@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>SENSA | Body Tehnika</title>
+    <meta name="title" content="SENSA | Body Tehnika" />
+    <meta
+      name="description"
+      content="SENSA anketa - samoprocjena vitalne energije"
+    />
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;900&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Style -->
+    <link rel="stylesheet" href="css/main.css?v=2" />
+
+    <!-- Facebook -->
+    <meta property="og:url" content="https://native.story.hr/preview/Sensa/" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Sensa anketa" />
+    <meta
+      property="og:description"
+      content="Izračunajte svoju vitalnu energiju uz Sensu!"
+    />
+    <meta
+      property="og:image"
+      content="https://native.story.hr/preview/sensa/share.jpg"
+    />
+    <meta property="og:image:width" content="1280" />
+    <meta property="og:image:height" content="720" />
+    <meta property="fb:app_id" content="684146431996498" />
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=UA-267402-38"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+
+      gtag("config", "UA-267402-38", { anonymize_ip: true });
+    </script>
+  </head>
+
+  <body>
+    <!-- HEADER -->
+    <header class="header has-text-centered">
+      <div class="header__text-box card1">
+        <img
+          class="header__logo"
+          src="./_assets/images/logo_sensa.png"
+          alt="Sensa logo"
+        />
+        <h3>Anketa</h3>
+        <h2>Body Tehnika</h2>
+      </div>
+      <div class="header__text-box card2">
+        <h1>PBS VITALNA ENERGIJA: Body Tehnika</h1>
+      </div>
+    </header>
+
+    <main>
+      <section class="form">
+        <form id="anketaSensa">
+          <div class="form__uvod has-text-centered">
+            <p>
+              Molimo Vas, izdvojite vrijeme za samoprocjenu i odgovore na
+              pitanja koja se tiču Vašeg trenutačnog stanja - „sadašnjeg Ja“ i
+              „potencijalnog Ja“, kojemu težite.
+            </p>
+            <p>
+              Kako biste dobili pravu procjenu ankete, a u skladu s GDPR-om,
+              molimo Vas da niže popunite upitnik i sva polja s osobnim
+              podacima.
+            </p>
+
+            <!-- Mjerenje -->
+            <div class="mjerenje">
+              <h3 class="form__question">Broj mjerenja:</h3>
+              <label><input type="radio" name="select" /><span>1</span></label>
+              <label><input type="radio" name="select" /><span>2</span></label>
+            </div>
+
+            <!-- Ime i prezime -->
+            <div>
+              <input
+                type="text"
+                id="imeprezime"
+                name="imeprezime"
+                class="form__imeprezime"
+                placeholder="Ime i prezime:"
+              />
+            </div>
+
+            <!-- E-mail -->
+            <div>
+              <input
+                type="text"
+                id="email"
+                name="email"
+                class="form__email"
+                placeholder="E-mail:"
+              />
+            </div>
+
+            <!-- Spol -->
+            <div class="mjerenje">
+              <h3 class="form__question">Spol (označiti):</h3>
+              <label for="zena">
+                <input
+                  type="radio"
+                  id="zena"
+                  name="spol"
+                  value="zena"
+                  class="form__answer"
+                />
+                <span>Ž</span>
+              </label>
+              <label for="muskarac">
+                <input
+                  type="radio"
+                  id="muskarac"
+                  name="spol"
+                  value="muskarac"
+                  class="form__answer"
+                />
+                <span>M</span>
+              </label>
+            </div>
+          </div>
+
+          <!-- Godine -->
+          <div class="form__card">
+            <h4>1 od 32</h4>
+            <h3>Označite svoju dob:</h3>
+
+            <p>A.&nbsp;&nbsp;&nbsp; 18 - 24</p>
+            <p>B.&nbsp;&nbsp;&nbsp; 25 - 34</p>
+            <p>C.&nbsp;&nbsp;&nbsp; 35 - 44</p>
+            <p>D.&nbsp;&nbsp;&nbsp; 45 - 54</p>
+            <p>E.&nbsp;&nbsp;&nbsp; 55 - 64</p>
+            <p>F.&nbsp;&nbsp;&nbsp; 65+</p>
+
+            <div class="form__label-wrapper">
+              <label for="od_18_do_24">
+                <input
+                  type="radio"
+                  id="od_18_do_24"
+                  name="godine"
+                  value="od_18_do_24"
+                  class="form__answer"
+                />
+                <span>A</span>
+              </label>
+              <label for="od_25_do_34">
+                <input
+                  type="radio"
+                  id="od_25_do_34"
+                  name="godine"
+                  value="od_25_do_34"
+                  class="form__answer"
+                />
+                <span>B</span>
+              </label>
+              <label for="od_35_do_44">
+                <input
+                  type="radio"
+                  id="od_35_do_44"
+                  name="godine"
+                  value="od_35_do_44"
+                  class="form__answer"
+                />
+                <span>C</span>
+              </label>
+              <label for="od_45_do_54">
+                <input
+                  type="radio"
+                  id="od_45_do_54"
+                  name="godine"
+                  value="od_45_do_54"
+                  class="form__answer"
+                />
+                <span>D</span>
+              </label>
+              <label for="od_55_do_64">
+                <input
+                  type="radio"
+                  id="od_55_do_64"
+                  name="godine"
+                  value="od_55_do_64"
+                  class="form__answer"
+                />
+                <span>E</span>
+              </label>
+              <label for="65_plus">
+                <input
+                  type="radio"
+                  id="65_plus"
+                  name="godine"
+                  value="65_plus"
+                  class="form__answer"
+                />
+                <span>F</span>
+              </label>
+            </div>
+          </div>
+        </form>
+      </section>
+    </main>
+    <!--  FOOTER -->
+    <!-- <footer class="footer has-text-centered">
+      <div class="container-footer">
+        <h4>Sadržaj nastao u suradnji</h4>
+        <a href="http://www.adriamedia.hr/oglasavanje/kontakti/" target="_blank"
+          ><img src="./_assets/images/AMZ_logo.png" alt="AMZ Native Studio"
+        /></a>
+        <a href="https://www.buzzsneakers.com/HRK_hr)" target="_blank"
+          ><img src="./_assets/images/buzz-logo.png" alt="Buzz logo" />
+        </a>
+      </div>
+    </footer> -->
+
+    <script type="text/javascript" src="lib/main.js"></script>
+  </body>
+</html>

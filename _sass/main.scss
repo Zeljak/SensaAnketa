@@ -1,0 +1,205 @@
+@charset "utf-8";
+
+@import "../node_modules/bulma/sass/utilities/initial-variables";
+
+@import "./_utilities";
+
+@import "../node_modules/bulma/bulma";
+
+//GENERAL
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  font-size: 62.5%;
+  background: $background-grey;
+}
+
+body {
+  box-sizing: border-box;
+  font-family: cedra4f;
+}
+
+.header {
+  max-width: 86rem;
+  margin: 2rem auto 2rem auto;
+  display: flex;
+  gap: 1rem;
+
+  &__text-box {
+    background: $light-grey;
+    width: 86rem;
+    height: 13.5rem;
+    box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.16);
+    color: $brownish-grey;
+    margin: 0 auto;
+  }
+
+  &__logo {
+    margin-top: 5rem;
+    width: 70%;
+  }
+
+  h1 {
+    font-size: 3rem;
+  }
+  h2 {
+    font-family: $family-secondary;
+    font-size: 1.4rem;
+    color: $brownish-grey;
+    background-color: $green;
+  }
+
+  h3 {
+    font-family: $family-secondary;
+    font-size: 1.2rem;
+    color: white;
+  }
+
+  .card1 {
+    width: 20rem;
+    background: $background-grey;
+    border: solid 3px white;
+  }
+
+  .card2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+.form {
+  &__wrapper {
+    max-width: 86rem;
+    margin: 0 auto;
+  }
+
+  &__uvod {
+    width: 86rem;
+    box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.16);
+    background: white;
+    color: $brownish-grey;
+    margin: 0 auto;
+    font-size: 1.8rem;
+    padding: 3rem 5.5rem 5.5rem 5.5rem;
+
+    @include for-phone {
+      width: 100%;
+    }
+
+    p:last-of-type {
+      margin-bottom: 2rem;
+    }
+  }
+
+  &__card {
+    width: 64rem;
+    box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.16);
+    background: white;
+    color: $brownish-grey;
+    margin: 1.4rem auto;
+    padding: 3rem 5.5rem 5.5rem 5.5rem;
+
+    @include for-phone {
+      width: 100%;
+    }
+
+    h4 {
+      font-family: $family-primary;
+      font-size: 1.2rem;
+      font-weight: bold;
+      text-align: left;
+      color: $brownish-grey;
+    }
+
+    h3 {
+      font-family: $family-primary;
+      font-size: 2rem;
+      font-weight: 900;
+      line-height: 1.6;
+      letter-spacing: -0.4px;
+      text-align: left;
+      color: $brownish-grey;
+      margin-top: 1.2rem;
+      margin-bottom: 1.6rem;
+    }
+
+    p {
+      font-family: $family-primary;
+      font-size: 1.6rem;
+      font-weight: 500;
+      line-height: 1.5;
+      text-align: left;
+      color: $brownish-grey;
+    }
+  }
+
+  .mjerenje {
+    display: flex;
+    justify-content: space-evenly;
+    margin-bottom: 2rem;
+    margin-top: 2rem;
+  }
+
+  input[type="text"] {
+    width: 75rem;
+    height: 9rem;
+    padding: 4rem 4rem 4rem 15.5rem;
+    border: 1px solid $green;
+    border-radius: 5rem;
+    margin: 1rem auto;
+    font-size: 1.8rem;
+    font-family: $family-secondary;
+
+    @include for-phone {
+      width: 100%;
+    }
+  }
+
+  label {
+    display: inline-block;
+    position: relative;
+  }
+  label input {
+    display: none;
+  }
+  label span {
+    border: 1px solid $green;
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    overflow: hidden;
+    line-height: 1.4;
+    text-align: center;
+    border-radius: 100%;
+    font-size: 2rem;
+    left: 0;
+    top: 50%;
+    margin-top: -1.4rem;
+    cursor: pointer;
+    display: inline-block;
+    background: #d1d1d1;
+  }
+  input:checked + span {
+    background: $green;
+    border-color: $green;
+    cursor: pointer;
+  }
+
+  &__label-wrapper {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 3rem;
+  }
+}
+
+//FOOTER
+// .footer {
+//   background-color: $white;
+// }
