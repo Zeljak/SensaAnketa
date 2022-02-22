@@ -11588,6 +11588,15 @@ body {
   text-align: left;
   color: #686868;
 }
+.form__card h5 {
+  font-family: "Roboto", sans-serif;
+  font-size: 1.2rem;
+  font-weight: 500;
+  line-height: 1.83;
+  text-align: left;
+  color: #a5a5a5;
+  margin-top: 1rem;
+}
 .form .mjerenje {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -11612,6 +11621,14 @@ body {
   .form input[type=text] {
     width: 100%;
   }
+}
+.form input[type=text]:nth-child(3) {
+  width: 50rem;
+  height: 4rem;
+  border: 1px solid #cde17a;
+  border-radius: 5rem;
+  font-size: 1.8rem;
+  font-family: cedra4f, cursive;
 }
 .form label {
   display: inline-block;
