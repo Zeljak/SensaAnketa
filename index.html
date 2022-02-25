@@ -55,244 +55,251 @@
   </head>
 
   <body>
-    <!-- HEADER -->
-    <header class="header has-text-centered">
-      <div class="header__text-box card1">
-        <img
-          class="header__logo"
-          src="./_assets/images/logo_sensa.png"
-          alt="Sensa logo"
-        />
-        <h3>Anketa</h3>
-        <h2>Body Tehnika</h2>
-      </div>
-      <div class="header__text-box card2">
-        <h1>PBS VITALNA ENERGIJA: Body Tehnika</h1>
-      </div>
-    </header>
-
-    <main>
-      <section class="form">
-        <form id="anketaSensa">
-          <div class="form__uvod has-text-centered">
-            <p>
-              Molimo Vas, izdvojite vrijeme za samoprocjenu i odgovore na
-              pitanja koja se tiču Vašeg trenutačnog stanja - „sadašnjeg Ja“ i
-              „potencijalnog Ja“, kojemu težite.
-            </p>
-            <p>
-              Kako biste dobili pravu procjenu ankete, a u skladu s GDPR-om,
-              molimo Vas da niže popunite upitnik i sva polja s osobnim
-              podacima.
-            </p>
-
-            <!-- Mjerenje -->
-            <div class="mjerenje">
-              <h3 class="form__question">Broj mjerenja:</h3>
-              <label><input type="radio" name="select" /><span>1</span></label>
-              <label><input type="radio" name="select" /><span>2</span></label>
-            </div>
-
-            <!-- Ime i prezime -->
-            <div>
-              <input
-                type="text"
-                id="imeprezime"
-                name="imeprezime"
-                class="form__imeprezime"
-                placeholder="Ime i prezime:"
-              />
-            </div>
-
-            <!-- E-mail -->
-            <div>
-              <input
-                type="text"
-                id="email"
-                name="email"
-                class="form__email"
-                placeholder="E-mail:"
-              />
-            </div>
-
-            <!-- Spol -->
-            <div class="mjerenje">
-              <h3 class="form__question">Spol (označiti):</h3>
-              <label for="zena">
-                <input
-                  type="radio"
-                  id="zena"
-                  name="spol"
-                  value="zena"
-                  class="form__answer"
-                />
-                <span>Ž</span>
-              </label>
-              <label for="muskarac">
-                <input
-                  type="radio"
-                  id="muskarac"
-                  name="spol"
-                  value="muskarac"
-                  class="form__answer"
-                />
-                <span>M</span>
-              </label>
-            </div>
+    <div id="wrapper_html">
+      <div id="wrapper_body">
+        <!-- HEADER -->
+        <header class="header has-text-centered">
+          <div class="header__text-box card1">
+            <img
+              class="header__logo"
+              src="./_assets/images/logo_sensa.png"
+              alt="Sensa logo"
+            />
+            <h3>Anketa</h3>
+            <h2>Body Tehnika</h2>
           </div>
-
-          <!-- 1. Godine -->
-          <div class="form__card">
-            <h4>1 od 32</h4>
-            <h3>Označite svoju dob:</h3>
-
-            <p>A.&nbsp;&nbsp;&nbsp; 18 - 24</p>
-            <p>B.&nbsp;&nbsp;&nbsp; 25 - 34</p>
-            <p>C.&nbsp;&nbsp;&nbsp; 35 - 44</p>
-            <p>D.&nbsp;&nbsp;&nbsp; 45 - 54</p>
-            <p>E.&nbsp;&nbsp;&nbsp; 55 - 64</p>
-            <p>F.&nbsp;&nbsp;&nbsp; 65+</p>
-
-            <div class="form__label-wrapper">
-              <label for="od_18_do_24">
-                <input
-                  type="radio"
-                  id="od_18_do_24"
-                  name="godine"
-                  value="od_18_do_24"
-                  class="form__answer"
-                />
-                <span>A</span>
-              </label>
-              <label for="od_25_do_34">
-                <input
-                  type="radio"
-                  id="od_25_do_34"
-                  name="godine"
-                  value="od_25_do_34"
-                  class="form__answer"
-                />
-                <span>B</span>
-              </label>
-              <label for="od_35_do_44">
-                <input
-                  type="radio"
-                  id="od_35_do_44"
-                  name="godine"
-                  value="od_35_do_44"
-                  class="form__answer"
-                />
-                <span>C</span>
-              </label>
-              <label for="od_45_do_54">
-                <input
-                  type="radio"
-                  id="od_45_do_54"
-                  name="godine"
-                  value="od_45_do_54"
-                  class="form__answer"
-                />
-                <span>D</span>
-              </label>
-              <label for="od_55_do_64">
-                <input
-                  type="radio"
-                  id="od_55_do_64"
-                  name="godine"
-                  value="od_55_do_64"
-                  class="form__answer"
-                />
-                <span>E</span>
-              </label>
-              <label for="65_plus">
-                <input
-                  type="radio"
-                  id="65_plus"
-                  name="godine"
-                  value="65_plus"
-                  class="form__answer"
-                />
-                <span>F</span>
-              </label>
-            </div>
+          <div class="header__text-box card2">
+            <h1>PBS VITALNA ENERGIJA: Body Tehnika</h1>
+            <div class="header__line"></div>
           </div>
+        </header>
 
-          <!-- 2. Stručna sprema -->
-          <div class="form__card">
-            <h4>2 od 32</h4>
-            <h3>Vaša najviša završena stručna sprema je:</h3>
+        <main>
+          <section class="form">
+            <form id="anketaSensa">
+              <div class="form__uvod has-text-centered">
+                <p>
+                  Molimo Vas, izdvojite vrijeme za samoprocjenu i odgovore na
+                  pitanja koja se tiču Vašeg trenutačnog stanja - „sadašnjeg Ja“
+                  i „potencijalnog Ja“, kojemu težite.
+                </p>
+                <p>
+                  Kako biste dobili pravu procjenu ankete, a u skladu s GDPR-om,
+                  molimo Vas da niže popunite upitnik i sva polja s osobnim
+                  podacima.
+                </p>
 
-            <p>A.&nbsp;&nbsp;&nbsp; nezavršena osnovna škola</p>
-            <p>B.&nbsp;&nbsp;&nbsp; srednja stručna sprema</p>
-            <p>C.&nbsp;&nbsp;&nbsp; viša stručna sprema</p>
-            <p>D.&nbsp;&nbsp;&nbsp; visoka stručna sprema</p>
-            <p>E.&nbsp;&nbsp;&nbsp; poslijediplomski studij</p>
+                <!-- Mjerenje -->
+                <div class="mjerenje">
+                  <h3 class="form__question">Broj mjerenja:</h3>
+                  <label
+                    ><input type="radio" name="select" /><span>1</span></label
+                  >
+                  <label
+                    ><input type="radio" name="select" /><span>2</span></label
+                  >
+                </div>
 
-            <div class="form__label-wrapper">
-              <label for="osnovna">
-                <input
-                  type="radio"
-                  id="osnovna"
-                  name="skola"
-                  value="osnovna"
-                  class="form__answer"
-                />
-                <span>A</span>
-              </label>
-              <label for="srednja">
-                <input
-                  type="radio"
-                  id="srednja"
-                  name="skola"
-                  value="srednja"
-                  class="form__answer"
-                />
-                <span>B</span>
-              </label>
-              <label for="visa">
-                <input
-                  type="radio"
-                  id="visa"
-                  name="skola"
-                  value="visa"
-                  class="form__answer"
-                />
-                <span>C</span>
-              </label>
-              <label for="visoka">
-                <input
-                  type="radio"
-                  id="visoka"
-                  name="skola"
-                  value="visoka"
-                  class="form__answer"
-                />
-                <span>D</span>
-              </label>
-              <label for="poslijediplomski">
-                <input
-                  type="radio"
-                  id="poslijediplomski"
-                  name="skola"
-                  value="poslijediplomski"
-                  class="form__answer"
-                />
-                <span>E</span>
-              </label>
-            </div>
-          </div>
+                <!-- Ime i prezime -->
+                <div>
+                  <input
+                    type="text"
+                    id="imeprezime"
+                    name="imeprezime"
+                    class="form__imeprezime"
+                    placeholder="Ime i prezime:"
+                  />
+                </div>
 
-          <!-- 3. Fizička aktivnost -->
-          <div class="form__card">
-            <h4>3 od 32</h4>
-            <h3>Kojom se vrstom fizičke aktivnosti najčešće bavite?</h3>
+                <!-- E-mail -->
+                <div>
+                  <input
+                    type="text"
+                    id="email"
+                    name="email"
+                    class="form__email"
+                    placeholder="E-mail:"
+                  />
+                </div>
 
-            <p>A.&nbsp;&nbsp;&nbsp; Body tehnikom</p>
-            <p>B.&nbsp;&nbsp;&nbsp; Jogom, pilatesom i sl.</p>
-            <p>C.&nbsp;&nbsp;&nbsp; Nekom vrstom fitnessa</p>
-            <p>D.&nbsp;&nbsp;&nbsp; Ne bavim se nikakvom aktivnošću</p>
-            <p>E.&nbsp;&nbsp;&nbsp; Nešto drugo (što?)</p>
-            <!-- <div>
+                <!-- Spol -->
+                <div class="mjerenje">
+                  <h3 class="form__question">Spol (označiti):</h3>
+                  <label for="zena">
+                    <input
+                      type="radio"
+                      id="zena"
+                      name="spol"
+                      value="zena"
+                      class="form__answer"
+                    />
+                    <span>Ž</span>
+                  </label>
+                  <label for="muskarac">
+                    <input
+                      type="radio"
+                      id="muskarac"
+                      name="spol"
+                      value="muskarac"
+                      class="form__answer"
+                    />
+                    <span>M</span>
+                  </label>
+                </div>
+              </div>
+
+              <!-- 1. Godine -->
+              <div class="form__card">
+                <h4>1 od 32</h4>
+                <h3>Označite svoju dob:</h3>
+
+                <p>A.&nbsp;&nbsp;&nbsp; 18 - 24</p>
+                <p>B.&nbsp;&nbsp;&nbsp; 25 - 34</p>
+                <p>C.&nbsp;&nbsp;&nbsp; 35 - 44</p>
+                <p>D.&nbsp;&nbsp;&nbsp; 45 - 54</p>
+                <p>E.&nbsp;&nbsp;&nbsp; 55 - 64</p>
+                <p>F.&nbsp;&nbsp;&nbsp; 65+</p>
+
+                <div class="form__label-wrapper">
+                  <label for="od_18_do_24">
+                    <input
+                      type="radio"
+                      id="od_18_do_24"
+                      name="godine"
+                      value="od_18_do_24"
+                      class="form__answer"
+                    />
+                    <span>A</span>
+                  </label>
+                  <label for="od_25_do_34">
+                    <input
+                      type="radio"
+                      id="od_25_do_34"
+                      name="godine"
+                      value="od_25_do_34"
+                      class="form__answer"
+                    />
+                    <span>B</span>
+                  </label>
+                  <label for="od_35_do_44">
+                    <input
+                      type="radio"
+                      id="od_35_do_44"
+                      name="godine"
+                      value="od_35_do_44"
+                      class="form__answer"
+                    />
+                    <span>C</span>
+                  </label>
+                  <label for="od_45_do_54">
+                    <input
+                      type="radio"
+                      id="od_45_do_54"
+                      name="godine"
+                      value="od_45_do_54"
+                      class="form__answer"
+                    />
+                    <span>D</span>
+                  </label>
+                  <label for="od_55_do_64">
+                    <input
+                      type="radio"
+                      id="od_55_do_64"
+                      name="godine"
+                      value="od_55_do_64"
+                      class="form__answer"
+                    />
+                    <span>E</span>
+                  </label>
+                  <label for="65_plus">
+                    <input
+                      type="radio"
+                      id="65_plus"
+                      name="godine"
+                      value="65_plus"
+                      class="form__answer"
+                    />
+                    <span>F</span>
+                  </label>
+                </div>
+              </div>
+
+              <!-- 2. Stručna sprema -->
+              <div class="form__card">
+                <h4>2 od 32</h4>
+                <h3>Vaša najviša završena stručna sprema je:</h3>
+
+                <p>A.&nbsp;&nbsp;&nbsp; nezavršena osnovna škola</p>
+                <p>B.&nbsp;&nbsp;&nbsp; srednja stručna sprema</p>
+                <p>C.&nbsp;&nbsp;&nbsp; viša stručna sprema</p>
+                <p>D.&nbsp;&nbsp;&nbsp; visoka stručna sprema</p>
+                <p>E.&nbsp;&nbsp;&nbsp; poslijediplomski studij</p>
+
+                <div class="form__label-wrapper">
+                  <label for="osnovna">
+                    <input
+                      type="radio"
+                      id="osnovna"
+                      name="skola"
+                      value="osnovna"
+                      class="form__answer"
+                    />
+                    <span>A</span>
+                  </label>
+                  <label for="srednja">
+                    <input
+                      type="radio"
+                      id="srednja"
+                      name="skola"
+                      value="srednja"
+                      class="form__answer"
+                    />
+                    <span>B</span>
+                  </label>
+                  <label for="visa">
+                    <input
+                      type="radio"
+                      id="visa"
+                      name="skola"
+                      value="visa"
+                      class="form__answer"
+                    />
+                    <span>C</span>
+                  </label>
+                  <label for="visoka">
+                    <input
+                      type="radio"
+                      id="visoka"
+                      name="skola"
+                      value="visoka"
+                      class="form__answer"
+                    />
+                    <span>D</span>
+                  </label>
+                  <label for="poslijediplomski">
+                    <input
+                      type="radio"
+                      id="poslijediplomski"
+                      name="skola"
+                      value="poslijediplomski"
+                      class="form__answer"
+                    />
+                    <span>E</span>
+                  </label>
+                </div>
+              </div>
+
+              <!-- 3. Fizička aktivnost -->
+              <div class="form__card">
+                <h4>3 od 32</h4>
+                <h3>Kojom se vrstom fizičke aktivnosti najčešće bavite?</h3>
+
+                <p>A.&nbsp;&nbsp;&nbsp; Body tehnikom</p>
+                <p>B.&nbsp;&nbsp;&nbsp; Jogom, pilatesom i sl.</p>
+                <p>C.&nbsp;&nbsp;&nbsp; Nekom vrstom fitnessa</p>
+                <p>D.&nbsp;&nbsp;&nbsp; Ne bavim se nikakvom aktivnošću</p>
+                <p>E.&nbsp;&nbsp;&nbsp; Nešto drugo (što?)</p>
+                <!-- <div>
               <input
                 type="text"
                 id="aktivnost_nesto_drugo"
@@ -301,185 +308,185 @@
               />
             </div> -->
 
-            <div class="form__label-wrapper">
-              <label for="body">
-                <input
-                  type="radio"
-                  id="body"
-                  name="aktivnost"
-                  value="body"
-                  class="form__answer"
-                />
-                <span>A</span>
-              </label>
-              <label for="joga">
-                <input
-                  type="radio"
-                  id="joga"
-                  name="aktivnost"
-                  value="joga"
-                  class="form__answer"
-                />
-                <span>B</span>
-              </label>
-              <label for="fitness">
-                <input
-                  type="radio"
-                  id="fitness"
-                  name="aktivnost"
-                  value="fitness"
-                  class="form__answer"
-                />
-                <span>C</span>
-              </label>
-              <label for="nikakva_aktivnost">
-                <input
-                  type="radio"
-                  id="nikakva_aktivnost"
-                  name="aktivnost"
-                  value="nikakva_aktivnost"
-                  class="form__answer"
-                />
-                <span>D</span>
-              </label>
-            </div>
-          </div>
+                <div class="form__label-wrapper">
+                  <label for="body">
+                    <input
+                      type="radio"
+                      id="body"
+                      name="aktivnost"
+                      value="body"
+                      class="form__answer"
+                    />
+                    <span>A</span>
+                  </label>
+                  <label for="joga">
+                    <input
+                      type="radio"
+                      id="joga"
+                      name="aktivnost"
+                      value="joga"
+                      class="form__answer"
+                    />
+                    <span>B</span>
+                  </label>
+                  <label for="fitness">
+                    <input
+                      type="radio"
+                      id="fitness"
+                      name="aktivnost"
+                      value="fitness"
+                      class="form__answer"
+                    />
+                    <span>C</span>
+                  </label>
+                  <label for="nikakva_aktivnost">
+                    <input
+                      type="radio"
+                      id="nikakva_aktivnost"
+                      name="aktivnost"
+                      value="nikakva_aktivnost"
+                      class="form__answer"
+                    />
+                    <span>D</span>
+                  </label>
+                </div>
+              </div>
 
-          <!-- 4. Materijalne prilike -->
-          <div class="form__card">
-            <h4>4 od 32</h4>
-            <h3>Kako biste procijenili svoje materijalne prilike?</h3>
+              <!-- 4. Materijalne prilike -->
+              <div class="form__card">
+                <h4>4 od 32</h4>
+                <h3>Kako biste procijenili svoje materijalne prilike?</h3>
 
-            <p>A.&nbsp;&nbsp;&nbsp; izrazito dobre</p>
-            <p>B.&nbsp;&nbsp;&nbsp; dobre</p>
-            <p>C.&nbsp;&nbsp;&nbsp; osrednje</p>
-            <p>D.&nbsp;&nbsp;&nbsp; loše</p>
-            <p>E.&nbsp;&nbsp;&nbsp; izrazito loše</p>
+                <p>A.&nbsp;&nbsp;&nbsp; izrazito dobre</p>
+                <p>B.&nbsp;&nbsp;&nbsp; dobre</p>
+                <p>C.&nbsp;&nbsp;&nbsp; osrednje</p>
+                <p>D.&nbsp;&nbsp;&nbsp; loše</p>
+                <p>E.&nbsp;&nbsp;&nbsp; izrazito loše</p>
 
-            <div class="form__label-wrapper">
-              <label for="izrazito_dobro">
-                <input
-                  type="radio"
-                  id="izrazito_dobro"
-                  name="materijalno"
-                  value="izrazito_dobro"
-                  class="form__answer"
-                />
-                <span>A</span>
-              </label>
-              <label for="dobro">
-                <input
-                  type="radio"
-                  id="dobro"
-                  name="materijalno"
-                  value="dobro"
-                  class="form__answer"
-                />
-                <span>B</span>
-              </label>
-              <label for="osrednje">
-                <input
-                  type="radio"
-                  id="osrednje"
-                  name="materijalno"
-                  value="osrednje"
-                  class="form__answer"
-                />
-                <span>C</span>
-              </label>
-              <label for="loše">
-                <input
-                  type="radio"
-                  id="loše"
-                  name="materijalno"
-                  value="loše"
-                  class="form__answer"
-                />
-                <span>D</span>
-              </label>
-              <label for="izrazito_loše">
-                <input
-                  type="radio"
-                  id="izrazito_loše"
-                  name="materijalno"
-                  value="izrazito_loše"
-                  class="form__answer"
-                />
-                <span>E</span>
-              </label>
-            </div>
-          </div>
+                <div class="form__label-wrapper">
+                  <label for="izrazito_dobro">
+                    <input
+                      type="radio"
+                      id="izrazito_dobro"
+                      name="materijalno"
+                      value="izrazito_dobro"
+                      class="form__answer"
+                    />
+                    <span>A</span>
+                  </label>
+                  <label for="dobro">
+                    <input
+                      type="radio"
+                      id="dobro"
+                      name="materijalno"
+                      value="dobro"
+                      class="form__answer"
+                    />
+                    <span>B</span>
+                  </label>
+                  <label for="osrednje">
+                    <input
+                      type="radio"
+                      id="osrednje"
+                      name="materijalno"
+                      value="osrednje"
+                      class="form__answer"
+                    />
+                    <span>C</span>
+                  </label>
+                  <label for="loše">
+                    <input
+                      type="radio"
+                      id="loše"
+                      name="materijalno"
+                      value="loše"
+                      class="form__answer"
+                    />
+                    <span>D</span>
+                  </label>
+                  <label for="izrazito_loše">
+                    <input
+                      type="radio"
+                      id="izrazito_loše"
+                      name="materijalno"
+                      value="izrazito_loše"
+                      class="form__answer"
+                    />
+                    <span>E</span>
+                  </label>
+                </div>
+              </div>
 
-          <!-- 5. Vrijeme za računalom -->
-          <div class="form__card">
-            <h4>5 od 32</h4>
-            <h3>Koliko vremena dnevno prodvodite za računalom?</h3>
+              <!-- 5. Vrijeme za računalom -->
+              <div class="form__card">
+                <h4>5 od 32</h4>
+                <h3>Koliko vremena dnevno prodvodite za računalom?</h3>
 
-            <p>A.&nbsp;&nbsp;&nbsp; Do 3 sata</p>
-            <p>B.&nbsp;&nbsp;&nbsp; 3 do 6 sati</p>
-            <p>C.&nbsp;&nbsp;&nbsp; 6 do 8 sati</p>
-            <p>D.&nbsp;&nbsp;&nbsp; Više od 8 sati</p>
+                <p>A.&nbsp;&nbsp;&nbsp; Do 3 sata</p>
+                <p>B.&nbsp;&nbsp;&nbsp; 3 do 6 sati</p>
+                <p>C.&nbsp;&nbsp;&nbsp; 6 do 8 sati</p>
+                <p>D.&nbsp;&nbsp;&nbsp; Više od 8 sati</p>
 
-            <div class="form__label-wrapper">
-              <label for="do_3">
-                <input
-                  type="radio"
-                  id="do_3"
-                  name="kompjuter"
-                  value="do_3"
-                  class="form__answer"
-                />
-                <span>A</span>
-              </label>
-              <label for="od_3_do_6">
-                <input
-                  type="radio"
-                  id="od_3_do_6"
-                  name="kompjuter"
-                  value="od_3_do_6"
-                  class="form__answer"
-                />
-                <span>B</span>
-              </label>
-              <label for="od_6_do_8">
-                <input
-                  type="radio"
-                  id="od_6_do_8"
-                  name="kompjuter"
-                  value="od_6_do_8"
-                  class="form__answer"
-                />
-                <span>C</span>
-              </label>
-              <label for="vise_od_8">
-                <input
-                  type="radio"
-                  id="vise_od_8"
-                  name="kompjuter"
-                  value="vise_od_8"
-                  class="form__answer"
-                />
-                <span>D</span>
-              </label>
-            </div>
-          </div>
+                <div class="form__label-wrapper">
+                  <label for="do_3">
+                    <input
+                      type="radio"
+                      id="do_3"
+                      name="kompjuter"
+                      value="do_3"
+                      class="form__answer"
+                    />
+                    <span>A</span>
+                  </label>
+                  <label for="od_3_do_6">
+                    <input
+                      type="radio"
+                      id="od_3_do_6"
+                      name="kompjuter"
+                      value="od_3_do_6"
+                      class="form__answer"
+                    />
+                    <span>B</span>
+                  </label>
+                  <label for="od_6_do_8">
+                    <input
+                      type="radio"
+                      id="od_6_do_8"
+                      name="kompjuter"
+                      value="od_6_do_8"
+                      class="form__answer"
+                    />
+                    <span>C</span>
+                  </label>
+                  <label for="vise_od_8">
+                    <input
+                      type="radio"
+                      id="vise_od_8"
+                      name="kompjuter"
+                      value="vise_od_8"
+                      class="form__answer"
+                    />
+                    <span>D</span>
+                  </label>
+                </div>
+              </div>
 
-          <!-- 6. Držanje i kralježnica -->
-          <div class="form__card">
-            <h4>6 od 32</h4>
-            <h3>
-              Razmislite o svom držanju i kako Vaša kralježnica podnosi
-              opterećenja tijela.
-            </h3>
+              <!-- RUBRIKA - Držanje i kralježnica -->
+              <div class="form__card--title">
+                <!-- <h4>6 od 32</h4> -->
+                <h3>
+                  Razmislite o svom držanju i kako Vaša kralježnica podnosi
+                  opterećenja tijela.
+                </h3>
 
-            <p>
-              Držite li se pogrbljeno s glavom prema naprijed i zatvorenim
-              ramenima? Je li donji dio leđa nepravilan (previše ili premalo
-              uvinut)? U kakvom su međuodnosu glava, ramena, prsni koš i
-              zdjelica?
-            </p>
+                <p>
+                  Držite li se pogrbljeno s glavom prema naprijed i zatvorenim
+                  ramenima? Je li donji dio leđa nepravilan (previše ili premalo
+                  uvinut)? U kakvom su međuodnosu glava, ramena, prsni koš i
+                  zdjelica?
+                </p>
 
-            <h5>1 = jako loše&nbsp;&nbsp;&nbsp; 7 = odlično</h5>
+                <!-- <h5>1 = jako loše&nbsp;&nbsp;&nbsp; 7 = odlično</h5>
 
             <div class="form__label-wrapper">
               <label for="drzanje_1">
@@ -551,195 +558,193 @@
                   class="form__answer"
                 />
                 <span>7</span>
-              </label>
-            </div>
-          </div>
+              </label> -->
+              </div>
 
-          <!--7. Držanje i kralježnica - "sadašnje ja" -->
-          <div class="form__card">
-            <h4>7 od 32</h4>
-            <h3>
-              Kako biste generalno ocijenili svoje „sadašnje ja“ u kategoriji
-              „držanje i kralježnica“?
-            </h3>
+              <!--6. Držanje i kralježnica - "sadašnje ja" -->
+              <div class="form__card">
+                <h4>6 od 32</h4>
+                <h3>
+                  Kako biste generalno ocijenili svoje „sadašnje ja“ u
+                  kategoriji „držanje i kralježnica“?
+                </h3>
 
-            <h5>1 = jako loše&nbsp;&nbsp;&nbsp; 7 = odlično</h5>
+                <h5>1 = jako loše&nbsp;&nbsp;&nbsp; 7 = odlično</h5>
 
-            <div class="form__label-wrapper">
-              <label for="kraljeznica_sadasnje_1">
-                <input
-                  type="radio"
-                  id="kraljeznica_sadasnje_1"
-                  name="kraljeznica_sadasnje"
-                  value="kraljeznica_sadasnje_1"
-                  class="form__answer"
-                />
-                <span>1</span>
-              </label>
-              <label for="kraljeznica_sadasnje_2">
-                <input
-                  type="radio"
-                  id="kraljeznica_sadasnje_2"
-                  name="kraljeznica_sadasnje"
-                  value="kraljeznica_sadasnje_2"
-                  class="form__answer"
-                />
-                <span>2</span>
-              </label>
-              <label for="kraljeznica_sadasnje_3">
-                <input
-                  type="radio"
-                  id="kraljeznica_sadasnje_3"
-                  name="kraljeznica_sadasnje"
-                  value="kraljeznica_sadasnje_3"
-                  class="form__answer"
-                />
-                <span>3</span>
-              </label>
-              <label for="kraljeznica_sadasnje_4">
-                <input
-                  type="radio"
-                  id="kraljeznica_sadasnje_4"
-                  name="kraljeznica_sadasnje"
-                  value="kraljeznica_sadasnje_4"
-                  class="form__answer"
-                />
-                <span>4</span>
-              </label>
-              <label for="kraljeznica_sadasnje_5">
-                <input
-                  type="radio"
-                  id="kraljeznica_sadasnje_5"
-                  name="kraljeznica_sadasnje"
-                  value="kraljeznica_sadasnje_5"
-                  class="form__answer"
-                />
-                <span>5</span>
-              </label>
-              <label for="kraljeznica_sadasnje_6">
-                <input
-                  type="radio"
-                  id="kraljeznica_sadasnje_6"
-                  name="kraljeznica_sadasnje"
-                  value="kraljeznica_sadasnje_6"
-                  class="form__answer"
-                />
-                <span>6</span>
-              </label>
-              <label for="kraljeznica_sadasnje_7">
-                <input
-                  type="radio"
-                  id="kraljeznica_sadasnje_7"
-                  name="kraljeznica_sadasnje"
-                  value="kraljeznica_sadasnje_7"
-                  class="form__answer"
-                />
-                <span>7</span>
-              </label>
-            </div>
-          </div>
+                <div class="form__label-wrapper">
+                  <label for="kraljeznica_sadasnje_1">
+                    <input
+                      type="radio"
+                      id="kraljeznica_sadasnje_1"
+                      name="kraljeznica_sadasnje"
+                      value="kraljeznica_sadasnje_1"
+                      class="form__answer"
+                    />
+                    <span>1</span>
+                  </label>
+                  <label for="kraljeznica_sadasnje_2">
+                    <input
+                      type="radio"
+                      id="kraljeznica_sadasnje_2"
+                      name="kraljeznica_sadasnje"
+                      value="kraljeznica_sadasnje_2"
+                      class="form__answer"
+                    />
+                    <span>2</span>
+                  </label>
+                  <label for="kraljeznica_sadasnje_3">
+                    <input
+                      type="radio"
+                      id="kraljeznica_sadasnje_3"
+                      name="kraljeznica_sadasnje"
+                      value="kraljeznica_sadasnje_3"
+                      class="form__answer"
+                    />
+                    <span>3</span>
+                  </label>
+                  <label for="kraljeznica_sadasnje_4">
+                    <input
+                      type="radio"
+                      id="kraljeznica_sadasnje_4"
+                      name="kraljeznica_sadasnje"
+                      value="kraljeznica_sadasnje_4"
+                      class="form__answer"
+                    />
+                    <span>4</span>
+                  </label>
+                  <label for="kraljeznica_sadasnje_5">
+                    <input
+                      type="radio"
+                      id="kraljeznica_sadasnje_5"
+                      name="kraljeznica_sadasnje"
+                      value="kraljeznica_sadasnje_5"
+                      class="form__answer"
+                    />
+                    <span>5</span>
+                  </label>
+                  <label for="kraljeznica_sadasnje_6">
+                    <input
+                      type="radio"
+                      id="kraljeznica_sadasnje_6"
+                      name="kraljeznica_sadasnje"
+                      value="kraljeznica_sadasnje_6"
+                      class="form__answer"
+                    />
+                    <span>6</span>
+                  </label>
+                  <label for="kraljeznica_sadasnje_7">
+                    <input
+                      type="radio"
+                      id="kraljeznica_sadasnje_7"
+                      name="kraljeznica_sadasnje"
+                      value="kraljeznica_sadasnje_7"
+                      class="form__answer"
+                    />
+                    <span>7</span>
+                  </label>
+                </div>
+              </div>
 
-          <!--8. Držanje i kralježnica - "potencijalno ja" -->
-          <div class="form__card">
-            <h4>8 od 32</h4>
-            <h3>
-              Kako biste voljeli da se vaše „potencijalno ja“ (u skladu s vašim
-              mogućnostima) osjeća, što se tiče kategorije „držanje i
-              kralježnica“?
-            </h3>
+              <!--7. Držanje i kralježnica - "potencijalno ja" -->
+              <div class="form__card">
+                <h4>7 od 32</h4>
+                <h3>
+                  Kako biste voljeli da se vaše „potencijalno ja“ (u skladu s
+                  vašim mogućnostima) osjeća, što se tiče kategorije „držanje i
+                  kralježnica“?
+                </h3>
 
-            <h5>1 = jako loše&nbsp;&nbsp;&nbsp; 7 = odlično</h5>
+                <h5>1 = jako loše&nbsp;&nbsp;&nbsp; 7 = odlično</h5>
 
-            <div class="form__label-wrapper">
-              <label for="kraljeznica_potencijalno_1">
-                <input
-                  type="radio"
-                  id="kraljeznica_potencijalno_1"
-                  name="kraljeznica_potencijalno"
-                  value="kraljeznica_potencijalno_1"
-                  class="form__answer"
-                />
-                <span>1</span>
-              </label>
-              <label for="kraljeznica_potencijalno_2">
-                <input
-                  type="radio"
-                  id="kraljeznica_potencijalno_2"
-                  name="kraljeznica_potencijalno"
-                  value="kraljeznica_potencijalno_2"
-                  class="form__answer"
-                />
-                <span>2</span>
-              </label>
-              <label for="kraljeznica_potencijalno_3">
-                <input
-                  type="radio"
-                  id="kraljeznica_potencijalno_3"
-                  name="kraljeznica_potencijalno"
-                  value="kraljeznica_potencijalno_3"
-                  class="form__answer"
-                />
-                <span>3</span>
-              </label>
-              <label for="kraljeznica_potencijalno_4">
-                <input
-                  type="radio"
-                  id="kraljeznica_potencijalno_4"
-                  name="kraljeznica_potencijalno"
-                  value="kraljeznica_potencijalno_4"
-                  class="form__answer"
-                />
-                <span>4</span>
-              </label>
-              <label for="kraljeznica_potencijalno_5">
-                <input
-                  type="radio"
-                  id="kraljeznica_potencijalno_5"
-                  name="kraljeznica_potencijalno"
-                  value="kraljeznica_potencijalno_5"
-                  class="form__answer"
-                />
-                <span>5</span>
-              </label>
-              <label for="kraljeznica_potencijalno_6">
-                <input
-                  type="radio"
-                  id="kraljeznica_potencijalno_6"
-                  name="kraljeznica_potencijalno"
-                  value="kraljeznica_potencijalno_6"
-                  class="form__answer"
-                />
-                <span>6</span>
-              </label>
-              <label for="kraljeznica_potencijalno_7">
-                <input
-                  type="radio"
-                  id="kraljeznica_potencijalno_7"
-                  name="kraljeznica_potencijalno"
-                  value="kraljeznica_potencijalno_7"
-                  class="form__answer"
-                />
-                <span>7</span>
-              </label>
-            </div>
-          </div>
+                <div class="form__label-wrapper">
+                  <label for="kraljeznica_potencijalno_1">
+                    <input
+                      type="radio"
+                      id="kraljeznica_potencijalno_1"
+                      name="kraljeznica_potencijalno"
+                      value="kraljeznica_potencijalno_1"
+                      class="form__answer"
+                    />
+                    <span>1</span>
+                  </label>
+                  <label for="kraljeznica_potencijalno_2">
+                    <input
+                      type="radio"
+                      id="kraljeznica_potencijalno_2"
+                      name="kraljeznica_potencijalno"
+                      value="kraljeznica_potencijalno_2"
+                      class="form__answer"
+                    />
+                    <span>2</span>
+                  </label>
+                  <label for="kraljeznica_potencijalno_3">
+                    <input
+                      type="radio"
+                      id="kraljeznica_potencijalno_3"
+                      name="kraljeznica_potencijalno"
+                      value="kraljeznica_potencijalno_3"
+                      class="form__answer"
+                    />
+                    <span>3</span>
+                  </label>
+                  <label for="kraljeznica_potencijalno_4">
+                    <input
+                      type="radio"
+                      id="kraljeznica_potencijalno_4"
+                      name="kraljeznica_potencijalno"
+                      value="kraljeznica_potencijalno_4"
+                      class="form__answer"
+                    />
+                    <span>4</span>
+                  </label>
+                  <label for="kraljeznica_potencijalno_5">
+                    <input
+                      type="radio"
+                      id="kraljeznica_potencijalno_5"
+                      name="kraljeznica_potencijalno"
+                      value="kraljeznica_potencijalno_5"
+                      class="form__answer"
+                    />
+                    <span>5</span>
+                  </label>
+                  <label for="kraljeznica_potencijalno_6">
+                    <input
+                      type="radio"
+                      id="kraljeznica_potencijalno_6"
+                      name="kraljeznica_potencijalno"
+                      value="kraljeznica_potencijalno_6"
+                      class="form__answer"
+                    />
+                    <span>6</span>
+                  </label>
+                  <label for="kraljeznica_potencijalno_7">
+                    <input
+                      type="radio"
+                      id="kraljeznica_potencijalno_7"
+                      name="kraljeznica_potencijalno"
+                      value="kraljeznica_potencijalno_7"
+                      class="form__answer"
+                    />
+                    <span>7</span>
+                  </label>
+                </div>
+              </div>
 
-          <!--9. Trbuh - "sadašnje ja" -->
-          <div class="form__card">
-            <h4>9 od 32</h4>
-            <h3>
-              Osvijestite svoj trbuh prema onome što vidite u ogledalu, ali i
-              prema tome kako ga osjetite.
-            </h3>
-            <p>
-              Kako vidite i osjećate trbuh? Imate li viška kože i sala? Osjećate
-              li da je dovoljno snažan i funkcionalan? Kako biste generalno
-              ocijenili svoje „sadašnje ja“ u kategoriji „trbuh“?
-            </p>
+              <!--RUBRIKA - Trbuh  -->
+              <div class="form__card--title">
+                <!-- <h4>9 od 32</h4> -->
+                <h3>
+                  Osvijestite svoj trbuh prema onome što vidite u ogledalu, ali
+                  i prema tome kako ga osjetite.
+                </h3>
+                <p>
+                  Kako vidite i osjećate trbuh? Imate li viška kože i sala?
+                  Osjećate li da je dovoljno snažan i funkcionalan?
+                </p>
 
-            <h5>1 = jako loše&nbsp;&nbsp;&nbsp; 7 = odlično</h5>
+                <!-- <h5>1 = jako loše&nbsp;&nbsp;&nbsp; 7 = odlično</h5> -->
 
-            <div class="form__label-wrapper">
+                <!-- <div class="form__label-wrapper">
               <label for="trbuh_sadasnje_1">
                 <input
                   type="radio"
@@ -810,20 +815,190 @@
                 />
                 <span>7</span>
               </label>
-            </div>
-          </div>
+            </div> -->
+              </div>
 
-          <!--10. Trbuh - "potencijalno ja" -->
-          <div class="form__card">
-            <h4>10 od 32</h4>
-            <h3>
-              Kako biste voljeli da se vaše „potencijalno ja“ (u skladu s vašim
-              mogućnostima) osjeća, što se tiče kategorije „trbuh“?
-            </h3>
+              <!--8. Trbuh - sadašnje ja  -->
+              <div class="form__card">
+                <h4>8 od 32</h4>
+                <h3>
+                  Kako biste generalno ocijenili svoje „sadašnje ja“ u
+                  kategoriji „trbuh“?
+                </h3>
 
-            <h5>1 = jako loše&nbsp;&nbsp;&nbsp; 7 = odlično</h5>
+                <h5>1 = jako loše&nbsp;&nbsp;&nbsp; 7 = odlično</h5>
 
-            <div class="form__label-wrapper">
+                <div class="form__label-wrapper">
+                  <label for="trbuh_sadasnje_1">
+                    <input
+                      type="radio"
+                      id="trbuh_sadasnje_1"
+                      name="trbuh_sadasnje"
+                      value="trbuh_sadasnje_1"
+                      class="form__answer"
+                    />
+                    <span>1</span>
+                  </label>
+                  <label for="trbuh_sadasnje_2">
+                    <input
+                      type="radio"
+                      id="trbuh_sadasnje_2"
+                      name="trbuh_sadasnje"
+                      value="trbuh_sadasnje_2"
+                      class="form__answer"
+                    />
+                    <span>2</span>
+                  </label>
+                  <label for="trbuh_sadasnje_3">
+                    <input
+                      type="radio"
+                      id="trbuh_sadasnje_3"
+                      name="trbuh_sadasnje"
+                      value="trbuh_sadasnje_3"
+                      class="form__answer"
+                    />
+                    <span>3</span>
+                  </label>
+                  <label for="trbuh_sadasnje_4">
+                    <input
+                      type="radio"
+                      id="trbuh_sadasnje_4"
+                      name="trbuh_sadasnje"
+                      value="trbuh_sadasnje_4"
+                      class="form__answer"
+                    />
+                    <span>4</span>
+                  </label>
+                  <label for="trbuh_sadasnje_5">
+                    <input
+                      type="radio"
+                      id="trbuh_sadasnje_5"
+                      name="trbuh_sadasnje"
+                      value="trbuh_sadasnje_5"
+                      class="form__answer"
+                    />
+                    <span>5</span>
+                  </label>
+                  <label for="trbuh_sadasnje_6">
+                    <input
+                      type="radio"
+                      id="trbuh_sadasnje_6"
+                      name="trbuh_sadasnje"
+                      value="trbuh_sadasnje_6"
+                      class="form__answer"
+                    />
+                    <span>6</span>
+                  </label>
+                  <label for="trbuh_sadasnje_7">
+                    <input
+                      type="radio"
+                      id="trbuh_sadasnje_7"
+                      name="trbuh_sadasnje"
+                      value="trbuh_sadasnje_7"
+                      class="form__answer"
+                    />
+                    <span>7</span>
+                  </label>
+                </div>
+              </div>
+
+              <!--9. Trbuh - "potencijalno ja" -->
+              <div class="form__card">
+                <h4>9 od 32</h4>
+                <h3>
+                  Kako biste voljeli da se vaše „potencijalno ja“ (u skladu s
+                  vašim mogućnostima) osjeća, što se tiče kategorije „trbuh“?
+                </h3>
+
+                <h5>1 = jako loše&nbsp;&nbsp;&nbsp; 7 = odlično</h5>
+
+                <div class="form__label-wrapper">
+                  <label for="trbuh_potencijalno_1">
+                    <input
+                      type="radio"
+                      id="trbuh_potencijalno_1"
+                      name="trbuh_potencijalno"
+                      value="trbuh_potencijalno_1"
+                      class="form__answer"
+                    />
+                    <span>1</span>
+                  </label>
+                  <label for="trbuh_potencijalno_2">
+                    <input
+                      type="radio"
+                      id="trbuh_potencijalno_2"
+                      name="trbuh_potencijalno"
+                      value="trbuh_potencijalno_2"
+                      class="form__answer"
+                    />
+                    <span>2</span>
+                  </label>
+                  <label for="trbuh_potencijalno_3">
+                    <input
+                      type="radio"
+                      id="trbuh_potencijalno_3"
+                      name="trbuh_potencijalno"
+                      value="trbuh_potencijalno_3"
+                      class="form__answer"
+                    />
+                    <span>3</span>
+                  </label>
+                  <label for="trbuh_potencijalno_4">
+                    <input
+                      type="radio"
+                      id="trbuh_potencijalno_4"
+                      name="trbuh_potencijalno"
+                      value="trbuh_potencijalno_4"
+                      class="form__answer"
+                    />
+                    <span>4</span>
+                  </label>
+                  <label for="trbuh_potencijalno_5">
+                    <input
+                      type="radio"
+                      id="trbuh_potencijalno_5"
+                      name="trbuh_potencijalno"
+                      value="trbuh_potencijalno_5"
+                      class="form__answer"
+                    />
+                    <span>5</span>
+                  </label>
+                  <label for="trbuh_potencijalno_6">
+                    <input
+                      type="radio"
+                      id="trbuh_potencijalno_6"
+                      name="trbuh_potencijalno"
+                      value="trbuh_potencijalno_6"
+                      class="form__answer"
+                    />
+                    <span>6</span>
+                  </label>
+                  <label for="trbuh_potencijalno_7">
+                    <input
+                      type="radio"
+                      id="trbuh_potencijalno_7"
+                      name="trbuh_potencijalno"
+                      value="trbuh_potencijalno_7"
+                      class="form__answer"
+                    />
+                    <span>7</span>
+                  </label>
+                </div>
+              </div>
+
+              <!--RUBRIKA - Bolovi i smetnje -->
+              <div class="form__card--title">
+                <!-- <h4>10 od 32</h4> -->
+                <h3>Analizirajte bolove i smetnje u vašem tijelu.</h3>
+                <p>
+                  Kako biste opisali „boravak“ u svom tijelu? Koliko često
+                  patite od bolova ili smetnji koje otežavaju funkcioniranje
+                  danju ili noću?
+                </p>
+
+                <!-- <h5>1 = jako loše&nbsp;&nbsp;&nbsp; 7 = odlično</h5> -->
+
+                <!-- <div class="form__label-wrapper">
               <label for="trbuh_potencijalno_1">
                 <input
                   type="radio"
@@ -894,24 +1069,1808 @@
                 />
                 <span>7</span>
               </label>
-            </div>
-          </div>
-        </form>
-      </section>
-    </main>
-    <!--  FOOTER -->
-    <!-- <footer class="footer has-text-centered">
-      <div class="container-footer">
-        <h4>Sadržaj nastao u suradnji</h4>
+            </div> -->
+              </div>
+
+              <!--10. Bolovi i smetnje - "sadašnje ja" -->
+              <div class="form__card">
+                <h4>10 od 32</h4>
+                <h3>
+                  Kako biste generalno ocijenili svoje „sadašnje ja“ u
+                  kategoriji „bolovi i smetnje u tijelu“?
+                </h3>
+                <!-- <p>
+              Kako biste opisali
+              „boravak“ u svom tijelu? Koliko često patite od bolova ili smetnji
+              koje otežavaju funkcioniranje danju ili noću?
+            </p> -->
+
+                <h5>1 = jako loše&nbsp;&nbsp;&nbsp; 7 = odlično</h5>
+
+                <div class="form__label-wrapper">
+                  <label for="smetnje_sadasnje_1">
+                    <input
+                      type="radio"
+                      id="smetnje_sadasnje_1"
+                      name="smetnje_sadasnje"
+                      value="smetnje_sadasnje_1"
+                      class="form__answer"
+                    />
+                    <span>1</span>
+                  </label>
+                  <label for="smetnje_sadasnje_2">
+                    <input
+                      type="radio"
+                      id="smetnje_sadasnje_2"
+                      name="smetnje_sadasnje"
+                      value="smetnje_sadasnje_2"
+                      class="form__answer"
+                    />
+                    <span>2</span>
+                  </label>
+                  <label for="smetnje_sadasnje_3">
+                    <input
+                      type="radio"
+                      id="smetnje_sadasnje_3"
+                      name="smetnje_sadasnje"
+                      value="smetnje_sadasnje_3"
+                      class="form__answer"
+                    />
+                    <span>3</span>
+                  </label>
+                  <label for="smetnje_sadasnje_4">
+                    <input
+                      type="radio"
+                      id="smetnje_sadasnje_4"
+                      name="smetnje_sadasnje"
+                      value="smetnje_sadasnje_4"
+                      class="form__answer"
+                    />
+                    <span>4</span>
+                  </label>
+                  <label for="smetnje_sadasnje_5">
+                    <input
+                      type="radio"
+                      id="smetnje_sadasnje_5"
+                      name="smetnje_sadasnje"
+                      value="smetnje_sadasnje_5"
+                      class="form__answer"
+                    />
+                    <span>5</span>
+                  </label>
+                  <label for="smetnje_sadasnje_6">
+                    <input
+                      type="radio"
+                      id="smetnje_sadasnje_6"
+                      name="smetnje_sadasnje"
+                      value="smetnje_sadasnje_6"
+                      class="form__answer"
+                    />
+                    <span>6</span>
+                  </label>
+                  <label for="smetnje_sadasnje_7">
+                    <input
+                      type="radio"
+                      id="smetnje_sadasnje_7"
+                      name="smetnje_sadasnje"
+                      value="smetnje_sadasnje_7"
+                      class="form__answer"
+                    />
+                    <span>7</span>
+                  </label>
+                </div>
+              </div>
+
+              <!--11. Bolovi i smetnje - "potencijalno ja" -->
+              <div class="form__card">
+                <h4>11 od 32</h4>
+                <h3>
+                  Kako biste voljeli da se vaše „potencijalno ja“ (u skladu s
+                  vašim mogućnostima) osjeća, što se tiče kategorije „bolovi i
+                  smetnje u tijelu“?
+                </h3>
+                <!-- <p>
+              Kako biste opisali
+              „boravak“ u svom tijelu? Koliko često patite od bolova ili smetnji
+              koje otežavaju funkcioniranje danju ili noću?
+            </p> -->
+
+                <h5>1 = jako loše&nbsp;&nbsp;&nbsp; 7 = odlično</h5>
+
+                <div class="form__label-wrapper">
+                  <label for="smetnje_potencijalno_1">
+                    <input
+                      type="radio"
+                      id="smetnje_potencijalno_1"
+                      name="smetnje_potencijalno"
+                      value="smetnje_potencijalno_1"
+                      class="form__answer"
+                    />
+                    <span>1</span>
+                  </label>
+                  <label for="smetnje_potencijalno_2">
+                    <input
+                      type="radio"
+                      id="smetnje_potencijalno_2"
+                      name="smetnje_potencijalno"
+                      value="smetnje_potencijalno_2"
+                      class="form__answer"
+                    />
+                    <span>2</span>
+                  </label>
+                  <label for="smetnje_potencijalno_3">
+                    <input
+                      type="radio"
+                      id="smetnje_potencijalno_3"
+                      name="smetnje_potencijalno"
+                      value="smetnje_potencijalno_3"
+                      class="form__answer"
+                    />
+                    <span>3</span>
+                  </label>
+                  <label for="smetnje_potencijalno_4">
+                    <input
+                      type="radio"
+                      id="smetnje_potencijalno_4"
+                      name="smetnje_potencijalno"
+                      value="smetnje_potencijalno_4"
+                      class="form__answer"
+                    />
+                    <span>4</span>
+                  </label>
+                  <label for="smetnje_potencijalno_5">
+                    <input
+                      type="radio"
+                      id="smetnje_potencijalno_5"
+                      name="smetnje_potencijalno"
+                      value="smetnje_potencijalno_5"
+                      class="form__answer"
+                    />
+                    <span>5</span>
+                  </label>
+                  <label for="smetnje_potencijalno_6">
+                    <input
+                      type="radio"
+                      id="smetnje_potencijalno_6"
+                      name="smetnje_potencijalno"
+                      value="smetnje_potencijalno_6"
+                      class="form__answer"
+                    />
+                    <span>6</span>
+                  </label>
+                  <label for="smetnje_potencijalno_7">
+                    <input
+                      type="radio"
+                      id="smetnje_potencijalno_7"
+                      name="smetnje_potencijalno"
+                      value="smetnje_potencijalno_7"
+                      class="form__answer"
+                    />
+                    <span>7</span>
+                  </label>
+                </div>
+              </div>
+
+              <!--RUBRIKA - Zdravstvene tegobe -->
+              <div class="form__card--title">
+                <!-- <h4>10 od 32</h4> -->
+                <h3>
+                  Obratite pažnju na svoje zdravstvene tegobe koje ste imali ili
+                  ih još uvijek imate.
+                </h3>
+                <p>
+                  Jesu li se zdravstvene tegobe intenzivirale i imate li neke
+                  nove simptome? Kako biste opisali stanje hormona, organa,
+                  imunitet, psihu i libido?
+                </p>
+
+                <!-- <h5>1 = jako loše&nbsp;&nbsp;&nbsp; 7 = odlično</h5> -->
+
+                <!-- <div class="form__label-wrapper">
+              <label for="trbuh_potencijalno_1">
+                <input
+                  type="radio"
+                  id="trbuh_potencijalno_1"
+                  name="trbuh_potencijalno"
+                  value="trbuh_potencijalno_1"
+                  class="form__answer"
+                />
+                <span>1</span>
+              </label>
+              <label for="trbuh_potencijalno_2">
+                <input
+                  type="radio"
+                  id="trbuh_potencijalno_2"
+                  name="trbuh_potencijalno"
+                  value="trbuh_potencijalno_2"
+                  class="form__answer"
+                />
+                <span>2</span>
+              </label>
+              <label for="trbuh_potencijalno_3">
+                <input
+                  type="radio"
+                  id="trbuh_potencijalno_3"
+                  name="trbuh_potencijalno"
+                  value="trbuh_potencijalno_3"
+                  class="form__answer"
+                />
+                <span>3</span>
+              </label>
+              <label for="trbuh_potencijalno_4">
+                <input
+                  type="radio"
+                  id="trbuh_potencijalno_4"
+                  name="trbuh_potencijalno"
+                  value="trbuh_potencijalno_4"
+                  class="form__answer"
+                />
+                <span>4</span>
+              </label>
+              <label for="trbuh_potencijalno_5">
+                <input
+                  type="radio"
+                  id="trbuh_potencijalno_5"
+                  name="trbuh_potencijalno"
+                  value="trbuh_potencijalno_5"
+                  class="form__answer"
+                />
+                <span>5</span>
+              </label>
+              <label for="trbuh_potencijalno_6">
+                <input
+                  type="radio"
+                  id="trbuh_potencijalno_6"
+                  name="trbuh_potencijalno"
+                  value="trbuh_potencijalno_6"
+                  class="form__answer"
+                />
+                <span>6</span>
+              </label>
+              <label for="trbuh_potencijalno_7">
+                <input
+                  type="radio"
+                  id="trbuh_potencijalno_7"
+                  name="trbuh_potencijalno"
+                  value="trbuh_potencijalno_7"
+                  class="form__answer"
+                />
+                <span>7</span>
+              </label>
+            </div> -->
+              </div>
+
+              <!--12. Zdravstvene tegobe -->
+              <div class="form__card">
+                <h4>12 od 32</h4>
+                <h3>
+                  Kako biste generalno ocijenili svoje „sadašnje ja“ u
+                  kategoriji „zdravstvene tegobe“?
+                </h3>
+                <!-- <p>
+              Kako biste opisali
+              „boravak“ u svom tijelu? Koliko često patite od bolova ili smetnji
+              koje otežavaju funkcioniranje danju ili noću?
+            </p> -->
+
+                <h5>1 = jako loše&nbsp;&nbsp;&nbsp; 7 = odlično</h5>
+
+                <div class="form__label-wrapper">
+                  <label for="tegobe_sadasnje_1">
+                    <input
+                      type="radio"
+                      id="tegobe_sadasnje_1"
+                      name="tegobe_sadasnje"
+                      value="tegobe_sadasnje_1"
+                      class="form__answer"
+                    />
+                    <span>1</span>
+                  </label>
+                  <label for="tegobe_sadasnje_2">
+                    <input
+                      type="radio"
+                      id="tegobe_sadasnje_2"
+                      name="tegobe_sadasnje"
+                      value="tegobe_sadasnje_2"
+                      class="form__answer"
+                    />
+                    <span>2</span>
+                  </label>
+                  <label for="tegobe_sadasnje_3">
+                    <input
+                      type="radio"
+                      id="tegobe_sadasnje_3"
+                      name="tegobe_sadasnje"
+                      value="tegobe_sadasnje_3"
+                      class="form__answer"
+                    />
+                    <span>3</span>
+                  </label>
+                  <label for="tegobe_sadasnje_4">
+                    <input
+                      type="radio"
+                      id="tegobe_sadasnje_4"
+                      name="tegobe_sadasnje"
+                      value="tegobe_sadasnje_4"
+                      class="form__answer"
+                    />
+                    <span>4</span>
+                  </label>
+                  <label for="tegobe_sadasnje_5">
+                    <input
+                      type="radio"
+                      id="tegobe_sadasnje_5"
+                      name="tegobe_sadasnje"
+                      value="tegobe_sadasnje_5"
+                      class="form__answer"
+                    />
+                    <span>5</span>
+                  </label>
+                  <label for="tegobe_sadasnje_6">
+                    <input
+                      type="radio"
+                      id="tegobe_sadasnje_6"
+                      name="tegobe_sadasnje"
+                      value="tegobe_sadasnje_6"
+                      class="form__answer"
+                    />
+                    <span>6</span>
+                  </label>
+                  <label for="tegobe_sadasnje_7">
+                    <input
+                      type="radio"
+                      id="tegobe_sadasnje_7"
+                      name="tegobe_sadasnje"
+                      value="tegobe_sadasnje_7"
+                      class="form__answer"
+                    />
+                    <span>7</span>
+                  </label>
+                </div>
+              </div>
+
+              <!--13. Bolovi i smetnje - "potencijalno ja" -->
+              <div class="form__card">
+                <h4>13 od 32</h4>
+                <h3>
+                  Kako biste voljeli da se vaše „potencijalno ja“ (u skladu s
+                  vašim mogućnostima) osjeća, što se tiče kategorije
+                  „zdravstvene tegobe“?
+                </h3>
+                <!-- <p>
+              Kako biste opisali
+              „boravak“ u svom tijelu? Koliko često patite od bolova ili smetnji
+              koje otežavaju funkcioniranje danju ili noću?
+            </p> -->
+
+                <h5>1 = jako loše&nbsp;&nbsp;&nbsp; 7 = odlično</h5>
+
+                <div class="form__label-wrapper">
+                  <label for="tegobe_potencijalno_1">
+                    <input
+                      type="radio"
+                      id="tegobe_potencijalno_1"
+                      name="tegobe_potencijalno"
+                      value="tegobe_potencijalno_1"
+                      class="form__answer"
+                    />
+                    <span>1</span>
+                  </label>
+                  <label for="tegobe_potencijalno_2">
+                    <input
+                      type="radio"
+                      id="tegobe_potencijalno_2"
+                      name="tegobe_potencijalno"
+                      value="tegobe_potencijalno_2"
+                      class="form__answer"
+                    />
+                    <span>2</span>
+                  </label>
+                  <label for="tegobe_potencijalno_3">
+                    <input
+                      type="radio"
+                      id="tegobe_potencijalno_3"
+                      name="tegobe_potencijalno"
+                      value="tegobe_potencijalno_3"
+                      class="form__answer"
+                    />
+                    <span>3</span>
+                  </label>
+                  <label for="tegobe_potencijalno_4">
+                    <input
+                      type="radio"
+                      id="tegobe_potencijalno_4"
+                      name="tegobe_potencijalno"
+                      value="tegobe_potencijalno_4"
+                      class="form__answer"
+                    />
+                    <span>4</span>
+                  </label>
+                  <label for="tegobe_potencijalno_5">
+                    <input
+                      type="radio"
+                      id="tegobe_potencijalno_5"
+                      name="tegobe_potencijalno"
+                      value="tegobe_potencijalno_5"
+                      class="form__answer"
+                    />
+                    <span>5</span>
+                  </label>
+                  <label for="tegobe_potencijalno_6">
+                    <input
+                      type="radio"
+                      id="tegobe_potencijalno_6"
+                      name="tegobe_potencijalno"
+                      value="tegobe_potencijalno_6"
+                      class="form__answer"
+                    />
+                    <span>6</span>
+                  </label>
+                  <label for="tegobe_potencijalno_7">
+                    <input
+                      type="radio"
+                      id="tegobe_potencijalno_7"
+                      name="tegobe_potencijalno"
+                      value="tegobe_potencijalno_7"
+                      class="form__answer"
+                    />
+                    <span>7</span>
+                  </label>
+                </div>
+              </div>
+
+              <!--RUBRIKA - Vanjski izgled -->
+              <div class="form__card--title">
+                <!-- <h4>10 od 32</h4> -->
+                <h3>
+                  Razmislite o svom vanjskom izgledu i kako se fizički osjećate.
+                </h3>
+                <p>
+                  Kad se pogledate u ogledalo bez odjeće, osjećate li
+                  zadovoljstvo? Pratite li svoje fizičke potrebe i njegujete li
+                  se redovito?
+                </p>
+
+                <!-- <h5>1 = jako loše&nbsp;&nbsp;&nbsp; 7 = odlično</h5> -->
+
+                <!-- <div class="form__label-wrapper">
+              <label for="trbuh_potencijalno_1">
+                <input
+                  type="radio"
+                  id="trbuh_potencijalno_1"
+                  name="trbuh_potencijalno"
+                  value="trbuh_potencijalno_1"
+                  class="form__answer"
+                />
+                <span>1</span>
+              </label>
+              <label for="trbuh_potencijalno_2">
+                <input
+                  type="radio"
+                  id="trbuh_potencijalno_2"
+                  name="trbuh_potencijalno"
+                  value="trbuh_potencijalno_2"
+                  class="form__answer"
+                />
+                <span>2</span>
+              </label>
+              <label for="trbuh_potencijalno_3">
+                <input
+                  type="radio"
+                  id="trbuh_potencijalno_3"
+                  name="trbuh_potencijalno"
+                  value="trbuh_potencijalno_3"
+                  class="form__answer"
+                />
+                <span>3</span>
+              </label>
+              <label for="trbuh_potencijalno_4">
+                <input
+                  type="radio"
+                  id="trbuh_potencijalno_4"
+                  name="trbuh_potencijalno"
+                  value="trbuh_potencijalno_4"
+                  class="form__answer"
+                />
+                <span>4</span>
+              </label>
+              <label for="trbuh_potencijalno_5">
+                <input
+                  type="radio"
+                  id="trbuh_potencijalno_5"
+                  name="trbuh_potencijalno"
+                  value="trbuh_potencijalno_5"
+                  class="form__answer"
+                />
+                <span>5</span>
+              </label>
+              <label for="trbuh_potencijalno_6">
+                <input
+                  type="radio"
+                  id="trbuh_potencijalno_6"
+                  name="trbuh_potencijalno"
+                  value="trbuh_potencijalno_6"
+                  class="form__answer"
+                />
+                <span>6</span>
+              </label>
+              <label for="trbuh_potencijalno_7">
+                <input
+                  type="radio"
+                  id="trbuh_potencijalno_7"
+                  name="trbuh_potencijalno"
+                  value="trbuh_potencijalno_7"
+                  class="form__answer"
+                />
+                <span>7</span>
+              </label>
+            </div> -->
+              </div>
+
+              <!--14. Vanjski izgled - "sadašnje ja" -->
+              <div class="form__card">
+                <h4>14 od 32</h4>
+                <h3>
+                  Kako biste generalno ocijenili svoje „sadašnje ja“ u
+                  kategoriji „vanjski izgled i fizički osjećaj“?
+                </h3>
+                <!-- <p>
+              Kako biste opisali
+              „boravak“ u svom tijelu? Koliko često patite od bolova ili smetnji
+              koje otežavaju funkcioniranje danju ili noću?
+            </p> -->
+
+                <h5>1 = jako loše&nbsp;&nbsp;&nbsp; 7 = odlično</h5>
+
+                <div class="form__label-wrapper">
+                  <label for="izgled_sadasnje_1">
+                    <input
+                      type="radio"
+                      id="izgled_sadasnje_1"
+                      name="izgled_sadasnje"
+                      value="izgled_sadasnje_1"
+                      class="form__answer"
+                    />
+                    <span>1</span>
+                  </label>
+                  <label for="izgled_sadasnje_2">
+                    <input
+                      type="radio"
+                      id="izgled_sadasnje_2"
+                      name="izgled_sadasnje"
+                      value="izgled_sadasnje_2"
+                      class="form__answer"
+                    />
+                    <span>2</span>
+                  </label>
+                  <label for="izgled_sadasnje_3">
+                    <input
+                      type="radio"
+                      id="izgled_sadasnje_3"
+                      name="izgled_sadasnje"
+                      value="izgled_sadasnje_3"
+                      class="form__answer"
+                    />
+                    <span>3</span>
+                  </label>
+                  <label for="izgled_sadasnje_4">
+                    <input
+                      type="radio"
+                      id="izgled_sadasnje_4"
+                      name="izgled_sadasnje"
+                      value="izgled_sadasnje_4"
+                      class="form__answer"
+                    />
+                    <span>4</span>
+                  </label>
+                  <label for="izgled_sadasnje_5">
+                    <input
+                      type="radio"
+                      id="izgled_sadasnje_5"
+                      name="izgled_sadasnje"
+                      value="izgled_sadasnje_5"
+                      class="form__answer"
+                    />
+                    <span>5</span>
+                  </label>
+                  <label for="izgled_sadasnje_6">
+                    <input
+                      type="radio"
+                      id="izgled_sadasnje_6"
+                      name="izgled_sadasnje"
+                      value="izgled_sadasnje_6"
+                      class="form__answer"
+                    />
+                    <span>6</span>
+                  </label>
+                  <label for="izgled_sadasnje_7">
+                    <input
+                      type="radio"
+                      id="izgled_sadasnje_7"
+                      name="izgled_sadasnje"
+                      value="izgled_sadasnje_7"
+                      class="form__answer"
+                    />
+                    <span>7</span>
+                  </label>
+                </div>
+              </div>
+
+              <!--15. Vanjski izgled - "potencijalno ja" -->
+              <div class="form__card">
+                <h4>15 od 32</h4>
+                <h3>
+                  Kako biste voljeli da se vaše „potencijalno ja“ (u skladu s
+                  vašim mogućnostima) osjeća, što se tiče kategorije „vanjski
+                  izgled i fizički osjećaj“?
+                </h3>
+                <!-- <p>
+              Kako biste opisali
+              „boravak“ u svom tijelu? Koliko često patite od bolova ili smetnji
+              koje otežavaju funkcioniranje danju ili noću?
+            </p> -->
+
+                <h5>1 = jako loše&nbsp;&nbsp;&nbsp; 7 = odlično</h5>
+
+                <div class="form__label-wrapper">
+                  <label for="izgled_potencijalno_1">
+                    <input
+                      type="radio"
+                      id="izgled_potencijalno_1"
+                      name="izgled_potencijalno"
+                      value="izgled_potencijalno_1"
+                      class="form__answer"
+                    />
+                    <span>1</span>
+                  </label>
+                  <label for="izgled_potencijalno_2">
+                    <input
+                      type="radio"
+                      id="izgled_potencijalno_2"
+                      name="izgled_potencijalno"
+                      value="izgled_potencijalno_2"
+                      class="form__answer"
+                    />
+                    <span>2</span>
+                  </label>
+                  <label for="izgled_potencijalno_3">
+                    <input
+                      type="radio"
+                      id="izgled_potencijalno_3"
+                      name="izgled_potencijalno"
+                      value="izgled_potencijalno_3"
+                      class="form__answer"
+                    />
+                    <span>3</span>
+                  </label>
+                  <label for="izgled_potencijalno_4">
+                    <input
+                      type="radio"
+                      id="izgled_potencijalno_4"
+                      name="izgled_potencijalno"
+                      value="izgled_potencijalno_4"
+                      class="form__answer"
+                    />
+                    <span>4</span>
+                  </label>
+                  <label for="izgled_potencijalno_5">
+                    <input
+                      type="radio"
+                      id="izgled_potencijalno_5"
+                      name="izgled_potencijalno"
+                      value="izgled_potencijalno_5"
+                      class="form__answer"
+                    />
+                    <span>5</span>
+                  </label>
+                  <label for="izgled_potencijalno_6">
+                    <input
+                      type="radio"
+                      id="izgled_potencijalno_6"
+                      name="izgled_potencijalno"
+                      value="izgled_potencijalno_6"
+                      class="form__answer"
+                    />
+                    <span>6</span>
+                  </label>
+                  <label for="izgled_potencijalno_7">
+                    <input
+                      type="radio"
+                      id="izgled_potencijalno_7"
+                      name="izgled_potencijalno"
+                      value="izgled_potencijalno_7"
+                      class="form__answer"
+                    />
+                    <span>7</span>
+                  </label>
+                </div>
+              </div>
+
+              <!--RUBRIKA - Disanje -->
+              <div class="form__card--title">
+                <!-- <h4>10 od 32</h4> -->
+                <h3>Koliko dobro poznajete svoje disanje?</h3>
+                <p>
+                  Imate li svjesnost kako dišete? Primjećujete li u mirovanju da
+                  je Vaš dah plitak i kratkotrajan ili lagan i dubok? Imate li
+                  zastoje disanja ili nedostatak daha pri laganoj aktivnosti?
+                </p>
+
+                <!-- <h5>1 = jako loše&nbsp;&nbsp;&nbsp; 7 = odlično</h5> -->
+
+                <!-- <div class="form__label-wrapper">
+              <label for="trbuh_potencijalno_1">
+                <input
+                  type="radio"
+                  id="trbuh_potencijalno_1"
+                  name="trbuh_potencijalno"
+                  value="trbuh_potencijalno_1"
+                  class="form__answer"
+                />
+                <span>1</span>
+              </label>
+              <label for="trbuh_potencijalno_2">
+                <input
+                  type="radio"
+                  id="trbuh_potencijalno_2"
+                  name="trbuh_potencijalno"
+                  value="trbuh_potencijalno_2"
+                  class="form__answer"
+                />
+                <span>2</span>
+              </label>
+              <label for="trbuh_potencijalno_3">
+                <input
+                  type="radio"
+                  id="trbuh_potencijalno_3"
+                  name="trbuh_potencijalno"
+                  value="trbuh_potencijalno_3"
+                  class="form__answer"
+                />
+                <span>3</span>
+              </label>
+              <label for="trbuh_potencijalno_4">
+                <input
+                  type="radio"
+                  id="trbuh_potencijalno_4"
+                  name="trbuh_potencijalno"
+                  value="trbuh_potencijalno_4"
+                  class="form__answer"
+                />
+                <span>4</span>
+              </label>
+              <label for="trbuh_potencijalno_5">
+                <input
+                  type="radio"
+                  id="trbuh_potencijalno_5"
+                  name="trbuh_potencijalno"
+                  value="trbuh_potencijalno_5"
+                  class="form__answer"
+                />
+                <span>5</span>
+              </label>
+              <label for="trbuh_potencijalno_6">
+                <input
+                  type="radio"
+                  id="trbuh_potencijalno_6"
+                  name="trbuh_potencijalno"
+                  value="trbuh_potencijalno_6"
+                  class="form__answer"
+                />
+                <span>6</span>
+              </label>
+              <label for="trbuh_potencijalno_7">
+                <input
+                  type="radio"
+                  id="trbuh_potencijalno_7"
+                  name="trbuh_potencijalno"
+                  value="trbuh_potencijalno_7"
+                  class="form__answer"
+                />
+                <span>7</span>
+              </label>
+            </div> -->
+              </div>
+
+              <!--16. Disanje - "sadašnje ja" -->
+              <div class="form__card">
+                <h4>16 od 32</h4>
+                <h3>
+                  Kako biste generalno ocijenili svoje „sadašnje ja“ u
+                  kategoriji „disanje“?
+                </h3>
+                <!-- <p>
+              Kako biste opisali
+              „boravak“ u svom tijelu? Koliko često patite od bolova ili smetnji
+              koje otežavaju funkcioniranje danju ili noću?
+            </p> -->
+
+                <h5>1 = jako loše&nbsp;&nbsp;&nbsp; 7 = odlično</h5>
+
+                <div class="form__label-wrapper">
+                  <label for="disanje_sadasnje_1">
+                    <input
+                      type="radio"
+                      id="disanje_sadasnje_1"
+                      name="disanje_sadasnje"
+                      value="disanje_sadasnje_1"
+                      class="form__answer"
+                    />
+                    <span>1</span>
+                  </label>
+                  <label for="disanje_sadasnje_2">
+                    <input
+                      type="radio"
+                      id="disanje_sadasnje_2"
+                      name="disanje_sadasnje"
+                      value="disanje_sadasnje_2"
+                      class="form__answer"
+                    />
+                    <span>2</span>
+                  </label>
+                  <label for="disanje_sadasnje_3">
+                    <input
+                      type="radio"
+                      id="disanje_sadasnje_3"
+                      name="disanje_sadasnje"
+                      value="disanje_sadasnje_3"
+                      class="form__answer"
+                    />
+                    <span>3</span>
+                  </label>
+                  <label for="disanje_sadasnje_4">
+                    <input
+                      type="radio"
+                      id="disanje_sadasnje_4"
+                      name="disanje_sadasnje"
+                      value="disanje_sadasnje_4"
+                      class="form__answer"
+                    />
+                    <span>4</span>
+                  </label>
+                  <label for="disanje_sadasnje_5">
+                    <input
+                      type="radio"
+                      id="disanje_sadasnje_5"
+                      name="disanje_sadasnje"
+                      value="disanje_sadasnje_5"
+                      class="form__answer"
+                    />
+                    <span>5</span>
+                  </label>
+                  <label for="disanje_sadasnje_6">
+                    <input
+                      type="radio"
+                      id="disanje_sadasnje_6"
+                      name="disanje_sadasnje"
+                      value="disanje_sadasnje_6"
+                      class="form__answer"
+                    />
+                    <span>6</span>
+                  </label>
+                  <label for="disanje_sadasnje_7">
+                    <input
+                      type="radio"
+                      id="disanje_sadasnje_7"
+                      name="disanje_sadasnje"
+                      value="disanje_sadasnje_7"
+                      class="form__answer"
+                    />
+                    <span>7</span>
+                  </label>
+                </div>
+              </div>
+
+              <!--17. Disanje - "potencijalno ja" -->
+              <div class="form__card">
+                <h4>17 od 32</h4>
+                <h3>
+                  Kako biste voljeli da se vaše „potencijalno ja“ (u skladu s
+                  vašim mogućnostima) osjeća, što se tiče kategorije „disanje“?
+                </h3>
+                <!-- <p>
+              Kako biste opisali
+              „boravak“ u svom tijelu? Koliko često patite od bolova ili smetnji
+              koje otežavaju funkcioniranje danju ili noću?
+            </p> -->
+
+                <h5>1 = jako loše&nbsp;&nbsp;&nbsp; 7 = odlično</h5>
+
+                <div class="form__label-wrapper">
+                  <label for="disanje_potencijalno_1">
+                    <input
+                      type="radio"
+                      id="disanje_potencijalno_1"
+                      name="disanje_potencijalno"
+                      value="disanje_potencijalno_1"
+                      class="form__answer"
+                    />
+                    <span>1</span>
+                  </label>
+                  <label for="disanje_potencijalno_2">
+                    <input
+                      type="radio"
+                      id="disanje_potencijalno_2"
+                      name="disanje_potencijalno"
+                      value="disanje_potencijalno_2"
+                      class="form__answer"
+                    />
+                    <span>2</span>
+                  </label>
+                  <label for="disanje_potencijalno_3">
+                    <input
+                      type="radio"
+                      id="disanje_potencijalno_3"
+                      name="disanje_potencijalno"
+                      value="disanje_potencijalno_3"
+                      class="form__answer"
+                    />
+                    <span>3</span>
+                  </label>
+                  <label for="disanje_potencijalno_4">
+                    <input
+                      type="radio"
+                      id="disanje_potencijalno_4"
+                      name="disanje_potencijalno"
+                      value="disanje_potencijalno_4"
+                      class="form__answer"
+                    />
+                    <span>4</span>
+                  </label>
+                  <label for="disanje_potencijalno_5">
+                    <input
+                      type="radio"
+                      id="disanje_potencijalno_5"
+                      name="disanje_potencijalno"
+                      value="disanje_potencijalno_5"
+                      class="form__answer"
+                    />
+                    <span>5</span>
+                  </label>
+                  <label for="disanje_potencijalno_6">
+                    <input
+                      type="radio"
+                      id="disanje_potencijalno_6"
+                      name="disanje_potencijalno"
+                      value="disanje_potencijalno_6"
+                      class="form__answer"
+                    />
+                    <span>6</span>
+                  </label>
+                  <label for="disanje_potencijalno_7">
+                    <input
+                      type="radio"
+                      id="disanje_potencijalno_7"
+                      name="disanje_potencijalno"
+                      value="disanje_potencijalno_7"
+                      class="form__answer"
+                    />
+                    <span>7</span>
+                  </label>
+                </div>
+              </div>
+
+              <!--RUBRIKA - Stil života -->
+              <div class="form__card--title">
+                <!-- <h4>10 od 32</h4> -->
+                <h3>
+                  Razmislite o svom stilu života, životnim navikama i općem
+                  funkcioniranju.
+                </h3>
+                <p>
+                  Kako percipirate svoj dosadašnji život? Kako biste ocijenili
+                  koliko ste dosad iskoristili priliku živjeti u skladu sa
+                  svojim potrebama prema hrani, poslu, odnosima, intimi,
+                  aktivnostima? Koliko je Vaše fizičko, emocionalno, mentalno i
+                  duhovno iskustvo dosad obogaćeno?
+                </p>
+
+                <!-- <h5>1 = jako loše&nbsp;&nbsp;&nbsp; 7 = odlično</h5> -->
+
+                <!-- <div class="form__label-wrapper">
+              <label for="trbuh_potencijalno_1">
+                <input
+                  type="radio"
+                  id="trbuh_potencijalno_1"
+                  name="trbuh_potencijalno"
+                  value="trbuh_potencijalno_1"
+                  class="form__answer"
+                />
+                <span>1</span>
+              </label>
+              <label for="trbuh_potencijalno_2">
+                <input
+                  type="radio"
+                  id="trbuh_potencijalno_2"
+                  name="trbuh_potencijalno"
+                  value="trbuh_potencijalno_2"
+                  class="form__answer"
+                />
+                <span>2</span>
+              </label>
+              <label for="trbuh_potencijalno_3">
+                <input
+                  type="radio"
+                  id="trbuh_potencijalno_3"
+                  name="trbuh_potencijalno"
+                  value="trbuh_potencijalno_3"
+                  class="form__answer"
+                />
+                <span>3</span>
+              </label>
+              <label for="trbuh_potencijalno_4">
+                <input
+                  type="radio"
+                  id="trbuh_potencijalno_4"
+                  name="trbuh_potencijalno"
+                  value="trbuh_potencijalno_4"
+                  class="form__answer"
+                />
+                <span>4</span>
+              </label>
+              <label for="trbuh_potencijalno_5">
+                <input
+                  type="radio"
+                  id="trbuh_potencijalno_5"
+                  name="trbuh_potencijalno"
+                  value="trbuh_potencijalno_5"
+                  class="form__answer"
+                />
+                <span>5</span>
+              </label>
+              <label for="trbuh_potencijalno_6">
+                <input
+                  type="radio"
+                  id="trbuh_potencijalno_6"
+                  name="trbuh_potencijalno"
+                  value="trbuh_potencijalno_6"
+                  class="form__answer"
+                />
+                <span>6</span>
+              </label>
+              <label for="trbuh_potencijalno_7">
+                <input
+                  type="radio"
+                  id="trbuh_potencijalno_7"
+                  name="trbuh_potencijalno"
+                  value="trbuh_potencijalno_7"
+                  class="form__answer"
+                />
+                <span>7</span>
+              </label>
+            </div> -->
+              </div>
+
+              <!--18. Stil života - "sadašnje ja" -->
+              <div class="form__card">
+                <h4>18 od 32</h4>
+                <h3>
+                  Kako biste generalno ocijenili svoje „sadašnje ja“ vezano uz
+                  stil života, životne navike, prisutnost u izazovnim
+                  situacijama, svoje pozitivne karakteristike i intuiciju?
+                </h3>
+                <!-- <p>
+              Kako biste opisali
+              „boravak“ u svom tijelu? Koliko često patite od bolova ili smetnji
+              koje otežavaju funkcioniranje danju ili noću?
+            </p> -->
+
+                <h5>1 = jako loše&nbsp;&nbsp;&nbsp; 7 = odlično</h5>
+
+                <div class="form__label-wrapper">
+                  <label for="stil_sadasnje_1">
+                    <input
+                      type="radio"
+                      id="stil_sadasnje_1"
+                      name="stil_sadasnje"
+                      value="stil_sadasnje_1"
+                      class="form__answer"
+                    />
+                    <span>1</span>
+                  </label>
+                  <label for="stil_sadasnje_2">
+                    <input
+                      type="radio"
+                      id="stil_sadasnje_2"
+                      name="stil_sadasnje"
+                      value="stil_sadasnje_2"
+                      class="form__answer"
+                    />
+                    <span>2</span>
+                  </label>
+                  <label for="stil_sadasnje_3">
+                    <input
+                      type="radio"
+                      id="stil_sadasnje_3"
+                      name="stil_sadasnje"
+                      value="stil_sadasnje_3"
+                      class="form__answer"
+                    />
+                    <span>3</span>
+                  </label>
+                  <label for="stil_sadasnje_4">
+                    <input
+                      type="radio"
+                      id="stil_sadasnje_4"
+                      name="stil_sadasnje"
+                      value="stil_sadasnje_4"
+                      class="form__answer"
+                    />
+                    <span>4</span>
+                  </label>
+                  <label for="stil_sadasnje_5">
+                    <input
+                      type="radio"
+                      id="stil_sadasnje_5"
+                      name="stil_sadasnje"
+                      value="stil_sadasnje_5"
+                      class="form__answer"
+                    />
+                    <span>5</span>
+                  </label>
+                  <label for="stil_sadasnje_6">
+                    <input
+                      type="radio"
+                      id="stil_sadasnje_6"
+                      name="stil_sadasnje"
+                      value="stil_sadasnje_6"
+                      class="form__answer"
+                    />
+                    <span>6</span>
+                  </label>
+                  <label for="stil_sadasnje_7">
+                    <input
+                      type="radio"
+                      id="stil_sadasnje_7"
+                      name="stil_sadasnje"
+                      value="stil_sadasnje_7"
+                      class="form__answer"
+                    />
+                    <span>7</span>
+                  </label>
+                </div>
+              </div>
+
+              <!--19. Stil života - "potencijalno ja" -->
+              <div class="form__card">
+                <h4>19 od 32</h4>
+                <h3>
+                  Kako biste voljeli da se vaše „potencijalno ja“ (u skladu s
+                  vašim mogućnostima) osjeća, vezano uz stil života, životne
+                  navike, prisutnost u izazovnim situacijama, svoje pozitivne
+                  karakteristike i intuiciju?
+                </h3>
+                <!-- <p>
+              Kako biste opisali
+              „boravak“ u svom tijelu? Koliko često patite od bolova ili smetnji
+              koje otežavaju funkcioniranje danju ili noću?
+            </p> -->
+
+                <h5>1 = jako loše&nbsp;&nbsp;&nbsp; 7 = odlično</h5>
+
+                <div class="form__label-wrapper">
+                  <label for="stil_potencijalno_1">
+                    <input
+                      type="radio"
+                      id="stil_potencijalno_1"
+                      name="stil_potencijalno"
+                      value="stil_potencijalno_1"
+                      class="form__answer"
+                    />
+                    <span>1</span>
+                  </label>
+                  <label for="stil_potencijalno_2">
+                    <input
+                      type="radio"
+                      id="stil_potencijalno_2"
+                      name="stil_potencijalno"
+                      value="stil_potencijalno_2"
+                      class="form__answer"
+                    />
+                    <span>2</span>
+                  </label>
+                  <label for="stil_potencijalno_3">
+                    <input
+                      type="radio"
+                      id="stil_potencijalno_3"
+                      name="stil_potencijalno"
+                      value="stil_potencijalno_3"
+                      class="form__answer"
+                    />
+                    <span>3</span>
+                  </label>
+                  <label for="stil_potencijalno_4">
+                    <input
+                      type="radio"
+                      id="stil_potencijalno_4"
+                      name="stil_potencijalno"
+                      value="stil_potencijalno_4"
+                      class="form__answer"
+                    />
+                    <span>4</span>
+                  </label>
+                  <label for="stil_potencijalno_5">
+                    <input
+                      type="radio"
+                      id="stil_potencijalno_5"
+                      name="stil_potencijalno"
+                      value="stil_potencijalno_5"
+                      class="form__answer"
+                    />
+                    <span>5</span>
+                  </label>
+                  <label for="stil_potencijalno_6">
+                    <input
+                      type="radio"
+                      id="stil_potencijalno_6"
+                      name="stil_potencijalno"
+                      value="stil_potencijalno_6"
+                      class="form__answer"
+                    />
+                    <span>6</span>
+                  </label>
+                  <label for="stil_potencijalno_7">
+                    <input
+                      type="radio"
+                      id="stil_potencijalno_7"
+                      name="stil_potencijalno"
+                      value="stil_potencijalno_7"
+                      class="form__answer"
+                    />
+                    <span>7</span>
+                  </label>
+                </div>
+              </div>
+
+              <!--20. Stil života - vitalnost -->
+              <div class="form__card">
+                <h4>20 od 32</h4>
+                <h3>U ovom trenutku, osjećam se živim i vitalnim.</h3>
+                <!-- <p>
+              Kako biste opisali
+              „boravak“ u svom tijelu? Koliko često patite od bolova ili smetnji
+              koje otežavaju funkcioniranje danju ili noću?
+            </p> -->
+
+                <h5>1 = jako loše&nbsp;&nbsp;&nbsp; 7 = odlično</h5>
+
+                <div class="form__label-wrapper">
+                  <label for="vitalnost_1">
+                    <input
+                      type="radio"
+                      id="vitalnost_1"
+                      name="vitalnost"
+                      value="vitalnost_1"
+                      class="form__answer"
+                    />
+                    <span>1</span>
+                  </label>
+                  <label for="vitalnost_2">
+                    <input
+                      type="radio"
+                      id="vitalnost_2"
+                      name="vitalnost"
+                      value="vitalnost_2"
+                      class="form__answer"
+                    />
+                    <span>2</span>
+                  </label>
+                  <label for="vitalnost_3">
+                    <input
+                      type="radio"
+                      id="vitalnost_3"
+                      name="vitalnost"
+                      value="vitalnost_3"
+                      class="form__answer"
+                    />
+                    <span>3</span>
+                  </label>
+                  <label for="vitalnost_4">
+                    <input
+                      type="radio"
+                      id="vitalnost_4"
+                      name="vitalnost"
+                      value="vitalnost_4"
+                      class="form__answer"
+                    />
+                    <span>4</span>
+                  </label>
+                  <label for="vitalnost_5">
+                    <input
+                      type="radio"
+                      id="vitalnost_5"
+                      name="vitalnost"
+                      value="vitalnost_5"
+                      class="form__answer"
+                    />
+                    <span>5</span>
+                  </label>
+                  <label for="vitalnost_6">
+                    <input
+                      type="radio"
+                      id="vitalnost_6"
+                      name="vitalnost"
+                      value="vitalnost_6"
+                      class="form__answer"
+                    />
+                    <span>6</span>
+                  </label>
+                  <label for="vitalnost_7">
+                    <input
+                      type="radio"
+                      id="vitalnost_7"
+                      name="vitalnost"
+                      value="vitalnost_7"
+                      class="form__answer"
+                    />
+                    <span>7</span>
+                  </label>
+                </div>
+              </div>
+
+              <!--21. Stil života - pucanje -->
+              <div class="form__card">
+                <h4>21 od 32</h4>
+                <h3>Trenutno se osjećam tako živim da samo želim puknuti.</h3>
+                <!-- <p>
+              Kako biste opisali
+              „boravak“ u svom tijelu? Koliko često patite od bolova ili smetnji
+              koje otežavaju funkcioniranje danju ili noću?
+            </p> -->
+
+                <h5>1 = jako loše&nbsp;&nbsp;&nbsp; 7 = odlično</h5>
+
+                <div class="form__label-wrapper">
+                  <label for="pucanje_1">
+                    <input
+                      type="radio"
+                      id="pucanje_1"
+                      name="pucanje"
+                      value="pucanje_1"
+                      class="form__answer"
+                    />
+                    <span>1</span>
+                  </label>
+                  <label for="pucanje_2">
+                    <input
+                      type="radio"
+                      id="pucanje_2"
+                      name="pucanje"
+                      value="pucanje_2"
+                      class="form__answer"
+                    />
+                    <span>2</span>
+                  </label>
+                  <label for="pucanje_3">
+                    <input
+                      type="radio"
+                      id="pucanje_3"
+                      name="pucanje"
+                      value="pucanje_3"
+                      class="form__answer"
+                    />
+                    <span>3</span>
+                  </label>
+                  <label for="pucanje_4">
+                    <input
+                      type="radio"
+                      id="pucanje_4"
+                      name="pucanje"
+                      value="pucanje_4"
+                      class="form__answer"
+                    />
+                    <span>4</span>
+                  </label>
+                  <label for="pucanje_5">
+                    <input
+                      type="radio"
+                      id="pucanje_5"
+                      name="pucanje"
+                      value="pucanje_5"
+                      class="form__answer"
+                    />
+                    <span>5</span>
+                  </label>
+                  <label for="pucanje_6">
+                    <input
+                      type="radio"
+                      id="pucanje_6"
+                      name="pucanje"
+                      value="pucanje_6"
+                      class="form__answer"
+                    />
+                    <span>6</span>
+                  </label>
+                  <label for="pucanje_7">
+                    <input
+                      type="radio"
+                      id="pucanje_7"
+                      name="pucanje"
+                      value="pucanje_7"
+                      class="form__answer"
+                    />
+                    <span>7</span>
+                  </label>
+                </div>
+              </div>
+
+              <!--22. Stil života - duh -->
+              <div class="form__card">
+                <h4>22 od 32</h4>
+                <h3>U ovom trenutku imam energije i duha.</h3>
+                <!-- <p>
+              Kako biste opisali
+              „boravak“ u svom tijelu? Koliko često patite od bolova ili smetnji
+              koje otežavaju funkcioniranje danju ili noću?
+            </p> -->
+
+                <h5>1 = jako loše&nbsp;&nbsp;&nbsp; 7 = odlično</h5>
+
+                <div class="form__label-wrapper">
+                  <label for="duh_1">
+                    <input
+                      type="radio"
+                      id="duh_1"
+                      name="duh"
+                      value="duh_1"
+                      class="form__answer"
+                    />
+                    <span>1</span>
+                  </label>
+                  <label for="duh_2">
+                    <input
+                      type="radio"
+                      id="duh_2"
+                      name="duh"
+                      value="duh_2"
+                      class="form__answer"
+                    />
+                    <span>2</span>
+                  </label>
+                  <label for="duh_3">
+                    <input
+                      type="radio"
+                      id="duh_3"
+                      name="duh"
+                      value="duh_3"
+                      class="form__answer"
+                    />
+                    <span>3</span>
+                  </label>
+                  <label for="duh_4">
+                    <input
+                      type="radio"
+                      id="duh_4"
+                      name="duh"
+                      value="duh_4"
+                      class="form__answer"
+                    />
+                    <span>4</span>
+                  </label>
+                  <label for="duh_5">
+                    <input
+                      type="radio"
+                      id="duh_5"
+                      name="duh"
+                      value="duh_5"
+                      class="form__answer"
+                    />
+                    <span>5</span>
+                  </label>
+                  <label for="duh_6">
+                    <input
+                      type="radio"
+                      id="duh_6"
+                      name="duh"
+                      value="duh_6"
+                      class="form__answer"
+                    />
+                    <span>6</span>
+                  </label>
+                  <label for="duh_7">
+                    <input
+                      type="radio"
+                      id="duh_7"
+                      name="duh"
+                      value="duh_7"
+                      class="form__answer"
+                    />
+                    <span>7</span>
+                  </label>
+                </div>
+              </div>
+
+              <!--23. Stil života - veselje -->
+              <div class="form__card">
+                <h4>23 od 32</h4>
+                <h3>Veselim se svakom novom danu.</h3>
+                <!-- <p>
+              Kako biste opisali
+              „boravak“ u svom tijelu? Koliko često patite od bolova ili smetnji
+              koje otežavaju funkcioniranje danju ili noću?
+            </p> -->
+
+                <h5>1 = jako loše&nbsp;&nbsp;&nbsp; 7 = odlično</h5>
+
+                <div class="form__label-wrapper">
+                  <label for="veselje_1">
+                    <input
+                      type="radio"
+                      id="veselje_1"
+                      name="veselje"
+                      value="veselje_1"
+                      class="form__answer"
+                    />
+                    <span>1</span>
+                  </label>
+                  <label for="veselje_2">
+                    <input
+                      type="radio"
+                      id="veselje_2"
+                      name="veselje"
+                      value="veselje_2"
+                      class="form__answer"
+                    />
+                    <span>2</span>
+                  </label>
+                  <label for="veselje_3">
+                    <input
+                      type="radio"
+                      id="veselje_3"
+                      name="veselje"
+                      value="veselje_3"
+                      class="form__answer"
+                    />
+                    <span>3</span>
+                  </label>
+                  <label for="veselje_4">
+                    <input
+                      type="radio"
+                      id="veselje_4"
+                      name="veselje"
+                      value="veselje_4"
+                      class="form__answer"
+                    />
+                    <span>4</span>
+                  </label>
+                  <label for="veselje_5">
+                    <input
+                      type="radio"
+                      id="veselje_5"
+                      name="veselje"
+                      value="veselje_5"
+                      class="form__answer"
+                    />
+                    <span>5</span>
+                  </label>
+                  <label for="veselje_6">
+                    <input
+                      type="radio"
+                      id="veselje_6"
+                      name="veselje"
+                      value="veselje_6"
+                      class="form__answer"
+                    />t
+                    <span>6</span>
+                  </label>
+                  <label for="veselje_7">
+                    <input
+                      type="radio"
+                      id="veselje_7"
+                      name="veselje"
+                      value="veselje_7"
+                      class="form__answer"
+                    />
+                    <span>7</span>
+                  </label>
+                </div>
+              </div>
+
+              <!--24. Stil života - budnost -->
+              <div class="form__card">
+                <h4>24 od 32</h4>
+                <h3>U ovom trenutku se osjećam budnim i spremnim.</h3>
+                <!-- <p>
+              Kako biste opisali
+              „boravak“ u svom tijelu? Koliko često patite od bolova ili smetnji
+              koje otežavaju funkcioniranje danju ili noću?
+            </p> -->
+
+                <h5>1 = jako loše&nbsp;&nbsp;&nbsp; 7 = odlično</h5>
+
+                <div class="form__label-wrapper">
+                  <label for="budnost_1">
+                    <input
+                      type="radio"
+                      id="budnost_1"
+                      name="budnost"
+                      value="budnost_1"
+                      class="form__answer"
+                    />
+                    <span>1</span>
+                  </label>
+                  <label for="budnost_2">
+                    <input
+                      type="radio"
+                      id="budnost_2"
+                      name="budnost"
+                      value="budnost_2"
+                      class="form__answer"
+                    />
+                    <span>2</span>
+                  </label>
+                  <label for="budnost_3">
+                    <input
+                      type="radio"
+                      id="budnost_3"
+                      name="budnost"
+                      value="budnost_3"
+                      class="form__answer"
+                    />
+                    <span>3</span>
+                  </label>
+                  <label for="budnost_4">
+                    <input
+                      type="radio"
+                      id="budnost_4"
+                      name="budnost"
+                      value="budnost_4"
+                      class="form__answer"
+                    />
+                    <span>4</span>
+                  </label>
+                  <label for="budnost_5">
+                    <input
+                      type="radio"
+                      id="budnost_5"
+                      name="budnost"
+                      value="budnost_5"
+                      class="form__answer"
+                    />
+                    <span>5</span>
+                  </label>
+                  <label for="budnost_6">
+                    <input
+                      type="radio"
+                      id="budnost_6"
+                      name="budnost"
+                      value="budnost_6"
+                      class="form__answer"
+                    />t
+                    <span>6</span>
+                  </label>
+                  <label for="budnost_7">
+                    <input
+                      type="radio"
+                      id="budnost_7"
+                      name="budnost"
+                      value="budnost_7"
+                      class="form__answer"
+                    />
+                    <span>7</span>
+                  </label>
+                </div>
+              </div>
+
+              <!--25. Stil života - energičnost -->
+              <div class="form__card">
+                <h4>25 od 32</h4>
+                <h3>Trenutno se osjećam energično.</h3>
+                <!-- <p>
+              Kako biste opisali
+              „boravak“ u svom tijelu? Koliko često patite od bolova ili smetnji
+              koje otežavaju funkcioniranje danju ili noću?
+            </p> -->
+
+                <h5>1 = jako loše&nbsp;&nbsp;&nbsp; 7 = odlično</h5>
+
+                <div class="form__label-wrapper">
+                  <label for="energicnost_1">
+                    <input
+                      type="radio"
+                      id="energicnost_1"
+                      name="energicnost"
+                      value="energicnost_1"
+                      class="form__answer"
+                    />
+                    <span>1</span>
+                  </label>
+                  <label for="energicnost_2">
+                    <input
+                      type="radio"
+                      id="energicnost_2"
+                      name="energicnost"
+                      value="energicnost_2"
+                      class="form__answer"
+                    />
+                    <span>2</span>
+                  </label>
+                  <label for="energicnost_3">
+                    <input
+                      type="radio"
+                      id="energicnost_3"
+                      name="energicnost"
+                      value="energicnost_3"
+                      class="form__answer"
+                    />
+                    <span>3</span>
+                  </label>
+                  <label for="energicnost_4">
+                    <input
+                      type="radio"
+                      id="energicnost_4"
+                      name="energicnost"
+                      value="energicnost_4"
+                      class="form__answer"
+                    />
+                    <span>4</span>
+                  </label>
+                  <label for="energicnost_5">
+                    <input
+                      type="radio"
+                      id="energicnost_5"
+                      name="energicnost"
+                      value="energicnost_5"
+                      class="form__answer"
+                    />
+                    <span>5</span>
+                  </label>
+                  <label for="energicnost_6">
+                    <input
+                      type="radio"
+                      id="energicnost_6"
+                      name="energicnost"
+                      value="energicnost_6"
+                      class="form__answer"
+                    />t
+                    <span>6</span>
+                  </label>
+                  <label for="energicnost_7">
+                    <input
+                      type="radio"
+                      id="energicnost_7"
+                      name="energicnost"
+                      value="energicnost_7"
+                      class="form__answer"
+                    />
+                    <span>7</span>
+                  </label>
+                </div>
+              </div>
+
+              <div class="form__end has-text-centered">
+                <p>Razmislite o svom stilu života!</p>
+                <p>
+                  Hvala na Vašem trudu i vremenu koje ste posvetili ispunjavanju
+                  ovog upitnika!
+                </p>
+                <div>
+                  <input
+                    type="submit"
+                    id="submit-form"
+                    class="button--custom"
+                    value="POŠALJI ANKETU"
+                  />
+                </div>
+              </div>
+            </form>
+          </section>
+        </main>
+        <!--  FOOTER -->
+        <footer class="footer has-text-centered">
+          <div class="container-footer">
+            <!-- <h4>Sadržaj nastao u suradnji</h4>
         <a href="http://www.adriamedia.hr/oglasavanje/kontakti/" target="_blank"
           ><img src="./_assets/images/AMZ_logo.png" alt="AMZ Native Studio"
         /></a>
         <a href="https://www.buzzsneakers.com/HRK_hr)" target="_blank"
           ><img src="./_assets/images/buzz-logo.png" alt="Buzz logo" />
-        </a>
-      </div>
-    </footer> -->
+        </a> -->
+          </div>
+        </footer>
 
-    <script type="text/javascript" src="lib/main.js"></script>
+        <script type="text/javascript" src="lib/main.js"></script>
+      </div>
+    </div>
   </body>
 </html>

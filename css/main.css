@@ -11463,56 +11463,79 @@ a.has-text-danger-dark:hover, a.has-text-danger-dark:focus {
           box-sizing: inherit;
 }
 
-html {
-  font-size: 62.5%;
-  background: #707070;
+#wrapper_html {
+  max-width: 990px;
+  background: white;
+  display: block;
+  margin: 0 auto;
 }
 
-body {
+#wrapper_body {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   font-family: cedra4f;
 }
 
 .header {
-  max-width: 86rem;
-  margin: 2rem auto 2rem auto;
+  width: 860px;
+  margin: 20px auto 20px auto;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  gap: 1rem;
+  background: #d1d1d1;
+  -webkit-box-shadow: inset 0px 0px 0px 2px white;
+          box-shadow: inset 0px 0px 0px 2px white;
+  border: solid 3px white;
+}
+@media (max-width: 767px) {
+  .header {
+    width: 100%;
+    margin: 5px auto 10px auto;
+  }
 }
 .header__text-box {
-  background: #e7e7e7;
-  width: 86rem;
-  height: 13.5rem;
+  width: 860px;
+  height: 135px;
   -webkit-box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.16);
           box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.16);
   color: #686868;
   margin: 0 auto;
+  font-family: cedra4f;
 }
 .header__logo {
-  margin-top: 5rem;
+  margin-top: 40px;
   width: 70%;
 }
 .header h1 {
-  font-size: 3rem;
+  font-size: 30px;
+}
+@media (max-width: 767px) {
+  .header h1 {
+    font-size: 16px;
+  }
 }
 .header h2 {
   font-family: cedra4f, cursive;
-  font-size: 1.4rem;
+  font-size: 14px;
   color: #686868;
   background-color: #cde17a;
 }
+@media (max-width: 767px) {
+  .header h2 {
+    font-size: 12px;
+  }
+}
 .header h3 {
   font-family: cedra4f, cursive;
-  font-size: 1.2rem;
+  font-size: 12px;
   color: white;
+  margin-bottom: 20px;
 }
 .header .card1 {
-  width: 20rem;
-  background: #707070;
-  border: solid 3px white;
+  width: 200px;
+  background: #d1d1d1;
+  -webkit-box-shadow: inset 0px 0px 0px 2px white;
+          box-shadow: inset 0px 0px 0px 2px white;
 }
 .header .card2 {
   display: -webkit-box;
@@ -11526,76 +11549,85 @@ body {
           align-items: center;
 }
 
+.form {
+  font-family: cedra4f;
+}
 .form__wrapper {
-  max-width: 86rem;
+  max-width: 860px;
   margin: 0 auto;
 }
 .form__uvod {
-  width: 86rem;
+  width: 860px;
   -webkit-box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.16);
           box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.16);
-  background: white;
+  background: #f2f2f2;
   color: #686868;
   margin: 0 auto;
-  font-size: 1.8rem;
-  padding: 3rem 5.5rem 5.5rem 5.5rem;
+  font-size: 18px;
+  padding: 30px 55px 55px 55px;
 }
 @media (max-width: 767px) {
   .form__uvod {
     width: 100%;
+    padding: 10px;
+    font-size: 16px;
   }
 }
 .form__uvod p:last-of-type {
-  margin-bottom: 2rem;
+  margin-bottom: 20px;
 }
-.form__card {
-  width: 64rem;
+.form__card, .form__card--title {
+  width: 860px;
   -webkit-box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.16);
           box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.16);
   background: white;
   color: #686868;
-  margin: 1.4rem auto;
-  padding: 3rem 5.5rem 5.5rem 5.5rem;
+  margin: 20px auto;
+  padding: 30px 55px 55px 55px;
 }
 @media (max-width: 767px) {
-  .form__card {
+  .form__card, .form__card--title {
     width: 100%;
   }
 }
-.form__card h4 {
+.form__card h4, .form__card--title h4 {
   font-family: "Roboto", sans-serif;
-  font-size: 1.2rem;
+  font-size: 12px;
   font-weight: bold;
   text-align: left;
   color: #686868;
 }
-.form__card h3 {
+.form__card h3, .form__card--title h3 {
   font-family: "Roboto", sans-serif;
-  font-size: 2rem;
+  font-size: 32px;
   font-weight: 900;
   line-height: 1.6;
   letter-spacing: -0.4px;
   text-align: left;
   color: #686868;
-  margin-top: 1.2rem;
-  margin-bottom: 1.6rem;
+  margin-top: 12px;
+  margin-bottom: 16px;
 }
-.form__card p {
+.form__card p, .form__card--title p {
   font-family: "Roboto", sans-serif;
-  font-size: 1.6rem;
+  font-size: 16px;
   font-weight: 500;
   line-height: 1.5;
   text-align: left;
   color: #686868;
 }
-.form__card h5 {
+.form__card h5, .form__card--title h5 {
   font-family: "Roboto", sans-serif;
-  font-size: 1.2rem;
+  font-size: 12px;
   font-weight: 500;
   line-height: 1.83;
   text-align: left;
   color: #a5a5a5;
-  margin-top: 1rem;
+  margin-top: 10px;
+}
+.form__card--title {
+  background: #f2f2f2;
+  border: 2px solid #cde17a;
 }
 .form .mjerenje {
   display: -webkit-box;
@@ -11604,30 +11636,33 @@ body {
   -webkit-box-pack: space-evenly;
       -ms-flex-pack: space-evenly;
           justify-content: space-evenly;
-  margin-bottom: 2rem;
-  margin-top: 2rem;
+  margin-bottom: 20px;
+  margin-top: 20px;
 }
 .form input[type=text] {
-  width: 75rem;
-  height: 9rem;
-  padding: 4rem 4rem 4rem 15.5rem;
+  width: 750px;
+  height: 90px;
+  padding: 40px 40px 40px 155px;
   border: 1px solid #cde17a;
-  border-radius: 5rem;
+  border-radius: 50px;
   margin: 1rem auto;
-  font-size: 1.8rem;
+  font-size: 18px;
   font-family: cedra4f, cursive;
 }
 @media (max-width: 767px) {
   .form input[type=text] {
     width: 100%;
+    height: 30px;
+    font-size: 16px;
+    padding: 20px;
   }
 }
 .form input[type=text]:nth-child(3) {
-  width: 50rem;
-  height: 4rem;
+  width: 500px;
+  height: 40px;
   border: 1px solid #cde17a;
-  border-radius: 5rem;
-  font-size: 1.8rem;
+  border-radius: 50px;
+  font-size: 18px;
   font-family: cedra4f, cursive;
 }
 .form label {
@@ -11646,10 +11681,10 @@ body {
   line-height: 1.4;
   text-align: center;
   border-radius: 100%;
-  font-size: 2rem;
+  font-size: 20px;
   left: 0;
   top: 50%;
-  margin-top: -1.4rem;
+  margin-top: -14px;
   cursor: pointer;
   display: inline-block;
   background: #d1d1d1;
@@ -11666,4 +11701,50 @@ body {
   -ms-flex-pack: distribute;
       justify-content: space-around;
   margin-top: 3rem;
+}
+.form__end {
+  width: 860px;
+  margin: 30px auto;
+  display: block;
+}
+@media (max-width: 767px) {
+  .form__end {
+    width: 100%;
+  }
+}
+.form__end p {
+  font-family: cedra4f, cursive;
+  font-size: 23px;
+  color: #686868;
+  text-align: center;
+  padding: 0 90px;
+}
+@media (max-width: 767px) {
+  .form__end p {
+    font-size: 16px;
+  }
+}
+.form input[type=submit] {
+  width: 424px;
+  height: 45px;
+  border: 1px solid #cde17a;
+  border-radius: 2rem;
+  margin: 15px auto;
+  display: block;
+  font-size: 18px;
+  font-family: cedra4f, cursive;
+  color: #686868;
+  background: #cde17a;
+  cursor: pointer;
+  -webkit-transition: all 0.3s ease-in;
+  transition: all 0.3s ease-in;
+}
+@media (max-width: 767px) {
+  .form input[type=submit] {
+    width: 75%;
+  }
+}
+
+.footer {
+  background-color: white !important;
 }
