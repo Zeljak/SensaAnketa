@@ -11510,7 +11510,7 @@ a.has-text-danger-dark:hover, a.has-text-danger-dark:focus {
 }
 @media (min-width: 768px) and (max-width: 1025px) {
   .header {
-    width: 700px;
+    width: 600px;
   }
 }
 .header__text-box {
@@ -11595,7 +11595,7 @@ a.has-text-danger-dark:hover, a.has-text-danger-dark:focus {
 }
 @media (min-width: 768px) and (max-width: 1025px) {
   .form__uvod {
-    width: 700px;
+    width: 600px;
   }
 }
 .form__uvod p:last-of-type {
