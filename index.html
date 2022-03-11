@@ -79,24 +79,27 @@
             <form id="anketaSensa">
               <div class="form__uvod has-text-centered">
                 <p>
-                  Molimo Vas, izdvojite vrijeme za samoprocjenu i odgovore na
-                  pitanja koja se tiču Vašeg trenutačnog stanja - „sadašnjeg Ja“
-                  i „potencijalnog Ja“, kojemu težite.
+                  Izdvojite vrijeme za samoprocjenu i odgovore na pitanja koja
+                  se tiču vašeg trenutačnog stanja - "sadašnjeg Ja" i
+                  "potencijalnog Ja", kojemu težite.
                 </p>
                 <p>
                   Kako biste dobili pravu procjenu ankete, a u skladu s GDPR-om,
-                  molimo Vas da niže popunite upitnik i sva polja s osobnim
+                  molimo vas da niže popunite upitnik i sva polja s osobnim
                   podacima.
                 </p>
+                <div class="green-rectangle"></div>
 
                 <!-- Mjerenje -->
                 <div class="mjerenje">
-                  <h3 class="form__question">Broj mjerenja:</h3>
+                  <h3 class="form__question">
+                    Vaš broj ispunjavanja upitnika:
+                  </h3>
                   <label
-                    ><input type="radio" name="select" /><span>1.</span></label
+                    ><input type="radio" name="select" /><span>1</span></label
                   >
                   <label
-                    ><input type="radio" name="select" /><span>2.</span></label
+                    ><input type="radio" name="select" /><span>2</span></label
                   >
                 </div>
 
@@ -111,6 +114,17 @@
                   />
                 </div>
 
+                <!-- Godina rođenja -->
+                <div>
+                  <input
+                    type="text"
+                    id="godiste"
+                    name="godiste"
+                    class="form__godiste"
+                    placeholder="Godina rođenja"
+                  />
+                </div>
+
                 <!-- E-mail -->
                 <div>
                   <input
@@ -121,10 +135,17 @@
                     placeholder="E-mail:"
                   />
                 </div>
+              </div>
 
-                <!-- Spol -->
-                <div class="mjerenje">
-                  <h3 class="form__question">Spol (označiti):</h3>
+              <!-- 1. Spol -->
+              <div class="form__card">
+                <h3>Vi ste:</h3>
+
+                <p>A&nbsp;&nbsp;&nbsp; Žena</p>
+                <p>B&nbsp;&nbsp;&nbsp; Muškarac</p>
+                <p>C&nbsp;&nbsp;&nbsp; Ne želim se izjasniti</p>
+
+                <div class="form__label-wrapper">
                   <label for="zena">
                     <input
                       type="radio"
@@ -133,7 +154,7 @@
                       value="zena"
                       class="form__answer"
                     />
-                    <span>Ž</span>
+                    <span>A</span>
                   </label>
                   <label for="muskarac">
                     <input
@@ -143,97 +164,30 @@
                       value="muskarac"
                       class="form__answer"
                     />
-                    <span>M</span>
-                  </label>
-                </div>
-              </div>
-
-              <!-- 1. Godine -->
-              <div class="form__card">
-                <h4>1 od 25</h4>
-                <h3>Označite svoju dob:</h3>
-
-                <p>A.&nbsp;&nbsp;&nbsp; 18 - 24</p>
-                <p>B.&nbsp;&nbsp;&nbsp; 25 - 34</p>
-                <p>C.&nbsp;&nbsp;&nbsp; 35 - 44</p>
-                <p>D.&nbsp;&nbsp;&nbsp; 45 - 54</p>
-                <p>E.&nbsp;&nbsp;&nbsp; 55 - 64</p>
-                <p>F.&nbsp;&nbsp;&nbsp; 65+</p>
-
-                <div class="form__label-wrapper">
-                  <label for="od_18_do_24">
-                    <input
-                      type="radio"
-                      id="od_18_do_24"
-                      name="godine"
-                      value="od_18_do_24"
-                      class="form__answer"
-                    />
-                    <span>A</span>
-                  </label>
-                  <label for="od_25_do_34">
-                    <input
-                      type="radio"
-                      id="od_25_do_34"
-                      name="godine"
-                      value="od_25_do_34"
-                      class="form__answer"
-                    />
                     <span>B</span>
                   </label>
-                  <label for="od_35_do_44">
+                  <label for="bezodgovora">
                     <input
                       type="radio"
-                      id="od_35_do_44"
-                      name="godine"
-                      value="od_35_do_44"
+                      id="bezodgovora"
+                      name="spol"
+                      value="bezodgovora"
                       class="form__answer"
                     />
                     <span>C</span>
-                  </label>
-                  <label for="od_45_do_54">
-                    <input
-                      type="radio"
-                      id="od_45_do_54"
-                      name="godine"
-                      value="od_45_do_54"
-                      class="form__answer"
-                    />
-                    <span>D</span>
-                  </label>
-                  <label for="od_55_do_64">
-                    <input
-                      type="radio"
-                      id="od_55_do_64"
-                      name="godine"
-                      value="od_55_do_64"
-                      class="form__answer"
-                    />
-                    <span>E</span>
-                  </label>
-                  <label for="65_plus">
-                    <input
-                      type="radio"
-                      id="65_plus"
-                      name="godine"
-                      value="65_plus"
-                      class="form__answer"
-                    />
-                    <span>F</span>
                   </label>
                 </div>
               </div>
 
               <!-- 2. Stručna sprema -->
               <div class="form__card">
-                <h4>2 od 25</h4>
                 <h3>Vaša najviša završena stručna sprema je:</h3>
 
-                <p>A.&nbsp;&nbsp;&nbsp; nezavršena osnovna škola</p>
-                <p>B.&nbsp;&nbsp;&nbsp; srednja stručna sprema</p>
-                <p>C.&nbsp;&nbsp;&nbsp; viša stručna sprema</p>
-                <p>D.&nbsp;&nbsp;&nbsp; visoka stručna sprema</p>
-                <p>E.&nbsp;&nbsp;&nbsp; poslijediplomski studij</p>
+                <p>A&nbsp;&nbsp;&nbsp; (Ne) završena osnovna škola</p>
+                <p>B&nbsp;&nbsp;&nbsp; Srednja stručna sprema</p>
+                <p>C&nbsp;&nbsp;&nbsp; Viša stručna sprema</p>
+                <p>D&nbsp;&nbsp;&nbsp; Visoka stručna sprema</p>
+                <p>E&nbsp;&nbsp;&nbsp; Poslijediplomski studij</p>
 
                 <div class="form__label-wrapper">
                   <label for="osnovna">
@@ -289,79 +243,16 @@
                 </div>
               </div>
 
-              <!-- 3. Fizička aktivnost -->
-              <div class="form__card">
-                <h4>3 od 25</h4>
-                <h3>Kojom se vrstom fizičke aktivnosti najčešće bavite?</h3>
-
-                <p>A.&nbsp;&nbsp;&nbsp; Body tehnikom</p>
-                <p>B.&nbsp;&nbsp;&nbsp; Jogom, pilatesom i sl.</p>
-                <p>C.&nbsp;&nbsp;&nbsp; Nekom vrstom fitnessa</p>
-                <p>D.&nbsp;&nbsp;&nbsp; Ne bavim se nikakvom aktivnošću</p>
-                <p>E.&nbsp;&nbsp;&nbsp; Nešto drugo (što?)</p>
-                <!-- <div>
-              <input
-                type="text"
-                id="aktivnost_nesto_drugo"
-                name="aktivnost"
-                class="aktivnost_nesto_drugo"
-              />
-            </div> -->
-
-                <div class="form__label-wrapper">
-                  <label for="body">
-                    <input
-                      type="radio"
-                      id="body"
-                      name="aktivnost"
-                      value="body"
-                      class="form__answer"
-                    />
-                    <span>A</span>
-                  </label>
-                  <label for="joga">
-                    <input
-                      type="radio"
-                      id="joga"
-                      name="aktivnost"
-                      value="joga"
-                      class="form__answer"
-                    />
-                    <span>B</span>
-                  </label>
-                  <label for="fitness">
-                    <input
-                      type="radio"
-                      id="fitness"
-                      name="aktivnost"
-                      value="fitness"
-                      class="form__answer"
-                    />
-                    <span>C</span>
-                  </label>
-                  <label for="nikakva_aktivnost">
-                    <input
-                      type="radio"
-                      id="nikakva_aktivnost"
-                      name="aktivnost"
-                      value="nikakva_aktivnost"
-                      class="form__answer"
-                    />
-                    <span>D</span>
-                  </label>
-                </div>
-              </div>
-
-              <!-- 4. Materijalne prilike -->
+              <!-- 3. Materijalne prilike -->
               <div class="form__card">
                 <h4>4 od 25</h4>
                 <h3>Kako biste procijenili svoje materijalne prilike?</h3>
 
-                <p>A.&nbsp;&nbsp;&nbsp; izrazito dobre</p>
-                <p>B.&nbsp;&nbsp;&nbsp; dobre</p>
-                <p>C.&nbsp;&nbsp;&nbsp; osrednje</p>
-                <p>D.&nbsp;&nbsp;&nbsp; loše</p>
-                <p>E.&nbsp;&nbsp;&nbsp; izrazito loše</p>
+                <p>A&nbsp;&nbsp;&nbsp; Izrazito dobre</p>
+                <p>B&nbsp;&nbsp;&nbsp; Dobre</p>
+                <p>C&nbsp;&nbsp;&nbsp; Osrednje</p>
+                <p>D&nbsp;&nbsp;&nbsp; Loše</p>
+                <p>E&nbsp;&nbsp;&nbsp; Izrazito loše</p>
 
                 <div class="form__label-wrapper">
                   <label for="izrazito_dobro">
@@ -413,6 +304,132 @@
                       class="form__answer"
                     />
                     <span>E</span>
+                  </label>
+                </div>
+              </div>
+
+              <!-- 4. Opće zdravlje -->
+              <div class="form__card">
+                <h3>Općenito, kako biste procijenili vaše zdravlje:</h3>
+
+                <p>A&nbsp;&nbsp;&nbsp; Odlično</p>
+                <p>B&nbsp;&nbsp;&nbsp; Vrlo dobro</p>
+                <p>C&nbsp;&nbsp;&nbsp; Dobro</p>
+                <p>D&nbsp;&nbsp;&nbsp; Zadovoljavajuće</p>
+                <p>E&nbsp;&nbsp;&nbsp; Loše</p>
+
+                <div class="form__label-wrapper">
+                  <label for="odlicno_opcezdravlje">
+                    <input
+                      type="radio"
+                      id="odlicno_opcezdravlje"
+                      name="opcezdravlje"
+                      value="odlicno_opcezdravlje"
+                      class="form__answer"
+                    />
+                    <span>A</span>
+                  </label>
+                  <label for="vrlodobro_opcezdravlje">
+                    <input
+                      type="radio"
+                      id="vrlodobro_opcezdravlje"
+                      name="opcezdravlje"
+                      value="vrlodobro_opcezdravlje"
+                      class="form__answer"
+                    />
+                    <span>B</span>
+                  </label>
+                  <label for="osrednje_opcezdravlje">
+                    <input
+                      type="radio"
+                      id="osrednje_opcezdravlje"
+                      name="opcezdravlje"
+                      value="osrednje_opcezdravlje"
+                      class="form__answer"
+                    />
+                    <span>C</span>
+                  </label>
+                  <label for="lose_opcezdravlje">
+                    <input
+                      type="radio"
+                      id="lose_opcezdravlje"
+                      name="opcezdravlje"
+                      value="lose_opcezdravlje"
+                      class="form__answer"
+                    />
+                    <span>D</span>
+                  </label>
+                  <label for="izrazitolose_opcezdravlje">
+                    <input
+                      type="radio"
+                      id="izrazitolose_opcezdravlje"
+                      name="opcezdravlje"
+                      value="izrazitolose_opcezdravlje"
+                      class="form__answer"
+                    />
+                    <span>E</span>
+                  </label>
+                </div>
+              </div>
+
+              <!-- 5. Fizička aktivnost -->
+              <div class="form__card">
+                <h3>Kojom se vrstom fizičke aktivnosti najčešće bavite?</h3>
+
+                <p>A&nbsp;&nbsp;&nbsp; Body tehnikom</p>
+                <p>B&nbsp;&nbsp;&nbsp; Jogom, pilatesom i sl.</p>
+                <p>C&nbsp;&nbsp;&nbsp; Nekom vrstom fitnessa</p>
+                <p>D&nbsp;&nbsp;&nbsp; Ne bavim se nikakvom aktivnošću</p>
+                <p>E&nbsp;&nbsp;&nbsp; Nešto drugo (što?)</p>
+                <!-- <div>
+              <input
+                type="text"
+                id="aktivnost_nesto_drugo"
+                name="aktivnost"
+                class="aktivnost_nesto_drugo"
+              />
+            </div> -->
+
+                <div class="form__label-wrapper">
+                  <label for="body">
+                    <input
+                      type="radio"
+                      id="body"
+                      name="aktivnost"
+                      value="body"
+                      class="form__answer"
+                    />
+                    <span>A</span>
+                  </label>
+                  <label for="joga">
+                    <input
+                      type="radio"
+                      id="joga"
+                      name="aktivnost"
+                      value="joga"
+                      class="form__answer"
+                    />
+                    <span>B</span>
+                  </label>
+                  <label for="fitness">
+                    <input
+                      type="radio"
+                      id="fitness"
+                      name="aktivnost"
+                      value="fitness"
+                      class="form__answer"
+                    />
+                    <span>C</span>
+                  </label>
+                  <label for="nikakva_aktivnost">
+                    <input
+                      type="radio"
+                      id="nikakva_aktivnost"
+                      name="aktivnost"
+                      value="nikakva_aktivnost"
+                      class="form__answer"
+                    />
+                    <span>D</span>
                   </label>
                 </div>
               </div>
@@ -562,7 +579,7 @@
               </div>
 
               <!--6. Držanje i kralježnica - "sadašnje ja" -->
-              <div class="form__card">
+              <div class="form__card" id="form__card2">
                 <h4>6 od 25</h4>
                 <h3>
                   Kako biste generalno ocijenili svoje „sadašnje ja“ u
@@ -579,6 +596,7 @@
                       name="kraljeznica_sadasnje"
                       value="kraljeznica_sadasnje_1"
                       class="form__answer"
+                      onClick="changeColour2('a')"
                     />
                     <span>1</span>
                   </label>
@@ -589,6 +607,7 @@
                       name="kraljeznica_sadasnje"
                       value="kraljeznica_sadasnje_2"
                       class="form__answer"
+                      onClick="changeColour2('a')"
                     />
                     <span>2</span>
                   </label>
@@ -599,6 +618,7 @@
                       name="kraljeznica_sadasnje"
                       value="kraljeznica_sadasnje_3"
                       class="form__answer"
+                      onClick="changeColour2('a')"
                     />
                     <span>3</span>
                   </label>
@@ -609,6 +629,7 @@
                       name="kraljeznica_sadasnje"
                       value="kraljeznica_sadasnje_4"
                       class="form__answer"
+                      onClick="changeColour2('a')"
                     />
                     <span>4</span>
                   </label>
@@ -619,6 +640,7 @@
                       name="kraljeznica_sadasnje"
                       value="kraljeznica_sadasnje_5"
                       class="form__answer"
+                      onClick="changeColour2('a')"
                     />
                     <span>5</span>
                   </label>
@@ -629,6 +651,7 @@
                       name="kraljeznica_sadasnje"
                       value="kraljeznica_sadasnje_6"
                       class="form__answer"
+                      onClick="changeColour2('a')"
                     />
                     <span>6</span>
                   </label>
@@ -639,6 +662,7 @@
                       name="kraljeznica_sadasnje"
                       value="kraljeznica_sadasnje_7"
                       class="form__answer"
+                      onClick="changeColour2('a')"
                     />
                     <span>7</span>
                   </label>
@@ -646,7 +670,7 @@
               </div>
 
               <!--7. Držanje i kralježnica - "potencijalno ja" -->
-              <div class="form__card">
+              <div class="form__card" id="form__card3">
                 <h4>7 od 25</h4>
                 <h3>
                   Kako biste voljeli da se vaše „potencijalno ja“ (u skladu s
@@ -664,6 +688,7 @@
                       name="kraljeznica_potencijalno"
                       value="kraljeznica_potencijalno_1"
                       class="form__answer"
+                      onClick="changeColour3('b')"
                     />
                     <span>1</span>
                   </label>
@@ -674,6 +699,7 @@
                       name="kraljeznica_potencijalno"
                       value="kraljeznica_potencijalno_2"
                       class="form__answer"
+                      onClick="changeColour3('b')"
                     />
                     <span>2</span>
                   </label>
@@ -684,6 +710,7 @@
                       name="kraljeznica_potencijalno"
                       value="kraljeznica_potencijalno_3"
                       class="form__answer"
+                      onClick="changeColour3('b')"
                     />
                     <span>3</span>
                   </label>
@@ -694,6 +721,7 @@
                       name="kraljeznica_potencijalno"
                       value="kraljeznica_potencijalno_4"
                       class="form__answer"
+                      onClick="changeColour3('b')"
                     />
                     <span>4</span>
                   </label>
@@ -704,6 +732,7 @@
                       name="kraljeznica_potencijalno"
                       value="kraljeznica_potencijalno_5"
                       class="form__answer"
+                      onClick="changeColour3('b')"
                     />
                     <span>5</span>
                   </label>
@@ -714,6 +743,7 @@
                       name="kraljeznica_potencijalno"
                       value="kraljeznica_potencijalno_6"
                       class="form__answer"
+                      onClick="changeColour3('b')"
                     />
                     <span>6</span>
                   </label>
@@ -724,6 +754,7 @@
                       name="kraljeznica_potencijalno"
                       value="kraljeznica_potencijalno_7"
                       class="form__answer"
+                      onClick="changeColour3('b')"
                     />
                     <span>7</span>
                   </label>
@@ -731,7 +762,7 @@
               </div>
 
               <!--RUBRIKA - Trbuh  -->
-              <div class="form__card--title">
+              <div class="form__card--title form__card--title-yellow">
                 <!-- <h4>9 od 32</h4> -->
                 <h3>
                   Osvijestite svoj trbuh prema onome što vidite u ogledalu, ali
@@ -819,7 +850,7 @@
               </div>
 
               <!--8. Trbuh - sadašnje ja  -->
-              <div class="form__card">
+              <div class="form__card" id="form__card4">
                 <h4>8 od 25</h4>
                 <h3>
                   Kako biste generalno ocijenili svoje „sadašnje ja“ u
@@ -836,6 +867,7 @@
                       name="trbuh_sadasnje"
                       value="trbuh_sadasnje_1"
                       class="form__answer"
+                      onClick="changeColour4('c')"
                     />
                     <span>1</span>
                   </label>
@@ -987,7 +1019,7 @@
               </div>
 
               <!--RUBRIKA - Bolovi i smetnje -->
-              <div class="form__card--title">
+              <div class="form__card--title form__card--title-purple">
                 <!-- <h4>10 od 32</h4> -->
                 <h3>Analizirajte bolove i smetnje u vašem tijelu.</h3>
                 <p>

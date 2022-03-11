@@ -11454,15 +11454,6 @@ a.has-text-danger-dark:hover, a.has-text-danger-dark:focus {
   padding: 3rem 1.5rem 6rem;
 }
 
-*,
-*::after,
-*::before {
-  margin: 0;
-  padding: 0;
-  -webkit-box-sizing: inherit;
-          box-sizing: inherit;
-}
-
 #wrapper_html {
   max-width: 990px;
   background: white;
@@ -11478,7 +11469,7 @@ a.has-text-danger-dark:hover, a.has-text-danger-dark:focus {
 #wrapper_body {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  font-family: cedra4f;
+  font-family: cedra4f, cursive;
 }
 @media (max-width: 767px) {
   #wrapper_body {
@@ -11500,7 +11491,6 @@ a.has-text-danger-dark:hover, a.has-text-danger-dark:focus {
   background: #d1d1d1;
   -webkit-box-shadow: inset 0px 0px 0px 2px white;
           box-shadow: inset 0px 0px 0px 2px white;
-  border: solid 3px white;
 }
 @media (max-width: 767px) {
   .header {
@@ -11598,11 +11588,14 @@ a.has-text-danger-dark:hover, a.has-text-danger-dark:focus {
     width: 600px;
   }
 }
-.form__uvod p:last-of-type {
+.form__uvod p {
   margin-bottom: 20px;
 }
-.form__uvod h3 {
-  font-weight: 800;
+.form .green-rectangle {
+  display: inline-block;
+  width: 100%;
+  height: 3px;
+  background: #cde17a;
 }
 .form__card, .form__card--title {
   width: 860px;
@@ -11678,6 +11671,12 @@ a.has-text-danger-dark:hover, a.has-text-danger-dark:focus {
   background: #f2f2f2;
   border: 2px solid #cde17a;
 }
+.form__card--title-yellow {
+  border: 2px solid #fcec2e;
+}
+.form__card--title-purple {
+  border: 2px solid #d39ff5;
+}
 .form .mjerenje {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -11697,7 +11696,6 @@ a.has-text-danger-dark:hover, a.has-text-danger-dark:focus {
   margin: 1rem auto;
   font-size: 18px;
   font-family: cedra4f, cursive;
-  font-weight: 800;
 }
 @media (max-width: 767px) {
   .form input[type=text] {
