@@ -111,6 +111,7 @@
                     name="imeprezime"
                     class="form__imeprezime"
                     placeholder="Ime i prezime:"
+					required
                   />
                 </div>
 
@@ -122,6 +123,7 @@
                     name="godiste"
                     class="form__godiste"
                     placeholder="Godina rođenja"
+					required
                   />
                 </div>
 
@@ -133,12 +135,13 @@
                     name="email"
                     class="form__email"
                     placeholder="E-mail:"
+					required
                   />
                 </div>
               </div>
 
               <!-- 1. Spol -->
-              <div class="form__card">
+              <div class="form__card" id="form__card21">
                 <h3>Vi ste:</h3>
 
                 <p>A&nbsp;&nbsp;&nbsp; Žena</p>
@@ -153,6 +156,7 @@
                       name="spol"
                       value="zena"
                       class="form__answer"
+					  onClick="changeColour21('u')"
                     />
                     <span>A</span>
                   </label>
@@ -163,6 +167,7 @@
                       name="spol"
                       value="muskarac"
                       class="form__answer"
+					  onClick="changeColour21('u')"
                     />
                     <span>B</span>
                   </label>
@@ -173,6 +178,7 @@
                       name="spol"
                       value="bezodgovora"
                       class="form__answer"
+					  onClick="changeColour21('u')"
                     />
                     <span>C</span>
                   </label>
@@ -180,7 +186,7 @@
               </div>
 
               <!-- 2. Stručna sprema -->
-              <div class="form__card">
+              <div class="form__card" id="form__card22">
                 <h3>Vaša najviša završena stručna sprema je:</h3>
 
                 <p>A&nbsp;&nbsp;&nbsp; (Ne) završena osnovna škola</p>
@@ -197,6 +203,7 @@
                       name="skola"
                       value="osnovna"
                       class="form__answer"
+					  onClick="changeColour22('v')"
                     />
                     <span>A</span>
                   </label>
@@ -207,6 +214,7 @@
                       name="skola"
                       value="srednja"
                       class="form__answer"
+					  onClick="changeColour22('v')"
                     />
                     <span>B</span>
                   </label>
@@ -217,6 +225,7 @@
                       name="skola"
                       value="visa"
                       class="form__answer"
+					  onClick="changeColour22('v')"
                     />
                     <span>C</span>
                   </label>
@@ -227,6 +236,7 @@
                       name="skola"
                       value="visoka"
                       class="form__answer"
+					  onClick="changeColour22('v')"
                     />
                     <span>D</span>
                   </label>
@@ -237,6 +247,7 @@
                       name="skola"
                       value="poslijediplomski"
                       class="form__answer"
+					  onClick="changeColour22('v')"
                     />
                     <span>E</span>
                   </label>
@@ -244,8 +255,7 @@
               </div>
 
               <!-- 3. Materijalne prilike -->
-              <div class="form__card">
-                <h4>4 od 25</h4>
+              <div class="form__card"  id="form__card23">
                 <h3>Kako biste procijenili svoje materijalne prilike?</h3>
 
                 <p>A&nbsp;&nbsp;&nbsp; Izrazito dobre</p>
@@ -255,43 +265,47 @@
                 <p>E&nbsp;&nbsp;&nbsp; Izrazito loše</p>
 
                 <div class="form__label-wrapper">
-                  <label for="izrazito_dobro">
+                  <label for="materijalno_izrazito_dobro">
                     <input
                       type="radio"
-                      id="izrazito_dobro"
+                      id="materijalno_izrazito_dobro"
                       name="materijalno"
-                      value="izrazito_dobro"
+                      value="materijalno_izrazito_dobro"
                       class="form__answer"
+					  onClick="changeColour23('w')"
                     />
                     <span>A</span>
                   </label>
-                  <label for="dobro">
+                  <label for="materijalno_dobro">
                     <input
                       type="radio"
-                      id="dobro"
+                      id="materijalno_dobro"
                       name="materijalno"
-                      value="dobro"
+                      value="materijalno_dobro"
                       class="form__answer"
+					  onClick="changeColour23('w')"
                     />
                     <span>B</span>
                   </label>
-                  <label for="osrednje">
+                  <label for="materijalno_osrednje">
                     <input
                       type="radio"
-                      id="osrednje"
+                      id="materijalno_osrednje"
                       name="materijalno"
-                      value="osrednje"
+                      value="materijalno_osrednje"
                       class="form__answer"
+					  onClick="changeColour23('w')"
                     />
                     <span>C</span>
                   </label>
-                  <label for="loše">
+                  <label for="materijalno_loše">
                     <input
                       type="radio"
-                      id="loše"
+                      id="materijalno_loše"
                       name="materijalno"
-                      value="loše"
+                      value="materijalno_loše"
                       class="form__answer"
+					  onClick="changeColour23('w')"
                     />
                     <span>D</span>
                   </label>
@@ -302,6 +316,7 @@
                       name="materijalno"
                       value="izrazito_loše"
                       class="form__answer"
+					  onClick="changeColour23('w')"
                     />
                     <span>E</span>
                   </label>
@@ -309,7 +324,7 @@
               </div>
 
               <!-- 4. Opće zdravlje -->
-              <div class="form__card">
+              <div class="form__card" id="form__card24">
                 <h3>Općenito, kako biste procijenili vaše zdravlje:</h3>
 
                 <p>A&nbsp;&nbsp;&nbsp; Odlično</p>
@@ -326,6 +341,7 @@
                       name="opcezdravlje"
                       value="odlicno_opcezdravlje"
                       class="form__answer"
+					  onClick="changeColour24('y')"
                     />
                     <span>A</span>
                   </label>
@@ -336,18 +352,31 @@
                       name="opcezdravlje"
                       value="vrlodobro_opcezdravlje"
                       class="form__answer"
+					  onClick="changeColour24('y')"
                     />
                     <span>B</span>
                   </label>
-                  <label for="osrednje_opcezdravlje">
+                  <label for="dobro_opcezdravlje">
                     <input
                       type="radio"
-                      id="osrednje_opcezdravlje"
+                      id="dobro_opcezdravlje"
                       name="opcezdravlje"
-                      value="osrednje_opcezdravlje"
+                      value="dobro_opcezdravlje"
                       class="form__answer"
+					  onClick="changeColour24('y')"
                     />
                     <span>C</span>
+                  </label>
+                  <label for="zadovoljavajuce_opcezdravlje">
+                    <input
+                      type="radio"
+                      id="zadovoljavajuce_opcezdravlje"
+                      name="opcezdravlje"
+                      value="zadovoljavajuce_opcezdravlje"
+                      class="form__answer"
+					  onClick="changeColour24('y')"
+                    />
+                    <span>D</span>
                   </label>
                   <label for="lose_opcezdravlje">
                     <input
@@ -356,16 +385,7 @@
                       name="opcezdravlje"
                       value="lose_opcezdravlje"
                       class="form__answer"
-                    />
-                    <span>D</span>
-                  </label>
-                  <label for="izrazitolose_opcezdravlje">
-                    <input
-                      type="radio"
-                      id="izrazitolose_opcezdravlje"
-                      name="opcezdravlje"
-                      value="izrazitolose_opcezdravlje"
-                      class="form__answer"
+					  onClick="changeColour24('y')"
                     />
                     <span>E</span>
                   </label>
@@ -373,7 +393,7 @@
               </div>
 
               <!-- 5. Fizička aktivnost -->
-              <div class="form__card">
+              <div class="form__card" id="form__card25">
                 <h3>Kojom se vrstom fizičke aktivnosti najčešće bavite?</h3>
 
                 <p>A&nbsp;&nbsp;&nbsp; Body tehnikom</p>
@@ -381,14 +401,15 @@
                 <p>C&nbsp;&nbsp;&nbsp; Nekom vrstom fitnessa</p>
                 <p>D&nbsp;&nbsp;&nbsp; Ne bavim se nikakvom aktivnošću</p>
                 <p>E&nbsp;&nbsp;&nbsp; Nešto drugo (što?)</p>
-                <!-- <div>
-              <input
-                type="text"
-                id="aktivnost_nesto_drugo"
-                name="aktivnost"
-                class="aktivnost_nesto_drugo"
-              />
-            </div> -->
+                <div>
+                  <input
+                    type="text"
+                    id="aktivnost_nesto_drugo"
+                    name="aktivnost"
+                    class="aktivnost_nesto_drugo"
+					onClick="changeColour25('z')"
+                  />
+                </div>
 
                 <div class="form__label-wrapper">
                   <label for="body">
@@ -398,6 +419,7 @@
                       name="aktivnost"
                       value="body"
                       class="form__answer"
+					  onClick="changeColour25('z')"
                     />
                     <span>A</span>
                   </label>
@@ -408,6 +430,7 @@
                       name="aktivnost"
                       value="joga"
                       class="form__answer"
+					  onClick="changeColour25('z')"
                     />
                     <span>B</span>
                   </label>
@@ -418,6 +441,7 @@
                       name="aktivnost"
                       value="fitness"
                       class="form__answer"
+					  onClick="changeColour25('z')"
                     />
                     <span>C</span>
                   </label>
@@ -428,6 +452,7 @@
                       name="aktivnost"
                       value="nikakva_aktivnost"
                       class="form__answer"
+					  onClick="changeColour25('z')"
                     />
                     <span>D</span>
                   </label>
@@ -435,14 +460,13 @@
               </div>
 
               <!-- 5. Vrijeme za računalom -->
-              <div class="form__card">
-                <h4>5 od 25</h4>
+              <div class="form__card" id="form__card26">
                 <h3>Koliko vremena dnevno prodvodite za računalom?</h3>
 
-                <p>A.&nbsp;&nbsp;&nbsp; Do 3 sata</p>
-                <p>B.&nbsp;&nbsp;&nbsp; 3 do 6 sati</p>
-                <p>C.&nbsp;&nbsp;&nbsp; 6 do 8 sati</p>
-                <p>D.&nbsp;&nbsp;&nbsp; Više od 8 sati</p>
+                <p>A&nbsp;&nbsp;&nbsp; Do 3 sata</p>
+                <p>B&nbsp;&nbsp;&nbsp; 3 do 6 sati</p>
+                <p>C&nbsp;&nbsp;&nbsp; 6 do 8 sati</p>
+                <p>D&nbsp;&nbsp;&nbsp; Više od 8 sati</p>
 
                 <div class="form__label-wrapper">
                   <label for="do_3">
@@ -452,6 +476,7 @@
                       name="kompjuter"
                       value="do_3"
                       class="form__answer"
+					  onClick="changeColour26('zz')"
                     />
                     <span>A</span>
                   </label>
@@ -462,6 +487,7 @@
                       name="kompjuter"
                       value="od_3_do_6"
                       class="form__answer"
+					  onClick="changeColour26('zz')"
                     />
                     <span>B</span>
                   </label>
@@ -472,6 +498,7 @@
                       name="kompjuter"
                       value="od_6_do_8"
                       class="form__answer"
+					  onClick="changeColour26('zz')"
                     />
                     <span>C</span>
                   </label>
@@ -482,15 +509,25 @@
                       name="kompjuter"
                       value="vise_od_8"
                       class="form__answer"
+					  onClick="changeColour26('zz')"
                     />
                     <span>D</span>
                   </label>
                 </div>
               </div>
 
-              <!-- RUBRIKA - Držanje i kralježnica -->
+              <!-- Kvocijent vitalnosti -->
               <div class="form__card--title">
-                <!-- <h4>6 od 32</h4> -->
+                <h1>kvocijent vitalnosti</h1>
+                <img
+                  class="form__colored_line"
+                  src="./_assets/images/colored_lines.png"
+                  alt="Linija u raznim bojama"
+                />
+              </div>
+
+              <!--6. Držanje i kralježnica - "sadašnje ja" -->
+              <div class="form__card" id="form__card1">
                 <h3>
                   Razmislite o svom držanju i kako Vaša kralježnica podnosi
                   opterećenja tijela.
@@ -502,92 +539,11 @@
                   uvinut)? U kakvom su međuodnosu glava, ramena, prsni koš i
                   zdjelica?
                 </p>
-
-                <!-- <h5>1 = jako loše&nbsp;&nbsp;&nbsp; 7 = odlično</h5>
-
-            <div class="form__label-wrapper">
-              <label for="drzanje_1">
-                <input
-                  type="radio"
-                  id="drzanje_1"
-                  name="drzanje"
-                  value="drzanje_1"
-                  class="form__answer"
-                />
-                <span>1</span>
-              </label>
-              <label for="drzanje_2">
-                <input
-                  type="radio"
-                  id="drzanje_2"
-                  name="drzanje"
-                  value="drzanje_2"
-                  class="form__answer"
-                />
-                <span>2</span>
-              </label>
-              <label for="drzanje_3">
-                <input
-                  type="radio"
-                  id="drzanje_3"
-                  name="drzanje"
-                  value="drzanje_3"
-                  class="form__answer"
-                />
-                <span>3</span>
-              </label>
-              <label for="drzanje_4">
-                <input
-                  type="radio"
-                  id="drzanje_4"
-                  name="drzanje"
-                  value="drzanje_4"
-                  class="form__answer"
-                />
-                <span>4</span>
-              </label>
-              <label for="drzanje_5">
-                <input
-                  type="radio"
-                  id="drzanje_5"
-                  name="drzanje"
-                  value="drzanje_5"
-                  class="form__answer"
-                />
-                <span>5</span>
-              </label>
-              <label for="drzanje_6">
-                <input
-                  type="radio"
-                  id="drzanje_6"
-                  name="drzanje"
-                  value="drzanje_6"
-                  class="form__answer"
-                />
-                <span>6</span>
-              </label>
-              <label for="drzanje_7">
-                <input
-                  type="radio"
-                  id="drzanje_7"
-                  name="drzanje"
-                  value="drzanje_7"
-                  class="form__answer"
-                />
-                <span>7</span>
-              </label> -->
-              </div>
-
-              <!--6. Držanje i kralježnica - "sadašnje ja" -->
-              <div class="form__card" id="form__card2">
-                <h4>6 od 25</h4>
-                <h3>
-                  Kako biste generalno ocijenili svoje „sadašnje ja“ u
-                  kategoriji „držanje i kralježnica“?
-                </h3>
-
+                <p>
+                  Kako biste generalno ocijenili svoje "sadašnje ja" u
+                  kategoriji "držanje i kralježnica"?
+                </p>
                 <h5>1 = jako loše&nbsp;&nbsp;&nbsp; 7 = odlično</h5>
-
                 <div class="form__label-wrapper">
                   <label for="kraljeznica_sadasnje_1">
                     <input
@@ -596,7 +552,7 @@
                       name="kraljeznica_sadasnje"
                       value="kraljeznica_sadasnje_1"
                       class="form__answer"
-                      onClick="changeColour2('a')"
+                      onClick="changeColour1('a')"
                     />
                     <span>1</span>
                   </label>
@@ -607,7 +563,7 @@
                       name="kraljeznica_sadasnje"
                       value="kraljeznica_sadasnje_2"
                       class="form__answer"
-                      onClick="changeColour2('a')"
+                      onClick="changeColour1('a')"
                     />
                     <span>2</span>
                   </label>
@@ -618,7 +574,7 @@
                       name="kraljeznica_sadasnje"
                       value="kraljeznica_sadasnje_3"
                       class="form__answer"
-                      onClick="changeColour2('a')"
+                      onClick="changeColour1('a')"
                     />
                     <span>3</span>
                   </label>
@@ -629,7 +585,7 @@
                       name="kraljeznica_sadasnje"
                       value="kraljeznica_sadasnje_4"
                       class="form__answer"
-                      onClick="changeColour2('a')"
+                      onClick="changeColour1('a')"
                     />
                     <span>4</span>
                   </label>
@@ -640,7 +596,7 @@
                       name="kraljeznica_sadasnje"
                       value="kraljeznica_sadasnje_5"
                       class="form__answer"
-                      onClick="changeColour2('a')"
+                      onClick="changeColour1('a')"
                     />
                     <span>5</span>
                   </label>
@@ -651,7 +607,7 @@
                       name="kraljeznica_sadasnje"
                       value="kraljeznica_sadasnje_6"
                       class="form__answer"
-                      onClick="changeColour2('a')"
+                      onClick="changeColour1('a')"
                     />
                     <span>6</span>
                   </label>
@@ -662,7 +618,7 @@
                       name="kraljeznica_sadasnje"
                       value="kraljeznica_sadasnje_7"
                       class="form__answer"
-                      onClick="changeColour2('a')"
+                      onClick="changeColour1('a')"
                     />
                     <span>7</span>
                   </label>
@@ -670,13 +626,12 @@
               </div>
 
               <!--7. Držanje i kralježnica - "potencijalno ja" -->
-              <div class="form__card" id="form__card3">
-                <h4>7 od 25</h4>
-                <h3>
-                  Kako biste voljeli da se vaše „potencijalno ja“ (u skladu s
-                  vašim mogućnostima) osjeća, što se tiče kategorije „držanje i
-                  kralježnica“?
-                </h3>
+              <div class="form__card" id="form__card2">
+                <p>
+                  Kako biste voljeli da se vaše "potencijalno ja" (u skladu s
+                  vašim mogućnostima) osjeća, što se tiče kategorije "držanje i
+                  kralježnica"?
+                </p>
 
                 <h5>1 = jako loše&nbsp;&nbsp;&nbsp; 7 = odlično</h5>
 
@@ -688,7 +643,7 @@
                       name="kraljeznica_potencijalno"
                       value="kraljeznica_potencijalno_1"
                       class="form__answer"
-                      onClick="changeColour3('b')"
+                      onClick="changeColour2('b')"
                     />
                     <span>1</span>
                   </label>
@@ -699,7 +654,7 @@
                       name="kraljeznica_potencijalno"
                       value="kraljeznica_potencijalno_2"
                       class="form__answer"
-                      onClick="changeColour3('b')"
+                      onClick="changeColour2('b')"
                     />
                     <span>2</span>
                   </label>
@@ -710,7 +665,7 @@
                       name="kraljeznica_potencijalno"
                       value="kraljeznica_potencijalno_3"
                       class="form__answer"
-                      onClick="changeColour3('b')"
+                      onClick="changeColour2('b')"
                     />
                     <span>3</span>
                   </label>
@@ -721,7 +676,7 @@
                       name="kraljeznica_potencijalno"
                       value="kraljeznica_potencijalno_4"
                       class="form__answer"
-                      onClick="changeColour3('b')"
+                      onClick="changeColour2('b')"
                     />
                     <span>4</span>
                   </label>
@@ -732,7 +687,7 @@
                       name="kraljeznica_potencijalno"
                       value="kraljeznica_potencijalno_5"
                       class="form__answer"
-                      onClick="changeColour3('b')"
+                      onClick="changeColour2('b')"
                     />
                     <span>5</span>
                   </label>
@@ -743,7 +698,7 @@
                       name="kraljeznica_potencijalno"
                       value="kraljeznica_potencijalno_6"
                       class="form__answer"
-                      onClick="changeColour3('b')"
+                      onClick="changeColour2('b')"
                     />
                     <span>6</span>
                   </label>
@@ -754,16 +709,15 @@
                       name="kraljeznica_potencijalno"
                       value="kraljeznica_potencijalno_7"
                       class="form__answer"
-                      onClick="changeColour3('b')"
+                      onClick="changeColour2('b')"
                     />
                     <span>7</span>
                   </label>
                 </div>
               </div>
 
-              <!--RUBRIKA - Trbuh  -->
-              <div class="form__card--title form__card--title-yellow">
-                <!-- <h4>9 od 32</h4> -->
+              <!--8. Trbuh - sadašnje ja  -->
+              <div class="form__card" id="form__card3">
                 <h3>
                   Osvijestite svoj trbuh prema onome što vidite u ogledalu, ali
                   i prema tome kako ga osjetite.
@@ -772,90 +726,11 @@
                   Kako vidite i osjećate trbuh? Imate li viška kože i sala?
                   Osjećate li da je dovoljno snažan i funkcionalan?
                 </p>
-
-                <!-- <h5>1 = jako loše&nbsp;&nbsp;&nbsp; 7 = odlično</h5> -->
-
-                <!-- <div class="form__label-wrapper">
-              <label for="trbuh_sadasnje_1">
-                <input
-                  type="radio"
-                  id="trbuh_sadasnje_1"
-                  name="trbuh_sadasnje"
-                  value="trbuh_sadasnje_1"
-                  class="form__answer"
-                />
-                <span>1</span>
-              </label>
-              <label for="trbuh_sadasnje_2">
-                <input
-                  type="radio"
-                  id="trbuh_sadasnje_2"
-                  name="trbuh_sadasnje"
-                  value="trbuh_sadasnje_2"
-                  class="form__answer"
-                />
-                <span>2</span>
-              </label>
-              <label for="trbuh_sadasnje_3">
-                <input
-                  type="radio"
-                  id="trbuh_sadasnje_3"
-                  name="trbuh_sadasnje"
-                  value="trbuh_sadasnje_3"
-                  class="form__answer"
-                />
-                <span>3</span>
-              </label>
-              <label for="trbuh_sadasnje_4">
-                <input
-                  type="radio"
-                  id="trbuh_sadasnje_4"
-                  name="trbuh_sadasnje"
-                  value="trbuh_sadasnje_4"
-                  class="form__answer"
-                />
-                <span>4</span>
-              </label>
-              <label for="trbuh_sadasnje_5">
-                <input
-                  type="radio"
-                  id="trbuh_sadasnje_5"
-                  name="trbuh_sadasnje"
-                  value="trbuh_sadasnje_5"
-                  class="form__answer"
-                />
-                <span>5</span>
-              </label>
-              <label for="trbuh_sadasnje_6">
-                <input
-                  type="radio"
-                  id="trbuh_sadasnje_6"
-                  name="trbuh_sadasnje"
-                  value="trbuh_sadasnje_6"
-                  class="form__answer"
-                />
-                <span>6</span>
-              </label>
-              <label for="trbuh_sadasnje_7">
-                <input
-                  type="radio"
-                  id="trbuh_sadasnje_7"
-                  name="trbuh_sadasnje"
-                  value="trbuh_sadasnje_7"
-                  class="form__answer"
-                />
-                <span>7</span>
-              </label>
-            </div> -->
-              </div>
-
-              <!--8. Trbuh - sadašnje ja  -->
-              <div class="form__card" id="form__card4">
-                <h4>8 od 25</h4>
-                <h3>
-                  Kako biste generalno ocijenili svoje „sadašnje ja“ u
-                  kategoriji „trbuh“?
-                </h3>
+				<p>
+					Kako biste generalno ocijenili svoje "sadašnje ja" u
+					kategoriji "trbuh"?
+				  </h3>
+				</p>
 
                 <h5>1 = jako loše&nbsp;&nbsp;&nbsp; 7 = odlično</h5>
 
@@ -867,7 +742,7 @@
                       name="trbuh_sadasnje"
                       value="trbuh_sadasnje_1"
                       class="form__answer"
-                      onClick="changeColour4('c')"
+                      onClick="changeColour3('c')"
                     />
                     <span>1</span>
                   </label>
@@ -878,6 +753,7 @@
                       name="trbuh_sadasnje"
                       value="trbuh_sadasnje_2"
                       class="form__answer"
+					  onClick="changeColour3('c')"
                     />
                     <span>2</span>
                   </label>
@@ -888,6 +764,7 @@
                       name="trbuh_sadasnje"
                       value="trbuh_sadasnje_3"
                       class="form__answer"
+					  onClick="changeColour3('c')"
                     />
                     <span>3</span>
                   </label>
@@ -898,6 +775,7 @@
                       name="trbuh_sadasnje"
                       value="trbuh_sadasnje_4"
                       class="form__answer"
+					  onClick="changeColour3('c')"
                     />
                     <span>4</span>
                   </label>
@@ -908,6 +786,7 @@
                       name="trbuh_sadasnje"
                       value="trbuh_sadasnje_5"
                       class="form__answer"
+					  onClick="changeColour3('c')"
                     />
                     <span>5</span>
                   </label>
@@ -918,6 +797,7 @@
                       name="trbuh_sadasnje"
                       value="trbuh_sadasnje_6"
                       class="form__answer"
+					  onClick="changeColour3('c')"
                     />
                     <span>6</span>
                   </label>
@@ -928,6 +808,7 @@
                       name="trbuh_sadasnje"
                       value="trbuh_sadasnje_7"
                       class="form__answer"
+					  onClick="changeColour3('c')"
                     />
                     <span>7</span>
                   </label>
@@ -935,12 +816,12 @@
               </div>
 
               <!--9. Trbuh - "potencijalno ja" -->
-              <div class="form__card">
-                <h4>9 od 25</h4>
-                <h3>
-                  Kako biste voljeli da se vaše „potencijalno ja“ (u skladu s
-                  vašim mogućnostima) osjeća, što se tiče kategorije „trbuh“?
-                </h3>
+              <div class="form__card" id="form__card4">
+               
+                <p>
+                  Kako biste voljeli da se vaše "potencijalno ja" (u skladu s
+                  vašim mogućnostima) osjeća, što se tiče kategorije "trbuh"?
+				</p>
 
                 <h5>1 = jako loše&nbsp;&nbsp;&nbsp; 7 = odlično</h5>
 
@@ -952,6 +833,7 @@
                       name="trbuh_potencijalno"
                       value="trbuh_potencijalno_1"
                       class="form__answer"
+					  onClick="changeColour4('d')"
                     />
                     <span>1</span>
                   </label>
@@ -962,6 +844,7 @@
                       name="trbuh_potencijalno"
                       value="trbuh_potencijalno_2"
                       class="form__answer"
+					  onClick="changeColour4('d')"
                     />
                     <span>2</span>
                   </label>
@@ -972,6 +855,7 @@
                       name="trbuh_potencijalno"
                       value="trbuh_potencijalno_3"
                       class="form__answer"
+					  onClick="changeColour4('d')"
                     />
                     <span>3</span>
                   </label>
@@ -982,6 +866,7 @@
                       name="trbuh_potencijalno"
                       value="trbuh_potencijalno_4"
                       class="form__answer"
+					  onClick="changeColour4('d')"
                     />
                     <span>4</span>
                   </label>
@@ -992,6 +877,7 @@
                       name="trbuh_potencijalno"
                       value="trbuh_potencijalno_5"
                       class="form__answer"
+					  onClick="changeColour4('d')"
                     />
                     <span>5</span>
                   </label>
@@ -1002,6 +888,7 @@
                       name="trbuh_potencijalno"
                       value="trbuh_potencijalno_6"
                       class="form__answer"
+					  onClick="changeColour4('d')"
                     />
                     <span>6</span>
                   </label>
@@ -1012,112 +899,27 @@
                       name="trbuh_potencijalno"
                       value="trbuh_potencijalno_7"
                       class="form__answer"
+					  onClick="changeColour4('d')"
                     />
                     <span>7</span>
                   </label>
                 </div>
               </div>
 
-              <!--RUBRIKA - Bolovi i smetnje -->
-              <div class="form__card--title form__card--title-purple">
-                <!-- <h4>10 od 32</h4> -->
+               <!--10. Bolovi i smetnje - "sadašnje ja" -->
+              <div class="form__card" id="form__card5">
                 <h3>Analizirajte bolove i smetnje u vašem tijelu.</h3>
                 <p>
-                  Kako biste opisali „boravak“ u svom tijelu? Koliko često
+                  Kako biste opisali "boravak" u svom tijelu? Koliko često
                   patite od bolova ili smetnji koje otežavaju funkcioniranje
                   danju ili noću?
                 </p>
-
-                <!-- <h5>1 = jako loše&nbsp;&nbsp;&nbsp; 7 = odlično</h5> -->
-
-                <!-- <div class="form__label-wrapper">
-              <label for="trbuh_potencijalno_1">
-                <input
-                  type="radio"
-                  id="trbuh_potencijalno_1"
-                  name="trbuh_potencijalno"
-                  value="trbuh_potencijalno_1"
-                  class="form__answer"
-                />
-                <span>1</span>
-              </label>
-              <label for="trbuh_potencijalno_2">
-                <input
-                  type="radio"
-                  id="trbuh_potencijalno_2"
-                  name="trbuh_potencijalno"
-                  value="trbuh_potencijalno_2"
-                  class="form__answer"
-                />
-                <span>2</span>
-              </label>
-              <label for="trbuh_potencijalno_3">
-                <input
-                  type="radio"
-                  id="trbuh_potencijalno_3"
-                  name="trbuh_potencijalno"
-                  value="trbuh_potencijalno_3"
-                  class="form__answer"
-                />
-                <span>3</span>
-              </label>
-              <label for="trbuh_potencijalno_4">
-                <input
-                  type="radio"
-                  id="trbuh_potencijalno_4"
-                  name="trbuh_potencijalno"
-                  value="trbuh_potencijalno_4"
-                  class="form__answer"
-                />
-                <span>4</span>
-              </label>
-              <label for="trbuh_potencijalno_5">
-                <input
-                  type="radio"
-                  id="trbuh_potencijalno_5"
-                  name="trbuh_potencijalno"
-                  value="trbuh_potencijalno_5"
-                  class="form__answer"
-                />
-                <span>5</span>
-              </label>
-              <label for="trbuh_potencijalno_6">
-                <input
-                  type="radio"
-                  id="trbuh_potencijalno_6"
-                  name="trbuh_potencijalno"
-                  value="trbuh_potencijalno_6"
-                  class="form__answer"
-                />
-                <span>6</span>
-              </label>
-              <label for="trbuh_potencijalno_7">
-                <input
-                  type="radio"
-                  id="trbuh_potencijalno_7"
-                  name="trbuh_potencijalno"
-                  value="trbuh_potencijalno_7"
-                  class="form__answer"
-                />
-                <span>7</span>
-              </label>
-            </div> -->
-              </div>
-
-              <!--10. Bolovi i smetnje - "sadašnje ja" -->
-              <div class="form__card">
-                <h4>10 od 25</h4>
-                <h3>
-                  Kako biste generalno ocijenili svoje „sadašnje ja“ u
-                  kategoriji „bolovi i smetnje u tijelu“?
-                </h3>
-                <!-- <p>
-              Kako biste opisali
-              „boravak“ u svom tijelu? Koliko često patite od bolova ili smetnji
-              koje otežavaju funkcioniranje danju ili noću?
-            </p> -->
-
-                <h5>1 = jako loše&nbsp;&nbsp;&nbsp; 7 = odlično</h5>
+				<p>
+					Kako biste generalno ocijenili svoje "sadašnje ja" u
+					kategoriji "bolovi i smetnje u tijelu"?
+				</p>
+        
+				<h5>1 = jako loše&nbsp;&nbsp;&nbsp; 7 = odlično</h5>
 
                 <div class="form__label-wrapper">
                   <label for="smetnje_sadasnje_1">
@@ -1127,6 +929,7 @@
                       name="smetnje_sadasnje"
                       value="smetnje_sadasnje_1"
                       class="form__answer"
+					  onClick="changeColour5('e')"
                     />
                     <span>1</span>
                   </label>
@@ -1137,6 +940,7 @@
                       name="smetnje_sadasnje"
                       value="smetnje_sadasnje_2"
                       class="form__answer"
+					  onClick="changeColour5('e')"
                     />
                     <span>2</span>
                   </label>
@@ -1147,6 +951,7 @@
                       name="smetnje_sadasnje"
                       value="smetnje_sadasnje_3"
                       class="form__answer"
+					  onClick="changeColour5('e')"
                     />
                     <span>3</span>
                   </label>
@@ -1157,6 +962,7 @@
                       name="smetnje_sadasnje"
                       value="smetnje_sadasnje_4"
                       class="form__answer"
+					  onClick="changeColour5('e')"
                     />
                     <span>4</span>
                   </label>
@@ -1167,6 +973,7 @@
                       name="smetnje_sadasnje"
                       value="smetnje_sadasnje_5"
                       class="form__answer"
+					  onClick="changeColour5('e')"
                     />
                     <span>5</span>
                   </label>
@@ -1177,6 +984,7 @@
                       name="smetnje_sadasnje"
                       value="smetnje_sadasnje_6"
                       class="form__answer"
+					  onClick="changeColour5('e')"
                     />
                     <span>6</span>
                   </label>
@@ -1187,6 +995,7 @@
                       name="smetnje_sadasnje"
                       value="smetnje_sadasnje_7"
                       class="form__answer"
+					  onClick="changeColour5('e')"
                     />
                     <span>7</span>
                   </label>
@@ -1194,18 +1003,12 @@
               </div>
 
               <!--11. Bolovi i smetnje - "potencijalno ja" -->
-              <div class="form__card">
-                <h4>11 od 25</h4>
-                <h3>
-                  Kako biste voljeli da se vaše „potencijalno ja“ (u skladu s
-                  vašim mogućnostima) osjeća, što se tiče kategorije „bolovi i
-                  smetnje u tijelu“?
-                </h3>
-                <!-- <p>
-              Kako biste opisali
-              „boravak“ u svom tijelu? Koliko često patite od bolova ili smetnji
-              koje otežavaju funkcioniranje danju ili noću?
-            </p> -->
+              <div class="form__card" id="form__card6">          
+                <p>
+                  Kako biste voljeli da se vaše "potencijalno ja" (u skladu s
+                  vašim mogućnostima) osjeća, što se tiče kategorije "bolovi i
+                  smetnje u tijelu"?
+				</p>
 
                 <h5>1 = jako loše&nbsp;&nbsp;&nbsp; 7 = odlično</h5>
 
@@ -1217,6 +1020,7 @@
                       name="smetnje_potencijalno"
                       value="smetnje_potencijalno_1"
                       class="form__answer"
+					  onClick="changeColour6('f')"
                     />
                     <span>1</span>
                   </label>
@@ -1227,6 +1031,7 @@
                       name="smetnje_potencijalno"
                       value="smetnje_potencijalno_2"
                       class="form__answer"
+					  onClick="changeColour6('f')"
                     />
                     <span>2</span>
                   </label>
@@ -1237,6 +1042,7 @@
                       name="smetnje_potencijalno"
                       value="smetnje_potencijalno_3"
                       class="form__answer"
+					  onClick="changeColour6('f')"
                     />
                     <span>3</span>
                   </label>
@@ -1247,6 +1053,7 @@
                       name="smetnje_potencijalno"
                       value="smetnje_potencijalno_4"
                       class="form__answer"
+					  onClick="changeColour6('f')"
                     />
                     <span>4</span>
                   </label>
@@ -1257,6 +1064,7 @@
                       name="smetnje_potencijalno"
                       value="smetnje_potencijalno_5"
                       class="form__answer"
+					  onClick="changeColour6('f')"
                     />
                     <span>5</span>
                   </label>
@@ -1267,6 +1075,7 @@
                       name="smetnje_potencijalno"
                       value="smetnje_potencijalno_6"
                       class="form__answer"
+					  onClick="changeColour6('f')"
                     />
                     <span>6</span>
                   </label>
@@ -1277,15 +1086,15 @@
                       name="smetnje_potencijalno"
                       value="smetnje_potencijalno_7"
                       class="form__answer"
+					  onClick="changeColour6('f')"
                     />
                     <span>7</span>
                   </label>
                 </div>
               </div>
 
-              <!--RUBRIKA - Zdravstvene tegobe -->
-              <div class="form__card--title">
-                <!-- <h4>10 od 32</h4> -->
+               <!--12. Zdravstvene tegobe - sadašnje ja -->
+              <div class="form__card" id="form__card7">
                 <h3>
                   Obratite pažnju na svoje zdravstvene tegobe koje ste imali ili
                   ih još uvijek imate.
@@ -1295,97 +1104,11 @@
                   nove simptome? Kako biste opisali stanje hormona, organa,
                   imunitet, psihu i libido?
                 </p>
-
-                <!-- <h5>1 = jako loše&nbsp;&nbsp;&nbsp; 7 = odlično</h5> -->
-
-                <!-- <div class="form__label-wrapper">
-              <label for="trbuh_potencijalno_1">
-                <input
-                  type="radio"
-                  id="trbuh_potencijalno_1"
-                  name="trbuh_potencijalno"
-                  value="trbuh_potencijalno_1"
-                  class="form__answer"
-                />
-                <span>1</span>
-              </label>
-              <label for="trbuh_potencijalno_2">
-                <input
-                  type="radio"
-                  id="trbuh_potencijalno_2"
-                  name="trbuh_potencijalno"
-                  value="trbuh_potencijalno_2"
-                  class="form__answer"
-                />
-                <span>2</span>
-              </label>
-              <label for="trbuh_potencijalno_3">
-                <input
-                  type="radio"
-                  id="trbuh_potencijalno_3"
-                  name="trbuh_potencijalno"
-                  value="trbuh_potencijalno_3"
-                  class="form__answer"
-                />
-                <span>3</span>
-              </label>
-              <label for="trbuh_potencijalno_4">
-                <input
-                  type="radio"
-                  id="trbuh_potencijalno_4"
-                  name="trbuh_potencijalno"
-                  value="trbuh_potencijalno_4"
-                  class="form__answer"
-                />
-                <span>4</span>
-              </label>
-              <label for="trbuh_potencijalno_5">
-                <input
-                  type="radio"
-                  id="trbuh_potencijalno_5"
-                  name="trbuh_potencijalno"
-                  value="trbuh_potencijalno_5"
-                  class="form__answer"
-                />
-                <span>5</span>
-              </label>
-              <label for="trbuh_potencijalno_6">
-                <input
-                  type="radio"
-                  id="trbuh_potencijalno_6"
-                  name="trbuh_potencijalno"
-                  value="trbuh_potencijalno_6"
-                  class="form__answer"
-                />
-                <span>6</span>
-              </label>
-              <label for="trbuh_potencijalno_7">
-                <input
-                  type="radio"
-                  id="trbuh_potencijalno_7"
-                  name="trbuh_potencijalno"
-                  value="trbuh_potencijalno_7"
-                  class="form__answer"
-                />
-                <span>7</span>
-              </label>
-            </div> -->
-              </div>
-
-              <!--12. Zdravstvene tegobe -->
-              <div class="form__card">
-                <h4>12 od 25</h4>
-                <h3>
-                  Kako biste generalno ocijenili svoje „sadašnje ja“ u
-                  kategoriji „zdravstvene tegobe“?
-                </h3>
-                <!-- <p>
-              Kako biste opisali
-              „boravak“ u svom tijelu? Koliko često patite od bolova ili smetnji
-              koje otežavaju funkcioniranje danju ili noću?
-            </p> -->
-
-                <h5>1 = jako loše&nbsp;&nbsp;&nbsp; 7 = odlično</h5>
+                <p>
+                  Kako biste generalno ocijenili svoje "sadašnje ja" u
+                  kategoriji "zdravstvene tegobe"?
+				</p>
+				<h5>1 = jako loše&nbsp;&nbsp;&nbsp; 7 = odlično</h5>
 
                 <div class="form__label-wrapper">
                   <label for="tegobe_sadasnje_1">
@@ -1395,6 +1118,7 @@
                       name="tegobe_sadasnje"
                       value="tegobe_sadasnje_1"
                       class="form__answer"
+					  onClick="changeColour7('g')"
                     />
                     <span>1</span>
                   </label>
@@ -1405,6 +1129,7 @@
                       name="tegobe_sadasnje"
                       value="tegobe_sadasnje_2"
                       class="form__answer"
+					  onClick="changeColour7('g')"
                     />
                     <span>2</span>
                   </label>
@@ -1415,6 +1140,7 @@
                       name="tegobe_sadasnje"
                       value="tegobe_sadasnje_3"
                       class="form__answer"
+					  onClick="changeColour7('g')"
                     />
                     <span>3</span>
                   </label>
@@ -1425,6 +1151,7 @@
                       name="tegobe_sadasnje"
                       value="tegobe_sadasnje_4"
                       class="form__answer"
+					  onClick="changeColour7('g')"
                     />
                     <span>4</span>
                   </label>
@@ -1435,6 +1162,7 @@
                       name="tegobe_sadasnje"
                       value="tegobe_sadasnje_5"
                       class="form__answer"
+					  onClick="changeColour7('g')"
                     />
                     <span>5</span>
                   </label>
@@ -1445,6 +1173,7 @@
                       name="tegobe_sadasnje"
                       value="tegobe_sadasnje_6"
                       class="form__answer"
+					  onClick="changeColour7('g')"
                     />
                     <span>6</span>
                   </label>
@@ -1455,6 +1184,7 @@
                       name="tegobe_sadasnje"
                       value="tegobe_sadasnje_7"
                       class="form__answer"
+					  onClick="changeColour7('g')"
                     />
                     <span>7</span>
                   </label>
@@ -1462,18 +1192,12 @@
               </div>
 
               <!--13. Bolovi i smetnje - "potencijalno ja" -->
-              <div class="form__card">
-                <h4>13 od 25</h4>
-                <h3>
-                  Kako biste voljeli da se vaše „potencijalno ja“ (u skladu s
+              <div class="form__card" id="form__card8">
+                <p>
+                  Kako biste voljeli da se vaše "potencijalno ja" (u skladu s
                   vašim mogućnostima) osjeća, što se tiče kategorije
-                  „zdravstvene tegobe“?
-                </h3>
-                <!-- <p>
-              Kako biste opisali
-              „boravak“ u svom tijelu? Koliko često patite od bolova ili smetnji
-              koje otežavaju funkcioniranje danju ili noću?
-            </p> -->
+                  "zdravstvene tegobe"?
+				</p>
 
                 <h5>1 = jako loše&nbsp;&nbsp;&nbsp; 7 = odlično</h5>
 
@@ -1485,6 +1209,7 @@
                       name="tegobe_potencijalno"
                       value="tegobe_potencijalno_1"
                       class="form__answer"
+					  onClick="changeColour8('h')"
                     />
                     <span>1</span>
                   </label>
@@ -1495,6 +1220,7 @@
                       name="tegobe_potencijalno"
                       value="tegobe_potencijalno_2"
                       class="form__answer"
+					  onClick="changeColour8('h')"
                     />
                     <span>2</span>
                   </label>
@@ -1505,6 +1231,7 @@
                       name="tegobe_potencijalno"
                       value="tegobe_potencijalno_3"
                       class="form__answer"
+					  onClick="changeColour8('h')"
                     />
                     <span>3</span>
                   </label>
@@ -1515,6 +1242,7 @@
                       name="tegobe_potencijalno"
                       value="tegobe_potencijalno_4"
                       class="form__answer"
+					  onClick="changeColour8('h')"
                     />
                     <span>4</span>
                   </label>
@@ -1525,6 +1253,7 @@
                       name="tegobe_potencijalno"
                       value="tegobe_potencijalno_5"
                       class="form__answer"
+					  onClick="changeColour8('h')"
                     />
                     <span>5</span>
                   </label>
@@ -1535,6 +1264,7 @@
                       name="tegobe_potencijalno"
                       value="tegobe_potencijalno_6"
                       class="form__answer"
+					  onClick="changeColour8('h')"
                     />
                     <span>6</span>
                   </label>
@@ -1545,15 +1275,15 @@
                       name="tegobe_potencijalno"
                       value="tegobe_potencijalno_7"
                       class="form__answer"
+					  onClick="changeColour8('h')"
                     />
                     <span>7</span>
                   </label>
                 </div>
               </div>
 
-              <!--RUBRIKA - Vanjski izgled -->
-              <div class="form__card--title">
-                <!-- <h4>10 od 32</h4> -->
+              <!--14. Vanjski izgled - "sadašnje ja" -->
+              <div class="form__card" id="form__card9">
                 <h3>
                   Razmislite o svom vanjskom izgledu i kako se fizički osjećate.
                 </h3>
@@ -1562,97 +1292,11 @@
                   zadovoljstvo? Pratite li svoje fizičke potrebe i njegujete li
                   se redovito?
                 </p>
-
-                <!-- <h5>1 = jako loše&nbsp;&nbsp;&nbsp; 7 = odlično</h5> -->
-
-                <!-- <div class="form__label-wrapper">
-              <label for="trbuh_potencijalno_1">
-                <input
-                  type="radio"
-                  id="trbuh_potencijalno_1"
-                  name="trbuh_potencijalno"
-                  value="trbuh_potencijalno_1"
-                  class="form__answer"
-                />
-                <span>1</span>
-              </label>
-              <label for="trbuh_potencijalno_2">
-                <input
-                  type="radio"
-                  id="trbuh_potencijalno_2"
-                  name="trbuh_potencijalno"
-                  value="trbuh_potencijalno_2"
-                  class="form__answer"
-                />
-                <span>2</span>
-              </label>
-              <label for="trbuh_potencijalno_3">
-                <input
-                  type="radio"
-                  id="trbuh_potencijalno_3"
-                  name="trbuh_potencijalno"
-                  value="trbuh_potencijalno_3"
-                  class="form__answer"
-                />
-                <span>3</span>
-              </label>
-              <label for="trbuh_potencijalno_4">
-                <input
-                  type="radio"
-                  id="trbuh_potencijalno_4"
-                  name="trbuh_potencijalno"
-                  value="trbuh_potencijalno_4"
-                  class="form__answer"
-                />
-                <span>4</span>
-              </label>
-              <label for="trbuh_potencijalno_5">
-                <input
-                  type="radio"
-                  id="trbuh_potencijalno_5"
-                  name="trbuh_potencijalno"
-                  value="trbuh_potencijalno_5"
-                  class="form__answer"
-                />
-                <span>5</span>
-              </label>
-              <label for="trbuh_potencijalno_6">
-                <input
-                  type="radio"
-                  id="trbuh_potencijalno_6"
-                  name="trbuh_potencijalno"
-                  value="trbuh_potencijalno_6"
-                  class="form__answer"
-                />
-                <span>6</span>
-              </label>
-              <label for="trbuh_potencijalno_7">
-                <input
-                  type="radio"
-                  id="trbuh_potencijalno_7"
-                  name="trbuh_potencijalno"
-                  value="trbuh_potencijalno_7"
-                  class="form__answer"
-                />
-                <span>7</span>
-              </label>
-            </div> -->
-              </div>
-
-              <!--14. Vanjski izgled - "sadašnje ja" -->
-              <div class="form__card">
-                <h4>14 od 25</h4>
-                <h3>
-                  Kako biste generalno ocijenili svoje „sadašnje ja“ u
-                  kategoriji „vanjski izgled i fizički osjećaj“?
-                </h3>
-                <!-- <p>
-              Kako biste opisali
-              „boravak“ u svom tijelu? Koliko često patite od bolova ili smetnji
-              koje otežavaju funkcioniranje danju ili noću?
-            </p> -->
-
-                <h5>1 = jako loše&nbsp;&nbsp;&nbsp; 7 = odlično</h5>
+				<p>
+					Kako biste generalno ocijenili svoje "sadašnje ja" u
+					kategoriji "vanjski izgled i fizički osjećaj"?
+				</p>
+				<h5>1 = jako loše&nbsp;&nbsp;&nbsp; 7 = odlično</h5>
 
                 <div class="form__label-wrapper">
                   <label for="izgled_sadasnje_1">
@@ -1662,6 +1306,7 @@
                       name="izgled_sadasnje"
                       value="izgled_sadasnje_1"
                       class="form__answer"
+					  onClick="changeColour9('i')"
                     />
                     <span>1</span>
                   </label>
@@ -1672,6 +1317,7 @@
                       name="izgled_sadasnje"
                       value="izgled_sadasnje_2"
                       class="form__answer"
+					  onClick="changeColour9('i')"
                     />
                     <span>2</span>
                   </label>
@@ -1682,6 +1328,7 @@
                       name="izgled_sadasnje"
                       value="izgled_sadasnje_3"
                       class="form__answer"
+					  onClick="changeColour9('i')"
                     />
                     <span>3</span>
                   </label>
@@ -1692,6 +1339,7 @@
                       name="izgled_sadasnje"
                       value="izgled_sadasnje_4"
                       class="form__answer"
+					  onClick="changeColour9('i')"
                     />
                     <span>4</span>
                   </label>
@@ -1702,6 +1350,7 @@
                       name="izgled_sadasnje"
                       value="izgled_sadasnje_5"
                       class="form__answer"
+					  onClick="changeColour9('i')"
                     />
                     <span>5</span>
                   </label>
@@ -1712,6 +1361,7 @@
                       name="izgled_sadasnje"
                       value="izgled_sadasnje_6"
                       class="form__answer"
+					  onClick="changeColour9('i')"
                     />
                     <span>6</span>
                   </label>
@@ -1722,6 +1372,7 @@
                       name="izgled_sadasnje"
                       value="izgled_sadasnje_7"
                       class="form__answer"
+					  onClick="changeColour9('i')"
                     />
                     <span>7</span>
                   </label>
@@ -1729,19 +1380,12 @@
               </div>
 
               <!--15. Vanjski izgled - "potencijalno ja" -->
-              <div class="form__card">
-                <h4>15 od 25</h4>
-                <h3>
-                  Kako biste voljeli da se vaše „potencijalno ja“ (u skladu s
-                  vašim mogućnostima) osjeća, što se tiče kategorije „vanjski
-                  izgled i fizički osjećaj“?
-                </h3>
-                <!-- <p>
-              Kako biste opisali
-              „boravak“ u svom tijelu? Koliko često patite od bolova ili smetnji
-              koje otežavaju funkcioniranje danju ili noću?
-            </p> -->
-
+              <div class="form__card" id="form__card10">
+                <p>
+                  Kako biste voljeli da se vaše "potencijalno ja" (u skladu s
+                  vašim mogućnostima) osjeća, što se tiče kategorije "vanjski
+                  izgled i fizički osjećaj"?
+				</p>
                 <h5>1 = jako loše&nbsp;&nbsp;&nbsp; 7 = odlično</h5>
 
                 <div class="form__label-wrapper">
@@ -1752,6 +1396,7 @@
                       name="izgled_potencijalno"
                       value="izgled_potencijalno_1"
                       class="form__answer"
+					  onClick="changeColour10('j')"
                     />
                     <span>1</span>
                   </label>
@@ -1762,6 +1407,7 @@
                       name="izgled_potencijalno"
                       value="izgled_potencijalno_2"
                       class="form__answer"
+					  onClick="changeColour10('j')"
                     />
                     <span>2</span>
                   </label>
@@ -1772,6 +1418,7 @@
                       name="izgled_potencijalno"
                       value="izgled_potencijalno_3"
                       class="form__answer"
+					  onClick="changeColour10('j')"
                     />
                     <span>3</span>
                   </label>
@@ -1782,6 +1429,7 @@
                       name="izgled_potencijalno"
                       value="izgled_potencijalno_4"
                       class="form__answer"
+					  onClick="changeColour10('j')"
                     />
                     <span>4</span>
                   </label>
@@ -1792,6 +1440,7 @@
                       name="izgled_potencijalno"
                       value="izgled_potencijalno_5"
                       class="form__answer"
+					  onClick="changeColour10('j')"
                     />
                     <span>5</span>
                   </label>
@@ -1802,6 +1451,7 @@
                       name="izgled_potencijalno"
                       value="izgled_potencijalno_6"
                       class="form__answer"
+					  onClick="changeColour10('j')"
                     />
                     <span>6</span>
                   </label>
@@ -1812,111 +1462,25 @@
                       name="izgled_potencijalno"
                       value="izgled_potencijalno_7"
                       class="form__answer"
+					  onClick="changeColour10('j')"
                     />
                     <span>7</span>
                   </label>
                 </div>
               </div>
 
-              <!--RUBRIKA - Disanje -->
-              <div class="form__card--title">
-                <!-- <h4>10 od 32</h4> -->
+             <!--16. Disanje - "sadašnje ja" -->
+              <div class="form__card" id="form__card11">
                 <h3>Koliko dobro poznajete svoje disanje?</h3>
                 <p>
                   Imate li svjesnost kako dišete? Primjećujete li u mirovanju da
                   je Vaš dah plitak i kratkotrajan ili lagan i dubok? Imate li
                   zastoje disanja ili nedostatak daha pri laganoj aktivnosti?
                 </p>
-
-                <!-- <h5>1 = jako loše&nbsp;&nbsp;&nbsp; 7 = odlično</h5> -->
-
-                <!-- <div class="form__label-wrapper">
-              <label for="trbuh_potencijalno_1">
-                <input
-                  type="radio"
-                  id="trbuh_potencijalno_1"
-                  name="trbuh_potencijalno"
-                  value="trbuh_potencijalno_1"
-                  class="form__answer"
-                />
-                <span>1</span>
-              </label>
-              <label for="trbuh_potencijalno_2">
-                <input
-                  type="radio"
-                  id="trbuh_potencijalno_2"
-                  name="trbuh_potencijalno"
-                  value="trbuh_potencijalno_2"
-                  class="form__answer"
-                />
-                <span>2</span>
-              </label>
-              <label for="trbuh_potencijalno_3">
-                <input
-                  type="radio"
-                  id="trbuh_potencijalno_3"
-                  name="trbuh_potencijalno"
-                  value="trbuh_potencijalno_3"
-                  class="form__answer"
-                />
-                <span>3</span>
-              </label>
-              <label for="trbuh_potencijalno_4">
-                <input
-                  type="radio"
-                  id="trbuh_potencijalno_4"
-                  name="trbuh_potencijalno"
-                  value="trbuh_potencijalno_4"
-                  class="form__answer"
-                />
-                <span>4</span>
-              </label>
-              <label for="trbuh_potencijalno_5">
-                <input
-                  type="radio"
-                  id="trbuh_potencijalno_5"
-                  name="trbuh_potencijalno"
-                  value="trbuh_potencijalno_5"
-                  class="form__answer"
-                />
-                <span>5</span>
-              </label>
-              <label for="trbuh_potencijalno_6">
-                <input
-                  type="radio"
-                  id="trbuh_potencijalno_6"
-                  name="trbuh_potencijalno"
-                  value="trbuh_potencijalno_6"
-                  class="form__answer"
-                />
-                <span>6</span>
-              </label>
-              <label for="trbuh_potencijalno_7">
-                <input
-                  type="radio"
-                  id="trbuh_potencijalno_7"
-                  name="trbuh_potencijalno"
-                  value="trbuh_potencijalno_7"
-                  class="form__answer"
-                />
-                <span>7</span>
-              </label>
-            </div> -->
-              </div>
-
-              <!--16. Disanje - "sadašnje ja" -->
-              <div class="form__card">
-                <h4>16 od 25</h4>
-                <h3>
-                  Kako biste generalno ocijenili svoje „sadašnje ja“ u
-                  kategoriji „disanje“?
-                </h3>
-                <!-- <p>
-              Kako biste opisali
-              „boravak“ u svom tijelu? Koliko često patite od bolova ili smetnji
-              koje otežavaju funkcioniranje danju ili noću?
-            </p> -->
-
+				<p>
+					Kako biste generalno ocijenili svoje "sadašnje ja" u
+					kategoriji "disanje"?
+				</p>
                 <h5>1 = jako loše&nbsp;&nbsp;&nbsp; 7 = odlično</h5>
 
                 <div class="form__label-wrapper">
@@ -1927,6 +1491,7 @@
                       name="disanje_sadasnje"
                       value="disanje_sadasnje_1"
                       class="form__answer"
+					  onClick="changeColour11('k')"
                     />
                     <span>1</span>
                   </label>
@@ -1937,6 +1502,7 @@
                       name="disanje_sadasnje"
                       value="disanje_sadasnje_2"
                       class="form__answer"
+					  onClick="changeColour11('k')"
                     />
                     <span>2</span>
                   </label>
@@ -1947,6 +1513,7 @@
                       name="disanje_sadasnje"
                       value="disanje_sadasnje_3"
                       class="form__answer"
+					  onClick="changeColour11('k')"
                     />
                     <span>3</span>
                   </label>
@@ -1957,6 +1524,7 @@
                       name="disanje_sadasnje"
                       value="disanje_sadasnje_4"
                       class="form__answer"
+					  onClick="changeColour11('k')"
                     />
                     <span>4</span>
                   </label>
@@ -1967,6 +1535,7 @@
                       name="disanje_sadasnje"
                       value="disanje_sadasnje_5"
                       class="form__answer"
+					  onClick="changeColour11('k')"
                     />
                     <span>5</span>
                   </label>
@@ -1977,6 +1546,7 @@
                       name="disanje_sadasnje"
                       value="disanje_sadasnje_6"
                       class="form__answer"
+					  onClick="changeColour11('k')"
                     />
                     <span>6</span>
                   </label>
@@ -1987,25 +1557,19 @@
                       name="disanje_sadasnje"
                       value="disanje_sadasnje_7"
                       class="form__answer"
+					  onClick="changeColour11('k')"
                     />
                     <span>7</span>
                   </label>
                 </div>
               </div>
 
-              <!--17. Disanje - "potencijalno ja" -->
-              <div class="form__card">
-                <h4>17 od 25</h4>
-                <h3>
-                  Kako biste voljeli da se vaše „potencijalno ja“ (u skladu s
-                  vašim mogućnostima) osjeća, što se tiče kategorije „disanje“?
-                </h3>
-                <!-- <p>
-              Kako biste opisali
-              „boravak“ u svom tijelu? Koliko često patite od bolova ili smetnji
-              koje otežavaju funkcioniranje danju ili noću?
-            </p> -->
-
+             <!--17. Disanje - "potencijalno ja" -->
+              <div class="form__card" id="form__card12">
+                <p>
+                  Kako biste voljeli da se vaše "potencijalno ja" (u skladu s
+                  vašim mogućnostima) osjeća, što se tiče kategorije "disanje"?
+				</p>
                 <h5>1 = jako loše&nbsp;&nbsp;&nbsp; 7 = odlično</h5>
 
                 <div class="form__label-wrapper">
@@ -2016,6 +1580,7 @@
                       name="disanje_potencijalno"
                       value="disanje_potencijalno_1"
                       class="form__answer"
+					  onClick="changeColour12('l')"
                     />
                     <span>1</span>
                   </label>
@@ -2026,6 +1591,7 @@
                       name="disanje_potencijalno"
                       value="disanje_potencijalno_2"
                       class="form__answer"
+					  onClick="changeColour12('l')"
                     />
                     <span>2</span>
                   </label>
@@ -2036,6 +1602,7 @@
                       name="disanje_potencijalno"
                       value="disanje_potencijalno_3"
                       class="form__answer"
+					  onClick="changeColour12('l')"
                     />
                     <span>3</span>
                   </label>
@@ -2046,6 +1613,7 @@
                       name="disanje_potencijalno"
                       value="disanje_potencijalno_4"
                       class="form__answer"
+					  onClick="changeColour12('l')"
                     />
                     <span>4</span>
                   </label>
@@ -2056,6 +1624,7 @@
                       name="disanje_potencijalno"
                       value="disanje_potencijalno_5"
                       class="form__answer"
+					  onClick="changeColour12('l')"
                     />
                     <span>5</span>
                   </label>
@@ -2066,6 +1635,7 @@
                       name="disanje_potencijalno"
                       value="disanje_potencijalno_6"
                       class="form__answer"
+					  onClick="changeColour12('l')"
                     />
                     <span>6</span>
                   </label>
@@ -2076,15 +1646,15 @@
                       name="disanje_potencijalno"
                       value="disanje_potencijalno_7"
                       class="form__answer"
+					  onClick="changeColour12('l')"
                     />
                     <span>7</span>
                   </label>
                 </div>
               </div>
 
-              <!--RUBRIKA - Stil života -->
-              <div class="form__card--title">
-                <!-- <h4>10 od 32</h4> -->
+              <!--18. Stil života - "sadašnje ja" -->
+              <div class="form__card" id="form__card13">            
                 <h3>
                   Razmislite o svom stilu života, životnim navikama i općem
                   funkcioniranju.
@@ -2096,98 +1666,12 @@
                   aktivnostima? Koliko je Vaše fizičko, emocionalno, mentalno i
                   duhovno iskustvo dosad obogaćeno?
                 </p>
-
-                <!-- <h5>1 = jako loše&nbsp;&nbsp;&nbsp; 7 = odlično</h5> -->
-
-                <!-- <div class="form__label-wrapper">
-              <label for="trbuh_potencijalno_1">
-                <input
-                  type="radio"
-                  id="trbuh_potencijalno_1"
-                  name="trbuh_potencijalno"
-                  value="trbuh_potencijalno_1"
-                  class="form__answer"
-                />
-                <span>1</span>
-              </label>
-              <label for="trbuh_potencijalno_2">
-                <input
-                  type="radio"
-                  id="trbuh_potencijalno_2"
-                  name="trbuh_potencijalno"
-                  value="trbuh_potencijalno_2"
-                  class="form__answer"
-                />
-                <span>2</span>
-              </label>
-              <label for="trbuh_potencijalno_3">
-                <input
-                  type="radio"
-                  id="trbuh_potencijalno_3"
-                  name="trbuh_potencijalno"
-                  value="trbuh_potencijalno_3"
-                  class="form__answer"
-                />
-                <span>3</span>
-              </label>
-              <label for="trbuh_potencijalno_4">
-                <input
-                  type="radio"
-                  id="trbuh_potencijalno_4"
-                  name="trbuh_potencijalno"
-                  value="trbuh_potencijalno_4"
-                  class="form__answer"
-                />
-                <span>4</span>
-              </label>
-              <label for="trbuh_potencijalno_5">
-                <input
-                  type="radio"
-                  id="trbuh_potencijalno_5"
-                  name="trbuh_potencijalno"
-                  value="trbuh_potencijalno_5"
-                  class="form__answer"
-                />
-                <span>5</span>
-              </label>
-              <label for="trbuh_potencijalno_6">
-                <input
-                  type="radio"
-                  id="trbuh_potencijalno_6"
-                  name="trbuh_potencijalno"
-                  value="trbuh_potencijalno_6"
-                  class="form__answer"
-                />
-                <span>6</span>
-              </label>
-              <label for="trbuh_potencijalno_7">
-                <input
-                  type="radio"
-                  id="trbuh_potencijalno_7"
-                  name="trbuh_potencijalno"
-                  value="trbuh_potencijalno_7"
-                  class="form__answer"
-                />
-                <span>7</span>
-              </label>
-            </div> -->
-              </div>
-
-              <!--18. Stil života - "sadašnje ja" -->
-              <div class="form__card">
-                <h4>18 od 25</h4>
-                <h3>
-                  Kako biste generalno ocijenili svoje „sadašnje ja“ vezano uz
-                  stil života, životne navike, prisutnost u izazovnim
-                  situacijama, svoje pozitivne karakteristike i intuiciju?
-                </h3>
-                <!-- <p>
-              Kako biste opisali
-              „boravak“ u svom tijelu? Koliko često patite od bolova ili smetnji
-              koje otežavaju funkcioniranje danju ili noću?
-            </p> -->
-
-                <h5>1 = jako loše&nbsp;&nbsp;&nbsp; 7 = odlično</h5>
+				<p>
+					Kako biste generalno ocijenili svoje "sadašnje ja" vezano uz
+					stil života, životne navike, prisutnost u izazovnim
+					situacijama, svoje pozitivne karakteristike i intuiciju?
+				</p>
+				<h5>1 = jako loše&nbsp;&nbsp;&nbsp; 7 = odlično</h5>
 
                 <div class="form__label-wrapper">
                   <label for="stil_sadasnje_1">
@@ -2197,6 +1681,7 @@
                       name="stil_sadasnje"
                       value="stil_sadasnje_1"
                       class="form__answer"
+					  onClick="changeColour13('m')"
                     />
                     <span>1</span>
                   </label>
@@ -2207,6 +1692,7 @@
                       name="stil_sadasnje"
                       value="stil_sadasnje_2"
                       class="form__answer"
+					  onClick="changeColour13('m')"
                     />
                     <span>2</span>
                   </label>
@@ -2217,6 +1703,7 @@
                       name="stil_sadasnje"
                       value="stil_sadasnje_3"
                       class="form__answer"
+					  onClick="changeColour13('m')"
                     />
                     <span>3</span>
                   </label>
@@ -2227,6 +1714,7 @@
                       name="stil_sadasnje"
                       value="stil_sadasnje_4"
                       class="form__answer"
+					  onClick="changeColour13('m')"
                     />
                     <span>4</span>
                   </label>
@@ -2237,6 +1725,7 @@
                       name="stil_sadasnje"
                       value="stil_sadasnje_5"
                       class="form__answer"
+					  onClick="changeColour13('m')"
                     />
                     <span>5</span>
                   </label>
@@ -2247,6 +1736,7 @@
                       name="stil_sadasnje"
                       value="stil_sadasnje_6"
                       class="form__answer"
+					  onClick="changeColour13('m')"
                     />
                     <span>6</span>
                   </label>
@@ -2257,27 +1747,21 @@
                       name="stil_sadasnje"
                       value="stil_sadasnje_7"
                       class="form__answer"
+					  onClick="changeColour13('m')"
                     />
                     <span>7</span>
                   </label>
-                </div>
+                </div>               
               </div>
 
               <!--19. Stil života - "potencijalno ja" -->
-              <div class="form__card">
-                <h4>19 od 25</h4>
-                <h3>
-                  Kako biste voljeli da se vaše „potencijalno ja“ (u skladu s
+              <div class="form__card" id="form__card14">
+                <p>
+                  Kako biste voljeli da se vaše "potencijalno ja" (u skladu s
                   vašim mogućnostima) osjeća, vezano uz stil života, životne
                   navike, prisutnost u izazovnim situacijama, svoje pozitivne
                   karakteristike i intuiciju?
-                </h3>
-                <!-- <p>
-              Kako biste opisali
-              „boravak“ u svom tijelu? Koliko često patite od bolova ili smetnji
-              koje otežavaju funkcioniranje danju ili noću?
-            </p> -->
-
+				</p>
                 <h5>1 = jako loše&nbsp;&nbsp;&nbsp; 7 = odlično</h5>
 
                 <div class="form__label-wrapper">
@@ -2288,6 +1772,7 @@
                       name="stil_potencijalno"
                       value="stil_potencijalno_1"
                       class="form__answer"
+					  onClick="changeColour14('n')"
                     />
                     <span>1</span>
                   </label>
@@ -2298,6 +1783,7 @@
                       name="stil_potencijalno"
                       value="stil_potencijalno_2"
                       class="form__answer"
+					  onClick="changeColour14('n')"
                     />
                     <span>2</span>
                   </label>
@@ -2308,6 +1794,7 @@
                       name="stil_potencijalno"
                       value="stil_potencijalno_3"
                       class="form__answer"
+					  onClick="changeColour14('n')"
                     />
                     <span>3</span>
                   </label>
@@ -2318,6 +1805,7 @@
                       name="stil_potencijalno"
                       value="stil_potencijalno_4"
                       class="form__answer"
+					  onClick="changeColour14('n')"
                     />
                     <span>4</span>
                   </label>
@@ -2328,6 +1816,7 @@
                       name="stil_potencijalno"
                       value="stil_potencijalno_5"
                       class="form__answer"
+					  onClick="changeColour14('n')"
                     />
                     <span>5</span>
                   </label>
@@ -2338,6 +1827,7 @@
                       name="stil_potencijalno"
                       value="stil_potencijalno_6"
                       class="form__answer"
+					  onClick="changeColour14('n')"
                     />
                     <span>6</span>
                   </label>
@@ -2348,23 +1838,31 @@
                       name="stil_potencijalno"
                       value="stil_potencijalno_7"
                       class="form__answer"
+					  onClick="changeColour14('n')"
                     />
                     <span>7</span>
-                  </label>
+                  </label>			  
                 </div>
               </div>
 
-              <!--20. Stil života - vitalnost -->
-              <div class="form__card">
-                <h4>20 od 25</h4>
-                <h3>U ovom trenutku, osjećam se živim i vitalnim.</h3>
-                <!-- <p>
-              Kako biste opisali
-              „boravak“ u svom tijelu? Koliko često patite od bolova ili smetnji
-              koje otežavaju funkcioniranje danju ili noću?
-            </p> -->
+			  <!-- Autor ankete -->
+			  <div class="form__author">
+			  		<h2 >Autor upitnika: Ana-Marija Jagodić Rukavina, mr. spec.</h2>
+			  </div>
 
-                <h5>1 = jako loše&nbsp;&nbsp;&nbsp; 7 = odlično</h5>
+			  <!-- Kvocijent vitalnosti -->
+			  <div class="form__card--title">
+				<h1>subjektivna vitalnost</h1>
+				<img
+					class="form__colored_line"
+					src="./_assets/images/colored_lines.png"
+					alt="Linija u raznim bojama"/>
+			  </div>
+
+              <!--20. Stil života - vitalnost -->
+              <div class="form__card" id="form__card15">
+                <h3>U ovom trenutku, osjećam se živim i vitalnim.</h3>
+                <h5>1 = uopće nije istina&nbsp;&nbsp;&nbsp; 7 = potpuna istina</h5>
 
                 <div class="form__label-wrapper">
                   <label for="vitalnost_1">
@@ -2374,6 +1872,7 @@
                       name="vitalnost"
                       value="vitalnost_1"
                       class="form__answer"
+					  onClick="changeColour15('o')"
                     />
                     <span>1</span>
                   </label>
@@ -2384,6 +1883,7 @@
                       name="vitalnost"
                       value="vitalnost_2"
                       class="form__answer"
+					  onClick="changeColour15('o')"
                     />
                     <span>2</span>
                   </label>
@@ -2394,6 +1894,7 @@
                       name="vitalnost"
                       value="vitalnost_3"
                       class="form__answer"
+					  onClick="changeColour15('o')"
                     />
                     <span>3</span>
                   </label>
@@ -2404,6 +1905,7 @@
                       name="vitalnost"
                       value="vitalnost_4"
                       class="form__answer"
+					  onClick="changeColour15('o')"
                     />
                     <span>4</span>
                   </label>
@@ -2414,6 +1916,7 @@
                       name="vitalnost"
                       value="vitalnost_5"
                       class="form__answer"
+					  onClick="changeColour15('o')"
                     />
                     <span>5</span>
                   </label>
@@ -2424,6 +1927,7 @@
                       name="vitalnost"
                       value="vitalnost_6"
                       class="form__answer"
+					  onClick="changeColour15('o')"
                     />
                     <span>6</span>
                   </label>
@@ -2434,6 +1938,7 @@
                       name="vitalnost"
                       value="vitalnost_7"
                       class="form__answer"
+					  onClick="changeColour15('o')"
                     />
                     <span>7</span>
                   </label>
@@ -2441,16 +1946,9 @@
               </div>
 
               <!--21. Stil života - pucanje -->
-              <div class="form__card">
-                <h4>21 od 25</h4>
+              <div class="form__card" id="form__card16">
                 <h3>Trenutno se osjećam tako živim da samo želim puknuti.</h3>
-                <!-- <p>
-              Kako biste opisali
-              „boravak“ u svom tijelu? Koliko često patite od bolova ili smetnji
-              koje otežavaju funkcioniranje danju ili noću?
-            </p> -->
-
-                <h5>1 = jako loše&nbsp;&nbsp;&nbsp; 7 = odlično</h5>
+				<h5>1 = uopće nije istina&nbsp;&nbsp;&nbsp; 7 = potpuna istina</h5>
 
                 <div class="form__label-wrapper">
                   <label for="pucanje_1">
@@ -2460,6 +1958,7 @@
                       name="pucanje"
                       value="pucanje_1"
                       class="form__answer"
+					  onClick="changeColour16('p')"
                     />
                     <span>1</span>
                   </label>
@@ -2470,6 +1969,7 @@
                       name="pucanje"
                       value="pucanje_2"
                       class="form__answer"
+					  onClick="changeColour16('p')"
                     />
                     <span>2</span>
                   </label>
@@ -2480,6 +1980,7 @@
                       name="pucanje"
                       value="pucanje_3"
                       class="form__answer"
+					  onClick="changeColour16('p')"
                     />
                     <span>3</span>
                   </label>
@@ -2490,6 +1991,7 @@
                       name="pucanje"
                       value="pucanje_4"
                       class="form__answer"
+					  onClick="changeColour16('p')"
                     />
                     <span>4</span>
                   </label>
@@ -2500,6 +2002,7 @@
                       name="pucanje"
                       value="pucanje_5"
                       class="form__answer"
+					  onClick="changeColour16('p')"
                     />
                     <span>5</span>
                   </label>
@@ -2510,6 +2013,7 @@
                       name="pucanje"
                       value="pucanje_6"
                       class="form__answer"
+					  onClick="changeColour16('p')"
                     />
                     <span>6</span>
                   </label>
@@ -2520,6 +2024,7 @@
                       name="pucanje"
                       value="pucanje_7"
                       class="form__answer"
+					  onClick="changeColour16('p')"
                     />
                     <span>7</span>
                   </label>
@@ -2527,16 +2032,9 @@
               </div>
 
               <!--22. Stil života - duh -->
-              <div class="form__card">
-                <h4>22 od 25</h4>
+              <div class="form__card" id="form__card17">
                 <h3>U ovom trenutku imam energije i duha.</h3>
-                <!-- <p>
-              Kako biste opisali
-              „boravak“ u svom tijelu? Koliko često patite od bolova ili smetnji
-              koje otežavaju funkcioniranje danju ili noću?
-            </p> -->
-
-                <h5>1 = jako loše&nbsp;&nbsp;&nbsp; 7 = odlično</h5>
+                <h5>1 = uopće nije istina&nbsp;&nbsp;&nbsp; 7 = potpuna istina</h5>
 
                 <div class="form__label-wrapper">
                   <label for="duh_1">
@@ -2546,6 +2044,7 @@
                       name="duh"
                       value="duh_1"
                       class="form__answer"
+					  onClick="changeColour17('r')"
                     />
                     <span>1</span>
                   </label>
@@ -2556,6 +2055,7 @@
                       name="duh"
                       value="duh_2"
                       class="form__answer"
+					  onClick="changeColour17('r')"
                     />
                     <span>2</span>
                   </label>
@@ -2566,6 +2066,7 @@
                       name="duh"
                       value="duh_3"
                       class="form__answer"
+					  onClick="changeColour17('r')"
                     />
                     <span>3</span>
                   </label>
@@ -2576,6 +2077,7 @@
                       name="duh"
                       value="duh_4"
                       class="form__answer"
+					  onClick="changeColour17('r')"
                     />
                     <span>4</span>
                   </label>
@@ -2586,6 +2088,7 @@
                       name="duh"
                       value="duh_5"
                       class="form__answer"
+					  onClick="changeColour17('r')"
                     />
                     <span>5</span>
                   </label>
@@ -2596,6 +2099,7 @@
                       name="duh"
                       value="duh_6"
                       class="form__answer"
+					  onClick="changeColour17('r')"
                     />
                     <span>6</span>
                   </label>
@@ -2606,6 +2110,7 @@
                       name="duh"
                       value="duh_7"
                       class="form__answer"
+					  onClick="changeColour17('r')"
                     />
                     <span>7</span>
                   </label>
@@ -2613,16 +2118,9 @@
               </div>
 
               <!--23. Stil života - veselje -->
-              <div class="form__card">
-                <h4>23 od 25</h4>
+              <div class="form__card" id="form__card18">
                 <h3>Veselim se svakom novom danu.</h3>
-                <!-- <p>
-              Kako biste opisali
-              „boravak“ u svom tijelu? Koliko često patite od bolova ili smetnji
-              koje otežavaju funkcioniranje danju ili noću?
-            </p> -->
-
-                <h5>1 = jako loše&nbsp;&nbsp;&nbsp; 7 = odlično</h5>
+                <h5>1 = uopće nije istina&nbsp;&nbsp;&nbsp; 7 = potpuna istina</h5>
 
                 <div class="form__label-wrapper">
                   <label for="veselje_1">
@@ -2632,6 +2130,7 @@
                       name="veselje"
                       value="veselje_1"
                       class="form__answer"
+					  onClick="changeColour18('q')"
                     />
                     <span>1</span>
                   </label>
@@ -2642,6 +2141,7 @@
                       name="veselje"
                       value="veselje_2"
                       class="form__answer"
+					  onClick="changeColour18('q')"
                     />
                     <span>2</span>
                   </label>
@@ -2652,6 +2152,7 @@
                       name="veselje"
                       value="veselje_3"
                       class="form__answer"
+					  onClick="changeColour18('q')"
                     />
                     <span>3</span>
                   </label>
@@ -2662,6 +2163,7 @@
                       name="veselje"
                       value="veselje_4"
                       class="form__answer"
+					  onClick="changeColour18('q')"
                     />
                     <span>4</span>
                   </label>
@@ -2672,6 +2174,7 @@
                       name="veselje"
                       value="veselje_5"
                       class="form__answer"
+					  onClick="changeColour18('q')"
                     />
                     <span>5</span>
                   </label>
@@ -2682,7 +2185,8 @@
                       name="veselje"
                       value="veselje_6"
                       class="form__answer"
-                    />t
+					  onClick="changeColour18('q')"
+                    />
                     <span>6</span>
                   </label>
                   <label for="veselje_7">
@@ -2692,6 +2196,7 @@
                       name="veselje"
                       value="veselje_7"
                       class="form__answer"
+					  onClick="changeColour18('q')"
                     />
                     <span>7</span>
                   </label>
@@ -2699,16 +2204,9 @@
               </div>
 
               <!--24. Stil života - budnost -->
-              <div class="form__card">
-                <h4>24 od 25</h4>
+              <div class="form__card" id="form__card19">
                 <h3>U ovom trenutku se osjećam budnim i spremnim.</h3>
-                <!-- <p>
-              Kako biste opisali
-              „boravak“ u svom tijelu? Koliko često patite od bolova ili smetnji
-              koje otežavaju funkcioniranje danju ili noću?
-            </p> -->
-
-                <h5>1 = jako loše&nbsp;&nbsp;&nbsp; 7 = odlično</h5>
+                <h5>1 = uopće nije istina&nbsp;&nbsp;&nbsp; 7 = potpuna istina</h5>
 
                 <div class="form__label-wrapper">
                   <label for="budnost_1">
@@ -2718,6 +2216,7 @@
                       name="budnost"
                       value="budnost_1"
                       class="form__answer"
+					  onClick="changeColour19('s')"
                     />
                     <span>1</span>
                   </label>
@@ -2728,6 +2227,7 @@
                       name="budnost"
                       value="budnost_2"
                       class="form__answer"
+					  onClick="changeColour19('s')"
                     />
                     <span>2</span>
                   </label>
@@ -2738,6 +2238,7 @@
                       name="budnost"
                       value="budnost_3"
                       class="form__answer"
+					  onClick="changeColour19('s')"
                     />
                     <span>3</span>
                   </label>
@@ -2748,6 +2249,7 @@
                       name="budnost"
                       value="budnost_4"
                       class="form__answer"
+					  onClick="changeColour19('s')"
                     />
                     <span>4</span>
                   </label>
@@ -2758,6 +2260,7 @@
                       name="budnost"
                       value="budnost_5"
                       class="form__answer"
+					  onClick="changeColour19('s')"
                     />
                     <span>5</span>
                   </label>
@@ -2768,6 +2271,7 @@
                       name="budnost"
                       value="budnost_6"
                       class="form__answer"
+					  onClick="changeColour19('s')"
                     />t
                     <span>6</span>
                   </label>
@@ -2778,6 +2282,7 @@
                       name="budnost"
                       value="budnost_7"
                       class="form__answer"
+					  onClick="changeColour19('s')"
                     />
                     <span>7</span>
                   </label>
@@ -2785,16 +2290,9 @@
               </div>
 
               <!--25. Stil života - energičnost -->
-              <div class="form__card">
-                <h4>25 od 25</h4>
+              <div class="form__card" id="form__card20">
                 <h3>Trenutno se osjećam energično.</h3>
-                <!-- <p>
-              Kako biste opisali
-              „boravak“ u svom tijelu? Koliko često patite od bolova ili smetnji
-              koje otežavaju funkcioniranje danju ili noću?
-            </p> -->
-
-                <h5>1 = jako loše&nbsp;&nbsp;&nbsp; 7 = odlično</h5>
+                <h5>1 = uopće nije istina&nbsp;&nbsp;&nbsp; 7 = potpuna istina</h5>
 
                 <div class="form__label-wrapper">
                   <label for="energicnost_1">
@@ -2804,6 +2302,7 @@
                       name="energicnost"
                       value="energicnost_1"
                       class="form__answer"
+					  onClick="changeColour20('t')"
                     />
                     <span>1</span>
                   </label>
@@ -2814,6 +2313,7 @@
                       name="energicnost"
                       value="energicnost_2"
                       class="form__answer"
+					  onClick="changeColour20('t')"
                     />
                     <span>2</span>
                   </label>
@@ -2824,6 +2324,7 @@
                       name="energicnost"
                       value="energicnost_3"
                       class="form__answer"
+					  onClick="changeColour20('t')"
                     />
                     <span>3</span>
                   </label>
@@ -2834,6 +2335,7 @@
                       name="energicnost"
                       value="energicnost_4"
                       class="form__answer"
+					  onClick="changeColour20('t')"
                     />
                     <span>4</span>
                   </label>
@@ -2844,6 +2346,7 @@
                       name="energicnost"
                       value="energicnost_5"
                       class="form__answer"
+					  onClick="changeColour20('t')"
                     />
                     <span>5</span>
                   </label>
@@ -2854,7 +2357,8 @@
                       name="energicnost"
                       value="energicnost_6"
                       class="form__answer"
-                    />t
+					  onClick="changeColour20('t')"
+                    />
                     <span>6</span>
                   </label>
                   <label for="energicnost_7">
@@ -2864,6 +2368,7 @@
                       name="energicnost"
                       value="energicnost_7"
                       class="form__answer"
+					  onClick="changeColour20('t')"
                     />
                     <span>7</span>
                   </label>
@@ -2873,7 +2378,7 @@
               <div class="form__end has-text-centered">
                 <p>Razmislite o svom stilu života!</p>
                 <p>
-                  Hvala na Vašem trudu i vremenu koje ste posvetili ispunjavanju
+                  Hvala na vašem trudu i vremenu koje ste posvetili ispunjavanju
                   ovog upitnika!
                 </p>
                 <div>
@@ -2888,18 +2393,7 @@
             </form>
           </section>
         </main>
-        <!--  FOOTER -->
-        <footer class="footer has-text-centered">
-          <div class="container-footer">
-            <!-- <h4>Sadržaj nastao u suradnji</h4>
-        <a href="http://www.adriamedia.hr/oglasavanje/kontakti/" target="_blank"
-          ><img src="./_assets/images/AMZ_logo.png" alt="AMZ Native Studio"
-        /></a>
-        <a href="https://www.buzzsneakers.com/HRK_hr)" target="_blank"
-          ><img src="./_assets/images/buzz-logo.png" alt="Buzz logo" />
-        </a> -->
-          </div>
-        </footer>
+      
 
         <script type="text/javascript" src="lib/main.js"></script>
       </div>
