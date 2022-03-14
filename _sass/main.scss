@@ -234,11 +234,43 @@
         font-size: 14px;
       }
     }
+
+    &--green {
+      border-left: 43px solid $green-section;
+    }
+
+    &--yellow {
+      border-left: 43px solid $yellow-section;
+    }
+
+    &--purple {
+      border-left: 43px solid $purple-section;
+    }
+
+    &--green2 {
+      border-left: 43px solid $green-section2;
+    }
+
+    &--red {
+      border-left: 43px solid $red-section;
+    }
+
+    &--blue {
+      border-left: 43px solid $blue-section;
+    }
+
+    &--purple2 {
+      border-left: 43px solid $purple-section2;
+    }
+
+    &--grey {
+      border-left: 43px solid $grey-section;
+    }
   }
 
   &__author {
     text-align: right;
-    width: 860px;
+    padding-right: 60px;
 
     h2 {
       font-size: 14px;
@@ -254,6 +286,7 @@
     padding: 0;
     padding-top: 10px;
   }
+
   .mjerenje {
     display: flex;
     justify-content: space-evenly;
@@ -267,7 +300,7 @@
     padding: 40px 40px 40px 155px;
     border: 1px solid $green;
     border-radius: 50px;
-    margin: 1rem auto;
+    margin: 16px auto;
     font-size: 18px;
     font-family: $family-secondary;
 
@@ -284,26 +317,33 @@
       font-size: 16px;
       padding: 20px;
     }
+  }
 
-    // &:last-of-type {
-    //   width: 500px;
-    //   height: 40px;
-    //   // padding: 4rem 4rem 4rem 15.5rem;
-    //   border: 1px solid $green;
-    //   // border-radius: 50px;
-    //   // margin: 1rem auto;
-    //   font-size: 18px;
-    //   font-family: $family-secondary;
-    // }
+  input[name="aktivnost"] {
+    width: 100%;
+    height: 10px;
+    margin: 0 auto;
+    font-size: 18px;
+    border-radius: 0;
+    font-family: $family-secondary;
+    margin-bottom: 10px;
+    padding: 24px 24px 24px 41px;
+
+    &::placeholder {
+      font-size: 14px;
+      text-align: left;
+    }
   }
 
   label {
     display: inline-block;
     position: relative;
   }
+
   label input {
     display: none;
   }
+
   label span {
     border: 1px solid $green;
     width: 30px;
@@ -321,6 +361,7 @@
     display: inline-block;
     background: #d1d1d1;
   }
+
   input:checked + span {
     background: $green;
     border-color: $green;
@@ -354,6 +395,7 @@
 
       @include for-phone {
         font-size: 16px;
+        padding: 0;
       }
     }
   }
@@ -371,11 +413,116 @@
     background: $green;
     cursor: pointer;
     transition: all 0.3s ease-in;
+    margin-bottom: 45px;
 
     @include for-phone {
       width: 75%;
     }
   }
+}
+
+// Pravila
+.pravila__wrapper h6 {
+  margin-top: 20px;
+  margin-bottom: 20px;
+
+  @include for-tablet {
+    font-size: 14px;
+  }
+
+  @include for-phone {
+    font-size: 14px;
+    padding-left: 10px;
+  }
+
+  @media screen and (min-width: 1025px) {
+    font-size: 20px;
+  }
+}
+
+.pravila__checkbox {
+  width: 44px;
+  margin: 0 auto;
+  position: relative;
+
+  @media screen and (min-width: 2000px) {
+    margin: 0;
+  }
+}
+
+.pravila__checkbox label {
+  cursor: pointer;
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  top: 0;
+  border-radius: 4px;
+  border: 1px solid $background-grey;
+  margin-top: 15px;
+
+  -webkit-box-shadow: 0 20px 20px 0 rgba(0, 0, 0, 0.16);
+  -moz-box-shadow: 0 20px 20px 0 rgba(0, 0, 0, 0.16);
+  box-shadow: 0 20px 20px 0 rgba(0, 0, 0, 0.16);
+  background: #fcfff4;
+
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fcfff4', endColorstr='#b3bead',GradientType=0 );
+
+  @include for-phone {
+    width: 22px;
+    height: 22px;
+  }
+}
+
+.pravila__checkbox label:after {
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+  filter: alpha(opacity=0);
+  opacity: 0;
+  content: "";
+  position: absolute;
+  width: 30px;
+  height: 18px;
+  background: transparent;
+  top: 4px;
+  left: 3px;
+  border: 5px solid $green;
+  border-top: none;
+  border-right: none;
+
+  -webkit-transform: rotate(-45deg);
+  -moz-transform: rotate(-45deg);
+  -o-transform: rotate(-45deg);
+  -ms-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+
+  @include for-phone {
+    top: 0;
+    left: 0;
+    width: 23px;
+    height: 12px;
+  }
+}
+
+.pravila__checkbox label:hover::after {
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=30)";
+  filter: alpha(opacity=30);
+  opacity: 0.5;
+}
+
+.pravila__checkbox input[type="checkbox"]:checked + label:after {
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+  filter: alpha(opacity=100);
+  opacity: 1;
+}
+
+input[type="checkbox" i] {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.link-pravila {
+  color: $link-blue;
+  text-decoration: underline;
 }
 
 // FOOTER
