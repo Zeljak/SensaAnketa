@@ -12021,6 +12021,12 @@ a.has-text-danger-dark:hover, a.has-text-danger-dark:focus {
   color: #cde17a;
   background: #686868;
 }
+.form__card--rezultati {
+  display: none;
+}
+.form__card--savjeti-strucnjaka {
+  display: none;
+}
 
 #form__card25 p {
   margin-bottom: 10px;

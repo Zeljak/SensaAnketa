@@ -521,6 +521,13 @@
       background: $brownish-grey;
     }
   }
+
+  &__card--rezultati {
+    display: none;
+  }
+  &__card--savjeti-strucnjaka {
+    display: none;
+  }
 }
 
 #form__card25 {
