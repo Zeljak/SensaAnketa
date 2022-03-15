@@ -515,6 +515,11 @@
     @include for-phone {
       width: 75%;
     }
+
+    &:hover {
+      color: $green;
+      background: $brownish-grey;
+    }
   }
 }
 

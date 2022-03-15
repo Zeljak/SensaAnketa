@@ -12017,6 +12017,10 @@ a.has-text-danger-dark:hover, a.has-text-danger-dark:focus {
     width: 75%;
   }
 }
+.form input[type=submit]:hover {
+  color: #cde17a;
+  background: #686868;
+}
 
 #form__card25 p {
   margin-bottom: 10px;
