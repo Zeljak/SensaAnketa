@@ -11614,7 +11614,7 @@ a.has-text-danger-dark:hover, a.has-text-danger-dark:focus {
 @media (max-width: 767px) {
   .form__card, .form__card--title {
     width: 100%;
-    padding: 20px 35px 35px 35px;
+    padding: 20px 30px 35px 30px;
   }
 }
 @media (min-width: 768px) and (max-width: 1025px) {
@@ -11789,13 +11789,17 @@ a.has-text-danger-dark:hover, a.has-text-danger-dark:focus {
   margin-bottom: 20px;
   margin-top: 20px;
 }
-@media (max-width: 359px) {
+@media (max-width: 767px) {
   .form .mjerenje {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-negative: 3;
-        flex-shrink: 3;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+}
+@media (max-width: 359px) {
+  .form .mjerenje label {
+    margin-left: 58px;
+    margin-right: 180px;
+    margin-top: 33px;
   }
 }
 @media (max-width: 767px) {

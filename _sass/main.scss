@@ -127,7 +127,7 @@
   &__uvod {
     width: 860px;
     box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.16);
-    background: #f2f2f2;
+    background: $checked-background;
     color: $brownish-grey;
     margin: 0 auto;
     font-size: 18px;
@@ -170,7 +170,7 @@
 
     @include for-phone {
       width: 100%;
-      padding: 20px 35px 35px 35px;
+      padding: 20px 30px 35px 30px;
     }
 
     @include for-tablet {
@@ -344,9 +344,16 @@
     margin-bottom: 20px;
     margin-top: 20px;
 
-    @include for-small-phone {
-      display: flex;
-      flex-shrink: 3;
+    @include for-phone {
+      flex-wrap: wrap;
+    }
+
+    label {
+      @include for-small-phone {
+        margin-left: 58px;
+        margin-right: 180px;
+        margin-top: 33px;
+      }
     }
 
     h3 {
