@@ -145,6 +145,10 @@
 
     p {
       margin-bottom: 20px;
+
+      @include for-phone {
+        font-size: 16px;
+      }
     }
   }
 
@@ -166,6 +170,7 @@
 
     @include for-phone {
       width: 100%;
+      padding: 20px 35px 35px 35px;
     }
 
     @include for-tablet {
@@ -181,6 +186,11 @@
       text-transform: uppercase;
       margin-top: 52px;
       margin-bottom: 22px;
+      font-weight: 800;
+
+      @include for-phone {
+        font-size: 25px;
+      }
     }
 
     h3 {
@@ -196,6 +206,7 @@
 
       @include for-phone {
         font-size: 18px;
+        margin-top: 0;
       }
     }
 
@@ -217,7 +228,7 @@
       font-weight: 500;
       line-height: 1.83;
       text-align: left;
-      color: #a5a5a5;
+      color: $range-gray;
       margin-top: 10px;
     }
 
@@ -237,34 +248,66 @@
 
     &--green {
       border-left: 43px solid $green-section;
+
+      @include for-phone {
+        border-left: 35px solid $green-section;
+      }
     }
 
     &--yellow {
       border-left: 43px solid $yellow-section;
+
+      @include for-phone {
+        border-left: 35px solid $yellow-section;
+      }
     }
 
     &--purple {
       border-left: 43px solid $purple-section;
+
+      @include for-phone {
+        border-left: 35px solid $purple-section;
+      }
     }
 
     &--green2 {
       border-left: 43px solid $green-section2;
+
+      @include for-phone {
+        border-left: 35px solid $green-section2;
+      }
     }
 
     &--red {
       border-left: 43px solid $red-section;
+
+      @include for-phone {
+        border-left: 35px solid $red-section;
+      }
     }
 
     &--blue {
       border-left: 43px solid $blue-section;
+
+      @include for-phone {
+        border-left: 35px solid $blue-section;
+      }
     }
 
     &--purple2 {
       border-left: 43px solid $purple-section2;
+
+      @include for-phone {
+        border-left: 35px solid $purple-section2;
+      }
     }
 
     &--grey {
       border-left: 43px solid $grey-section;
+
+      @include for-phone {
+        border-left: 35px solid $grey-section;
+      }
     }
   }
 
@@ -272,8 +315,16 @@
     text-align: right;
     padding-right: 60px;
 
+    @include for-phone {
+      padding-right: 0;
+    }
+
     h2 {
       font-size: 14px;
+
+      @include for-phone {
+        font-size: 12px;
+      }
     }
   }
 
@@ -292,6 +343,17 @@
     justify-content: space-evenly;
     margin-bottom: 20px;
     margin-top: 20px;
+
+    @include for-small-phone {
+      display: flex;
+      flex-shrink: 3;
+    }
+
+    h3 {
+      @include for-phone {
+        font-size: 14px;
+      }
+    }
   }
 
   input[type="text"] {
@@ -307,8 +369,9 @@
     @include for-phone {
       width: 100%;
       height: 30px;
-      font-size: 16px;
+      font-size: 14px;
       padding: 20px;
+      font-size: 16px;
     }
 
     @include for-tablet {
@@ -316,6 +379,14 @@
       height: 30px;
       font-size: 16px;
       padding: 20px;
+    }
+
+    &::placeholder {
+      font-size: 14px;
+
+      @include for-phone {
+        font-size: 12px;
+      }
     }
   }
 
@@ -328,10 +399,19 @@
     font-family: $family-secondary;
     margin-bottom: 10px;
     padding: 24px 24px 24px 41px;
+    margin-bottom: 25px;
+
+    @include for-phone {
+      padding: 14px 14px 14px 31px;
+    }
 
     &::placeholder {
       font-size: 14px;
       text-align: left;
+
+      @include for-phone {
+        font-size: 12px;
+      }
     }
   }
 
@@ -359,7 +439,7 @@
     margin-top: -14px;
     cursor: pointer;
     display: inline-block;
-    background: #d1d1d1;
+    background: $light-pink;
   }
 
   input:checked + span {
@@ -371,7 +451,17 @@
   &__label-wrapper {
     display: flex;
     justify-content: space-around;
-    margin-top: 3rem;
+    margin-top: 48px;
+
+    @include for-phone {
+      margin-left: -42px;
+      margin-right: -12px;
+    }
+
+    @include for-tablet {
+      margin-left: -42px;
+      margin-right: -12px;
+    }
   }
 
   &__end {
@@ -421,10 +511,18 @@
   }
 }
 
+#form__card25 {
+  p {
+    margin-bottom: 10px;
+  }
+}
+
 // Pravila
 .pravila__wrapper h6 {
   margin-top: 20px;
   margin-bottom: 20px;
+  font-family: Arial, Helvetica, sans-serif;
+  color: $background-grey;
 
   @include for-tablet {
     font-size: 14px;

@@ -11591,6 +11591,11 @@ a.has-text-danger-dark:hover, a.has-text-danger-dark:focus {
 .form__uvod p {
   margin-bottom: 20px;
 }
+@media (max-width: 767px) {
+  .form__uvod p {
+    font-size: 16px;
+  }
+}
 .form .green-rectangle {
   display: inline-block;
   width: 100%;
@@ -11609,6 +11614,7 @@ a.has-text-danger-dark:hover, a.has-text-danger-dark:focus {
 @media (max-width: 767px) {
   .form__card, .form__card--title {
     width: 100%;
+    padding: 20px 35px 35px 35px;
   }
 }
 @media (min-width: 768px) and (max-width: 1025px) {
@@ -11625,6 +11631,12 @@ a.has-text-danger-dark:hover, a.has-text-danger-dark:focus {
   text-transform: uppercase;
   margin-top: 52px;
   margin-bottom: 22px;
+  font-weight: 800;
+}
+@media (max-width: 767px) {
+  .form__card h1, .form__card--title h1 {
+    font-size: 25px;
+  }
 }
 .form__card h3, .form__card--title h3 {
   font-family: "Roboto", sans-serif;
@@ -11640,6 +11652,7 @@ a.has-text-danger-dark:hover, a.has-text-danger-dark:focus {
 @media (max-width: 767px) {
   .form__card h3, .form__card--title h3 {
     font-size: 18px;
+    margin-top: 0;
   }
 }
 .form__card h4, .form__card--title h4 {
@@ -11680,33 +11693,83 @@ a.has-text-danger-dark:hover, a.has-text-danger-dark:focus {
 .form__card--green, .form__card--title--green {
   border-left: 43px solid #cee182;
 }
+@media (max-width: 767px) {
+  .form__card--green, .form__card--title--green {
+    border-left: 35px solid #cee182;
+  }
+}
 .form__card--yellow, .form__card--title--yellow {
   border-left: 43px solid #fcec2e;
+}
+@media (max-width: 767px) {
+  .form__card--yellow, .form__card--title--yellow {
+    border-left: 35px solid #fcec2e;
+  }
 }
 .form__card--purple, .form__card--title--purple {
   border-left: 43px solid #d39ff5;
 }
+@media (max-width: 767px) {
+  .form__card--purple, .form__card--title--purple {
+    border-left: 35px solid #d39ff5;
+  }
+}
 .form__card--green2, .form__card--title--green2 {
   border-left: 43px solid #7ef8a1;
+}
+@media (max-width: 767px) {
+  .form__card--green2, .form__card--title--green2 {
+    border-left: 35px solid #7ef8a1;
+  }
 }
 .form__card--red, .form__card--title--red {
   border-left: 43px solid #f85b46;
 }
+@media (max-width: 767px) {
+  .form__card--red, .form__card--title--red {
+    border-left: 35px solid #f85b46;
+  }
+}
 .form__card--blue, .form__card--title--blue {
   border-left: 43px solid #0e83f8;
+}
+@media (max-width: 767px) {
+  .form__card--blue, .form__card--title--blue {
+    border-left: 35px solid #0e83f8;
+  }
 }
 .form__card--purple2, .form__card--title--purple2 {
   border-left: 43px solid #d83cf5;
 }
+@media (max-width: 767px) {
+  .form__card--purple2, .form__card--title--purple2 {
+    border-left: 35px solid #d83cf5;
+  }
+}
 .form__card--grey, .form__card--title--grey {
   border-left: 43px solid #6e6e6e;
+}
+@media (max-width: 767px) {
+  .form__card--grey, .form__card--title--grey {
+    border-left: 35px solid #6e6e6e;
+  }
 }
 .form__author {
   text-align: right;
   padding-right: 60px;
 }
+@media (max-width: 767px) {
+  .form__author {
+    padding-right: 0;
+  }
+}
 .form__author h2 {
   font-size: 14px;
+}
+@media (max-width: 767px) {
+  .form__author h2 {
+    font-size: 12px;
+  }
 }
 .form__colored_line {
   margin-bottom: 70px;
@@ -11726,6 +11789,20 @@ a.has-text-danger-dark:hover, a.has-text-danger-dark:focus {
   margin-bottom: 20px;
   margin-top: 20px;
 }
+@media (max-width: 359px) {
+  .form .mjerenje {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-negative: 3;
+        flex-shrink: 3;
+  }
+}
+@media (max-width: 767px) {
+  .form .mjerenje h3 {
+    font-size: 14px;
+  }
+}
 .form input[type=text] {
   width: 750px;
   height: 90px;
@@ -11740,8 +11817,9 @@ a.has-text-danger-dark:hover, a.has-text-danger-dark:focus {
   .form input[type=text] {
     width: 100%;
     height: 30px;
-    font-size: 16px;
+    font-size: 14px;
     padding: 20px;
+    font-size: 16px;
   }
 }
 @media (min-width: 768px) and (max-width: 1025px) {
@@ -11750,6 +11828,38 @@ a.has-text-danger-dark:hover, a.has-text-danger-dark:focus {
     height: 30px;
     font-size: 16px;
     padding: 20px;
+  }
+}
+.form input[type=text]::-webkit-input-placeholder {
+  font-size: 14px;
+}
+.form input[type=text]::-moz-placeholder {
+  font-size: 14px;
+}
+.form input[type=text]:-ms-input-placeholder {
+  font-size: 14px;
+}
+.form input[type=text]::-ms-input-placeholder {
+  font-size: 14px;
+}
+.form input[type=text]::placeholder {
+  font-size: 14px;
+}
+@media (max-width: 767px) {
+  .form input[type=text]::-webkit-input-placeholder {
+    font-size: 12px;
+  }
+  .form input[type=text]::-moz-placeholder {
+    font-size: 12px;
+  }
+  .form input[type=text]:-ms-input-placeholder {
+    font-size: 12px;
+  }
+  .form input[type=text]::-ms-input-placeholder {
+    font-size: 12px;
+  }
+  .form input[type=text]::placeholder {
+    font-size: 12px;
   }
 }
 .form input[name=aktivnost] {
@@ -11761,6 +11871,12 @@ a.has-text-danger-dark:hover, a.has-text-danger-dark:focus {
   font-family: cedra4f, cursive;
   margin-bottom: 10px;
   padding: 24px 24px 24px 41px;
+  margin-bottom: 25px;
+}
+@media (max-width: 767px) {
+  .form input[name=aktivnost] {
+    padding: 14px 14px 14px 31px;
+  }
 }
 .form input[name=aktivnost]::-webkit-input-placeholder {
   font-size: 14px;
@@ -11781,6 +11897,23 @@ a.has-text-danger-dark:hover, a.has-text-danger-dark:focus {
 .form input[name=aktivnost]::placeholder {
   font-size: 14px;
   text-align: left;
+}
+@media (max-width: 767px) {
+  .form input[name=aktivnost]::-webkit-input-placeholder {
+    font-size: 12px;
+  }
+  .form input[name=aktivnost]::-moz-placeholder {
+    font-size: 12px;
+  }
+  .form input[name=aktivnost]:-ms-input-placeholder {
+    font-size: 12px;
+  }
+  .form input[name=aktivnost]::-ms-input-placeholder {
+    font-size: 12px;
+  }
+  .form input[name=aktivnost]::placeholder {
+    font-size: 12px;
+  }
 }
 .form label {
   display: inline-block;
@@ -11817,7 +11950,19 @@ a.has-text-danger-dark:hover, a.has-text-danger-dark:focus {
   display: flex;
   -ms-flex-pack: distribute;
       justify-content: space-around;
-  margin-top: 3rem;
+  margin-top: 48px;
+}
+@media (max-width: 767px) {
+  .form__label-wrapper {
+    margin-left: -42px;
+    margin-right: -12px;
+  }
+}
+@media (min-width: 768px) and (max-width: 1025px) {
+  .form__label-wrapper {
+    margin-left: -42px;
+    margin-right: -12px;
+  }
 }
 .form__end {
   width: 860px;
@@ -11869,9 +12014,15 @@ a.has-text-danger-dark:hover, a.has-text-danger-dark:focus {
   }
 }
 
+#form__card25 p {
+  margin-bottom: 10px;
+}
+
 .pravila__wrapper h6 {
   margin-top: 20px;
   margin-bottom: 20px;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #707070;
 }
 @media (min-width: 768px) and (max-width: 1025px) {
   .pravila__wrapper h6 {
