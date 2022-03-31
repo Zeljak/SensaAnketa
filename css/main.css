@@ -11454,35 +11454,33 @@ a.has-text-danger-dark:hover, a.has-text-danger-dark:focus {
   padding: 3rem 1.5rem 6rem;
 }
 
-#wrapper_html {
+.ovojesasvimposebnaklasa .wrapper_html {
   max-width: 990px;
   background: white;
   display: block;
   margin: 0 auto;
 }
 @media (min-width: 768px) and (max-width: 1025px) {
-  #wrapper_html {
+  .ovojesasvimposebnaklasa .wrapper_html {
     width: 700px;
   }
 }
-
-#wrapper_body {
+.ovojesasvimposebnaklasa .wrapper_body {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   font-family: cedra4f, cursive;
 }
 @media (max-width: 767px) {
-  #wrapper_body {
+  .ovojesasvimposebnaklasa .wrapper_body {
     padding: 20px;
   }
 }
 @media (min-width: 768px) and (max-width: 1025px) {
-  #wrapper_body {
+  .ovojesasvimposebnaklasa .wrapper_body {
     padding: 20px;
   }
 }
-
-.header {
+.ovojesasvimposebnaklasa .header {
   width: 860px;
   margin: 20px auto 20px auto;
   display: -webkit-box;
@@ -11493,17 +11491,17 @@ a.has-text-danger-dark:hover, a.has-text-danger-dark:focus {
           box-shadow: inset 0px 0px 0px 2px white;
 }
 @media (max-width: 767px) {
-  .header {
+  .ovojesasvimposebnaklasa .header {
     width: 100%;
     margin: 5px auto 10px auto;
   }
 }
 @media (min-width: 768px) and (max-width: 1025px) {
-  .header {
+  .ovojesasvimposebnaklasa .header {
     width: 600px;
   }
 }
-.header__text-box {
+.ovojesasvimposebnaklasa .header__text-box {
   width: 860px;
   height: 135px;
   -webkit-box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.16);
@@ -11512,42 +11510,42 @@ a.has-text-danger-dark:hover, a.has-text-danger-dark:focus {
   margin: 0 auto;
   font-family: cedra4f;
 }
-.header__logo {
+.ovojesasvimposebnaklasa .header__logo {
   margin-top: 40px;
   width: 70%;
 }
-.header h1 {
+.ovojesasvimposebnaklasa .header h1 {
   font-size: 30px;
 }
 @media (max-width: 767px) {
-  .header h1 {
+  .ovojesasvimposebnaklasa .header h1 {
     font-size: 16px;
   }
 }
-.header h2 {
+.ovojesasvimposebnaklasa .header h2 {
   font-family: cedra4f, cursive;
   font-size: 14px;
   color: #686868;
   background-color: #cde17a;
 }
 @media (max-width: 767px) {
-  .header h2 {
+  .ovojesasvimposebnaklasa .header h2 {
     font-size: 12px;
   }
 }
-.header h3 {
+.ovojesasvimposebnaklasa .header h3 {
   font-family: cedra4f, cursive;
   font-size: 12px;
   color: white;
   margin-bottom: 20px;
 }
-.header .card1 {
+.ovojesasvimposebnaklasa .header .card1 {
   width: 200px;
   background: #d1d1d1;
   -webkit-box-shadow: inset 0px 0px 0px 2px white;
           box-shadow: inset 0px 0px 0px 2px white;
 }
-.header .card2 {
+.ovojesasvimposebnaklasa .header .card2 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -11558,15 +11556,14 @@ a.has-text-danger-dark:hover, a.has-text-danger-dark:focus {
       -ms-flex-align: center;
           align-items: center;
 }
-
-.form {
+.ovojesasvimposebnaklasa .form {
   font-family: cedra4f;
 }
-.form__wrapper {
+.ovojesasvimposebnaklasa .form__wrapper {
   width: 860px;
   margin: 0 auto;
 }
-.form__uvod {
+.ovojesasvimposebnaklasa .form__uvod {
   width: 860px;
   -webkit-box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.16);
           box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.16);
@@ -11577,32 +11574,32 @@ a.has-text-danger-dark:hover, a.has-text-danger-dark:focus {
   padding: 30px 55px 55px 55px;
 }
 @media (max-width: 767px) {
-  .form__uvod {
+  .ovojesasvimposebnaklasa .form__uvod {
     width: 100%;
     padding: 10px;
     font-size: 16px;
   }
 }
 @media (min-width: 768px) and (max-width: 1025px) {
-  .form__uvod {
+  .ovojesasvimposebnaklasa .form__uvod {
     width: 600px;
   }
 }
-.form__uvod p {
+.ovojesasvimposebnaklasa .form__uvod p {
   margin-bottom: 20px;
 }
 @media (max-width: 767px) {
-  .form__uvod p {
+  .ovojesasvimposebnaklasa .form__uvod p {
     font-size: 16px;
   }
 }
-.form .green-rectangle {
+.ovojesasvimposebnaklasa .form .green-rectangle {
   display: inline-block;
   width: 100%;
   height: 3px;
   background: #cde17a;
 }
-.form__card, .form__card--title {
+.ovojesasvimposebnaklasa .form__card, .ovojesasvimposebnaklasa .form__card--title {
   width: 860px;
   -webkit-box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.16);
           box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.16);
@@ -11612,18 +11609,18 @@ a.has-text-danger-dark:hover, a.has-text-danger-dark:focus {
   padding: 30px 55px 55px 55px;
 }
 @media (max-width: 767px) {
-  .form__card, .form__card--title {
+  .ovojesasvimposebnaklasa .form__card, .ovojesasvimposebnaklasa .form__card--title {
     width: 100%;
     padding: 20px 30px 35px 30px;
   }
 }
 @media (min-width: 768px) and (max-width: 1025px) {
-  .form__card, .form__card--title {
+  .ovojesasvimposebnaklasa .form__card, .ovojesasvimposebnaklasa .form__card--title {
     width: 600px;
     padding: 20px 45px 45px 45px;
   }
 }
-.form__card h1, .form__card--title h1 {
+.ovojesasvimposebnaklasa .form__card h2, .ovojesasvimposebnaklasa .form__card--title h2 {
   font-family: cedra4f, cursive;
   font-size: 32px;
   text-align: center;
@@ -11634,11 +11631,11 @@ a.has-text-danger-dark:hover, a.has-text-danger-dark:focus {
   font-weight: 800;
 }
 @media (max-width: 767px) {
-  .form__card h1, .form__card--title h1 {
+  .ovojesasvimposebnaklasa .form__card h2, .ovojesasvimposebnaklasa .form__card--title h2 {
     font-size: 25px;
   }
 }
-.form__card h3, .form__card--title h3 {
+.ovojesasvimposebnaklasa .form__card h3, .ovojesasvimposebnaklasa .form__card--title h3 {
   font-family: "Roboto", sans-serif;
   font-size: 20px;
   font-weight: 900;
@@ -11647,15 +11644,15 @@ a.has-text-danger-dark:hover, a.has-text-danger-dark:focus {
   text-align: left;
   color: #707070;
   margin-top: 12px;
-  margin-bottom: 14px;
+  margin-bottom: 16px;
 }
 @media (max-width: 767px) {
-  .form__card h3, .form__card--title h3 {
+  .ovojesasvimposebnaklasa .form__card h3, .ovojesasvimposebnaklasa .form__card--title h3 {
     font-size: 18px;
     margin-top: 0;
   }
 }
-.form__card h4, .form__card--title h4 {
+.ovojesasvimposebnaklasa .form__card h4, .ovojesasvimposebnaklasa .form__card--title h4 {
   font-family: "Roboto", sans-serif;
   font-size: 12px;
   font-weight: bold;
@@ -11663,11 +11660,11 @@ a.has-text-danger-dark:hover, a.has-text-danger-dark:focus {
   color: #686868;
 }
 @media (max-width: 767px) {
-  .form__card h4, .form__card--title h4 {
+  .ovojesasvimposebnaklasa .form__card h4, .ovojesasvimposebnaklasa .form__card--title h4 {
     font-size: 10px;
   }
 }
-.form__card h5, .form__card--title h5 {
+.ovojesasvimposebnaklasa .form__card h5, .ovojesasvimposebnaklasa .form__card--title h5 {
   font-family: "Roboto", sans-serif;
   font-size: 12px;
   font-weight: 500;
@@ -11676,110 +11673,109 @@ a.has-text-danger-dark:hover, a.has-text-danger-dark:focus {
   color: #a5a5a5;
   margin-top: 10px;
 }
-.form__card p, .form__card--title p {
+.ovojesasvimposebnaklasa .form__card p, .ovojesasvimposebnaklasa .form__card--title p {
   font-family: "Roboto", sans-serif;
   font-size: 16px;
   font-weight: 500;
   line-height: 1.5;
   text-align: left;
   color: #686868;
-  margin-bottom: 20px;
 }
 @media (max-width: 767px) {
-  .form__card p, .form__card--title p {
+  .ovojesasvimposebnaklasa .form__card p, .ovojesasvimposebnaklasa .form__card--title p {
     font-size: 14px;
   }
 }
-.form__card--green, .form__card--title--green {
+.ovojesasvimposebnaklasa .form__card--green, .ovojesasvimposebnaklasa .form__card--title--green {
   border-left: 43px solid #cee182;
 }
 @media (max-width: 767px) {
-  .form__card--green, .form__card--title--green {
+  .ovojesasvimposebnaklasa .form__card--green, .ovojesasvimposebnaklasa .form__card--title--green {
     border-left: 35px solid #cee182;
   }
 }
-.form__card--yellow, .form__card--title--yellow {
+.ovojesasvimposebnaklasa .form__card--yellow, .ovojesasvimposebnaklasa .form__card--title--yellow {
   border-left: 43px solid #fcec2e;
 }
 @media (max-width: 767px) {
-  .form__card--yellow, .form__card--title--yellow {
+  .ovojesasvimposebnaklasa .form__card--yellow, .ovojesasvimposebnaklasa .form__card--title--yellow {
     border-left: 35px solid #fcec2e;
   }
 }
-.form__card--purple, .form__card--title--purple {
+.ovojesasvimposebnaklasa .form__card--purple, .ovojesasvimposebnaklasa .form__card--title--purple {
   border-left: 43px solid #d39ff5;
 }
 @media (max-width: 767px) {
-  .form__card--purple, .form__card--title--purple {
+  .ovojesasvimposebnaklasa .form__card--purple, .ovojesasvimposebnaklasa .form__card--title--purple {
     border-left: 35px solid #d39ff5;
   }
 }
-.form__card--green2, .form__card--title--green2 {
+.ovojesasvimposebnaklasa .form__card--green2, .ovojesasvimposebnaklasa .form__card--title--green2 {
   border-left: 43px solid #7ef8a1;
 }
 @media (max-width: 767px) {
-  .form__card--green2, .form__card--title--green2 {
+  .ovojesasvimposebnaklasa .form__card--green2, .ovojesasvimposebnaklasa .form__card--title--green2 {
     border-left: 35px solid #7ef8a1;
   }
 }
-.form__card--red, .form__card--title--red {
+.ovojesasvimposebnaklasa .form__card--red, .ovojesasvimposebnaklasa .form__card--title--red {
   border-left: 43px solid #f85b46;
 }
 @media (max-width: 767px) {
-  .form__card--red, .form__card--title--red {
+  .ovojesasvimposebnaklasa .form__card--red, .ovojesasvimposebnaklasa .form__card--title--red {
     border-left: 35px solid #f85b46;
   }
 }
-.form__card--blue, .form__card--title--blue {
+.ovojesasvimposebnaklasa .form__card--blue, .ovojesasvimposebnaklasa .form__card--title--blue {
   border-left: 43px solid #0e83f8;
 }
 @media (max-width: 767px) {
-  .form__card--blue, .form__card--title--blue {
+  .ovojesasvimposebnaklasa .form__card--blue, .ovojesasvimposebnaklasa .form__card--title--blue {
     border-left: 35px solid #0e83f8;
   }
 }
-.form__card--purple2, .form__card--title--purple2 {
+.ovojesasvimposebnaklasa .form__card--purple2, .ovojesasvimposebnaklasa .form__card--title--purple2 {
   border-left: 43px solid #d83cf5;
 }
 @media (max-width: 767px) {
-  .form__card--purple2, .form__card--title--purple2 {
+  .ovojesasvimposebnaklasa .form__card--purple2, .ovojesasvimposebnaklasa .form__card--title--purple2 {
     border-left: 35px solid #d83cf5;
   }
 }
-.form__card--grey, .form__card--title--grey {
+.ovojesasvimposebnaklasa .form__card--grey, .ovojesasvimposebnaklasa .form__card--title--grey {
   border-left: 43px solid #6e6e6e;
 }
 @media (max-width: 767px) {
-  .form__card--grey, .form__card--title--grey {
+  .ovojesasvimposebnaklasa .form__card--grey, .ovojesasvimposebnaklasa .form__card--title--grey {
     border-left: 35px solid #6e6e6e;
   }
 }
-.form__author {
+.ovojesasvimposebnaklasa .form__author {
   text-align: right;
   padding-right: 60px;
 }
 @media (max-width: 767px) {
-  .form__author {
+  .ovojesasvimposebnaklasa .form__author {
     padding-right: 0;
   }
 }
-.form__author h2 {
+.ovojesasvimposebnaklasa .form__author h2 {
   font-size: 14px;
 }
 @media (max-width: 767px) {
-  .form__author h2 {
+  .ovojesasvimposebnaklasa .form__author h2 {
     font-size: 12px;
   }
 }
-.form__colored_line {
+.ovojesasvimposebnaklasa .form__colored_line {
   margin-bottom: 70px;
 }
-.form__card--title {
+.ovojesasvimposebnaklasa .form__card--title {
   background: #d1d1d1;
   padding: 0;
   padding-top: 10px;
 }
-.form .mjerenje {
+.ovojesasvimposebnaklasa .form .mjerenje {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -11790,24 +11786,25 @@ a.has-text-danger-dark:hover, a.has-text-danger-dark:focus {
   margin-top: 20px;
 }
 @media (max-width: 767px) {
-  .form .mjerenje {
+  .ovojesasvimposebnaklasa .form .mjerenje {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
   }
 }
 @media (max-width: 359px) {
-  .form .mjerenje label {
+  .ovojesasvimposebnaklasa .form .mjerenje label {
     margin-left: 58px;
     margin-right: 180px;
     margin-top: 33px;
   }
 }
 @media (max-width: 767px) {
-  .form .mjerenje h3 {
+  .ovojesasvimposebnaklasa .form .mjerenje h3 {
     font-size: 14px;
   }
 }
-.form input[type=text] {
+.ovojesasvimposebnaklasa .form input[type=text],
+.ovojesasvimposebnaklasa .form input[type=date] {
   width: 750px;
   height: 90px;
   padding: 40px 40px 40px 155px;
@@ -11818,7 +11815,8 @@ a.has-text-danger-dark:hover, a.has-text-danger-dark:focus {
   font-family: cedra4f, cursive;
 }
 @media (max-width: 767px) {
-  .form input[type=text] {
+  .ovojesasvimposebnaklasa .form input[type=text],
+.ovojesasvimposebnaklasa .form input[type=date] {
     width: 100%;
     height: 30px;
     font-size: 14px;
@@ -11827,46 +11825,49 @@ a.has-text-danger-dark:hover, a.has-text-danger-dark:focus {
   }
 }
 @media (min-width: 768px) and (max-width: 1025px) {
-  .form input[type=text] {
+  .ovojesasvimposebnaklasa .form input[type=text],
+.ovojesasvimposebnaklasa .form input[type=date] {
     width: 100%;
     height: 30px;
     font-size: 16px;
     padding: 20px;
   }
 }
-.form input[type=text]::-webkit-input-placeholder {
+.ovojesasvimposebnaklasa .form input[type=text]::-webkit-input-placeholder, .ovojesasvimposebnaklasa .form input[type=date]::-webkit-input-placeholder {
   font-size: 14px;
 }
-.form input[type=text]::-moz-placeholder {
+.ovojesasvimposebnaklasa .form input[type=text]::-moz-placeholder, .ovojesasvimposebnaklasa .form input[type=date]::-moz-placeholder {
   font-size: 14px;
 }
-.form input[type=text]:-ms-input-placeholder {
+.ovojesasvimposebnaklasa .form input[type=text]:-ms-input-placeholder, .ovojesasvimposebnaklasa .form input[type=date]:-ms-input-placeholder {
   font-size: 14px;
 }
-.form input[type=text]::-ms-input-placeholder {
+.ovojesasvimposebnaklasa .form input[type=text]::-ms-input-placeholder, .ovojesasvimposebnaklasa .form input[type=date]::-ms-input-placeholder {
   font-size: 14px;
 }
-.form input[type=text]::placeholder {
+.ovojesasvimposebnaklasa .form input[type=text]::placeholder,
+.ovojesasvimposebnaklasa .form input[type=date]::placeholder {
   font-size: 14px;
 }
 @media (max-width: 767px) {
-  .form input[type=text]::-webkit-input-placeholder {
+  .ovojesasvimposebnaklasa .form input[type=text]::-webkit-input-placeholder, .ovojesasvimposebnaklasa .form input[type=date]::-webkit-input-placeholder {
     font-size: 12px;
   }
-  .form input[type=text]::-moz-placeholder {
+  .ovojesasvimposebnaklasa .form input[type=text]::-moz-placeholder, .ovojesasvimposebnaklasa .form input[type=date]::-moz-placeholder {
     font-size: 12px;
   }
-  .form input[type=text]:-ms-input-placeholder {
+  .ovojesasvimposebnaklasa .form input[type=text]:-ms-input-placeholder, .ovojesasvimposebnaklasa .form input[type=date]:-ms-input-placeholder {
     font-size: 12px;
   }
-  .form input[type=text]::-ms-input-placeholder {
+  .ovojesasvimposebnaklasa .form input[type=text]::-ms-input-placeholder, .ovojesasvimposebnaklasa .form input[type=date]::-ms-input-placeholder {
     font-size: 12px;
   }
-  .form input[type=text]::placeholder {
+  .ovojesasvimposebnaklasa .form input[type=text]::placeholder,
+.ovojesasvimposebnaklasa .form input[type=date]::placeholder {
     font-size: 12px;
   }
 }
-.form input[name=aktivnost] {
+.ovojesasvimposebnaklasa .form input[name=aktivnost] {
   width: 100%;
   height: 10px;
   margin: 0 auto;
@@ -11878,61 +11879,61 @@ a.has-text-danger-dark:hover, a.has-text-danger-dark:focus {
   margin-bottom: 25px;
 }
 @media (max-width: 767px) {
-  .form input[name=aktivnost] {
+  .ovojesasvimposebnaklasa .form input[name=aktivnost] {
     padding: 14px 14px 14px 31px;
   }
 }
-.form input[name=aktivnost]::-webkit-input-placeholder {
+.ovojesasvimposebnaklasa .form input[name=aktivnost]::-webkit-input-placeholder {
   font-size: 14px;
   text-align: left;
 }
-.form input[name=aktivnost]::-moz-placeholder {
+.ovojesasvimposebnaklasa .form input[name=aktivnost]::-moz-placeholder {
   font-size: 14px;
   text-align: left;
 }
-.form input[name=aktivnost]:-ms-input-placeholder {
+.ovojesasvimposebnaklasa .form input[name=aktivnost]:-ms-input-placeholder {
   font-size: 14px;
   text-align: left;
 }
-.form input[name=aktivnost]::-ms-input-placeholder {
+.ovojesasvimposebnaklasa .form input[name=aktivnost]::-ms-input-placeholder {
   font-size: 14px;
   text-align: left;
 }
-.form input[name=aktivnost]::placeholder {
+.ovojesasvimposebnaklasa .form input[name=aktivnost]::placeholder {
   font-size: 14px;
   text-align: left;
 }
 @media (max-width: 767px) {
-  .form input[name=aktivnost]::-webkit-input-placeholder {
+  .ovojesasvimposebnaklasa .form input[name=aktivnost]::-webkit-input-placeholder {
     font-size: 12px;
   }
-  .form input[name=aktivnost]::-moz-placeholder {
+  .ovojesasvimposebnaklasa .form input[name=aktivnost]::-moz-placeholder {
     font-size: 12px;
   }
-  .form input[name=aktivnost]:-ms-input-placeholder {
+  .ovojesasvimposebnaklasa .form input[name=aktivnost]:-ms-input-placeholder {
     font-size: 12px;
   }
-  .form input[name=aktivnost]::-ms-input-placeholder {
+  .ovojesasvimposebnaklasa .form input[name=aktivnost]::-ms-input-placeholder {
     font-size: 12px;
   }
-  .form input[name=aktivnost]::placeholder {
+  .ovojesasvimposebnaklasa .form input[name=aktivnost]::placeholder {
     font-size: 12px;
   }
 }
-.form label {
+.ovojesasvimposebnaklasa .form label {
   display: inline-block;
   position: relative;
 }
-.form label input {
+.ovojesasvimposebnaklasa .form label input {
   display: none;
 }
-.form label span {
+.ovojesasvimposebnaklasa .form label span {
   border: 1px solid #cde17a;
-  width: 30px;
-  height: 30px;
+  width: 41px;
+  height: 41px;
   position: absolute;
   overflow: hidden;
-  line-height: 1.4;
+  line-height: 2;
   text-align: center;
   border-radius: 100%;
   font-size: 20px;
@@ -11943,47 +11944,55 @@ a.has-text-danger-dark:hover, a.has-text-danger-dark:focus {
   display: inline-block;
   background: #d1d1d1;
 }
-.form input:checked + span {
+@media (max-width: 767px) {
+  .ovojesasvimposebnaklasa .form label span {
+    width: 30px;
+    height: 30px;
+    line-height: 1.4;
+  }
+}
+.ovojesasvimposebnaklasa .form input:checked + span {
   background: #cde17a;
   border-color: #cde17a;
   cursor: pointer;
 }
-.form__label-wrapper {
+.ovojesasvimposebnaklasa .form__label-wrapper {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
   margin-top: 48px;
 }
 @media (max-width: 767px) {
-  .form__label-wrapper {
+  .ovojesasvimposebnaklasa .form__label-wrapper {
     margin-left: -42px;
     margin-right: -12px;
   }
 }
 @media (min-width: 768px) and (max-width: 1025px) {
-  .form__label-wrapper {
+  .ovojesasvimposebnaklasa .form__label-wrapper {
     margin-left: -42px;
     margin-right: -12px;
   }
 }
-.form__end {
+.ovojesasvimposebnaklasa .form__end {
   width: 860px;
   margin: 30px auto;
   display: block;
 }
 @media (max-width: 767px) {
-  .form__end {
+  .ovojesasvimposebnaklasa .form__end {
     width: 100%;
   }
 }
 @media (min-width: 768px) and (max-width: 1025px) {
-  .form__end {
+  .ovojesasvimposebnaklasa .form__end {
     width: 600px;
   }
 }
-.form__end p {
+.ovojesasvimposebnaklasa .form__end p {
   font-family: cedra4f, cursive;
   font-size: 23px;
   color: #686868;
@@ -11991,12 +12000,12 @@ a.has-text-danger-dark:hover, a.has-text-danger-dark:focus {
   padding: 0 90px;
 }
 @media (max-width: 767px) {
-  .form__end p {
+  .ovojesasvimposebnaklasa .form__end p {
     font-size: 16px;
     padding: 0;
   }
 }
-.form input[type=submit] {
+.ovojesasvimposebnaklasa .form input[type=submit] {
   width: 424px;
   height: 45px;
   border: 1px solid #cde17a;
@@ -12013,60 +12022,66 @@ a.has-text-danger-dark:hover, a.has-text-danger-dark:focus {
   margin-bottom: 45px;
 }
 @media (max-width: 767px) {
-  .form input[type=submit] {
+  .ovojesasvimposebnaklasa .form input[type=submit] {
     width: 75%;
   }
 }
-.form input[type=submit]:hover {
+.ovojesasvimposebnaklasa .form input[type=submit]:hover {
   color: #cde17a;
   background: #686868;
 }
-.form__card--rezultati {
-  display: none;
+.ovojesasvimposebnaklasa .form .tekst-rezultati {
+  font-family: cedra4f, cursive;
+  color: #707070;
+  font-size: 20px;
+  font-weight: normal;
 }
-.form__card--savjeti-strucnjaka {
-  display: none;
+@media (max-width: 767px) {
+  .ovojesasvimposebnaklasa .form .tekst-rezultati {
+    font-size: 16px;
+  }
 }
-
-#form__card25 p {
+.ovojesasvimposebnaklasa .form .error-message [type=text] {
+  background-color: #fce4e4;
+  border: 1px solid red;
+  outline: none;
+}
+.ovojesasvimposebnaklasa #form__card25 p {
   margin-bottom: 10px;
 }
-
-.pravila__wrapper h6 {
+.ovojesasvimposebnaklasa .pravila__wrapper h6 {
   margin-top: 20px;
   margin-bottom: 20px;
   font-family: Arial, Helvetica, sans-serif;
   color: #707070;
 }
 @media (min-width: 768px) and (max-width: 1025px) {
-  .pravila__wrapper h6 {
+  .ovojesasvimposebnaklasa .pravila__wrapper h6 {
     font-size: 14px;
   }
 }
 @media (max-width: 767px) {
-  .pravila__wrapper h6 {
+  .ovojesasvimposebnaklasa .pravila__wrapper h6 {
     font-size: 14px;
     padding-left: 10px;
   }
 }
 @media screen and (min-width: 1025px) {
-  .pravila__wrapper h6 {
+  .ovojesasvimposebnaklasa .pravila__wrapper h6 {
     font-size: 20px;
   }
 }
-
-.pravila__checkbox {
+.ovojesasvimposebnaklasa .pravila__checkbox {
   width: 44px;
   margin: 0 auto;
   position: relative;
 }
 @media screen and (min-width: 2000px) {
-  .pravila__checkbox {
+  .ovojesasvimposebnaklasa .pravila__checkbox {
     margin: 0;
   }
 }
-
-.pravila__checkbox label {
+.ovojesasvimposebnaklasa .pravila__checkbox label {
   cursor: pointer;
   position: absolute;
   width: 40px;
@@ -12081,13 +12096,12 @@ a.has-text-danger-dark:hover, a.has-text-danger-dark:focus {
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr="#fcfff4", endColorstr="#b3bead",GradientType=0 );
 }
 @media (max-width: 767px) {
-  .pravila__checkbox label {
+  .ovojesasvimposebnaklasa .pravila__checkbox label {
     width: 22px;
     height: 22px;
   }
 }
-
-.pravila__checkbox label:after {
+.ovojesasvimposebnaklasa .pravila__checkbox label:after {
   -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
   filter: alpha(opacity=0);
   opacity: 0;
@@ -12105,37 +12119,82 @@ a.has-text-danger-dark:hover, a.has-text-danger-dark:focus {
   transform: rotate(-45deg);
 }
 @media (max-width: 767px) {
-  .pravila__checkbox label:after {
+  .ovojesasvimposebnaklasa .pravila__checkbox label:after {
     top: 0;
     left: 0;
     width: 23px;
     height: 12px;
   }
 }
-
-.pravila__checkbox label:hover::after {
+.ovojesasvimposebnaklasa .pravila__checkbox label:hover::after {
   -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=30)";
   filter: alpha(opacity=30);
   opacity: 0.5;
 }
-
-.pravila__checkbox input[type=checkbox]:checked + label:after {
+.ovojesasvimposebnaklasa .pravila__checkbox input[type=checkbox]:checked + label:after {
   -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
   filter: alpha(opacity=100);
   opacity: 1;
 }
-
-input[type=checkbox i] {
+.ovojesasvimposebnaklasa input[type=checkbox i] {
   opacity: 0;
   width: 0;
   height: 0;
 }
-
-.link-pravila {
+.ovojesasvimposebnaklasa .link-pravila {
   color: #0030fa;
   text-decoration: underline;
 }
-
-.footer {
+.ovojesasvimposebnaklasa .footer {
   background-color: white !important;
+}
+.ovojesasvimposebnaklasa .bodovi,
+.ovojesasvimposebnaklasa #rKraljeznica,
+.ovojesasvimposebnaklasa #rTrbuh,
+.ovojesasvimposebnaklasa #rSmetnje,
+.ovojesasvimposebnaklasa #rTegobe,
+.ovojesasvimposebnaklasa #rIzgled,
+.ovojesasvimposebnaklasa #rDisanje,
+.ovojesasvimposebnaklasa #rStil {
+  font-family: cedra4f, cursive;
+  color: #707070;
+  font-size: 20px;
+  line-height: 22px;
+  text-transform: uppercase;
+  padding-left: 30px;
+  margin-bottom: 20px;
+}
+@media (max-width: 767px) {
+  .ovojesasvimposebnaklasa .bodovi,
+.ovojesasvimposebnaklasa #rKraljeznica,
+.ovojesasvimposebnaklasa #rTrbuh,
+.ovojesasvimposebnaklasa #rSmetnje,
+.ovojesasvimposebnaklasa #rTegobe,
+.ovojesasvimposebnaklasa #rIzgled,
+.ovojesasvimposebnaklasa #rDisanje,
+.ovojesasvimposebnaklasa #rStil {
+    font-size: 12px;
+    padding-left: 10px;
+  }
+}
+.ovojesasvimposebnaklasa #rKraljeznica {
+  background-color: rgba(206, 225, 130, 0.6);
+}
+.ovojesasvimposebnaklasa #rTrbuh {
+  background-color: rgba(252, 234, 44, 0.6);
+}
+.ovojesasvimposebnaklasa #rSmetnje {
+  background-color: rgba(211, 159, 245, 0.6);
+}
+.ovojesasvimposebnaklasa #rTegobe {
+  background-color: rgba(126, 248, 161, 0.6);
+}
+.ovojesasvimposebnaklasa #rIzgled {
+  background-color: rgba(248, 91, 70, 0.6);
+}
+.ovojesasvimposebnaklasa #rDisanje {
+  background-color: rgba(14, 131, 248, 0.6);
+}
+.ovojesasvimposebnaklasa #rStil {
+  background-color: rgba(216, 60, 245, 0.6);
 }

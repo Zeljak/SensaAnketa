@@ -24,625 +24,697 @@
 //   //   box-sizing: border-box;
 //   //   font-family: cedra4f;
 // }
-
-#wrapper_html {
-  max-width: 990px;
-  background: white;
-  display: block;
-  margin: 0 auto;
-
-  @include for-tablet {
-    width: 700px;
-  }
-}
-
-#wrapper_body {
-  box-sizing: border-box;
-  font-family: $family-secondary;
-
-  @include for-phone {
-    padding: 20px;
-  }
-
-  @include for-tablet {
-    padding: 20px;
-  }
-}
-
-.header {
-  width: 860px;
-  margin: 20px auto 20px auto;
-  display: flex;
-  background: $light-pink;
-  box-shadow: inset 0px 0px 0px 2px white;
-
-  @include for-phone {
-    width: 100%;
-    margin: 5px auto 10px auto;
-  }
-
-  @include for-tablet {
-    width: 600px;
-  }
-
-  &__text-box {
-    width: 860px;
-    height: 135px;
-    box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.16);
-    color: $brownish-grey;
+.ovojesasvimposebnaklasa {
+  .wrapper_html {
+    max-width: 990px;
+    background: white;
+    display: block;
     margin: 0 auto;
-    font-family: cedra4f;
-  }
 
-  &__logo {
-    margin-top: 40px;
-    width: 70%;
-  }
-
-  h1 {
-    font-size: 30px;
-
-    @include for-phone {
-      font-size: 16px;
-    }
-  }
-  h2 {
-    font-family: $family-secondary;
-    font-size: 14px;
-    color: $brownish-grey;
-    background-color: $green;
-
-    @include for-phone {
-      font-size: 12px;
+    @include for-tablet {
+      width: 700px;
     }
   }
 
-  h3 {
+  .wrapper_body {
+    box-sizing: border-box;
     font-family: $family-secondary;
-    font-size: 12px;
-    color: white;
-    margin-bottom: 20px;
+
+    @include for-phone {
+      padding: 20px;
+    }
+
+    @include for-tablet {
+      padding: 20px;
+    }
   }
 
-  .card1 {
-    width: 200px;
+  .header {
+    width: 860px;
+    margin: 20px auto 20px auto;
+    display: flex;
     background: $light-pink;
     box-shadow: inset 0px 0px 0px 2px white;
-  }
-
-  .card2 {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-}
-
-.form {
-  font-family: cedra4f;
-  &__wrapper {
-    width: 860px;
-    margin: 0 auto;
-  }
-
-  &__uvod {
-    width: 860px;
-    box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.16);
-    background: $checked-background;
-    color: $brownish-grey;
-    margin: 0 auto;
-    font-size: 18px;
-    padding: 30px 55px 55px 55px;
 
     @include for-phone {
       width: 100%;
-      padding: 10px;
-      font-size: 16px;
+      margin: 5px auto 10px auto;
     }
 
     @include for-tablet {
       width: 600px;
     }
 
-    p {
-      margin-bottom: 20px;
-
-      @include for-phone {
-        font-size: 16px;
-      }
-    }
-  }
-
-  .green-rectangle {
-    display: inline-block;
-    width: 100%;
-    height: 3px;
-    background: $green;
-  }
-
-  &__card,
-  &__card--title {
-    width: 860px;
-    box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.16);
-    background: white;
-    color: $brownish-grey;
-    margin: 20px auto;
-    padding: 30px 55px 55px 55px;
-
-    @include for-phone {
-      width: 100%;
-      padding: 20px 30px 35px 30px;
+    &__text-box {
+      width: 860px;
+      height: 135px;
+      box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.16);
+      color: $brownish-grey;
+      margin: 0 auto;
+      font-family: cedra4f;
     }
 
-    @include for-tablet {
-      width: 600px;
-      padding: 20px 45px 45px 45px;
+    &__logo {
+      margin-top: 40px;
+      width: 70%;
     }
 
     h1 {
-      font-family: $family-secondary;
-      font-size: 32px;
-      text-align: center;
-      color: $title-white;
-      text-transform: uppercase;
-      margin-top: 52px;
-      margin-bottom: 22px;
-      font-weight: 800;
-
-      @include for-phone {
-        font-size: 25px;
-      }
-    }
-
-    h3 {
-      font-family: $family-primary;
-      font-size: 20px;
-      font-weight: 900;
-      line-height: 1.1;
-      letter-spacing: -0.4px;
-      text-align: left;
-      color: $background-grey;
-      margin-top: 12px;
-      margin-bottom: 14px;
-
-      @include for-phone {
-        font-size: 18px;
-        margin-top: 0;
-      }
-    }
-
-    h4 {
-      font-family: $family-primary;
-      font-size: 12px;
-      font-weight: bold;
-      text-align: left;
-      color: $brownish-grey;
-
-      @include for-phone {
-        font-size: 10px;
-      }
-    }
-
-    h5 {
-      font-family: $family-primary;
-      font-size: 12px;
-      font-weight: 500;
-      line-height: 1.83;
-      text-align: left;
-      color: $range-gray;
-      margin-top: 10px;
-    }
-
-    p {
-      font-family: $family-primary;
-      font-size: 16px;
-      font-weight: 500;
-      line-height: 1.5;
-      text-align: left;
-      color: $brownish-grey;
-      margin-bottom: 20px;
-
-      @include for-phone {
-        font-size: 14px;
-      }
-    }
-
-    &--green {
-      border-left: 43px solid $green-section;
-
-      @include for-phone {
-        border-left: 35px solid $green-section;
-      }
-    }
-
-    &--yellow {
-      border-left: 43px solid $yellow-section;
-
-      @include for-phone {
-        border-left: 35px solid $yellow-section;
-      }
-    }
-
-    &--purple {
-      border-left: 43px solid $purple-section;
-
-      @include for-phone {
-        border-left: 35px solid $purple-section;
-      }
-    }
-
-    &--green2 {
-      border-left: 43px solid $green-section2;
-
-      @include for-phone {
-        border-left: 35px solid $green-section2;
-      }
-    }
-
-    &--red {
-      border-left: 43px solid $red-section;
-
-      @include for-phone {
-        border-left: 35px solid $red-section;
-      }
-    }
-
-    &--blue {
-      border-left: 43px solid $blue-section;
-
-      @include for-phone {
-        border-left: 35px solid $blue-section;
-      }
-    }
-
-    &--purple2 {
-      border-left: 43px solid $purple-section2;
-
-      @include for-phone {
-        border-left: 35px solid $purple-section2;
-      }
-    }
-
-    &--grey {
-      border-left: 43px solid $grey-section;
-
-      @include for-phone {
-        border-left: 35px solid $grey-section;
-      }
-    }
-  }
-
-  &__author {
-    text-align: right;
-    padding-right: 60px;
-
-    @include for-phone {
-      padding-right: 0;
-    }
-
-    h2 {
-      font-size: 14px;
-
-      @include for-phone {
-        font-size: 12px;
-      }
-    }
-  }
-
-  &__colored_line {
-    margin-bottom: 70px;
-  }
-
-  &__card--title {
-    background: $light-pink;
-    padding: 0;
-    padding-top: 10px;
-  }
-
-  .mjerenje {
-    display: flex;
-    justify-content: space-evenly;
-    margin-bottom: 20px;
-    margin-top: 20px;
-
-    @include for-phone {
-      flex-wrap: wrap;
-    }
-
-    label {
-      @include for-small-phone {
-        margin-left: 58px;
-        margin-right: 180px;
-        margin-top: 33px;
-      }
-    }
-
-    h3 {
-      @include for-phone {
-        font-size: 14px;
-      }
-    }
-  }
-
-  input[type="text"] {
-    width: 750px;
-    height: 90px;
-    padding: 40px 40px 40px 155px;
-    border: 1px solid $green;
-    border-radius: 50px;
-    margin: 16px auto;
-    font-size: 18px;
-    font-family: $family-secondary;
-
-    @include for-phone {
-      width: 100%;
-      height: 30px;
-      font-size: 14px;
-      padding: 20px;
-      font-size: 16px;
-    }
-
-    @include for-tablet {
-      width: 100%;
-      height: 30px;
-      font-size: 16px;
-      padding: 20px;
-    }
-
-    &::placeholder {
-      font-size: 14px;
-
-      @include for-phone {
-        font-size: 12px;
-      }
-    }
-  }
-
-  input[name="aktivnost"] {
-    width: 100%;
-    height: 10px;
-    margin: 0 auto;
-    font-size: 18px;
-    border-radius: 0;
-    font-family: $family-secondary;
-    margin-bottom: 10px;
-    padding: 24px 24px 24px 41px;
-    margin-bottom: 25px;
-
-    @include for-phone {
-      padding: 14px 14px 14px 31px;
-    }
-
-    &::placeholder {
-      font-size: 14px;
-      text-align: left;
-
-      @include for-phone {
-        font-size: 12px;
-      }
-    }
-  }
-
-  label {
-    display: inline-block;
-    position: relative;
-  }
-
-  label input {
-    display: none;
-  }
-
-  label span {
-    border: 1px solid $green;
-    width: 30px;
-    height: 30px;
-    position: absolute;
-    overflow: hidden;
-    line-height: 1.4;
-    text-align: center;
-    border-radius: 100%;
-    font-size: 20px;
-    left: 0;
-    top: 50%;
-    margin-top: -14px;
-    cursor: pointer;
-    display: inline-block;
-    background: $light-pink;
-  }
-
-  input:checked + span {
-    background: $green;
-    border-color: $green;
-    cursor: pointer;
-  }
-
-  &__label-wrapper {
-    display: flex;
-    justify-content: space-around;
-    margin-top: 48px;
-
-    @include for-phone {
-      margin-left: -42px;
-      margin-right: -12px;
-    }
-
-    @include for-tablet {
-      margin-left: -42px;
-      margin-right: -12px;
-    }
-  }
-
-  &__end {
-    width: 860px;
-    margin: 30px auto;
-    display: block;
-
-    @include for-phone {
-      width: 100%;
-    }
-
-    @include for-tablet {
-      width: 600px;
-    }
-    p {
-      font-family: $family-secondary;
-      font-size: 23px;
-      color: $brownish-grey;
-      text-align: center;
-      padding: 0 90px;
+      font-size: 30px;
 
       @include for-phone {
         font-size: 16px;
-        padding: 0;
       }
     }
+    h2 {
+      font-family: $family-secondary;
+      font-size: 14px;
+      color: $brownish-grey;
+      background-color: $green;
+
+      @include for-phone {
+        font-size: 12px;
+      }
+    }
+
+    h3 {
+      font-family: $family-secondary;
+      font-size: 12px;
+      color: white;
+      margin-bottom: 20px;
+    }
+
+    .card1 {
+      width: 200px;
+      background: $light-pink;
+      box-shadow: inset 0px 0px 0px 2px white;
+    }
+
+    .card2 {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
   }
 
-  input[type="submit"] {
-    width: 424px;
-    height: 45px;
-    border: 1px solid $green;
-    border-radius: 2rem;
-    margin: 15px auto;
-    display: block;
-    font-size: 18px;
-    font-family: $family-secondary;
-    color: $brownish-grey;
-    background: $green;
-    cursor: pointer;
-    transition: all 0.3s ease-in;
-    margin-bottom: 45px;
+  .form {
+    font-family: cedra4f;
+    &__wrapper {
+      width: 860px;
+      margin: 0 auto;
+    }
+
+    &__uvod {
+      width: 860px;
+      box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.16);
+      background: $checked-background;
+      color: $brownish-grey;
+      margin: 0 auto;
+      font-size: 18px;
+      padding: 30px 55px 55px 55px;
+
+      @include for-phone {
+        width: 100%;
+        padding: 10px;
+        font-size: 16px;
+      }
+
+      @include for-tablet {
+        width: 600px;
+      }
+
+      p {
+        margin-bottom: 20px;
+
+        @include for-phone {
+          font-size: 16px;
+        }
+      }
+    }
+
+    .green-rectangle {
+      display: inline-block;
+      width: 100%;
+      height: 3px;
+      background: $green;
+    }
+
+    &__card,
+    &__card--title {
+      width: 860px;
+      box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.16);
+      background: white;
+      color: $brownish-grey;
+      margin: 20px auto;
+      padding: 30px 55px 55px 55px;
+
+      @include for-phone {
+        width: 100%;
+        padding: 20px 30px 35px 30px;
+      }
+
+      @include for-tablet {
+        width: 600px;
+        padding: 20px 45px 45px 45px;
+      }
+
+      h2 {
+        font-family: $family-secondary;
+        font-size: 32px;
+        text-align: center;
+        color: $title-white;
+        text-transform: uppercase;
+        margin-top: 52px;
+        margin-bottom: 22px;
+        font-weight: 800;
+
+        @include for-phone {
+          font-size: 25px;
+        }
+      }
+
+      h3 {
+        font-family: $family-primary;
+        font-size: 20px;
+        font-weight: 900;
+        line-height: 1.1;
+        letter-spacing: -0.4px;
+        text-align: left;
+        color: $background-grey;
+        margin-top: 12px;
+        margin-bottom: 16px;
+
+        @include for-phone {
+          font-size: 18px;
+          margin-top: 0;
+        }
+      }
+
+      h4 {
+        font-family: $family-primary;
+        font-size: 12px;
+        font-weight: bold;
+        text-align: left;
+        color: $brownish-grey;
+
+        @include for-phone {
+          font-size: 10px;
+        }
+      }
+
+      h5 {
+        font-family: $family-primary;
+        font-size: 12px;
+        font-weight: 500;
+        line-height: 1.83;
+        text-align: left;
+        color: $range-gray;
+        margin-top: 10px;
+      }
+
+      p {
+        font-family: $family-primary;
+        font-size: 16px;
+        font-weight: 500;
+        line-height: 1.5;
+        text-align: left;
+        color: $brownish-grey;
+
+        @include for-phone {
+          font-size: 14px;
+        }
+      }
+
+      &--green {
+        border-left: 43px solid $green-section;
+
+        @include for-phone {
+          border-left: 35px solid $green-section;
+        }
+      }
+
+      &--yellow {
+        border-left: 43px solid $yellow-section;
+
+        @include for-phone {
+          border-left: 35px solid $yellow-section;
+        }
+      }
+
+      &--purple {
+        border-left: 43px solid $purple-section;
+
+        @include for-phone {
+          border-left: 35px solid $purple-section;
+        }
+      }
+
+      &--green2 {
+        border-left: 43px solid $green-section2;
+
+        @include for-phone {
+          border-left: 35px solid $green-section2;
+        }
+      }
+
+      &--red {
+        border-left: 43px solid $red-section;
+
+        @include for-phone {
+          border-left: 35px solid $red-section;
+        }
+      }
+
+      &--blue {
+        border-left: 43px solid $blue-section;
+
+        @include for-phone {
+          border-left: 35px solid $blue-section;
+        }
+      }
+
+      &--purple2 {
+        border-left: 43px solid $purple-section2;
+
+        @include for-phone {
+          border-left: 35px solid $purple-section2;
+        }
+      }
+
+      &--grey {
+        border-left: 43px solid $grey-section;
+
+        @include for-phone {
+          border-left: 35px solid $grey-section;
+        }
+      }
+    }
+
+    &__author {
+      text-align: right;
+      padding-right: 60px;
+
+      @include for-phone {
+        padding-right: 0;
+      }
+
+      h2 {
+        font-size: 14px;
+
+        @include for-phone {
+          font-size: 12px;
+        }
+      }
+    }
+
+    &__colored_line {
+      margin-bottom: 70px;
+    }
+
+    &__card--title {
+      background: $light-pink;
+      padding: 0;
+      padding-top: 10px;
+    }
+
+    .mjerenje {
+      display: flex;
+      justify-content: space-evenly;
+      margin-bottom: 20px;
+      margin-top: 20px;
+
+      @include for-phone {
+        flex-wrap: wrap;
+      }
+
+      label {
+        @include for-small-phone {
+          margin-left: 58px;
+          margin-right: 180px;
+          margin-top: 33px;
+        }
+      }
+
+      h3 {
+        @include for-phone {
+          font-size: 14px;
+        }
+      }
+    }
+
+    input[type="text"],
+    input[type="date"] {
+      width: 750px;
+      height: 90px;
+      padding: 40px 40px 40px 155px;
+      border: 1px solid $green;
+      border-radius: 50px;
+      margin: 16px auto;
+      font-size: 18px;
+      font-family: $family-secondary;
+
+      @include for-phone {
+        width: 100%;
+        height: 30px;
+        font-size: 14px;
+        padding: 20px;
+        font-size: 16px;
+      }
+
+      @include for-tablet {
+        width: 100%;
+        height: 30px;
+        font-size: 16px;
+        padding: 20px;
+      }
+
+      &::placeholder {
+        font-size: 14px;
+
+        @include for-phone {
+          font-size: 12px;
+        }
+      }
+    }
+
+    input[name="aktivnost"] {
+      width: 100%;
+      height: 10px;
+      margin: 0 auto;
+      font-size: 18px;
+      border-radius: 0;
+      font-family: $family-secondary;
+      margin-bottom: 10px;
+      padding: 24px 24px 24px 41px;
+      margin-bottom: 25px;
+
+      @include for-phone {
+        padding: 14px 14px 14px 31px;
+      }
+
+      &::placeholder {
+        font-size: 14px;
+        text-align: left;
+
+        @include for-phone {
+          font-size: 12px;
+        }
+      }
+    }
+
+    label {
+      display: inline-block;
+      position: relative;
+    }
+
+    label input {
+      display: none;
+    }
+
+    label span {
+      border: 1px solid $green;
+      width: 41px;
+      height: 41px;
+      position: absolute;
+      overflow: hidden;
+      line-height: 2;
+      text-align: center;
+      border-radius: 100%;
+      font-size: 20px;
+      left: 0;
+      top: 50%;
+      margin-top: -14px;
+      cursor: pointer;
+      display: inline-block;
+      background: $light-pink;
+
+      @include for-phone {
+        width: 30px;
+        height: 30px;
+        line-height: 1.4;
+      }
+    }
+
+    input:checked + span {
+      background: $green;
+      border-color: $green;
+      cursor: pointer;
+    }
+
+    &__label-wrapper {
+      display: flex;
+      justify-content: space-evenly;
+      margin-top: 48px;
+
+      @include for-phone {
+        margin-left: -42px;
+        margin-right: -12px;
+      }
+
+      @include for-tablet {
+        margin-left: -42px;
+        margin-right: -12px;
+      }
+    }
+
+    &__end {
+      width: 860px;
+      margin: 30px auto;
+      display: block;
+
+      @include for-phone {
+        width: 100%;
+      }
+
+      @include for-tablet {
+        width: 600px;
+      }
+      p {
+        font-family: $family-secondary;
+        font-size: 23px;
+        color: $brownish-grey;
+        text-align: center;
+        padding: 0 90px;
+
+        @include for-phone {
+          font-size: 16px;
+          padding: 0;
+        }
+      }
+    }
+
+    input[type="submit"] {
+      width: 424px;
+      height: 45px;
+      border: 1px solid $green;
+      border-radius: 2rem;
+      margin: 15px auto;
+      display: block;
+      font-size: 18px;
+      font-family: $family-secondary;
+      color: $brownish-grey;
+      background: $green;
+      cursor: pointer;
+      transition: all 0.3s ease-in;
+      margin-bottom: 45px;
+
+      @include for-phone {
+        width: 75%;
+      }
+
+      &:hover {
+        color: $green;
+        background: $brownish-grey;
+      }
+    }
+
+    // &__card--rezultati {
+    //   display: none;
+    // }
+    // &__card--savjeti-strucnjaka {
+    //   display: none;
+    // }
+    // &__card--rezultati-poraditi-prije {
+    //   display: none;
+    // }
+    // &__card--rezultati-poraditi-nakon {
+    //   display: none;
+    // }
+
+    .tekst-rezultati {
+      font-family: $family-secondary;
+      color: $background-grey;
+      font-size: 20px;
+      font-weight: normal;
+
+      @include for-phone {
+        font-size: 16px;
+      }
+    }
+
+    .error-message [type="text"] {
+      background-color: #fce4e4;
+      border: 1px solid red;
+      outline: none;
+    }
+  }
+
+  #form__card25 {
+    p {
+      margin-bottom: 10px;
+    }
+  }
+
+  // Pravila
+  .pravila__wrapper h6 {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: $background-grey;
+
+    @include for-tablet {
+      font-size: 14px;
+    }
 
     @include for-phone {
-      width: 75%;
+      font-size: 14px;
+      padding-left: 10px;
     }
 
-    &:hover {
-      color: $green;
-      background: $brownish-grey;
+    @media screen and (min-width: 1025px) {
+      font-size: 20px;
     }
   }
 
-  &__card--rezultati {
-    display: none;
-  }
-  &__card--savjeti-strucnjaka {
-    display: none;
-  }
-}
+  .pravila__checkbox {
+    width: 44px;
+    margin: 0 auto;
+    position: relative;
 
-#form__card25 {
-  p {
-    margin-bottom: 10px;
-  }
-}
-
-// Pravila
-.pravila__wrapper h6 {
-  margin-top: 20px;
-  margin-bottom: 20px;
-  font-family: Arial, Helvetica, sans-serif;
-  color: $background-grey;
-
-  @include for-tablet {
-    font-size: 14px;
+    @media screen and (min-width: 2000px) {
+      margin: 0;
+    }
   }
 
-  @include for-phone {
-    font-size: 14px;
-    padding-left: 10px;
-  }
-
-  @media screen and (min-width: 1025px) {
-    font-size: 20px;
-  }
-}
-
-.pravila__checkbox {
-  width: 44px;
-  margin: 0 auto;
-  position: relative;
-
-  @media screen and (min-width: 2000px) {
-    margin: 0;
-  }
-}
-
-.pravila__checkbox label {
-  cursor: pointer;
-  position: absolute;
-  width: 40px;
-  height: 40px;
-  top: 0;
-  border-radius: 4px;
-  border: 1px solid $background-grey;
-  margin-top: 15px;
-
-  -webkit-box-shadow: 0 20px 20px 0 rgba(0, 0, 0, 0.16);
-  -moz-box-shadow: 0 20px 20px 0 rgba(0, 0, 0, 0.16);
-  box-shadow: 0 20px 20px 0 rgba(0, 0, 0, 0.16);
-  background: #fcfff4;
-
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fcfff4', endColorstr='#b3bead',GradientType=0 );
-
-  @include for-phone {
-    width: 22px;
-    height: 22px;
-  }
-}
-
-.pravila__checkbox label:after {
-  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
-  filter: alpha(opacity=0);
-  opacity: 0;
-  content: "";
-  position: absolute;
-  width: 30px;
-  height: 18px;
-  background: transparent;
-  top: 4px;
-  left: 3px;
-  border: 5px solid $green;
-  border-top: none;
-  border-right: none;
-
-  -webkit-transform: rotate(-45deg);
-  -moz-transform: rotate(-45deg);
-  -o-transform: rotate(-45deg);
-  -ms-transform: rotate(-45deg);
-  transform: rotate(-45deg);
-
-  @include for-phone {
+  .pravila__checkbox label {
+    cursor: pointer;
+    position: absolute;
+    width: 40px;
+    height: 40px;
     top: 0;
-    left: 0;
-    width: 23px;
-    height: 12px;
+    border-radius: 4px;
+    border: 1px solid $background-grey;
+    margin-top: 15px;
+
+    -webkit-box-shadow: 0 20px 20px 0 rgba(0, 0, 0, 0.16);
+    -moz-box-shadow: 0 20px 20px 0 rgba(0, 0, 0, 0.16);
+    box-shadow: 0 20px 20px 0 rgba(0, 0, 0, 0.16);
+    background: #fcfff4;
+
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fcfff4', endColorstr='#b3bead',GradientType=0 );
+
+    @include for-phone {
+      width: 22px;
+      height: 22px;
+    }
   }
-}
 
-.pravila__checkbox label:hover::after {
-  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=30)";
-  filter: alpha(opacity=30);
-  opacity: 0.5;
-}
+  .pravila__checkbox label:after {
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+    filter: alpha(opacity=0);
+    opacity: 0;
+    content: "";
+    position: absolute;
+    width: 30px;
+    height: 18px;
+    background: transparent;
+    top: 4px;
+    left: 3px;
+    border: 5px solid $green;
+    border-top: none;
+    border-right: none;
 
-.pravila__checkbox input[type="checkbox"]:checked + label:after {
-  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
-  filter: alpha(opacity=100);
-  opacity: 1;
-}
+    -webkit-transform: rotate(-45deg);
+    -moz-transform: rotate(-45deg);
+    -o-transform: rotate(-45deg);
+    -ms-transform: rotate(-45deg);
+    transform: rotate(-45deg);
 
-input[type="checkbox" i] {
-  opacity: 0;
-  width: 0;
-  height: 0;
-}
+    @include for-phone {
+      top: 0;
+      left: 0;
+      width: 23px;
+      height: 12px;
+    }
+  }
 
-.link-pravila {
-  color: $link-blue;
-  text-decoration: underline;
-}
+  .pravila__checkbox label:hover::after {
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=30)";
+    filter: alpha(opacity=30);
+    opacity: 0.5;
+  }
 
-// FOOTER
-.footer {
-  background-color: $white !important;
+  .pravila__checkbox input[type="checkbox"]:checked + label:after {
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+    filter: alpha(opacity=100);
+    opacity: 1;
+  }
+
+  input[type="checkbox" i] {
+    opacity: 0;
+    width: 0;
+    height: 0;
+  }
+
+  .link-pravila {
+    color: $link-blue;
+    text-decoration: underline;
+  }
+
+  // FOOTER
+  .footer {
+    background-color: $white !important;
+  }
+  .bodovi,
+  #rKraljeznica,
+  #rTrbuh,
+  #rSmetnje,
+  #rTegobe,
+  #rIzgled,
+  #rDisanje,
+  #rStil {
+    font-family: $family-secondary;
+    color: $background-grey;
+    font-size: 20px;
+    line-height: 22px;
+    text-transform: uppercase;
+    padding-left: 30px;
+    margin-bottom: 20px;
+
+    @include for-phone {
+      font-size: 12px;
+      padding-left: 10px;
+    }
+  }
+  #rKraljeznica {
+    background-color: rgb(206, 225, 130, 0.6);
+  }
+  #rTrbuh {
+    background-color: rgb(252, 234, 44, 0.6);
+  }
+  #rSmetnje {
+    background-color: rgb(211, 159, 245, 0.6);
+  }
+  #rTegobe {
+    background-color: rgb(126, 248, 161, 0.6);
+  }
+  #rIzgled {
+    background-color: rgb(248, 91, 70, 0.6);
+  }
+  #rDisanje {
+    background-color: rgb(14, 131, 248, 0.6);
+  }
+  #rStil {
+    background-color: rgb(216, 60, 245, 0.6);
+  }
 }

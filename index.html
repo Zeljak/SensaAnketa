@@ -58,8 +58,9 @@
   </head>
 
   <body>
-    <div id="wrapper_html">
-      <div id="wrapper_body">
+	<div class="ovojesasvimposebnaklasa">
+    <div class="wrapper_html">
+      <div class="wrapper_body">
         <!-- HEADER -->
         <header class="header has-text-centered">
           <div class="header__text-box card1">
@@ -77,8 +78,8 @@
           </div>
         </header>
 
-        <main>
-          <section class="form">
+    <main>
+        <section class="form">
             <form id="anketaSensa">
               <div class="form__uvod has-text-centered">
                 <p>
@@ -94,7 +95,7 @@
                 <div class="green-rectangle"></div>
 
                 <!-- Mjerenje -->
-                <div class="mjerenje">
+                <!-- <div class="mjerenje">
                   <h3 class="form__question">
                     Vaš broj ispunjavanja upitnika:
                   </h3>
@@ -104,7 +105,7 @@
                   <label
                     ><input type="radio" name="select" /><span>2</span></label
                   >
-                </div>
+                </div> -->
 
                 <!-- Ime i prezime -->
                 <!-- <div>
@@ -121,16 +122,16 @@
                 <!-- Godina rođenja -->
                 <div>
                   <input
-                    type="text"
-                    id="godiste"
-                    name="godiste"
+                    type="date"
+                    id="date"
+                    name="date"
                     class="form__godiste"
                     placeholder="Godina rođenja"
 					required
                   />
                 </div>
 
-                <!-- E-mail -->
+            <!-- E-mail -->
                 <div>
                   <input
                     type="text"
@@ -141,10 +142,10 @@
 					required
                   />
                 </div>
-              </div>
+            </div>
 
-              <!-- 1. Spol -->
-              <div class="form__card" id="form__card21">
+            <!-- 1. Spol -->
+            <div class="form__card" id="form__card21">
                 <h3>Vi ste:</h3>
 
                 <p>A&nbsp;&nbsp;&nbsp; Žena</p>
@@ -186,10 +187,10 @@
                     <span>C</span>
                   </label>
                 </div>
-              </div>
+            </div>
 
-              <!-- 2. Stručna sprema -->
-              <div class="form__card" id="form__card22">
+            <!-- 2. Stručna sprema -->
+            <div class="form__card" id="form__card22">
                 <h3>Vaša najviša završena stručna sprema je:</h3>
 
                 <p>A&nbsp;&nbsp;&nbsp; (Ne) završena osnovna škola</p>
@@ -255,10 +256,10 @@
                     <span>E</span>
                   </label>
                 </div>
-              </div>
+            </div>
 
-              <!-- 3. Materijalne prilike -->
-              <div class="form__card"  id="form__card23">
+            <!-- 3. Materijalne prilike -->
+            <div class="form__card"  id="form__card23">
                 <h3>Kako biste procijenili svoje materijalne prilike?</h3>
 
                 <p>A&nbsp;&nbsp;&nbsp; Izrazito dobre</p>
@@ -324,10 +325,10 @@
                     <span>E</span>
                   </label>
                 </div>
-              </div>
+            </div>
 
-              <!-- 4. Opće zdravlje -->
-              <div class="form__card" id="form__card24">
+            <!-- 4. Opće zdravlje -->
+            <div class="form__card" id="form__card24">
                 <h3>Općenito, kako biste procijenili vaše zdravlje:</h3>
 
                 <p>A&nbsp;&nbsp;&nbsp; Odlično</p>
@@ -393,10 +394,10 @@
                     <span>E</span>
                   </label>
                 </div>
-              </div>
+            </div>
 
-              <!-- 5. Fizička aktivnost -->
-              <div class="form__card" id="form__card25">
+            <!-- 5. Fizička aktivnost -->
+            <div class="form__card" id="form__card25">
                 <h3>Procijenite u kojoj ste kategoriji aktivnosti koju redovito vršite u tjednu: </h3>
 
                 <p>A&nbsp;&nbsp;&nbsp; Niski intenzitet (spori hod, joga asane, thai chi, vrtlarenje...)</p>
@@ -432,10 +433,10 @@
 					  onClick="changeColour25('z')"
 					/>
 				</div>
-              </div>
+            </div>
 
-              <!-- 6. Vrijeme za računalom -->
-              <div class="form__card" id="form__card26">
+            <!-- 6. Vrijeme za računalom -->
+            <div class="form__card" id="form__card26">
                 <h3>Koliko vremena dnevno prodvodite za računalom?</h3>
 
                 <p>A&nbsp;&nbsp;&nbsp; Do 3 sata</p>
@@ -489,10 +490,10 @@
                     <span>D</span>
                   </label>
                 </div>
-              </div>
+            </div>
 
-			    <!-- 7. Težina -->
-			  <div class="form__card" id="form__card27">
+			<!-- 7. Težina -->
+			<div class="form__card" id="form__card27">
 					<h3>Moja težina je: </h3>
 						<div>
 							  <input
@@ -504,20 +505,20 @@
 						  onClick="changeColour27('zz')"
 							/>
 						</div>
-			  </div>
+			</div>
 
-              <!-- Kvocijent vitalnosti -->
-              <div class="form__card--title">
-                <h1>kvocijent vitalnosti</h1>
+            <!-- Kvocijent vitalnosti -->
+            <div class="form__card--title">
+                <h2>kvocijent vitalnosti</h2>
                 <img
                   class="form__colored_line"
                   src="./_assets/images/colored_lines.png"
                   alt="Linija u raznim bojama"
                 />
-              </div>
+            </div>
 
-              <!--8. Držanje i kralježnica - "sadašnje ja" -->
-              <div class="form__card form__card--green" id="form__card1">
+            <!--8. Držanje i kralježnica - "sadašnje ja" -->
+            <div class="form__card form__card--green" id="form__card1">
                 <h3>
                   Razmislite o svom držanju i kako vaša kralježnica podnosi
                   opterećenja tijela.
@@ -613,10 +614,10 @@
                     <span>7</span>
                   </label>
                 </div>
-              </div>
+            </div>
 
-              <!--9. Držanje i kralježnica - "potencijalno ja" -->
-              <div class="form__card form__card--green" id="form__card2">
+            <!--9. Držanje i kralježnica - "potencijalno ja" -->
+            <div class="form__card form__card--green" id="form__card2">
                 <p>
                   Kako biste voljeli da se vaše "potencijalno ja" (u skladu s
                   vašim mogućnostima) osjeća, što se tiče kategorije "držanje i
@@ -704,10 +705,10 @@
                     <span>7</span>
                   </label>
                 </div>
-              </div>
+            </div>
 
-              <!--10. Trbuh - sadašnje ja  -->
-              <div class="form__card form__card--yellow" id="form__card3">
+            <!--10. Trbuh - sadašnje ja  -->
+            <div class="form__card form__card--yellow" id="form__card3">
                 <h3>
                   Osvijestite svoj trbuh prema onome što vidite u ogledalu, ali
                   i prema tome kako ga osjetite.
@@ -803,10 +804,10 @@
                     <span>7</span>
                   </label>
                 </div>
-              </div>
+            </div>
 
-              <!--11. Trbuh - "potencijalno ja" -->
-              <div class="form__card form__card--yellow" id="form__card4">
+            <!--11. Trbuh - "potencijalno ja" -->
+            <div class="form__card form__card--yellow" id="form__card4">
                
                 <p>
                   Kako biste voljeli da se vaše "potencijalno ja" (u skladu s
@@ -894,10 +895,10 @@
                     <span>7</span>
                   </label>
                 </div>
-              </div>
+            </div>
 
-               <!--12. Bolovi i smetnje - "sadašnje ja" -->
-              <div class="form__card form__card--purple" id="form__card5">
+            <!--12. Bolovi i smetnje - "sadašnje ja" -->
+            <div class="form__card form__card--purple" id="form__card5">
                 <h3>Analizirajte bolove i smetnje u vašem tijelu.</h3>
                 <p>
                   Kako biste opisali "boravak" u svom tijelu? Koliko često
@@ -990,10 +991,10 @@
                     <span>7</span>
                   </label>
                 </div>
-              </div>
+            </div>
 
-              <!--13. Bolovi i smetnje - "potencijalno ja" -->
-              <div class="form__card form__card--purple" id="form__card6">          
+            <!--13. Bolovi i smetnje - "potencijalno ja" -->
+            <div class="form__card form__card--purple" id="form__card6">          
                 <p>
                   Kako biste voljeli da se vaše "potencijalno ja" (u skladu s
                   vašim mogućnostima) osjeća, što se tiče kategorije "bolovi i
@@ -1081,10 +1082,10 @@
                     <span>7</span>
                   </label>
                 </div>
-              </div>
+            </div>
 
-               <!--14. Zdravstvene tegobe - sadašnje ja -->
-              <div class="form__card form__card--green2" id="form__card7">
+            <!--14. Zdravstvene tegobe - sadašnje ja -->
+            <div class="form__card form__card--green2" id="form__card7">
                 <h3>
                   Obratite pažnju na svoje zdravstvene tegobe koje ste imali ili
                   ih još uvijek imate.
@@ -1179,10 +1180,10 @@
                     <span>7</span>
                   </label>
                 </div>
-              </div>
+            </div>
 
-              <!--15. Zdravstvene tegobe - "potencijalno ja" -->
-              <div class="form__card form__card--green2" id="form__card8">
+            <!--15. Zdravstvene tegobe - "potencijalno ja" -->
+            <div class="form__card form__card--green2" id="form__card8">
                 <p>
                   Kako biste voljeli da se vaše "potencijalno ja" (u skladu s
                   vašim mogućnostima) osjeća, što se tiče kategorije
@@ -1270,10 +1271,10 @@
                     <span>7</span>
                   </label>
                 </div>
-              </div>
+            </div>
 
-              <!--16. Vanjski izgled - "sadašnje ja" -->
-              <div class="form__card form__card--red" id="form__card9">
+            <!--16. Vanjski izgled - "sadašnje ja" -->
+            <div class="form__card form__card--red" id="form__card9">
                 <h3>
                   Razmislite o svom vanjskom izgledu i kako se fizički osjećate.
                 </h3>
@@ -1367,10 +1368,10 @@
                     <span>7</span>
                   </label>
                 </div>
-              </div>
+            </div>
 
-              <!--17. Vanjski izgled - "potencijalno ja" -->
-              <div class="form__card form__card--red" id="form__card10">
+            <!--17. Vanjski izgled - "potencijalno ja" -->
+            <div class="form__card form__card--red" id="form__card10">
                 <p>
                   Kako biste voljeli da se vaše "potencijalno ja" (u skladu s
                   vašim mogućnostima) osjeća, što se tiče kategorije "vanjski
@@ -1457,10 +1458,10 @@
                     <span>7</span>
                   </label>
                 </div>
-              </div>
+            </div>
 
-             <!--18. Disanje - "sadašnje ja" -->
-              <div class="form__card form__card--blue" id="form__card11">
+            <!--18. Disanje - "sadašnje ja" -->
+            <div class="form__card form__card--blue" id="form__card11">
                 <h3>Koliko dobro poznajete svoje disanje?</h3>
                 <p>
                   Imate li svjesnost kako dišete? Primjećujete li u mirovanju da
@@ -1552,10 +1553,10 @@
                     <span>7</span>
                   </label>
                 </div>
-              </div>
+            </div>
 
-             <!--19. Disanje - "potencijalno ja" -->
-              <div class="form__card form__card--blue" id="form__card12">
+            <!--19. Disanje - "potencijalno ja" -->
+            <div class="form__card form__card--blue" id="form__card12">
                 <p>
                   Kako biste voljeli da se vaše "potencijalno ja" (u skladu s
                   vašim mogućnostima) osjeća, što se tiče kategorije "disanje"?
@@ -1641,10 +1642,10 @@
                     <span>7</span>
                   </label>
                 </div>
-              </div>
+            </div>
 
-              <!--20. Stil života - "sadašnje ja" -->
-              <div class="form__card form__card--purple2" id="form__card13">            
+            <!--20. Stil života - "sadašnje ja" -->
+            <div class="form__card form__card--purple2" id="form__card13">            
                 <h3>
                   Razmislite o svom stilu života, životnim navikama i općem
                   funkcioniranju.
@@ -1742,10 +1743,10 @@
                     <span>7</span>
                   </label>
                 </div>               
-              </div>
+            </div>
 
-              <!--21. Stil života - "potencijalno ja" -->
-              <div class="form__card form__card--purple2" id="form__card14">
+            <!--21. Stil života - "potencijalno ja" -->
+            <div class="form__card form__card--purple2" id="form__card14">
                 <p>
                   Kako biste voljeli da se vaše "potencijalno ja" (u skladu s
                   vašim mogućnostima) osjeća, vezano uz stil života, životne
@@ -1833,24 +1834,24 @@
                     <span>7</span>
                   </label>			  
                 </div>
-              </div>
+            </div>
 
-			  <!-- Autor ankete -->
-			  <div class="form__author">
+			<!-- Autor ankete -->
+			<div class="form__author">
 			  		<h2 >Autor upitnika: Ana-Marija Jagodić Rukavina, mr. spec.</h2>
-			  </div>
+			</div>
 
-			  <!-- Subjektivna vitalnost -->
-			  <div class="form__card--title">
-				<h1>subjektivna vitalnost</h1>
+			<!-- Subjektivna vitalnost -->
+			<div class="form__card--title">
+				<h2>subjektivna vitalnost</h2>
 				<img
 					class="form__colored_line"
 					src="./_assets/images/colored_lines.png"
 					alt="Linija u raznim bojama"/>
-			  </div>
+			</div>
 
-              <!--22. Subjektivna vitalnost - vitalnost -->
-              <div class="form__card form__card--grey" id="form__card15">
+            <!--22. Subjektivna vitalnost - vitalnost -->
+            <div class="form__card form__card--grey" id="form__card15">
                 <h3>U ovom trenutku, osjećam se živim i vitalnim.</h3>
                 <h5>1 = uopće nije istina&nbsp;&nbsp;&nbsp; 7 = potpuna istina</h5>
 
@@ -1933,10 +1934,10 @@
                     <span>7</span>
                   </label>
                 </div>
-              </div>
+            </div>
 
-              <!--23. Subjektivna vitalnost - pucanje -->
-              <div class="form__card form__card--grey" id="form__card16">
+            <!--23. Subjektivna vitalnost - pucanje -->
+            <div class="form__card form__card--grey" id="form__card16">
                 <h3>Trenutno se osjećam tako živim da samo želim puknuti.</h3>
 				<h5>1 = uopće nije istina&nbsp;&nbsp;&nbsp; 7 = potpuna istina</h5>
 
@@ -2019,10 +2020,10 @@
                     <span>7</span>
                   </label>
                 </div>
-              </div>
+            </div>
 
-              <!--24. Subjektivna vitalnost - duh -->
-              <div class="form__card form__card--grey" id="form__card17">
+            <!--24. Subjektivna vitalnost - duh -->
+            <div class="form__card form__card--grey" id="form__card17">
                 <h3>U ovom trenutku imam energije i duha.</h3>
                 <h5>1 = uopće nije istina&nbsp;&nbsp;&nbsp; 7 = potpuna istina</h5>
 
@@ -2105,10 +2106,10 @@
                     <span>7</span>
                   </label>
                 </div>
-              </div>
+            </div>
 
-              <!--25. Subjektivna vitalnost - veselje -->
-              <div class="form__card form__card--grey" id="form__card18">
+            <!--25. Subjektivna vitalnost - veselje -->
+            <div class="form__card form__card--grey" id="form__card18">
                 <h3>Veselim se svakom novom danu.</h3>
                 <h5>1 = uopće nije istina&nbsp;&nbsp;&nbsp; 7 = potpuna istina</h5>
 
@@ -2191,10 +2192,10 @@
                     <span>7</span>
                   </label>
                 </div>
-              </div>
+            </div>
 
-              <!--26. Subjektivna vitalnost - budnost -->
-              <div class="form__card form__card--grey" id="form__card19">
+            <!--26. Subjektivna vitalnost - budnost -->
+            <div class="form__card form__card--grey" id="form__card19">
                 <h3>U ovom trenutku se osjećam budnim i spremnim.</h3>
                 <h5>1 = uopće nije istina&nbsp;&nbsp;&nbsp; 7 = potpuna istina</h5>
 
@@ -2277,10 +2278,10 @@
                     <span>7</span>
                   </label>
                 </div>
-              </div>
+            </div>
 
               <!--27. Subjektivna vitalnost - energičnost -->
-              <div class="form__card form__card--grey" id="form__card20">
+            <div class="form__card form__card--grey" id="form__card20">
                 <h3>Trenutno se osjećam energično.</h3>
                 <h5>1 = uopće nije istina&nbsp;&nbsp;&nbsp; 7 = potpuna istina</h5>
 
@@ -2363,10 +2364,10 @@
                     <span>7</span>
                   </label>
                 </div>
-              </div>
+            </div>
 
 			  <!-- Submit button & GDPR -->
-              <div class="form__end has-text-centered">
+            <div class="form__end has-text-centered">
                 <p>Razmislite o svom stilu života!</p>
                 <p>
                   Hvala na vašem trudu i vremenu koje ste posvetili ispunjavanju
@@ -2380,7 +2381,7 @@
 			  			<label for="pravila" id="pravila"></label>
 					</div>
 					<div>
-			  			<h6 class="pravila">Upoznat/a sam s pravilima GDPR-a <a class="link-pravila" href="#">(kliknite za više o pravilima GDPR-a)</a> 
+            <a class="link-pravila" href="#"> <h6 class="pravila">Upoznat/a sam s pravilima GDPR-a (kliknite za više o pravilima GDPR-a)</a> 
 						</h6>
 					</div>
 		  		</div>
@@ -2392,32 +2393,66 @@
                     value="POŠALJI ANKETU"
                   />
                 </div>
-              </div>
+            </div>
 
 			  <!-- Rezultati -->
- 			  <div class="form__card--title form__card--rezultati">
-			  	<h1>rezultati</h1>
+ 			<div class="form__card--title form__card--rezultati">
+			  	<h2>rezultati</h2>
 				<img
 			  	class="form__colored_line"
 			  	src="./_assets/images/colored_lines.png"
 			  	alt="Linija u raznim bojama"/>
-			  </div>
+			</div>
+
+			<!-- Bodovi -->
+
+			<div class="results form__card">
+				<div class="bodovi">BODOVI</div>
+				<div id="rKraljeznica">KRALJEŽNICA</div>
+				<div id="rTrbuh">TRBUH</div>
+				<div id="rSmetnje">BOLOVI</div>
+				<div id="rTegobe">ZDRAVSTVENE TEGOBE</div>
+				<div id="rIzgled">FIZIČKI IZGLED I OPĆENITO </div>
+				<div id="rDisanje">DISANJE</div>
+				<div id="rStil">STIL</div>
+			</div>
 
 			  <!-- Odgovori i savjeti stručnjaka -->
- 			  <div class="form__card--title form__card--savjeti-strucnjaka">
-			  	<h1>Odgovori i savjeti stručnjaka</h1>
+ 			<div class="form__card--title form__card--savjeti-strucnjaka">
+			  	<h2>Odgovori i savjeti stručnjaka</h2>
 				<img
 			  	class="form__colored_line"
 			  	src="./_assets/images/colored_lines.png"
 			  	alt="Linija u raznim bojama"/>
-			  </div>
-            </form>
-          </section>
+			</div>
 
- 	
-		  
-		
-        </main>
+	
+
+			  <!-- Rezultati - poraditi prije -->
+ 			<div class="form__card--title form__card--rezultati-poraditi-prije">
+			  	<h3 class="has-text-centered tekst-rezultati">Za vrijeme ovog Sensa izazova najviše trebate raditi na:</h3>
+				  <img
+			  	class="form__colored_line"
+			  	src="./_assets/images/sensa_blue_odgovor.png"
+			  	alt="Sensa logo"/>
+			</div>
+
+
+			  <!-- Rezultati - poraditi nakon -->
+ 			<div class="form__card--title       form__card--rezultati-poraditi-nakon">
+          		<h3 class="has-text-centered tekst-rezultati">Nakon našeg izazova najviše ste se poboljšali u kategoriji:  </h3>
+				<h3 class="has-text-centered tekst-rezultati"> 
+            	Preporučamo da još poradite na:
+				</h3>  
+				<img
+			  	class="form__colored_line"
+			  	src="./_assets/images/sensa_greeen_odgovor.png"
+			  	alt="Sensa logo"/>
+			</div>
+      		</form>
+    	</section>
+	</main>
+</div>
       
 
         <script type="text/javascript" src="lib/main.js"></script>
