@@ -11599,7 +11599,7 @@ a.has-text-danger-dark:hover, a.has-text-danger-dark:focus {
   height: 3px;
   background: #cde17a;
 }
-.ovojesasvimposebnaklasa .form__card, .ovojesasvimposebnaklasa .form__card--title {
+.ovojesasvimposebnaklasa .form__card, .ovojesasvimposebnaklasa .form__card--title, .ovojesasvimposebnaklasa .form__card--bodovi {
   width: 860px;
   -webkit-box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.16);
           box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.16);
@@ -11609,18 +11609,18 @@ a.has-text-danger-dark:hover, a.has-text-danger-dark:focus {
   padding: 30px 55px 55px 55px;
 }
 @media (max-width: 767px) {
-  .ovojesasvimposebnaklasa .form__card, .ovojesasvimposebnaklasa .form__card--title {
+  .ovojesasvimposebnaklasa .form__card, .ovojesasvimposebnaklasa .form__card--title, .ovojesasvimposebnaklasa .form__card--bodovi {
     width: 100%;
     padding: 20px 30px 35px 30px;
   }
 }
 @media (min-width: 768px) and (max-width: 1025px) {
-  .ovojesasvimposebnaklasa .form__card, .ovojesasvimposebnaklasa .form__card--title {
+  .ovojesasvimposebnaklasa .form__card, .ovojesasvimposebnaklasa .form__card--title, .ovojesasvimposebnaklasa .form__card--bodovi {
     width: 600px;
     padding: 20px 45px 45px 45px;
   }
 }
-.ovojesasvimposebnaklasa .form__card h2, .ovojesasvimposebnaklasa .form__card--title h2 {
+.ovojesasvimposebnaklasa .form__card h2, .ovojesasvimposebnaklasa .form__card--title h2, .ovojesasvimposebnaklasa .form__card--bodovi h2 {
   font-family: cedra4f, cursive;
   font-size: 32px;
   text-align: center;
@@ -11631,11 +11631,11 @@ a.has-text-danger-dark:hover, a.has-text-danger-dark:focus {
   font-weight: 800;
 }
 @media (max-width: 767px) {
-  .ovojesasvimposebnaklasa .form__card h2, .ovojesasvimposebnaklasa .form__card--title h2 {
+  .ovojesasvimposebnaklasa .form__card h2, .ovojesasvimposebnaklasa .form__card--title h2, .ovojesasvimposebnaklasa .form__card--bodovi h2 {
     font-size: 25px;
   }
 }
-.ovojesasvimposebnaklasa .form__card h3, .ovojesasvimposebnaklasa .form__card--title h3 {
+.ovojesasvimposebnaklasa .form__card h3, .ovojesasvimposebnaklasa .form__card--title h3, .ovojesasvimposebnaklasa .form__card--bodovi h3 {
   font-family: "Roboto", sans-serif;
   font-size: 20px;
   font-weight: 900;
@@ -11647,12 +11647,12 @@ a.has-text-danger-dark:hover, a.has-text-danger-dark:focus {
   margin-bottom: 16px;
 }
 @media (max-width: 767px) {
-  .ovojesasvimposebnaklasa .form__card h3, .ovojesasvimposebnaklasa .form__card--title h3 {
+  .ovojesasvimposebnaklasa .form__card h3, .ovojesasvimposebnaklasa .form__card--title h3, .ovojesasvimposebnaklasa .form__card--bodovi h3 {
     font-size: 18px;
     margin-top: 0;
   }
 }
-.ovojesasvimposebnaklasa .form__card h4, .ovojesasvimposebnaklasa .form__card--title h4 {
+.ovojesasvimposebnaklasa .form__card h4, .ovojesasvimposebnaklasa .form__card--title h4, .ovojesasvimposebnaklasa .form__card--bodovi h4 {
   font-family: "Roboto", sans-serif;
   font-size: 12px;
   font-weight: bold;
@@ -11660,11 +11660,11 @@ a.has-text-danger-dark:hover, a.has-text-danger-dark:focus {
   color: #686868;
 }
 @media (max-width: 767px) {
-  .ovojesasvimposebnaklasa .form__card h4, .ovojesasvimposebnaklasa .form__card--title h4 {
+  .ovojesasvimposebnaklasa .form__card h4, .ovojesasvimposebnaklasa .form__card--title h4, .ovojesasvimposebnaklasa .form__card--bodovi h4 {
     font-size: 10px;
   }
 }
-.ovojesasvimposebnaklasa .form__card h5, .ovojesasvimposebnaklasa .form__card--title h5 {
+.ovojesasvimposebnaklasa .form__card h5, .ovojesasvimposebnaklasa .form__card--title h5, .ovojesasvimposebnaklasa .form__card--bodovi h5 {
   font-family: "Roboto", sans-serif;
   font-size: 12px;
   font-weight: 500;
@@ -11673,7 +11673,7 @@ a.has-text-danger-dark:hover, a.has-text-danger-dark:focus {
   color: #a5a5a5;
   margin-top: 10px;
 }
-.ovojesasvimposebnaklasa .form__card p, .ovojesasvimposebnaklasa .form__card--title p {
+.ovojesasvimposebnaklasa .form__card p, .ovojesasvimposebnaklasa .form__card--title p, .ovojesasvimposebnaklasa .form__card--bodovi p {
   font-family: "Roboto", sans-serif;
   font-size: 16px;
   font-weight: 500;
@@ -11682,17 +11682,17 @@ a.has-text-danger-dark:hover, a.has-text-danger-dark:focus {
   color: #686868;
 }
 @media (max-width: 767px) {
-  .ovojesasvimposebnaklasa .form__card p, .ovojesasvimposebnaklasa .form__card--title p {
+  .ovojesasvimposebnaklasa .form__card p, .ovojesasvimposebnaklasa .form__card--title p, .ovojesasvimposebnaklasa .form__card--bodovi p {
     font-size: 14px;
   }
 }
-.ovojesasvimposebnaklasa .form__card .drugo-pitanje, .ovojesasvimposebnaklasa .form__card--title .drugo-pitanje {
+.ovojesasvimposebnaklasa .form__card .drugo-pitanje, .ovojesasvimposebnaklasa .form__card--title .drugo-pitanje, .ovojesasvimposebnaklasa .form__card--bodovi .drugo-pitanje {
   margin-top: 30px;
 }
-.ovojesasvimposebnaklasa .form__card--green, .ovojesasvimposebnaklasa .form__card--title--green {
+.ovojesasvimposebnaklasa .form__card--green, .ovojesasvimposebnaklasa .form__card--title--green, .ovojesasvimposebnaklasa .form__card--bodovi--green {
   position: relative;
 }
-.ovojesasvimposebnaklasa .form__card--green::before, .ovojesasvimposebnaklasa .form__card--title--green::before {
+.ovojesasvimposebnaklasa .form__card--green::before, .ovojesasvimposebnaklasa .form__card--title--green::before, .ovojesasvimposebnaklasa .form__card--bodovi--green::before {
   content: "";
   position: absolute;
   display: block;
@@ -11702,7 +11702,7 @@ a.has-text-danger-dark:hover, a.has-text-danger-dark:focus {
   top: 0;
   background-color: #cee182;
 }
-.ovojesasvimposebnaklasa .form__card--green:first-of-type::before, .ovojesasvimposebnaklasa .form__card--title--green:first-of-type::before {
+.ovojesasvimposebnaklasa .form__card--green:first-of-type::before, .ovojesasvimposebnaklasa .form__card--title--green:first-of-type::before, .ovojesasvimposebnaklasa .form__card--bodovi--green:first-of-type::before {
   content: "";
   position: absolute;
   display: block;
@@ -11712,10 +11712,10 @@ a.has-text-danger-dark:hover, a.has-text-danger-dark:focus {
   top: -20px;
   background-color: #cee182;
 }
-.ovojesasvimposebnaklasa .form__card--yellow, .ovojesasvimposebnaklasa .form__card--title--yellow {
+.ovojesasvimposebnaklasa .form__card--yellow, .ovojesasvimposebnaklasa .form__card--title--yellow, .ovojesasvimposebnaklasa .form__card--bodovi--yellow {
   position: relative;
 }
-.ovojesasvimposebnaklasa .form__card--yellow::before, .ovojesasvimposebnaklasa .form__card--title--yellow::before {
+.ovojesasvimposebnaklasa .form__card--yellow::before, .ovojesasvimposebnaklasa .form__card--title--yellow::before, .ovojesasvimposebnaklasa .form__card--bodovi--yellow::before {
   content: "";
   position: absolute;
   display: block;
@@ -11725,10 +11725,10 @@ a.has-text-danger-dark:hover, a.has-text-danger-dark:focus {
   top: 0;
   background-color: #fcec2e;
 }
-.ovojesasvimposebnaklasa .form__card--purple, .ovojesasvimposebnaklasa .form__card--title--purple {
+.ovojesasvimposebnaklasa .form__card--purple, .ovojesasvimposebnaklasa .form__card--title--purple, .ovojesasvimposebnaklasa .form__card--bodovi--purple {
   position: relative;
 }
-.ovojesasvimposebnaklasa .form__card--purple::before, .ovojesasvimposebnaklasa .form__card--title--purple::before {
+.ovojesasvimposebnaklasa .form__card--purple::before, .ovojesasvimposebnaklasa .form__card--title--purple::before, .ovojesasvimposebnaklasa .form__card--bodovi--purple::before {
   content: "";
   position: absolute;
   display: block;
@@ -11738,10 +11738,10 @@ a.has-text-danger-dark:hover, a.has-text-danger-dark:focus {
   top: 0;
   background-color: #d39ff5;
 }
-.ovojesasvimposebnaklasa .form__card--green2, .ovojesasvimposebnaklasa .form__card--title--green2 {
+.ovojesasvimposebnaklasa .form__card--green2, .ovojesasvimposebnaklasa .form__card--title--green2, .ovojesasvimposebnaklasa .form__card--bodovi--green2 {
   position: relative;
 }
-.ovojesasvimposebnaklasa .form__card--green2::before, .ovojesasvimposebnaklasa .form__card--title--green2::before {
+.ovojesasvimposebnaklasa .form__card--green2::before, .ovojesasvimposebnaklasa .form__card--title--green2::before, .ovojesasvimposebnaklasa .form__card--bodovi--green2::before {
   content: "";
   position: absolute;
   display: block;
@@ -11751,10 +11751,10 @@ a.has-text-danger-dark:hover, a.has-text-danger-dark:focus {
   top: 0;
   background-color: #7ef8a1;
 }
-.ovojesasvimposebnaklasa .form__card--red, .ovojesasvimposebnaklasa .form__card--title--red {
+.ovojesasvimposebnaklasa .form__card--red, .ovojesasvimposebnaklasa .form__card--title--red, .ovojesasvimposebnaklasa .form__card--bodovi--red {
   position: relative;
 }
-.ovojesasvimposebnaklasa .form__card--red::before, .ovojesasvimposebnaklasa .form__card--title--red::before {
+.ovojesasvimposebnaklasa .form__card--red::before, .ovojesasvimposebnaklasa .form__card--title--red::before, .ovojesasvimposebnaklasa .form__card--bodovi--red::before {
   content: "";
   position: absolute;
   display: block;
@@ -11764,10 +11764,10 @@ a.has-text-danger-dark:hover, a.has-text-danger-dark:focus {
   top: 0;
   background-color: #f85b46;
 }
-.ovojesasvimposebnaklasa .form__card--blue, .ovojesasvimposebnaklasa .form__card--title--blue {
+.ovojesasvimposebnaklasa .form__card--blue, .ovojesasvimposebnaklasa .form__card--title--blue, .ovojesasvimposebnaklasa .form__card--bodovi--blue {
   position: relative;
 }
-.ovojesasvimposebnaklasa .form__card--blue::before, .ovojesasvimposebnaklasa .form__card--title--blue::before {
+.ovojesasvimposebnaklasa .form__card--blue::before, .ovojesasvimposebnaklasa .form__card--title--blue::before, .ovojesasvimposebnaklasa .form__card--bodovi--blue::before {
   content: "";
   position: absolute;
   display: block;
@@ -11777,10 +11777,10 @@ a.has-text-danger-dark:hover, a.has-text-danger-dark:focus {
   top: 0;
   background-color: #0e83f8;
 }
-.ovojesasvimposebnaklasa .form__card--purple2, .ovojesasvimposebnaklasa .form__card--title--purple2 {
+.ovojesasvimposebnaklasa .form__card--purple2, .ovojesasvimposebnaklasa .form__card--title--purple2, .ovojesasvimposebnaklasa .form__card--bodovi--purple2 {
   position: relative;
 }
-.ovojesasvimposebnaklasa .form__card--purple2::before, .ovojesasvimposebnaklasa .form__card--title--purple2::before {
+.ovojesasvimposebnaklasa .form__card--purple2::before, .ovojesasvimposebnaklasa .form__card--title--purple2::before, .ovojesasvimposebnaklasa .form__card--bodovi--purple2::before {
   content: "";
   position: absolute;
   display: block;
@@ -11790,10 +11790,10 @@ a.has-text-danger-dark:hover, a.has-text-danger-dark:focus {
   top: 0;
   background-color: #d83cf5;
 }
-.ovojesasvimposebnaklasa .form__card--grey, .ovojesasvimposebnaklasa .form__card--title--grey {
+.ovojesasvimposebnaklasa .form__card--grey, .ovojesasvimposebnaklasa .form__card--title--grey, .ovojesasvimposebnaklasa .form__card--bodovi--grey {
   position: relative;
 }
-.ovojesasvimposebnaklasa .form__card--grey::before, .ovojesasvimposebnaklasa .form__card--title--grey::before {
+.ovojesasvimposebnaklasa .form__card--grey::before, .ovojesasvimposebnaklasa .form__card--title--grey::before, .ovojesasvimposebnaklasa .form__card--bodovi--grey::before {
   content: "";
   position: absolute;
   display: block;
@@ -12077,6 +12077,9 @@ a.has-text-danger-dark:hover, a.has-text-danger-dark:focus {
   color: #cde17a;
   background: #686868;
 }
+.ovojesasvimposebnaklasa .form__card--bodovi {
+  padding: 20px 0 5px 0;
+}
 .ovojesasvimposebnaklasa .form .tekst-rezultati {
   font-family: cedra4f, cursive;
   color: #707070;
@@ -12093,8 +12096,14 @@ a.has-text-danger-dark:hover, a.has-text-danger-dark:focus {
 .ovojesasvimposebnaklasa .form .error-message input[name=tezina],
 .ovojesasvimposebnaklasa .form .error-message input[name=aktivnost] {
   background-color: #fce4e4;
-  border: 1px solid red;
+  border: 1px solid #f50000;
   outline: none;
+}
+.ovojesasvimposebnaklasa .form #bouncer-error_date {
+  font-family: "Roboto", sans-serif;
+  font-size: 14px;
+  color: #f50000;
+  margin-bottom: 30px;
 }
 .ovojesasvimposebnaklasa #form__card25 p {
   margin-bottom: 10px;
@@ -12195,56 +12204,75 @@ a.has-text-danger-dark:hover, a.has-text-danger-dark:focus {
   color: #0030fa;
   text-decoration: underline;
 }
-.ovojesasvimposebnaklasa .footer {
-  background-color: white !important;
+.ovojesasvimposebnaklasa .results #rKraljeznica,
+.ovojesasvimposebnaklasa .results #rTrbuh,
+.ovojesasvimposebnaklasa .results #rSmetnje,
+.ovojesasvimposebnaklasa .results #rTegobe,
+.ovojesasvimposebnaklasa .results #rIzgled,
+.ovojesasvimposebnaklasa .results #rDisanje,
+.ovojesasvimposebnaklasa .results #rStil {
+  margin-bottom: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
-.ovojesasvimposebnaklasa .bodovi,
-.ovojesasvimposebnaklasa #rKraljeznica,
-.ovojesasvimposebnaklasa #rTrbuh,
-.ovojesasvimposebnaklasa #rSmetnje,
-.ovojesasvimposebnaklasa #rTegobe,
-.ovojesasvimposebnaklasa #rIzgled,
-.ovojesasvimposebnaklasa #rDisanje,
-.ovojesasvimposebnaklasa #rStil {
+@media (max-width: 767px) {
+  .ovojesasvimposebnaklasa .results #rKraljeznica,
+.ovojesasvimposebnaklasa .results #rTrbuh,
+.ovojesasvimposebnaklasa .results #rSmetnje,
+.ovojesasvimposebnaklasa .results #rTegobe,
+.ovojesasvimposebnaklasa .results #rIzgled,
+.ovojesasvimposebnaklasa .results #rDisanje,
+.ovojesasvimposebnaklasa .results #rStil {
+    font-size: 12px;
+    margin-bottom: 10px;
+  }
+}
+.ovojesasvimposebnaklasa .results .bodovi {
+  font-weight: bold;
+  text-align: left;
+  margin-bottom: 20px;
+  margin-left: 10px;
   font-family: cedra4f, cursive;
   color: #707070;
   font-size: 20px;
   line-height: 22px;
   text-transform: uppercase;
-  padding-left: 30px;
-  margin-bottom: 20px;
 }
-@media (max-width: 767px) {
-  .ovojesasvimposebnaklasa .bodovi,
-.ovojesasvimposebnaklasa #rKraljeznica,
-.ovojesasvimposebnaklasa #rTrbuh,
-.ovojesasvimposebnaklasa #rSmetnje,
-.ovojesasvimposebnaklasa #rTegobe,
-.ovojesasvimposebnaklasa #rIzgled,
-.ovojesasvimposebnaklasa #rDisanje,
-.ovojesasvimposebnaklasa #rStil {
-    font-size: 12px;
-    padding-left: 10px;
-  }
+.ovojesasvimposebnaklasa .results p {
+  font-family: cedra4f, cursive;
+  color: #707070;
+  font-size: 20px;
+  line-height: 22px;
+  text-transform: uppercase;
+  margin-right: 20px;
+  margin-left: 10px;
 }
-.ovojesasvimposebnaklasa #rKraljeznica {
+.ovojesasvimposebnaklasa .results #rKraljeznica {
   background-color: rgba(206, 225, 130, 0.6);
 }
-.ovojesasvimposebnaklasa #rTrbuh {
+.ovojesasvimposebnaklasa .results #rTrbuh {
   background-color: rgba(252, 234, 44, 0.6);
 }
-.ovojesasvimposebnaklasa #rSmetnje {
+.ovojesasvimposebnaklasa .results #rSmetnje {
   background-color: rgba(211, 159, 245, 0.6);
 }
-.ovojesasvimposebnaklasa #rTegobe {
+.ovojesasvimposebnaklasa .results #rTegobe {
   background-color: rgba(126, 248, 161, 0.6);
 }
-.ovojesasvimposebnaklasa #rIzgled {
+.ovojesasvimposebnaklasa .results #rIzgled {
   background-color: rgba(248, 91, 70, 0.6);
 }
-.ovojesasvimposebnaklasa #rDisanje {
+.ovojesasvimposebnaklasa .results #rDisanje {
   background-color: rgba(14, 131, 248, 0.6);
 }
-.ovojesasvimposebnaklasa #rStil {
+.ovojesasvimposebnaklasa .results #rStil {
   background-color: rgba(216, 60, 245, 0.6);
+}
+
+.footer {
+  background-color: white !important;
 }

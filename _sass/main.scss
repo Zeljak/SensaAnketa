@@ -160,7 +160,8 @@
     }
 
     &__card,
-    &__card--title {
+    &__card--title,
+    &__card--bodovi {
       width: 860px;
       box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.16);
       background: white;
@@ -610,6 +611,10 @@
     //   display: none;
     // }
 
+    &__card--bodovi {
+      padding: 20px 0 5px 0;
+    }
+
     .tekst-rezultati {
       font-family: $family-secondary;
       color: $background-grey;
@@ -621,13 +626,21 @@
       }
     }
 
+    // Error mesages
     .error-message input[type="text"],
     .error-message input[type="date"],
     .error-message input[name="tezina"],
     .error-message input[name="aktivnost"] {
       background-color: #fce4e4;
-      border: 1px solid red;
+      border: 1px solid $error-color;
       outline: none;
+    }
+
+    #bouncer-error_date {
+      font-family: $family-primary;
+      font-size: 14px;
+      color: $error-color;
+      margin-bottom: 30px;
     }
   }
 
@@ -743,50 +756,72 @@
     text-decoration: underline;
   }
 
-  // FOOTER
-  .footer {
-    background-color: $white !important;
-  }
-  .bodovi,
-  #rKraljeznica,
-  #rTrbuh,
-  #rSmetnje,
-  #rTegobe,
-  #rIzgled,
-  #rDisanje,
-  #rStil {
-    font-family: $family-secondary;
-    color: $background-grey;
-    font-size: 20px;
-    line-height: 22px;
-    text-transform: uppercase;
-    padding-left: 30px;
-    margin-bottom: 20px;
+  //   BODOVI
 
-    @include for-phone {
-      font-size: 12px;
-      padding-left: 10px;
+  .results {
+    #rKraljeznica,
+    #rTrbuh,
+    #rSmetnje,
+    #rTegobe,
+    #rIzgled,
+    #rDisanje,
+    #rStil {
+      margin-bottom: 20px;
+      display: flex;
+      align-items: center;
+
+      @include for-phone {
+        font-size: 12px;
+        margin-bottom: 10px;
+      }
+    }
+    .bodovi {
+      font-weight: bold;
+      text-align: left;
+      margin-bottom: 20px;
+      margin-left: 10px;
+      font-family: $family-secondary;
+      color: $background-grey;
+      font-size: 20px;
+      line-height: 22px;
+      text-transform: uppercase;
+    }
+
+    p {
+      font-family: $family-secondary;
+      color: $background-grey;
+      font-size: 20px;
+      line-height: 22px;
+      text-transform: uppercase;
+      margin-right: 20px;
+      margin-left: 10px;
+    }
+
+    #rKraljeznica {
+      background-color: rgb(206, 225, 130, 0.6);
+    }
+    #rTrbuh {
+      background-color: rgb(252, 234, 44, 0.6);
+    }
+    #rSmetnje {
+      background-color: rgb(211, 159, 245, 0.6);
+    }
+    #rTegobe {
+      background-color: rgb(126, 248, 161, 0.6);
+    }
+    #rIzgled {
+      background-color: rgb(248, 91, 70, 0.6);
+    }
+    #rDisanje {
+      background-color: rgb(14, 131, 248, 0.6);
+    }
+    #rStil {
+      background-color: rgb(216, 60, 245, 0.6);
     }
   }
-  #rKraljeznica {
-    background-color: rgb(206, 225, 130, 0.6);
-  }
-  #rTrbuh {
-    background-color: rgb(252, 234, 44, 0.6);
-  }
-  #rSmetnje {
-    background-color: rgb(211, 159, 245, 0.6);
-  }
-  #rTegobe {
-    background-color: rgb(126, 248, 161, 0.6);
-  }
-  #rIzgled {
-    background-color: rgb(248, 91, 70, 0.6);
-  }
-  #rDisanje {
-    background-color: rgb(14, 131, 248, 0.6);
-  }
-  #rStil {
-    background-color: rgb(216, 60, 245, 0.6);
-  }
+}
+
+// FOOTER
+.footer {
+  background-color: $white !important;
 }
