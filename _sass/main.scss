@@ -245,6 +245,10 @@
         }
       }
 
+      .drugo-pitanje {
+        margin-top: 30px;
+      }
+
       &--green {
         border-left: 43px solid $green-section;
 
@@ -397,12 +401,14 @@
       }
     }
 
-    input[name="aktivnost"] {
+    input[name="aktivnost"],
+    input[name="tezina"] {
       width: 100%;
       height: 10px;
       margin: 0 auto;
       font-size: 18px;
       border-radius: 0;
+      border: 1px solid $green;
       font-family: $family-secondary;
       margin-bottom: 10px;
       padding: 24px 24px 24px 41px;
@@ -425,6 +431,7 @@
     label {
       display: inline-block;
       position: relative;
+      width: 50px;
     }
 
     label input {
@@ -463,17 +470,17 @@
 
     &__label-wrapper {
       display: flex;
-      justify-content: space-evenly;
-      margin-top: 48px;
+      justify-content: flex-start;
+      margin: 48px auto 0 auto;
 
       @include for-phone {
-        margin-left: -42px;
-        margin-right: -12px;
+        // margin-left: -42px;
+        // margin-right: -12px;
       }
 
       @include for-tablet {
-        margin-left: -42px;
-        margin-right: -12px;
+        // margin-left: -42px;
+        // margin-right: -12px;
       }
     }
 
@@ -552,7 +559,10 @@
       }
     }
 
-    .error-message [type="text"] {
+    .error-message input[type="text"],
+    .error-message input[type="date"],
+    .error-message input[name="tezina"],
+    .error-message input[name="aktivnost"] {
       background-color: #fce4e4;
       border: 1px solid red;
       outline: none;

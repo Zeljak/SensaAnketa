@@ -11686,6 +11686,9 @@ a.has-text-danger-dark:hover, a.has-text-danger-dark:focus {
     font-size: 14px;
   }
 }
+.ovojesasvimposebnaklasa .form__card .drugo-pitanje, .ovojesasvimposebnaklasa .form__card--title .drugo-pitanje {
+  margin-top: 30px;
+}
 .ovojesasvimposebnaklasa .form__card--green, .ovojesasvimposebnaklasa .form__card--title--green {
   border-left: 43px solid #cee182;
 }
@@ -11867,62 +11870,68 @@ a.has-text-danger-dark:hover, a.has-text-danger-dark:focus {
     font-size: 12px;
   }
 }
-.ovojesasvimposebnaklasa .form input[name=aktivnost] {
+.ovojesasvimposebnaklasa .form input[name=aktivnost],
+.ovojesasvimposebnaklasa .form input[name=tezina] {
   width: 100%;
   height: 10px;
   margin: 0 auto;
   font-size: 18px;
   border-radius: 0;
+  border: 1px solid #cde17a;
   font-family: cedra4f, cursive;
   margin-bottom: 10px;
   padding: 24px 24px 24px 41px;
   margin-bottom: 25px;
 }
 @media (max-width: 767px) {
-  .ovojesasvimposebnaklasa .form input[name=aktivnost] {
+  .ovojesasvimposebnaklasa .form input[name=aktivnost],
+.ovojesasvimposebnaklasa .form input[name=tezina] {
     padding: 14px 14px 14px 31px;
   }
 }
-.ovojesasvimposebnaklasa .form input[name=aktivnost]::-webkit-input-placeholder {
+.ovojesasvimposebnaklasa .form input[name=aktivnost]::-webkit-input-placeholder, .ovojesasvimposebnaklasa .form input[name=tezina]::-webkit-input-placeholder {
   font-size: 14px;
   text-align: left;
 }
-.ovojesasvimposebnaklasa .form input[name=aktivnost]::-moz-placeholder {
+.ovojesasvimposebnaklasa .form input[name=aktivnost]::-moz-placeholder, .ovojesasvimposebnaklasa .form input[name=tezina]::-moz-placeholder {
   font-size: 14px;
   text-align: left;
 }
-.ovojesasvimposebnaklasa .form input[name=aktivnost]:-ms-input-placeholder {
+.ovojesasvimposebnaklasa .form input[name=aktivnost]:-ms-input-placeholder, .ovojesasvimposebnaklasa .form input[name=tezina]:-ms-input-placeholder {
   font-size: 14px;
   text-align: left;
 }
-.ovojesasvimposebnaklasa .form input[name=aktivnost]::-ms-input-placeholder {
+.ovojesasvimposebnaklasa .form input[name=aktivnost]::-ms-input-placeholder, .ovojesasvimposebnaklasa .form input[name=tezina]::-ms-input-placeholder {
   font-size: 14px;
   text-align: left;
 }
-.ovojesasvimposebnaklasa .form input[name=aktivnost]::placeholder {
+.ovojesasvimposebnaklasa .form input[name=aktivnost]::placeholder,
+.ovojesasvimposebnaklasa .form input[name=tezina]::placeholder {
   font-size: 14px;
   text-align: left;
 }
 @media (max-width: 767px) {
-  .ovojesasvimposebnaklasa .form input[name=aktivnost]::-webkit-input-placeholder {
+  .ovojesasvimposebnaklasa .form input[name=aktivnost]::-webkit-input-placeholder, .ovojesasvimposebnaklasa .form input[name=tezina]::-webkit-input-placeholder {
     font-size: 12px;
   }
-  .ovojesasvimposebnaklasa .form input[name=aktivnost]::-moz-placeholder {
+  .ovojesasvimposebnaklasa .form input[name=aktivnost]::-moz-placeholder, .ovojesasvimposebnaklasa .form input[name=tezina]::-moz-placeholder {
     font-size: 12px;
   }
-  .ovojesasvimposebnaklasa .form input[name=aktivnost]:-ms-input-placeholder {
+  .ovojesasvimposebnaklasa .form input[name=aktivnost]:-ms-input-placeholder, .ovojesasvimposebnaklasa .form input[name=tezina]:-ms-input-placeholder {
     font-size: 12px;
   }
-  .ovojesasvimposebnaklasa .form input[name=aktivnost]::-ms-input-placeholder {
+  .ovojesasvimposebnaklasa .form input[name=aktivnost]::-ms-input-placeholder, .ovojesasvimposebnaklasa .form input[name=tezina]::-ms-input-placeholder {
     font-size: 12px;
   }
-  .ovojesasvimposebnaklasa .form input[name=aktivnost]::placeholder {
+  .ovojesasvimposebnaklasa .form input[name=aktivnost]::placeholder,
+.ovojesasvimposebnaklasa .form input[name=tezina]::placeholder {
     font-size: 12px;
   }
 }
 .ovojesasvimposebnaklasa .form label {
   display: inline-block;
   position: relative;
+  width: 50px;
 }
 .ovojesasvimposebnaklasa .form label input {
   display: none;
@@ -11960,22 +11969,10 @@ a.has-text-danger-dark:hover, a.has-text-danger-dark:focus {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
-  margin-top: 48px;
-}
-@media (max-width: 767px) {
-  .ovojesasvimposebnaklasa .form__label-wrapper {
-    margin-left: -42px;
-    margin-right: -12px;
-  }
-}
-@media (min-width: 768px) and (max-width: 1025px) {
-  .ovojesasvimposebnaklasa .form__label-wrapper {
-    margin-left: -42px;
-    margin-right: -12px;
-  }
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  margin: 48px auto 0 auto;
 }
 .ovojesasvimposebnaklasa .form__end {
   width: 860px;
@@ -12041,7 +12038,10 @@ a.has-text-danger-dark:hover, a.has-text-danger-dark:focus {
     font-size: 16px;
   }
 }
-.ovojesasvimposebnaklasa .form .error-message [type=text] {
+.ovojesasvimposebnaklasa .form .error-message input[type=text],
+.ovojesasvimposebnaklasa .form .error-message input[type=date],
+.ovojesasvimposebnaklasa .form .error-message input[name=tezina],
+.ovojesasvimposebnaklasa .form .error-message input[name=aktivnost] {
   background-color: #fce4e4;
   border: 1px solid red;
   outline: none;

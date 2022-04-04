@@ -121,6 +121,7 @@
 
                 <!-- Godina rođenja -->
                 <div>
+                  <h4>Upišite datum i godinu rođenja:</h4>
                   <input
                     type="date"
                     id="date"
@@ -133,12 +134,13 @@
 
             <!-- E-mail -->
                 <div>
+                  <h4>Upišite e-mail adresu:</h4>
                   <input
                     type="text"
                     id="email"
                     name="email"
                     class="form__email"
-                    placeholder="E-mail:"
+                    placeholder="imeprezime@mail.com"
 					required
                   />
                 </div>
@@ -497,9 +499,9 @@
 					<h3>Moja težina je: </h3>
 						<div>
 							  <input
-						  type="text"
+						  type="number"
 						  id="aktivnost_niska"
-						  name="aktivnost"
+						  name="tezina"
 						  class="aktivnost_niska"
 						  placeholder="kg"
 						  onClick="changeColour27('zz')"
@@ -530,10 +532,10 @@
                   uvinut)? U kakvom su međuodnosu glava, ramena, prsni koš i
                   zdjelica?
                 </p>
-                <p>
+                <p> <span class="drugo-pitanje">
                   Kako biste generalno ocijenili svoje "sadašnje ja" u
                   kategoriji "držanje i kralježnica"?
-                </p>
+                </p></span>
                 <h5>1 = jako loše&nbsp;&nbsp;&nbsp; 7 = odlično</h5>
                 <div class="form__label-wrapper">
                   <label for="kraljeznica_sadasnje_1">
