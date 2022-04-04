@@ -636,7 +636,8 @@
       outline: none;
     }
 
-    #bouncer-error_date {
+    #bouncer-error_date,
+    #bouncer-error_gdpr_prihvacam {
       font-family: $family-primary;
       font-size: 14px;
       color: $error-color;
