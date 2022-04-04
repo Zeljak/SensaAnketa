@@ -11686,8 +11686,8 @@ a.has-text-danger-dark:hover, a.has-text-danger-dark:focus {
     font-size: 14px;
   }
 }
-.ovojesasvimposebnaklasa .form__card .drugo-pitanje, .ovojesasvimposebnaklasa .form__card--title .drugo-pitanje, .ovojesasvimposebnaklasa .form__card--bodovi .drugo-pitanje {
-  margin-top: 30px;
+.ovojesasvimposebnaklasa .form__card .prvo-pitanje, .ovojesasvimposebnaklasa .form__card--title .prvo-pitanje, .ovojesasvimposebnaklasa .form__card--bodovi .prvo-pitanje {
+  margin-bottom: 20px;
 }
 .ovojesasvimposebnaklasa .form__card--green, .ovojesasvimposebnaklasa .form__card--title--green, .ovojesasvimposebnaklasa .form__card--bodovi--green {
   position: relative;
