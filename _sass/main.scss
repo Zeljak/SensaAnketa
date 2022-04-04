@@ -250,66 +250,128 @@
       }
 
       &--green {
-        border-left: 43px solid $green-section;
+        position: relative;
 
-        @include for-phone {
-          border-left: 35px solid $green-section;
+        &::before {
+          content: "";
+          position: absolute;
+          display: block;
+          width: 43px;
+          height: 100%;
+          left: -52px;
+          top: 0;
+          background-color: $green-section;
+        }
+
+        &:first-of-type::before {
+          content: "";
+          position: absolute;
+          display: block;
+          width: 43px;
+          height: 130%;
+          left: 0;
+          top: -20px;
+          background-color: $green-section;
         }
       }
 
       &--yellow {
-        border-left: 43px solid $yellow-section;
-
-        @include for-phone {
-          border-left: 35px solid $yellow-section;
+        position: relative;
+        &::before {
+          content: "";
+          position: absolute;
+          display: block;
+          width: 43px;
+          height: 100%;
+          left: -52px;
+          top: 0;
+          background-color: $yellow-section;
         }
       }
 
       &--purple {
-        border-left: 43px solid $purple-section;
+        position: relative;
 
-        @include for-phone {
-          border-left: 35px solid $purple-section;
+        &::before {
+          content: "";
+          position: absolute;
+          display: block;
+          width: 43px;
+          height: 100%;
+          left: -52px;
+          top: 0;
+          background-color: $purple-section;
         }
       }
 
       &--green2 {
-        border-left: 43px solid $green-section2;
-
-        @include for-phone {
-          border-left: 35px solid $green-section2;
+        position: relative;
+        &::before {
+          content: "";
+          position: absolute;
+          display: block;
+          width: 43px;
+          height: 100%;
+          left: -52px;
+          top: 0;
+          background-color: $green-section2;
         }
       }
 
       &--red {
-        border-left: 43px solid $red-section;
-
-        @include for-phone {
-          border-left: 35px solid $red-section;
+        position: relative;
+        &::before {
+          content: "";
+          position: absolute;
+          display: block;
+          width: 43px;
+          height: 100%;
+          left: -52px;
+          top: 0;
+          background-color: $red-section;
         }
       }
 
       &--blue {
-        border-left: 43px solid $blue-section;
+        position: relative;
 
-        @include for-phone {
-          border-left: 35px solid $blue-section;
+        &::before {
+          content: "";
+          position: absolute;
+          display: block;
+          width: 43px;
+          height: 100%;
+          left: -52px;
+          top: 0;
+          background-color: $blue-section;
         }
       }
 
       &--purple2 {
-        border-left: 43px solid $purple-section2;
-
-        @include for-phone {
-          border-left: 35px solid $purple-section2;
+        position: relative;
+        &::before {
+          content: "";
+          position: absolute;
+          display: block;
+          width: 43px;
+          height: 100%;
+          left: -52px;
+          top: 0;
+          background-color: $purple-section2;
         }
       }
 
       &--grey {
-        border-left: 43px solid $grey-section;
-
-        @include for-phone {
-          border-left: 35px solid $grey-section;
+        position: relative;
+        &::before {
+          content: "";
+          position: absolute;
+          display: block;
+          width: 43px;
+          height: 100%;
+          left: -52px;
+          top: 0;
+          background-color: $grey-section;
         }
       }
     }
