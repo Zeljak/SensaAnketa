@@ -770,6 +770,7 @@
       margin-bottom: 20px;
       display: flex;
       align-items: center;
+      transition: background 2s ease-in-out;
 
       @include for-phone {
         font-size: 12px;
