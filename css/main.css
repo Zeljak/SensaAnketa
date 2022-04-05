@@ -11788,7 +11788,7 @@ a.has-text-danger-dark:hover, a.has-text-danger-dark:focus {
   position: absolute;
   display: block;
   width: 43px;
-  height: 110%;
+  height: 110.6%;
   left: -52px;
   top: 0;
   background-color: #6e6e6e;
@@ -12119,6 +12119,11 @@ a.has-text-danger-dark:hover, a.has-text-danger-dark:focus {
 @media screen and (min-width: 1025px) {
   .ovojesasvimposebnaklasa .pravila__wrapper h6 {
     font-size: 20px;
+  }
+}
+@media screen and (min-width: 2000px) {
+  .ovojesasvimposebnaklasa .pravila__wrapper h6 {
+    margin-left: 52px;
   }
 }
 .ovojesasvimposebnaklasa .pravila__checkbox {

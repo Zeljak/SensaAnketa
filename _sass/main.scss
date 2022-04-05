@@ -358,7 +358,7 @@
           position: absolute;
           display: block;
           width: 43px;
-          height: 110%;
+          height: 110.6%;
           left: -52px;
           top: 0;
           background-color: $grey-section;
@@ -658,6 +658,10 @@
 
     @media screen and (min-width: 1025px) {
       font-size: 20px;
+    }
+
+    @media screen and (min-width: 2000px) {
+      margin-left: 52px;
     }
   }
 
