@@ -11603,6 +11603,7 @@ a.has-text-danger-dark:hover, a.has-text-danger-dark:focus {
   width: 100%;
   height: 3px;
   background: #cde17a;
+  margin-bottom: 20px;
 }
 .ovojesasvimposebnaklasa .form__card, .ovojesasvimposebnaklasa .form__card--title, .ovojesasvimposebnaklasa .form__card--bodovi {
   width: 860px;
@@ -12016,9 +12017,9 @@ a.has-text-danger-dark:hover, a.has-text-danger-dark:focus {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: flex-start;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   margin: 48px auto 0 auto;
 }
 .ovojesasvimposebnaklasa .form__end {
