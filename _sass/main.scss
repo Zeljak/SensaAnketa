@@ -625,6 +625,13 @@
     }
 
     // Error mesages
+    .error-message {
+      font-family: $family-error;
+      font-size: 14px;
+      background-color: $error-color;
+      color: white;
+    }
+
     .error-message input[type="text"],
     .error-message input[type="date"],
     .error-message input[name="tezina"],
@@ -632,14 +639,6 @@
       background-color: #fce4e4;
       border: 1px solid $error-color;
       outline: none;
-    }
-
-    #bouncer-error_date,
-    #bouncer-error_gdpr_prihvacam {
-      font-family: $family-primary;
-      font-size: 14px;
-      color: $error-color;
-      margin-bottom: 30px;
     }
   }
 

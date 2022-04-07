@@ -12090,20 +12090,19 @@ a.has-text-danger-dark:hover, a.has-text-danger-dark:focus {
     font-size: 16px;
   }
 }
+.ovojesasvimposebnaklasa .form .error-message {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 14px;
+  background-color: #fc837c;
+  color: white;
+}
 .ovojesasvimposebnaklasa .form .error-message input[type=text],
 .ovojesasvimposebnaklasa .form .error-message input[type=date],
 .ovojesasvimposebnaklasa .form .error-message input[name=tezina],
 .ovojesasvimposebnaklasa .form .error-message input[name=aktivnost] {
   background-color: #fce4e4;
-  border: 1px solid #f50000;
+  border: 1px solid #fc837c;
   outline: none;
-}
-.ovojesasvimposebnaklasa .form #bouncer-error_date,
-.ovojesasvimposebnaklasa .form #bouncer-error_gdpr_prihvacam {
-  font-family: "Roboto", sans-serif;
-  font-size: 14px;
-  color: #f50000;
-  margin-bottom: 30px;
 }
 .ovojesasvimposebnaklasa #form__card25 p {
   margin-bottom: 10px;
