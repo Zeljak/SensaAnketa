@@ -75,12 +75,14 @@
     }
 
     &__logo {
-      margin-top: 40px;
+      margin: 40px auto 0 auto;
       width: 70%;
+      display: block;
     }
 
     h1 {
       font-size: 30px;
+      text-align: center;
 
       @include for-phone {
         font-size: 16px;
@@ -91,6 +93,7 @@
       font-size: 14px;
       color: $brownish-grey;
       background-color: $green;
+      text-align: center;
 
       @include for-phone {
         font-size: 12px;
@@ -102,6 +105,7 @@
       font-size: 12px;
       color: white;
       margin-bottom: 20px;
+      text-align: center;
     }
 
     .card1 {
@@ -132,6 +136,7 @@
       margin: 0 auto;
       font-size: 18px;
       padding: 30px 55px 55px 55px;
+      text-align: center;
 
       @include for-phone {
         width: 100%;
@@ -168,6 +173,7 @@
       color: $brownish-grey;
       margin: 20px auto;
       padding: 30px 55px 55px 55px;
+      text-align: center;
 
       @include for-phone {
         width: 100%;
@@ -188,6 +194,7 @@
         margin-top: 52px;
         margin-bottom: 22px;
         font-weight: 800;
+        text-align: center;
 
         @include for-phone {
           font-size: 25px;
@@ -358,7 +365,7 @@
           position: absolute;
           display: block;
           width: 43px;
-          height: 110.6%;
+          height: 111.6%;
           left: -52px;
           top: 0;
           background-color: $grey-section;
@@ -554,6 +561,7 @@
         color: $brownish-grey;
         text-align: center;
         padding: 0 90px;
+        text-align: center;
 
         @include for-phone {
           font-size: 16px;
@@ -609,6 +617,7 @@
       color: $background-grey;
       font-size: 20px;
       font-weight: normal;
+      text-align: center;
 
       @include for-phone {
         font-size: 16px;
@@ -641,11 +650,15 @@
   }
 
   // Pravila
+
+  .pravila__wrapper {
+    display: flex;
+  }
   .pravila__wrapper h6 {
     margin-top: 20px;
     margin-bottom: 20px;
     font-family: Arial, Helvetica, sans-serif;
-    color: $background-grey;
+    color: $link-blue;
 
     @include for-tablet {
       font-size: 14px;
@@ -763,7 +776,7 @@
       margin-bottom: 20px;
       display: flex;
       align-items: center;
-      transition: background 2s ease-in-out;
+      transition: background 0.5s ease-in-out;
 
       @include for-phone {
         font-size: 12px;

@@ -11511,11 +11511,13 @@ a.has-text-danger-dark:hover, a.has-text-danger-dark:focus {
   font-family: cedra4f;
 }
 .ovojesasvimposebnaklasa .header__logo {
-  margin-top: 40px;
+  margin: 40px auto 0 auto;
   width: 70%;
+  display: block;
 }
 .ovojesasvimposebnaklasa .header h1 {
   font-size: 30px;
+  text-align: center;
 }
 @media (max-width: 767px) {
   .ovojesasvimposebnaklasa .header h1 {
@@ -11527,6 +11529,7 @@ a.has-text-danger-dark:hover, a.has-text-danger-dark:focus {
   font-size: 14px;
   color: #686868;
   background-color: #cde17a;
+  text-align: center;
 }
 @media (max-width: 767px) {
   .ovojesasvimposebnaklasa .header h2 {
@@ -11538,6 +11541,7 @@ a.has-text-danger-dark:hover, a.has-text-danger-dark:focus {
   font-size: 12px;
   color: white;
   margin-bottom: 20px;
+  text-align: center;
 }
 .ovojesasvimposebnaklasa .header .card1 {
   width: 200px;
@@ -11572,6 +11576,7 @@ a.has-text-danger-dark:hover, a.has-text-danger-dark:focus {
   margin: 0 auto;
   font-size: 18px;
   padding: 30px 55px 55px 55px;
+  text-align: center;
 }
 @media (max-width: 767px) {
   .ovojesasvimposebnaklasa .form__uvod {
@@ -11607,6 +11612,7 @@ a.has-text-danger-dark:hover, a.has-text-danger-dark:focus {
   color: #686868;
   margin: 20px auto;
   padding: 30px 55px 55px 55px;
+  text-align: center;
 }
 @media (max-width: 767px) {
   .ovojesasvimposebnaklasa .form__card, .ovojesasvimposebnaklasa .form__card--title, .ovojesasvimposebnaklasa .form__card--bodovi {
@@ -11629,6 +11635,7 @@ a.has-text-danger-dark:hover, a.has-text-danger-dark:focus {
   margin-top: 52px;
   margin-bottom: 22px;
   font-weight: 800;
+  text-align: center;
 }
 @media (max-width: 767px) {
   .ovojesasvimposebnaklasa .form__card h2, .ovojesasvimposebnaklasa .form__card--title h2, .ovojesasvimposebnaklasa .form__card--bodovi h2 {
@@ -11788,7 +11795,7 @@ a.has-text-danger-dark:hover, a.has-text-danger-dark:focus {
   position: absolute;
   display: block;
   width: 43px;
-  height: 110.6%;
+  height: 111.6%;
   left: -52px;
   top: 0;
   background-color: #6e6e6e;
@@ -12035,6 +12042,7 @@ a.has-text-danger-dark:hover, a.has-text-danger-dark:focus {
   color: #686868;
   text-align: center;
   padding: 0 90px;
+  text-align: center;
 }
 @media (max-width: 767px) {
   .ovojesasvimposebnaklasa .form__end p {
@@ -12075,6 +12083,7 @@ a.has-text-danger-dark:hover, a.has-text-danger-dark:focus {
   color: #707070;
   font-size: 20px;
   font-weight: normal;
+  text-align: center;
 }
 @media (max-width: 767px) {
   .ovojesasvimposebnaklasa .form .tekst-rezultati {
@@ -12099,11 +12108,16 @@ a.has-text-danger-dark:hover, a.has-text-danger-dark:focus {
 .ovojesasvimposebnaklasa #form__card25 p {
   margin-bottom: 10px;
 }
+.ovojesasvimposebnaklasa .pravila__wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
 .ovojesasvimposebnaklasa .pravila__wrapper h6 {
   margin-top: 20px;
   margin-bottom: 20px;
   font-family: Arial, Helvetica, sans-serif;
-  color: #707070;
+  color: #0030fa;
 }
 @media (min-width: 768px) and (max-width: 1025px) {
   .ovojesasvimposebnaklasa .pravila__wrapper h6 {
@@ -12214,8 +12228,8 @@ a.has-text-danger-dark:hover, a.has-text-danger-dark:focus {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-transition: background 2s ease-in-out;
-  transition: background 2s ease-in-out;
+  -webkit-transition: background 0.5s ease-in-out;
+  transition: background 0.5s ease-in-out;
 }
 @media (max-width: 767px) {
   .ovojesasvimposebnaklasa .results #rKraljeznica,

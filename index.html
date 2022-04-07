@@ -62,7 +62,7 @@
     <div class="wrapper_html">
       <div class="wrapper_body">
         <!-- HEADER -->
-        <header class="header has-text-centered">
+        <header class="header">
           <div class="header__text-box card1">
             <img
               class="header__logo"
@@ -81,7 +81,7 @@
     <main>
         <section class="form">
             <form id="anketaSensa">
-              <div class="form__uvod has-text-centered">
+              <div class="form__uvod">
                 <p>
                   Izdvojite vrijeme za samoprocjenu i odgovore na pitanja koja
                   se tiču vašeg trenutačnog stanja - "sadašnjeg Ja" i
@@ -130,7 +130,7 @@
                     placeholder="Godina rođenja"
 					required
                   />
-				  <div class="error-message" id="bouncer-error_date">Ispunite obavezno polje</div>
+				  <!-- <div class="error-message" id="bouncer-error_date">Ispunite obavezno polje</div> -->
                 </div>
 				
 
@@ -2371,22 +2371,22 @@
             </div>
 
 			  <!-- Submit button & GDPR -->
-            <div class="form__end has-text-centered">
+            <div class="form__end">
                 <p>Razmislite o svom stilu života!</p>
                 <p>
                   Hvala na vašem trudu i vremenu koje ste posvetili ispunjavanju
                   ovog upitnika!
                 </p>
+
 				 <!-- Pravila privatnosti -->
-		
-				 <div class="pravila__wrapper is-flex is-justify-content-center">
+				<div class="pravila__wrapper">
 					<div class="pravila__checkbox">
 			  			<input type="checkbox" id="pravila" name="pravila" value="prihvacam">
 			  			<label for="pravila" id="pravila"></label>
 					</div>
 					<div>
-            <a class="link-pravila" href="#"> <h6 class="pravila">Upoznat/a sam s pravilima GDPR-a (kliknite za više o pravilima GDPR-a)</a> 
-						</h6>
+            			<a class="link-pravila" href="#">
+						<h6 class="pravila">Upoznat/a sam s pravilima GDPR-a (kliknite za više o pravilima GDPR-a)</h6></a>
 					</div>
 		  		</div>
                 <div>
@@ -2409,8 +2409,7 @@
 			</div>
 
 			<!-- Bodovi -->
-
-			<div class="results form__card--bodovi has-text-centered">
+			<div class="results form__card--bodovi">
 				<div class="bodovi">BODOVI</div>
 				<div id="rKraljeznica" style="width:10%">
 					<p>10%</p>
@@ -2455,7 +2454,7 @@
 
 			  <!-- Rezultati - poraditi prije -->
  			<div class="form__card--title form__card--rezultati-poraditi-prije">
-			  	<h3 class="has-text-centered tekst-rezultati">Za vrijeme ovog Sensa izazova najviše trebate raditi na:</h3>
+			  	<h3 class="tekst-rezultati">Za vrijeme ovog Sensa izazova najviše trebate raditi na:</h3>
 				  <img
 			  	class="form__colored_line"
 			  	src="./_assets/images/sensa_blue_odgovor.png"
@@ -2465,8 +2464,8 @@
 
 			  <!-- Rezultati - poraditi nakon -->
  			<div class="form__card--title       form__card--rezultati-poraditi-nakon">
-          		<h3 class="has-text-centered tekst-rezultati">Nakon našeg izazova najviše ste se poboljšali u kategoriji:  </h3>
-				<h3 class="has-text-centered tekst-rezultati"> 
+          		<h3 class="tekst-rezultati">Nakon našeg izazova najviše ste se poboljšali u kategoriji:  </h3>
+				<h3 class="tekst-rezultati"> 
             	Preporučamo da još poradite na:
 				</h3>  
 				<img
@@ -2477,11 +2476,11 @@
       		</form>
     	</section>
 	</main>
-</div>
+	</div>
       
 
         <script type="text/javascript" src="lib/main.js"></script>
-      </div>
+    </div>
     </div>
   </body>
 </html>
