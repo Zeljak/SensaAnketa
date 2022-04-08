@@ -1,11 +1,9 @@
-@charset "utf-8";
+// @charset "utf-8";
 
-@import "../node_modules/bulma/sass/utilities/initial-variables";
+// @import "../node_modules/bulma/sass/utilities/initial-variables";
 
+// @import "../node_modules/bulma/bulma";
 @import "./_utilities";
-
-@import "../node_modules/bulma/bulma";
-
 //GENERAL
 // *,
 // *::after,
@@ -50,19 +48,14 @@
   }
 
   .header {
-    width: 860px;
+    width: 100%;
     margin: 20px auto 20px auto;
     display: flex;
     background: $light-pink;
     box-shadow: inset 0px 0px 0px 2px white;
 
     @include for-phone {
-      width: 100%;
       margin: 5px auto 10px auto;
-    }
-
-    @include for-tablet {
-      width: 600px;
     }
 
     &__text-box {
@@ -85,7 +78,7 @@
       text-align: center;
 
       @include for-phone {
-        font-size: 16px;
+        font-size: 20px;
       }
     }
     h2 {
@@ -129,61 +122,65 @@
     }
 
     &__uvod {
-      width: 860px;
+      width: 100%;
       box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.16);
       background: $checked-background;
       color: $brownish-grey;
       margin: 0 auto;
       font-size: 18px;
-      padding: 30px 55px 55px 55px;
+      // padding: 30px 55px 55px 55px;
       text-align: center;
+      padding-bottom: 20px;
 
       @include for-phone {
-        width: 100%;
-        padding: 10px;
         font-size: 16px;
       }
 
-      @include for-tablet {
-        width: 600px;
-      }
-
       p {
-        margin-bottom: 20px;
+        padding: 30px 30px 0 30px;
 
         @include for-phone {
           font-size: 16px;
+          padding-top: 20px;
+          padding-left: 5px;
         }
+
+        @include for-tablet {
+          font-size: 16px;
+          padding-top: 20px;
+          padding-left: 5px;
+        }
+      }
+
+      h4 {
+        margin-bottom: 10px;
       }
     }
 
     .green-rectangle {
       display: inline-block;
-      width: 100%;
+      width: 90%;
       height: 3px;
       background: $green;
-      margin-bottom: 20px;
     }
 
     &__card,
     &__card--title,
     &__card--bodovi {
-      width: 860px;
+      width: 100%;
       box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.16);
       background: white;
       color: $brownish-grey;
       margin: 20px auto;
-      padding: 30px 55px 55px 55px;
+      padding: 30px 0 55px 0;
       text-align: center;
 
       @include for-phone {
-        width: 100%;
-        padding: 20px 30px 35px 30px;
+        padding: 20px 0 35px 0;
       }
 
       @include for-tablet {
-        width: 600px;
-        padding: 20px 45px 45px 45px;
+        padding: 20px 0 45px 0;
       }
 
       h2 {
@@ -198,7 +195,7 @@
         text-align: center;
 
         @include for-phone {
-          font-size: 25px;
+          font-size: 23px;
         }
       }
 
@@ -212,10 +209,15 @@
         color: $background-grey;
         margin-top: 12px;
         margin-bottom: 16px;
+        padding-left: 40px;
 
         @include for-phone {
           font-size: 18px;
           margin-top: 0;
+          padding-left: 10px;
+        }
+        @include for-tablet {
+          padding-left: 20px;
         }
       }
 
@@ -239,6 +241,14 @@
         text-align: left;
         color: $range-gray;
         margin-top: 10px;
+        padding-left: 40px;
+
+        @include for-phone {
+          padding-left: 10px;
+        }
+        @include for-tablet {
+          padding-left: 20px;
+        }
       }
 
       p {
@@ -248,9 +258,18 @@
         line-height: 1.5;
         text-align: left;
         color: $brownish-grey;
+        margin: 0;
+        padding-left: 40px;
 
         @include for-phone {
           font-size: 14px;
+          padding-left: 10px;
+          padding-right: 10px;
+        }
+
+        @include for-tablet {
+          padding-left: 20px;
+          padding-right: 20px;
         }
       }
 
@@ -393,6 +412,7 @@
 
     &__colored_line {
       margin-bottom: 70px;
+      width: 100%;
     }
 
     &__card--title {
@@ -428,8 +448,7 @@
 
     input[type="text"],
     input[type="date"] {
-      width: 750px;
-      height: 90px;
+      width: 75%;
       padding: 40px 40px 40px 155px;
       border: 1px solid $green;
       border-radius: 50px;
@@ -438,16 +457,13 @@
       font-family: $family-secondary;
 
       @include for-phone {
-        width: 100%;
-        height: 30px;
         font-size: 14px;
         padding: 20px;
         font-size: 16px;
+        margin: 0 auto 16px auto;
       }
 
       @include for-tablet {
-        width: 100%;
-        height: 30px;
         font-size: 16px;
         padding: 20px;
       }
@@ -463,8 +479,7 @@
 
     input[name="aktivnost"],
     input[name="tezina"] {
-      width: 100%;
-      height: 10px;
+      width: 30%;
       margin: 0 auto;
       font-size: 18px;
       border-radius: 0;
@@ -476,6 +491,7 @@
 
       @include for-phone {
         padding: 14px 14px 14px 31px;
+        width: 70%;
       }
 
       &::placeholder {
@@ -492,6 +508,10 @@
       display: inline-block;
       position: relative;
       width: 50px;
+
+      @include for-phone {
+        width: 40px;
+      }
     }
 
     label input {
@@ -534,13 +554,12 @@
       margin: 48px auto 0 auto;
 
       @include for-phone {
-        // margin-left: -42px;
-        // margin-right: -12px;
+        padding-left: 10px;
+        padding-right: 10px;
       }
 
       @include for-tablet {
-        // margin-left: -42px;
-        // margin-right: -12px;
+        padding-left: 10px;
       }
     }
 
@@ -588,6 +607,7 @@
 
       @include for-phone {
         width: 75%;
+        font-size: 14px;
       }
 
       &:hover {
@@ -637,8 +657,7 @@
     .error-message input[type="date"],
     .error-message input[name="tezina"],
     .error-message input[name="aktivnost"] {
-      background-color: #fce4e4;
-      border: 1px solid $error-color;
+      border: 2px solid $error-color;
       outline: none;
     }
   }
@@ -793,6 +812,10 @@
       font-size: 20px;
       line-height: 22px;
       text-transform: uppercase;
+
+      @include for-phone {
+        font-size: 16px;
+      }
     }
 
     p {
@@ -803,6 +826,11 @@
       text-transform: uppercase;
       margin-right: 20px;
       margin-left: 10px;
+
+      @include for-phone {
+        font-size: 14px;
+        margin-right: 10px;
+      }
     }
 
     #rKraljeznica {
@@ -830,6 +858,6 @@
 }
 
 // FOOTER
-.footer {
-  background-color: $white !important;
-}
+// .footer {
+//   background-color: $white !important;
+// }

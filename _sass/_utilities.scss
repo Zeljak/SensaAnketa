@@ -27,7 +27,7 @@
   }
 }
 @mixin for-tablet {
-  @media (min-width: 768px) and (max-width: 1025px) {
+  @media (min-width: 767px) and (max-width: 1025px) {
     @content;
   }
 }
@@ -69,8 +69,8 @@
 }
 //** VARIABLES **
 
-$fullhd: 1200px + (2 * $gap);
-$section-padding-desktop: 3rem 0;
+// $fullhd: 1200px + (2 * $gap);
+// $section-padding-desktop: 3rem 0;
 
 //colors
 $background-grey: #707070;
