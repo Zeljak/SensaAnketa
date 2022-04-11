@@ -871,127 +871,127 @@
       background-color: rgb(216, 60, 245, 0.6);
     }
   }
-}
 
-// CRTE U BOJI
+  // CRTE U BOJI
 
-#form__card2::before {
-  content: "";
-  position: absolute;
-  display: block;
-  width: 43px;
-  height: 100%;
-  left: -52px;
-  top: 0;
-  background-color: $green-section;
-}
-
-#form__card4::before {
-  content: "";
-  position: absolute;
-  display: block;
-  width: 43px;
-  height: 100%;
-  left: -52px;
-  top: 0;
-  background-color: $yellow-section;
-}
-
-#form__card6::before {
-  content: "";
-  position: absolute;
-  display: block;
-  width: 43px;
-  height: 100%;
-  left: -52px;
-  top: 0;
-  background-color: $purple-section;
-}
-
-#form__card8::before {
-  content: "";
-  position: absolute;
-  display: block;
-  width: 43px;
-  height: 100%;
-  left: -52px;
-  top: 0;
-  background-color: $green-section2;
-}
-
-#form__card10::before {
-  content: "";
-  position: absolute;
-  display: block;
-  width: 43px;
-  height: 100%;
-  left: -52px;
-  top: 0;
-  background-color: $red-section;
-}
-
-#form__card12::before {
-  content: "";
-  position: absolute;
-  display: block;
-  width: 43px;
-  height: 100%;
-  left: -52px;
-  top: 0;
-  background-color: $blue-section;
-}
-
-#form__card14::before {
-  content: "";
-  position: absolute;
-  display: block;
-  width: 43px;
-  height: 100%;
-  left: -52px;
-  top: 0;
-  background-color: $purple-section2;
-}
-
-#form__card20::before {
-  content: "";
-  position: absolute;
-  display: block;
-  width: 43px;
-  height: 100%;
-  left: -52px;
-  top: 0;
-  background-color: $grey-section;
-}
-
-// SUCCESS MESSAGE
-.success-message {
-  width: 500px;
-  height: 250px;
-  background: $green;
-  position: relative;
-  display: block;
-  margin: 0 auto;
-  text-align: center;
-
-  @include for-phone {
-    width: 100%;
-    height: 125px;
+  #form__card2::before {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 43px;
+    height: 100%;
+    left: -52px;
+    top: 0;
+    background-color: $green-section;
   }
-}
-.success-message .text {
-  width: 50%;
-  height: 50%;
-  background: white;
-  box-shadow: 0 22px 60px 0 rgba(0, 0, 0, 0.16);
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  padding: 30px;
 
-  @include for-phone {
+  #form__card4::before {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 43px;
+    height: 100%;
+    left: -52px;
+    top: 0;
+    background-color: $yellow-section;
+  }
+
+  #form__card6::before {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 43px;
+    height: 100%;
+    left: -52px;
+    top: 0;
+    background-color: $purple-section;
+  }
+
+  #form__card8::before {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 43px;
+    height: 100%;
+    left: -52px;
+    top: 0;
+    background-color: $green-section2;
+  }
+
+  #form__card10::before {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 43px;
+    height: 100%;
+    left: -52px;
+    top: 0;
+    background-color: $red-section;
+  }
+
+  #form__card12::before {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 43px;
+    height: 100%;
+    left: -52px;
+    top: 0;
+    background-color: $blue-section;
+  }
+
+  #form__card14::before {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 43px;
+    height: 100%;
+    left: -52px;
+    top: 0;
+    background-color: $purple-section2;
+  }
+
+  #form__card20::before {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 43px;
+    height: 100%;
+    left: -52px;
+    top: 0;
+    background-color: $grey-section;
+  }
+
+  // SUCCESS MESSAGE
+  .success-message {
+    width: 500px;
+    height: 250px;
+    background: $green;
+    position: relative;
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+
+    @include for-phone {
+      width: 100%;
+      height: 125px;
+    }
+  }
+  .success-message .text {
+    width: 50%;
+    height: 50%;
+    background: white;
+    box-shadow: 0 22px 60px 0 rgba(0, 0, 0, 0.16);
+    position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+    padding: 30px;
+
+    @include for-phone {
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
   }
 }
