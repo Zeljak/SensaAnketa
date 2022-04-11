@@ -645,7 +645,7 @@
       }
     }
 
-    // Error mesages
+    // ERROR MESSAGE
     .error-message {
       font-family: $family-error;
       font-size: 14px;
@@ -675,6 +675,43 @@
     .error-message input[name="aktivnost"] {
       border: 2px solid $error-color;
       outline: none;
+    }
+  }
+
+  // SUCCESS MESSAGE
+  .success-message {
+    margin-bottom: 50px;
+
+    .text {
+      width: 50%;
+      height: 25%;
+      background: white;
+      box-shadow: 0 22px 60px 0 rgba(0, 0, 0, 0.16);
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      padding: 30px;
+      font-weight: 800;
+
+      @include for-phone {
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 30%;
+        height: 25%;
+        font-size: 14px;
+      }
+    }
+
+    .icon {
+      z-index: 1000;
+      position: absolute;
+      top: 50px;
+
+      @include for-phone {
+        top: 10px;
+      }
     }
   }
 
@@ -977,21 +1014,31 @@
       height: 125px;
     }
   }
-  .success-message .text {
-    width: 50%;
-    height: 50%;
-    background: white;
-    box-shadow: 0 22px 60px 0 rgba(0, 0, 0, 0.16);
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    padding: 30px;
+
+  .stranica503 {
+    text-align: center;
+    margin-top: 50px;
+    background-color: $light-grey;
+    padding: 20px;
 
     @include for-phone {
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%, -50%);
+      margin-top: 30px;
+    }
+
+    h1 {
+      color: $error-page;
+
+      @include for-phone {
+        font-size: 20px;
+      }
+    }
+
+    img {
+      width: 50%;
+    }
+
+    p {
+      font-weight: 800;
     }
   }
 }

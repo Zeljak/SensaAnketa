@@ -705,6 +705,44 @@
   border: 2px solid #fc837c;
   outline: none;
 }
+.ovojesasvimposebnaklasa .success-message {
+  margin-bottom: 50px;
+}
+.ovojesasvimposebnaklasa .success-message .text {
+  width: 50%;
+  height: 25%;
+  background: white;
+  -webkit-box-shadow: 0 22px 60px 0 rgba(0, 0, 0, 0.16);
+          box-shadow: 0 22px 60px 0 rgba(0, 0, 0, 0.16);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  padding: 30px;
+  font-weight: 800;
+}
+@media (max-width: 767px) {
+  .ovojesasvimposebnaklasa .success-message .text {
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+    width: 30%;
+    height: 25%;
+    font-size: 14px;
+  }
+}
+.ovojesasvimposebnaklasa .success-message .icon {
+  z-index: 1000;
+  position: absolute;
+  top: 50px;
+}
+@media (max-width: 767px) {
+  .ovojesasvimposebnaklasa .success-message .icon {
+    top: 10px;
+  }
+}
 .ovojesasvimposebnaklasa #form__card25 p {
   margin-bottom: 10px;
 }
@@ -990,24 +1028,28 @@
     height: 125px;
   }
 }
-.ovojesasvimposebnaklasa .success-message .text {
-  width: 50%;
-  height: 50%;
-  background: white;
-  -webkit-box-shadow: 0 22px 60px 0 rgba(0, 0, 0, 0.16);
-          box-shadow: 0 22px 60px 0 rgba(0, 0, 0, 0.16);
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
-  padding: 30px;
+.ovojesasvimposebnaklasa .stranica503 {
+  text-align: center;
+  margin-top: 50px;
+  background-color: #e7e7e7;
+  padding: 20px;
 }
 @media (max-width: 767px) {
-  .ovojesasvimposebnaklasa .success-message .text {
-    top: 50%;
-    left: 50%;
-    -webkit-transform: translate(-50%, -50%);
-            transform: translate(-50%, -50%);
+  .ovojesasvimposebnaklasa .stranica503 {
+    margin-top: 30px;
   }
+}
+.ovojesasvimposebnaklasa .stranica503 h1 {
+  color: #10fac4;
+}
+@media (max-width: 767px) {
+  .ovojesasvimposebnaklasa .stranica503 h1 {
+    font-size: 20px;
+  }
+}
+.ovojesasvimposebnaklasa .stranica503 img {
+  width: 50%;
+}
+.ovojesasvimposebnaklasa .stranica503 p {
+  font-weight: 800;
 }
