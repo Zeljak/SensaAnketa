@@ -22,8 +22,8 @@
 //   //   box-sizing: border-box;
 //   //   font-family: cedra4f;
 // }
-.ovojesasvimposebnaklasa {
-  .wrapper_html {
+#ovojesasvimposebnaklasa {
+  #wrapper_html {
     max-width: 990px;
     background: white;
     display: block;
@@ -34,7 +34,7 @@
     }
   }
 
-  .wrapper_body {
+  #wrapper_body {
     box-sizing: border-box;
     font-family: $family-secondary;
 
@@ -74,6 +74,7 @@
     }
 
     h1 {
+      font-family: $family-secondary;
       font-size: 30px;
       text-align: center;
 
@@ -128,6 +129,7 @@
       color: $brownish-grey;
       margin: 0 auto;
       font-size: 18px;
+      font-family: $family-secondary;
       // padding: 30px 55px 55px 55px;
       text-align: center;
       padding-bottom: 20px;
@@ -137,7 +139,11 @@
       }
 
       p {
-        padding: 30px 30px 0 30px;
+        font-family: $family-secondary;
+        padding-top: 30px;
+        padding-right: 30px;
+        padding-bottom: 0px;
+        padding-left: 30px;
 
         @include for-phone {
           font-size: 16px;
@@ -153,6 +159,7 @@
       }
 
       h4 {
+        font-family: $family-secondary;
         margin-bottom: 10px;
       }
     }
@@ -174,6 +181,7 @@
       margin: 20px auto;
       padding: 30px 0 55px 0;
       text-align: center;
+      font-family: $family-secondary;
 
       @include for-phone {
         padding: 20px 0 35px 0;
@@ -285,10 +293,14 @@
           position: absolute;
           display: block;
           width: 43px;
-          height: 106.8%;
+          height: calc(100% + 20px);
           left: -52px;
           top: 0;
           background-color: $green-section;
+
+          @include for-phone {
+            width: 50px;
+          }
         }
       }
 
@@ -299,10 +311,14 @@
           position: absolute;
           display: block;
           width: 43px;
-          height: 108%;
+          height: calc(100% + 20px);
           left: -52px;
           top: 0;
           background-color: $yellow-section;
+
+          @include for-phone {
+            width: 50px;
+          }
         }
       }
 
@@ -314,10 +330,14 @@
           position: absolute;
           display: block;
           width: 43px;
-          height: 108%;
+          height: calc(100% + 20px);
           left: -52px;
           top: 0;
           background-color: $purple-section;
+
+          @include for-phone {
+            width: 50px;
+          }
         }
       }
 
@@ -328,10 +348,14 @@
           position: absolute;
           display: block;
           width: 43px;
-          height: 108%;
+          height: calc(100% + 20px);
           left: -52px;
           top: 0;
           background-color: $green-section2;
+
+          @include for-phone {
+            width: 50px;
+          }
         }
       }
 
@@ -342,10 +366,14 @@
           position: absolute;
           display: block;
           width: 43px;
-          height: 108%;
+          height: calc(100% + 20px);
           left: -52px;
           top: 0;
           background-color: $red-section;
+
+          @include for-phone {
+            width: 50px;
+          }
         }
       }
 
@@ -357,10 +385,14 @@
           position: absolute;
           display: block;
           width: 43px;
-          height: 108%;
+          height: calc(100% + 20px);
           left: -52px;
           top: 0;
           background-color: $blue-section;
+
+          @include for-phone {
+            width: 50px;
+          }
         }
       }
 
@@ -371,10 +403,14 @@
           position: absolute;
           display: block;
           width: 43px;
-          height: 106%;
+          height: calc(100% + 20px);
           left: -52px;
           top: 0;
           background-color: $purple-section2;
+
+          @include for-phone {
+            width: 50px;
+          }
         }
       }
 
@@ -385,10 +421,14 @@
           position: absolute;
           display: block;
           width: 43px;
-          height: 113%;
+          height: calc(100% + 21px);
           left: -52px;
           top: 0;
           background-color: $grey-section;
+
+          @include for-phone {
+            width: 50px;
+          }
         }
       }
     }
@@ -412,6 +452,7 @@
 
     &__colored_line {
       margin-bottom: 70px;
+      margin-left: 0;
       width: 100%;
     }
 
@@ -446,10 +487,14 @@
       }
     }
 
+    .input-wrapper {
+      position: relative;
+    }
+
     input[type="text"],
     input[type="date"] {
       width: 75%;
-      padding: 20px 20px 20px 155px;
+      padding: 20px 20px 20px 40px;
       border: 1px solid $green;
       border-radius: 50px;
       margin: 16px auto;
@@ -477,8 +522,7 @@
       }
     }
 
-    input[name="aktivnost"],
-    input[name="tezina"] {
+    input[type="number"] {
       width: 30%;
       margin: 0 auto;
       font-size: 18px;
@@ -564,20 +608,14 @@
     }
 
     &__end {
-      width: 860px;
+      width: 100%;
       margin: 30px auto;
       display: block;
 
-      @include for-phone {
-        width: 100%;
-      }
-
-      @include for-tablet {
-        width: 600px;
-      }
       p {
         font-family: $family-secondary;
         font-size: 23px;
+        line-height: 1;
         color: $brownish-grey;
         text-align: center;
         padding: 0 90px;
@@ -651,10 +689,17 @@
       font-size: 14px;
       background-color: $error-color;
       color: white;
-      position: relative;
+      position: absolute;
+      top: 60px;
+      right: 0;
       width: 30%;
       padding: 10px;
       margin: 0 auto;
+
+      @include for-phone {
+        top: 28px;
+        right: 0;
+      }
     }
 
     .error-message::before {
@@ -693,6 +738,7 @@
       transform: translate(-50%, -50%);
       padding: 30px;
       font-weight: 800;
+      font-family: $family-secondary;
 
       @include for-phone {
         top: 50%;
@@ -833,6 +879,7 @@
   .link-pravila {
     color: $link-blue;
     text-decoration: underline;
+    font-family: $family-error;
   }
 
   //   BODOVI
@@ -910,7 +957,6 @@
   }
 
   // CRTE U BOJI
-
   #form__card2::before {
     content: "";
     position: absolute;
@@ -920,6 +966,9 @@
     left: -52px;
     top: 0;
     background-color: $green-section;
+    @include for-phone {
+      width: 50px;
+    }
   }
 
   #form__card4::before {
@@ -931,6 +980,10 @@
     left: -52px;
     top: 0;
     background-color: $yellow-section;
+
+    @include for-phone {
+      width: 50px;
+    }
   }
 
   #form__card6::before {
@@ -942,6 +995,10 @@
     left: -52px;
     top: 0;
     background-color: $purple-section;
+
+    @include for-phone {
+      width: 50px;
+    }
   }
 
   #form__card8::before {
@@ -953,6 +1010,10 @@
     left: -52px;
     top: 0;
     background-color: $green-section2;
+
+    @include for-phone {
+      width: 50px;
+    }
   }
 
   #form__card10::before {
@@ -964,6 +1025,10 @@
     left: -52px;
     top: 0;
     background-color: $red-section;
+
+    @include for-phone {
+      width: 50px;
+    }
   }
 
   #form__card12::before {
@@ -975,6 +1040,10 @@
     left: -52px;
     top: 0;
     background-color: $blue-section;
+
+    @include for-phone {
+      width: 50px;
+    }
   }
 
   #form__card14::before {
@@ -986,6 +1055,10 @@
     left: -52px;
     top: 0;
     background-color: $purple-section2;
+
+    @include for-phone {
+      width: 50px;
+    }
   }
 
   #form__card20::before {
@@ -997,6 +1070,10 @@
     left: -52px;
     top: 0;
     background-color: $grey-section;
+
+    @include for-phone {
+      width: 50px;
+    }
   }
 
   // SUCCESS MESSAGE
@@ -1015,6 +1092,7 @@
     }
   }
 
+  // ERROR 503
   .stranica503 {
     text-align: center;
     margin-top: 50px;
@@ -1040,5 +1118,26 @@
     p {
       font-weight: 800;
     }
+  }
+
+  // HIDING FORM
+  #anketaForm {
+    position: relative;
+  }
+
+  #anketaForm::after {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: rgb(0, 0, 0, 0.5);
+    top: 0;
+    left: 0;
+  }
+
+  .napomena {
+    position: relative;
+    z-index: 10;
   }
 }

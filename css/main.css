@@ -2,33 +2,33 @@
   font-family: cedra4f;
   src: url(../_assets/fonts/cedra4f-wide-webfont.woff);
 }
-.ovojesasvimposebnaklasa .wrapper_html {
+#ovojesasvimposebnaklasa #wrapper_html {
   max-width: 990px;
   background: white;
   display: block;
   margin: 0 auto;
 }
 @media (min-width: 767px) and (max-width: 1025px) {
-  .ovojesasvimposebnaklasa .wrapper_html {
+  #ovojesasvimposebnaklasa #wrapper_html {
     width: 700px;
   }
 }
-.ovojesasvimposebnaklasa .wrapper_body {
+#ovojesasvimposebnaklasa #wrapper_body {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   font-family: cedra4f, cursive;
 }
 @media (max-width: 767px) {
-  .ovojesasvimposebnaklasa .wrapper_body {
+  #ovojesasvimposebnaklasa #wrapper_body {
     padding: 20px;
   }
 }
 @media (min-width: 767px) and (max-width: 1025px) {
-  .ovojesasvimposebnaklasa .wrapper_body {
+  #ovojesasvimposebnaklasa #wrapper_body {
     padding: 20px;
   }
 }
-.ovojesasvimposebnaklasa .header {
+#ovojesasvimposebnaklasa .header {
   width: 100%;
   margin: 20px auto 20px auto;
   display: -webkit-box;
@@ -39,11 +39,11 @@
           box-shadow: inset 0px 0px 0px 2px white;
 }
 @media (max-width: 767px) {
-  .ovojesasvimposebnaklasa .header {
+  #ovojesasvimposebnaklasa .header {
     margin: 5px auto 10px auto;
   }
 }
-.ovojesasvimposebnaklasa .header__text-box {
+#ovojesasvimposebnaklasa .header__text-box {
   width: 860px;
   height: 135px;
   -webkit-box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.16);
@@ -52,21 +52,22 @@
   margin: 0 auto;
   font-family: cedra4f;
 }
-.ovojesasvimposebnaklasa .header__logo {
+#ovojesasvimposebnaklasa .header__logo {
   margin: 40px auto 0 auto;
   width: 70%;
   display: block;
 }
-.ovojesasvimposebnaklasa .header h1 {
+#ovojesasvimposebnaklasa .header h1 {
+  font-family: cedra4f, cursive;
   font-size: 30px;
   text-align: center;
 }
 @media (max-width: 767px) {
-  .ovojesasvimposebnaklasa .header h1 {
+  #ovojesasvimposebnaklasa .header h1 {
     font-size: 20px;
   }
 }
-.ovojesasvimposebnaklasa .header h2 {
+#ovojesasvimposebnaklasa .header h2 {
   font-family: cedra4f, cursive;
   font-size: 14px;
   color: #686868;
@@ -74,24 +75,24 @@
   text-align: center;
 }
 @media (max-width: 767px) {
-  .ovojesasvimposebnaklasa .header h2 {
+  #ovojesasvimposebnaklasa .header h2 {
     font-size: 12px;
   }
 }
-.ovojesasvimposebnaklasa .header h3 {
+#ovojesasvimposebnaklasa .header h3 {
   font-family: cedra4f, cursive;
   font-size: 12px;
   color: white;
   margin-bottom: 20px;
   text-align: center;
 }
-.ovojesasvimposebnaklasa .header .card1 {
+#ovojesasvimposebnaklasa .header .card1 {
   width: 200px;
   background: #d1d1d1;
   -webkit-box-shadow: inset 0px 0px 0px 2px white;
           box-shadow: inset 0px 0px 0px 2px white;
 }
-.ovojesasvimposebnaklasa .header .card2 {
+#ovojesasvimposebnaklasa .header .card2 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -102,14 +103,14 @@
       -ms-flex-align: center;
           align-items: center;
 }
-.ovojesasvimposebnaklasa .form {
+#ovojesasvimposebnaklasa .form {
   font-family: cedra4f;
 }
-.ovojesasvimposebnaklasa .form__wrapper {
+#ovojesasvimposebnaklasa .form__wrapper {
   width: 860px;
   margin: 0 auto;
 }
-.ovojesasvimposebnaklasa .form__uvod {
+#ovojesasvimposebnaklasa .form__uvod {
   width: 100%;
   -webkit-box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.16);
           box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.16);
@@ -117,41 +118,47 @@
   color: #686868;
   margin: 0 auto;
   font-size: 18px;
+  font-family: cedra4f, cursive;
   text-align: center;
   padding-bottom: 20px;
 }
 @media (max-width: 767px) {
-  .ovojesasvimposebnaklasa .form__uvod {
+  #ovojesasvimposebnaklasa .form__uvod {
     font-size: 16px;
   }
 }
-.ovojesasvimposebnaklasa .form__uvod p {
-  padding: 30px 30px 0 30px;
+#ovojesasvimposebnaklasa .form__uvod p {
+  font-family: cedra4f, cursive;
+  padding-top: 30px;
+  padding-right: 30px;
+  padding-bottom: 0px;
+  padding-left: 30px;
 }
 @media (max-width: 767px) {
-  .ovojesasvimposebnaklasa .form__uvod p {
+  #ovojesasvimposebnaklasa .form__uvod p {
     font-size: 16px;
     padding-top: 20px;
     padding-left: 5px;
   }
 }
 @media (min-width: 767px) and (max-width: 1025px) {
-  .ovojesasvimposebnaklasa .form__uvod p {
+  #ovojesasvimposebnaklasa .form__uvod p {
     font-size: 16px;
     padding-top: 20px;
     padding-left: 5px;
   }
 }
-.ovojesasvimposebnaklasa .form__uvod h4 {
+#ovojesasvimposebnaklasa .form__uvod h4 {
+  font-family: cedra4f, cursive;
   margin-bottom: 10px;
 }
-.ovojesasvimposebnaklasa .form .green-rectangle {
+#ovojesasvimposebnaklasa .form .green-rectangle {
   display: inline-block;
   width: 90%;
   height: 3px;
   background: #cde17a;
 }
-.ovojesasvimposebnaklasa .form__card, .ovojesasvimposebnaklasa .form__card--title, .ovojesasvimposebnaklasa .form__card--bodovi {
+#ovojesasvimposebnaklasa .form__card, #ovojesasvimposebnaklasa .form__card--title, #ovojesasvimposebnaklasa .form__card--bodovi {
   width: 100%;
   -webkit-box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.16);
           box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.16);
@@ -160,18 +167,19 @@
   margin: 20px auto;
   padding: 30px 0 55px 0;
   text-align: center;
+  font-family: cedra4f, cursive;
 }
 @media (max-width: 767px) {
-  .ovojesasvimposebnaklasa .form__card, .ovojesasvimposebnaklasa .form__card--title, .ovojesasvimposebnaklasa .form__card--bodovi {
+  #ovojesasvimposebnaklasa .form__card, #ovojesasvimposebnaklasa .form__card--title, #ovojesasvimposebnaklasa .form__card--bodovi {
     padding: 20px 0 35px 0;
   }
 }
 @media (min-width: 767px) and (max-width: 1025px) {
-  .ovojesasvimposebnaklasa .form__card, .ovojesasvimposebnaklasa .form__card--title, .ovojesasvimposebnaklasa .form__card--bodovi {
+  #ovojesasvimposebnaklasa .form__card, #ovojesasvimposebnaklasa .form__card--title, #ovojesasvimposebnaklasa .form__card--bodovi {
     padding: 20px 0 45px 0;
   }
 }
-.ovojesasvimposebnaklasa .form__card h2, .ovojesasvimposebnaklasa .form__card--title h2, .ovojesasvimposebnaklasa .form__card--bodovi h2 {
+#ovojesasvimposebnaklasa .form__card h2, #ovojesasvimposebnaklasa .form__card--title h2, #ovojesasvimposebnaklasa .form__card--bodovi h2 {
   font-family: cedra4f, cursive;
   font-size: 32px;
   text-align: center;
@@ -183,11 +191,11 @@
   text-align: center;
 }
 @media (max-width: 767px) {
-  .ovojesasvimposebnaklasa .form__card h2, .ovojesasvimposebnaklasa .form__card--title h2, .ovojesasvimposebnaklasa .form__card--bodovi h2 {
+  #ovojesasvimposebnaklasa .form__card h2, #ovojesasvimposebnaklasa .form__card--title h2, #ovojesasvimposebnaklasa .form__card--bodovi h2 {
     font-size: 23px;
   }
 }
-.ovojesasvimposebnaklasa .form__card h3, .ovojesasvimposebnaklasa .form__card--title h3, .ovojesasvimposebnaklasa .form__card--bodovi h3 {
+#ovojesasvimposebnaklasa .form__card h3, #ovojesasvimposebnaklasa .form__card--title h3, #ovojesasvimposebnaklasa .form__card--bodovi h3 {
   font-family: "Roboto", sans-serif;
   font-size: 20px;
   font-weight: 900;
@@ -200,18 +208,18 @@
   padding-left: 40px;
 }
 @media (max-width: 767px) {
-  .ovojesasvimposebnaklasa .form__card h3, .ovojesasvimposebnaklasa .form__card--title h3, .ovojesasvimposebnaklasa .form__card--bodovi h3 {
+  #ovojesasvimposebnaklasa .form__card h3, #ovojesasvimposebnaklasa .form__card--title h3, #ovojesasvimposebnaklasa .form__card--bodovi h3 {
     font-size: 18px;
     margin-top: 0;
     padding-left: 10px;
   }
 }
 @media (min-width: 767px) and (max-width: 1025px) {
-  .ovojesasvimposebnaklasa .form__card h3, .ovojesasvimposebnaklasa .form__card--title h3, .ovojesasvimposebnaklasa .form__card--bodovi h3 {
+  #ovojesasvimposebnaklasa .form__card h3, #ovojesasvimposebnaklasa .form__card--title h3, #ovojesasvimposebnaklasa .form__card--bodovi h3 {
     padding-left: 20px;
   }
 }
-.ovojesasvimposebnaklasa .form__card h4, .ovojesasvimposebnaklasa .form__card--title h4, .ovojesasvimposebnaklasa .form__card--bodovi h4 {
+#ovojesasvimposebnaklasa .form__card h4, #ovojesasvimposebnaklasa .form__card--title h4, #ovojesasvimposebnaklasa .form__card--bodovi h4 {
   font-family: "Roboto", sans-serif;
   font-size: 12px;
   font-weight: bold;
@@ -219,11 +227,11 @@
   color: #686868;
 }
 @media (max-width: 767px) {
-  .ovojesasvimposebnaklasa .form__card h4, .ovojesasvimposebnaklasa .form__card--title h4, .ovojesasvimposebnaklasa .form__card--bodovi h4 {
+  #ovojesasvimposebnaklasa .form__card h4, #ovojesasvimposebnaklasa .form__card--title h4, #ovojesasvimposebnaklasa .form__card--bodovi h4 {
     font-size: 10px;
   }
 }
-.ovojesasvimposebnaklasa .form__card h5, .ovojesasvimposebnaklasa .form__card--title h5, .ovojesasvimposebnaklasa .form__card--bodovi h5 {
+#ovojesasvimposebnaklasa .form__card h5, #ovojesasvimposebnaklasa .form__card--title h5, #ovojesasvimposebnaklasa .form__card--bodovi h5 {
   font-family: "Roboto", sans-serif;
   font-size: 12px;
   font-weight: 500;
@@ -234,16 +242,16 @@
   padding-left: 40px;
 }
 @media (max-width: 767px) {
-  .ovojesasvimposebnaklasa .form__card h5, .ovojesasvimposebnaklasa .form__card--title h5, .ovojesasvimposebnaklasa .form__card--bodovi h5 {
+  #ovojesasvimposebnaklasa .form__card h5, #ovojesasvimposebnaklasa .form__card--title h5, #ovojesasvimposebnaklasa .form__card--bodovi h5 {
     padding-left: 10px;
   }
 }
 @media (min-width: 767px) and (max-width: 1025px) {
-  .ovojesasvimposebnaklasa .form__card h5, .ovojesasvimposebnaklasa .form__card--title h5, .ovojesasvimposebnaklasa .form__card--bodovi h5 {
+  #ovojesasvimposebnaklasa .form__card h5, #ovojesasvimposebnaklasa .form__card--title h5, #ovojesasvimposebnaklasa .form__card--bodovi h5 {
     padding-left: 20px;
   }
 }
-.ovojesasvimposebnaklasa .form__card p, .ovojesasvimposebnaklasa .form__card--title p, .ovojesasvimposebnaklasa .form__card--bodovi p {
+#ovojesasvimposebnaklasa .form__card p, #ovojesasvimposebnaklasa .form__card--title p, #ovojesasvimposebnaklasa .form__card--bodovi p {
   font-family: "Roboto", sans-serif;
   font-size: 16px;
   font-weight: 500;
@@ -254,152 +262,193 @@
   padding-left: 40px;
 }
 @media (max-width: 767px) {
-  .ovojesasvimposebnaklasa .form__card p, .ovojesasvimposebnaklasa .form__card--title p, .ovojesasvimposebnaklasa .form__card--bodovi p {
+  #ovojesasvimposebnaklasa .form__card p, #ovojesasvimposebnaklasa .form__card--title p, #ovojesasvimposebnaklasa .form__card--bodovi p {
     font-size: 14px;
     padding-left: 10px;
     padding-right: 10px;
   }
 }
 @media (min-width: 767px) and (max-width: 1025px) {
-  .ovojesasvimposebnaklasa .form__card p, .ovojesasvimposebnaklasa .form__card--title p, .ovojesasvimposebnaklasa .form__card--bodovi p {
+  #ovojesasvimposebnaklasa .form__card p, #ovojesasvimposebnaklasa .form__card--title p, #ovojesasvimposebnaklasa .form__card--bodovi p {
     padding-left: 20px;
     padding-right: 20px;
   }
 }
-.ovojesasvimposebnaklasa .form__card .prvo-pitanje, .ovojesasvimposebnaklasa .form__card--title .prvo-pitanje, .ovojesasvimposebnaklasa .form__card--bodovi .prvo-pitanje {
+#ovojesasvimposebnaklasa .form__card .prvo-pitanje, #ovojesasvimposebnaklasa .form__card--title .prvo-pitanje, #ovojesasvimposebnaklasa .form__card--bodovi .prvo-pitanje {
   margin-bottom: 20px;
 }
-.ovojesasvimposebnaklasa .form__card--green, .ovojesasvimposebnaklasa .form__card--title--green, .ovojesasvimposebnaklasa .form__card--bodovi--green {
+#ovojesasvimposebnaklasa .form__card--green, #ovojesasvimposebnaklasa .form__card--title--green, #ovojesasvimposebnaklasa .form__card--bodovi--green {
   position: relative;
 }
-.ovojesasvimposebnaklasa .form__card--green::before, .ovojesasvimposebnaklasa .form__card--title--green::before, .ovojesasvimposebnaklasa .form__card--bodovi--green::before {
+#ovojesasvimposebnaklasa .form__card--green::before, #ovojesasvimposebnaklasa .form__card--title--green::before, #ovojesasvimposebnaklasa .form__card--bodovi--green::before {
   content: "";
   position: absolute;
   display: block;
   width: 43px;
-  height: 106.8%;
+  height: calc(100% + 20px);
   left: -52px;
   top: 0;
   background-color: #cee182;
 }
-.ovojesasvimposebnaklasa .form__card--yellow, .ovojesasvimposebnaklasa .form__card--title--yellow, .ovojesasvimposebnaklasa .form__card--bodovi--yellow {
+@media (max-width: 767px) {
+  #ovojesasvimposebnaklasa .form__card--green::before, #ovojesasvimposebnaklasa .form__card--title--green::before, #ovojesasvimposebnaklasa .form__card--bodovi--green::before {
+    width: 50px;
+  }
+}
+#ovojesasvimposebnaklasa .form__card--yellow, #ovojesasvimposebnaklasa .form__card--title--yellow, #ovojesasvimposebnaklasa .form__card--bodovi--yellow {
   position: relative;
 }
-.ovojesasvimposebnaklasa .form__card--yellow::before, .ovojesasvimposebnaklasa .form__card--title--yellow::before, .ovojesasvimposebnaklasa .form__card--bodovi--yellow::before {
+#ovojesasvimposebnaklasa .form__card--yellow::before, #ovojesasvimposebnaklasa .form__card--title--yellow::before, #ovojesasvimposebnaklasa .form__card--bodovi--yellow::before {
   content: "";
   position: absolute;
   display: block;
   width: 43px;
-  height: 108%;
+  height: calc(100% + 20px);
   left: -52px;
   top: 0;
   background-color: #fcec2e;
 }
-.ovojesasvimposebnaklasa .form__card--purple, .ovojesasvimposebnaklasa .form__card--title--purple, .ovojesasvimposebnaklasa .form__card--bodovi--purple {
+@media (max-width: 767px) {
+  #ovojesasvimposebnaklasa .form__card--yellow::before, #ovojesasvimposebnaklasa .form__card--title--yellow::before, #ovojesasvimposebnaklasa .form__card--bodovi--yellow::before {
+    width: 50px;
+  }
+}
+#ovojesasvimposebnaklasa .form__card--purple, #ovojesasvimposebnaklasa .form__card--title--purple, #ovojesasvimposebnaklasa .form__card--bodovi--purple {
   position: relative;
 }
-.ovojesasvimposebnaklasa .form__card--purple::before, .ovojesasvimposebnaklasa .form__card--title--purple::before, .ovojesasvimposebnaklasa .form__card--bodovi--purple::before {
+#ovojesasvimposebnaklasa .form__card--purple::before, #ovojesasvimposebnaklasa .form__card--title--purple::before, #ovojesasvimposebnaklasa .form__card--bodovi--purple::before {
   content: "";
   position: absolute;
   display: block;
   width: 43px;
-  height: 108%;
+  height: calc(100% + 20px);
   left: -52px;
   top: 0;
   background-color: #d39ff5;
 }
-.ovojesasvimposebnaklasa .form__card--green2, .ovojesasvimposebnaklasa .form__card--title--green2, .ovojesasvimposebnaklasa .form__card--bodovi--green2 {
+@media (max-width: 767px) {
+  #ovojesasvimposebnaklasa .form__card--purple::before, #ovojesasvimposebnaklasa .form__card--title--purple::before, #ovojesasvimposebnaklasa .form__card--bodovi--purple::before {
+    width: 50px;
+  }
+}
+#ovojesasvimposebnaklasa .form__card--green2, #ovojesasvimposebnaklasa .form__card--title--green2, #ovojesasvimposebnaklasa .form__card--bodovi--green2 {
   position: relative;
 }
-.ovojesasvimposebnaklasa .form__card--green2::before, .ovojesasvimposebnaklasa .form__card--title--green2::before, .ovojesasvimposebnaklasa .form__card--bodovi--green2::before {
+#ovojesasvimposebnaklasa .form__card--green2::before, #ovojesasvimposebnaklasa .form__card--title--green2::before, #ovojesasvimposebnaklasa .form__card--bodovi--green2::before {
   content: "";
   position: absolute;
   display: block;
   width: 43px;
-  height: 108%;
+  height: calc(100% + 20px);
   left: -52px;
   top: 0;
   background-color: #7ef8a1;
 }
-.ovojesasvimposebnaklasa .form__card--red, .ovojesasvimposebnaklasa .form__card--title--red, .ovojesasvimposebnaklasa .form__card--bodovi--red {
+@media (max-width: 767px) {
+  #ovojesasvimposebnaklasa .form__card--green2::before, #ovojesasvimposebnaklasa .form__card--title--green2::before, #ovojesasvimposebnaklasa .form__card--bodovi--green2::before {
+    width: 50px;
+  }
+}
+#ovojesasvimposebnaklasa .form__card--red, #ovojesasvimposebnaklasa .form__card--title--red, #ovojesasvimposebnaklasa .form__card--bodovi--red {
   position: relative;
 }
-.ovojesasvimposebnaklasa .form__card--red::before, .ovojesasvimposebnaklasa .form__card--title--red::before, .ovojesasvimposebnaklasa .form__card--bodovi--red::before {
+#ovojesasvimposebnaklasa .form__card--red::before, #ovojesasvimposebnaklasa .form__card--title--red::before, #ovojesasvimposebnaklasa .form__card--bodovi--red::before {
   content: "";
   position: absolute;
   display: block;
   width: 43px;
-  height: 108%;
+  height: calc(100% + 20px);
   left: -52px;
   top: 0;
   background-color: #f85b46;
 }
-.ovojesasvimposebnaklasa .form__card--blue, .ovojesasvimposebnaklasa .form__card--title--blue, .ovojesasvimposebnaklasa .form__card--bodovi--blue {
+@media (max-width: 767px) {
+  #ovojesasvimposebnaklasa .form__card--red::before, #ovojesasvimposebnaklasa .form__card--title--red::before, #ovojesasvimposebnaklasa .form__card--bodovi--red::before {
+    width: 50px;
+  }
+}
+#ovojesasvimposebnaklasa .form__card--blue, #ovojesasvimposebnaklasa .form__card--title--blue, #ovojesasvimposebnaklasa .form__card--bodovi--blue {
   position: relative;
 }
-.ovojesasvimposebnaklasa .form__card--blue::before, .ovojesasvimposebnaklasa .form__card--title--blue::before, .ovojesasvimposebnaklasa .form__card--bodovi--blue::before {
+#ovojesasvimposebnaklasa .form__card--blue::before, #ovojesasvimposebnaklasa .form__card--title--blue::before, #ovojesasvimposebnaklasa .form__card--bodovi--blue::before {
   content: "";
   position: absolute;
   display: block;
   width: 43px;
-  height: 108%;
+  height: calc(100% + 20px);
   left: -52px;
   top: 0;
   background-color: #0e83f8;
 }
-.ovojesasvimposebnaklasa .form__card--purple2, .ovojesasvimposebnaklasa .form__card--title--purple2, .ovojesasvimposebnaklasa .form__card--bodovi--purple2 {
+@media (max-width: 767px) {
+  #ovojesasvimposebnaklasa .form__card--blue::before, #ovojesasvimposebnaklasa .form__card--title--blue::before, #ovojesasvimposebnaklasa .form__card--bodovi--blue::before {
+    width: 50px;
+  }
+}
+#ovojesasvimposebnaklasa .form__card--purple2, #ovojesasvimposebnaklasa .form__card--title--purple2, #ovojesasvimposebnaklasa .form__card--bodovi--purple2 {
   position: relative;
 }
-.ovojesasvimposebnaklasa .form__card--purple2::before, .ovojesasvimposebnaklasa .form__card--title--purple2::before, .ovojesasvimposebnaklasa .form__card--bodovi--purple2::before {
+#ovojesasvimposebnaklasa .form__card--purple2::before, #ovojesasvimposebnaklasa .form__card--title--purple2::before, #ovojesasvimposebnaklasa .form__card--bodovi--purple2::before {
   content: "";
   position: absolute;
   display: block;
   width: 43px;
-  height: 106%;
+  height: calc(100% + 20px);
   left: -52px;
   top: 0;
   background-color: #d83cf5;
 }
-.ovojesasvimposebnaklasa .form__card--grey, .ovojesasvimposebnaklasa .form__card--title--grey, .ovojesasvimposebnaklasa .form__card--bodovi--grey {
+@media (max-width: 767px) {
+  #ovojesasvimposebnaklasa .form__card--purple2::before, #ovojesasvimposebnaklasa .form__card--title--purple2::before, #ovojesasvimposebnaklasa .form__card--bodovi--purple2::before {
+    width: 50px;
+  }
+}
+#ovojesasvimposebnaklasa .form__card--grey, #ovojesasvimposebnaklasa .form__card--title--grey, #ovojesasvimposebnaklasa .form__card--bodovi--grey {
   position: relative;
 }
-.ovojesasvimposebnaklasa .form__card--grey::before, .ovojesasvimposebnaklasa .form__card--title--grey::before, .ovojesasvimposebnaklasa .form__card--bodovi--grey::before {
+#ovojesasvimposebnaklasa .form__card--grey::before, #ovojesasvimposebnaklasa .form__card--title--grey::before, #ovojesasvimposebnaklasa .form__card--bodovi--grey::before {
   content: "";
   position: absolute;
   display: block;
   width: 43px;
-  height: 113%;
+  height: calc(100% + 21px);
   left: -52px;
   top: 0;
   background-color: #6e6e6e;
 }
-.ovojesasvimposebnaklasa .form__author {
+@media (max-width: 767px) {
+  #ovojesasvimposebnaklasa .form__card--grey::before, #ovojesasvimposebnaklasa .form__card--title--grey::before, #ovojesasvimposebnaklasa .form__card--bodovi--grey::before {
+    width: 50px;
+  }
+}
+#ovojesasvimposebnaklasa .form__author {
   text-align: right;
   padding-right: 60px;
 }
 @media (max-width: 767px) {
-  .ovojesasvimposebnaklasa .form__author {
+  #ovojesasvimposebnaklasa .form__author {
     padding-right: 0;
   }
 }
-.ovojesasvimposebnaklasa .form__author h2 {
+#ovojesasvimposebnaklasa .form__author h2 {
   font-size: 14px;
 }
 @media (max-width: 767px) {
-  .ovojesasvimposebnaklasa .form__author h2 {
+  #ovojesasvimposebnaklasa .form__author h2 {
     font-size: 12px;
   }
 }
-.ovojesasvimposebnaklasa .form__colored_line {
+#ovojesasvimposebnaklasa .form__colored_line {
   margin-bottom: 70px;
+  margin-left: 0;
   width: 100%;
 }
-.ovojesasvimposebnaklasa .form__card--title {
+#ovojesasvimposebnaklasa .form__card--title {
   background: #d1d1d1;
   padding: 0;
   padding-top: 10px;
 }
-.ovojesasvimposebnaklasa .form .mjerenje {
+#ovojesasvimposebnaklasa .form .mjerenje {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -410,27 +459,30 @@
   margin-top: 20px;
 }
 @media (max-width: 767px) {
-  .ovojesasvimposebnaklasa .form .mjerenje {
+  #ovojesasvimposebnaklasa .form .mjerenje {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
   }
 }
 @media (max-width: 359px) {
-  .ovojesasvimposebnaklasa .form .mjerenje label {
+  #ovojesasvimposebnaklasa .form .mjerenje label {
     margin-left: 58px;
     margin-right: 180px;
     margin-top: 33px;
   }
 }
 @media (max-width: 767px) {
-  .ovojesasvimposebnaklasa .form .mjerenje h3 {
+  #ovojesasvimposebnaklasa .form .mjerenje h3 {
     font-size: 14px;
   }
 }
-.ovojesasvimposebnaklasa .form input[type=text],
-.ovojesasvimposebnaklasa .form input[type=date] {
+#ovojesasvimposebnaklasa .form .input-wrapper {
+  position: relative;
+}
+#ovojesasvimposebnaklasa .form input[type=text],
+#ovojesasvimposebnaklasa .form input[type=date] {
   width: 75%;
-  padding: 20px 20px 20px 155px;
+  padding: 20px 20px 20px 40px;
   border: 1px solid #cde17a;
   border-radius: 50px;
   margin: 16px auto;
@@ -438,8 +490,8 @@
   font-family: cedra4f, cursive;
 }
 @media (max-width: 767px) {
-  .ovojesasvimposebnaklasa .form input[type=text],
-.ovojesasvimposebnaklasa .form input[type=date] {
+  #ovojesasvimposebnaklasa .form input[type=text],
+#ovojesasvimposebnaklasa .form input[type=date] {
     font-size: 14px;
     padding: 16px;
     font-size: 16px;
@@ -447,48 +499,47 @@
   }
 }
 @media (min-width: 767px) and (max-width: 1025px) {
-  .ovojesasvimposebnaklasa .form input[type=text],
-.ovojesasvimposebnaklasa .form input[type=date] {
+  #ovojesasvimposebnaklasa .form input[type=text],
+#ovojesasvimposebnaklasa .form input[type=date] {
     font-size: 16px;
     padding: 20px;
   }
 }
-.ovojesasvimposebnaklasa .form input[type=text]::-webkit-input-placeholder, .ovojesasvimposebnaklasa .form input[type=date]::-webkit-input-placeholder {
+#ovojesasvimposebnaklasa .form input[type=text]::-webkit-input-placeholder, #ovojesasvimposebnaklasa .form input[type=date]::-webkit-input-placeholder {
   font-size: 14px;
 }
-.ovojesasvimposebnaklasa .form input[type=text]::-moz-placeholder, .ovojesasvimposebnaklasa .form input[type=date]::-moz-placeholder {
+#ovojesasvimposebnaklasa .form input[type=text]::-moz-placeholder, #ovojesasvimposebnaklasa .form input[type=date]::-moz-placeholder {
   font-size: 14px;
 }
-.ovojesasvimposebnaklasa .form input[type=text]:-ms-input-placeholder, .ovojesasvimposebnaklasa .form input[type=date]:-ms-input-placeholder {
+#ovojesasvimposebnaklasa .form input[type=text]:-ms-input-placeholder, #ovojesasvimposebnaklasa .form input[type=date]:-ms-input-placeholder {
   font-size: 14px;
 }
-.ovojesasvimposebnaklasa .form input[type=text]::-ms-input-placeholder, .ovojesasvimposebnaklasa .form input[type=date]::-ms-input-placeholder {
+#ovojesasvimposebnaklasa .form input[type=text]::-ms-input-placeholder, #ovojesasvimposebnaklasa .form input[type=date]::-ms-input-placeholder {
   font-size: 14px;
 }
-.ovojesasvimposebnaklasa .form input[type=text]::placeholder,
-.ovojesasvimposebnaklasa .form input[type=date]::placeholder {
+#ovojesasvimposebnaklasa .form input[type=text]::placeholder,
+#ovojesasvimposebnaklasa .form input[type=date]::placeholder {
   font-size: 14px;
 }
 @media (max-width: 767px) {
-  .ovojesasvimposebnaklasa .form input[type=text]::-webkit-input-placeholder, .ovojesasvimposebnaklasa .form input[type=date]::-webkit-input-placeholder {
+  #ovojesasvimposebnaklasa .form input[type=text]::-webkit-input-placeholder, #ovojesasvimposebnaklasa .form input[type=date]::-webkit-input-placeholder {
     font-size: 12px;
   }
-  .ovojesasvimposebnaklasa .form input[type=text]::-moz-placeholder, .ovojesasvimposebnaklasa .form input[type=date]::-moz-placeholder {
+  #ovojesasvimposebnaklasa .form input[type=text]::-moz-placeholder, #ovojesasvimposebnaklasa .form input[type=date]::-moz-placeholder {
     font-size: 12px;
   }
-  .ovojesasvimposebnaklasa .form input[type=text]:-ms-input-placeholder, .ovojesasvimposebnaklasa .form input[type=date]:-ms-input-placeholder {
+  #ovojesasvimposebnaklasa .form input[type=text]:-ms-input-placeholder, #ovojesasvimposebnaklasa .form input[type=date]:-ms-input-placeholder {
     font-size: 12px;
   }
-  .ovojesasvimposebnaklasa .form input[type=text]::-ms-input-placeholder, .ovojesasvimposebnaklasa .form input[type=date]::-ms-input-placeholder {
+  #ovojesasvimposebnaklasa .form input[type=text]::-ms-input-placeholder, #ovojesasvimposebnaklasa .form input[type=date]::-ms-input-placeholder {
     font-size: 12px;
   }
-  .ovojesasvimposebnaklasa .form input[type=text]::placeholder,
-.ovojesasvimposebnaklasa .form input[type=date]::placeholder {
+  #ovojesasvimposebnaklasa .form input[type=text]::placeholder,
+#ovojesasvimposebnaklasa .form input[type=date]::placeholder {
     font-size: 12px;
   }
 }
-.ovojesasvimposebnaklasa .form input[name=aktivnost],
-.ovojesasvimposebnaklasa .form input[name=tezina] {
+#ovojesasvimposebnaklasa .form input[type=number] {
   width: 30%;
   margin: 0 auto;
   font-size: 18px;
@@ -500,65 +551,62 @@
   margin-bottom: 25px;
 }
 @media (max-width: 767px) {
-  .ovojesasvimposebnaklasa .form input[name=aktivnost],
-.ovojesasvimposebnaklasa .form input[name=tezina] {
+  #ovojesasvimposebnaklasa .form input[type=number] {
     padding: 14px 14px 14px 31px;
     width: 70%;
   }
 }
-.ovojesasvimposebnaklasa .form input[name=aktivnost]::-webkit-input-placeholder, .ovojesasvimposebnaklasa .form input[name=tezina]::-webkit-input-placeholder {
+#ovojesasvimposebnaklasa .form input[type=number]::-webkit-input-placeholder {
   font-size: 14px;
   text-align: left;
 }
-.ovojesasvimposebnaklasa .form input[name=aktivnost]::-moz-placeholder, .ovojesasvimposebnaklasa .form input[name=tezina]::-moz-placeholder {
+#ovojesasvimposebnaklasa .form input[type=number]::-moz-placeholder {
   font-size: 14px;
   text-align: left;
 }
-.ovojesasvimposebnaklasa .form input[name=aktivnost]:-ms-input-placeholder, .ovojesasvimposebnaklasa .form input[name=tezina]:-ms-input-placeholder {
+#ovojesasvimposebnaklasa .form input[type=number]:-ms-input-placeholder {
   font-size: 14px;
   text-align: left;
 }
-.ovojesasvimposebnaklasa .form input[name=aktivnost]::-ms-input-placeholder, .ovojesasvimposebnaklasa .form input[name=tezina]::-ms-input-placeholder {
+#ovojesasvimposebnaklasa .form input[type=number]::-ms-input-placeholder {
   font-size: 14px;
   text-align: left;
 }
-.ovojesasvimposebnaklasa .form input[name=aktivnost]::placeholder,
-.ovojesasvimposebnaklasa .form input[name=tezina]::placeholder {
+#ovojesasvimposebnaklasa .form input[type=number]::placeholder {
   font-size: 14px;
   text-align: left;
 }
 @media (max-width: 767px) {
-  .ovojesasvimposebnaklasa .form input[name=aktivnost]::-webkit-input-placeholder, .ovojesasvimposebnaklasa .form input[name=tezina]::-webkit-input-placeholder {
+  #ovojesasvimposebnaklasa .form input[type=number]::-webkit-input-placeholder {
     font-size: 12px;
   }
-  .ovojesasvimposebnaklasa .form input[name=aktivnost]::-moz-placeholder, .ovojesasvimposebnaklasa .form input[name=tezina]::-moz-placeholder {
+  #ovojesasvimposebnaklasa .form input[type=number]::-moz-placeholder {
     font-size: 12px;
   }
-  .ovojesasvimposebnaklasa .form input[name=aktivnost]:-ms-input-placeholder, .ovojesasvimposebnaklasa .form input[name=tezina]:-ms-input-placeholder {
+  #ovojesasvimposebnaklasa .form input[type=number]:-ms-input-placeholder {
     font-size: 12px;
   }
-  .ovojesasvimposebnaklasa .form input[name=aktivnost]::-ms-input-placeholder, .ovojesasvimposebnaklasa .form input[name=tezina]::-ms-input-placeholder {
+  #ovojesasvimposebnaklasa .form input[type=number]::-ms-input-placeholder {
     font-size: 12px;
   }
-  .ovojesasvimposebnaklasa .form input[name=aktivnost]::placeholder,
-.ovojesasvimposebnaklasa .form input[name=tezina]::placeholder {
+  #ovojesasvimposebnaklasa .form input[type=number]::placeholder {
     font-size: 12px;
   }
 }
-.ovojesasvimposebnaklasa .form label {
+#ovojesasvimposebnaklasa .form label {
   display: inline-block;
   position: relative;
   width: 50px;
 }
 @media (max-width: 767px) {
-  .ovojesasvimposebnaklasa .form label {
+  #ovojesasvimposebnaklasa .form label {
     width: 40px;
   }
 }
-.ovojesasvimposebnaklasa .form label input {
+#ovojesasvimposebnaklasa .form label input {
   display: none;
 }
-.ovojesasvimposebnaklasa .form label span {
+#ovojesasvimposebnaklasa .form label span {
   border: 1px solid #cde17a;
   width: 41px;
   height: 41px;
@@ -576,18 +624,18 @@
   background: #d1d1d1;
 }
 @media (max-width: 767px) {
-  .ovojesasvimposebnaklasa .form label span {
+  #ovojesasvimposebnaklasa .form label span {
     width: 30px;
     height: 30px;
     line-height: 1.4;
   }
 }
-.ovojesasvimposebnaklasa .form input:checked + span {
+#ovojesasvimposebnaklasa .form input:checked + span {
   background: #cde17a;
   border-color: #cde17a;
   cursor: pointer;
 }
-.ovojesasvimposebnaklasa .form__label-wrapper {
+#ovojesasvimposebnaklasa .form__label-wrapper {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -597,46 +645,37 @@
   margin: 48px auto 0 auto;
 }
 @media (max-width: 767px) {
-  .ovojesasvimposebnaklasa .form__label-wrapper {
+  #ovojesasvimposebnaklasa .form__label-wrapper {
     padding-left: 10px;
     padding-right: 10px;
   }
 }
 @media (min-width: 767px) and (max-width: 1025px) {
-  .ovojesasvimposebnaklasa .form__label-wrapper {
+  #ovojesasvimposebnaklasa .form__label-wrapper {
     padding-left: 10px;
   }
 }
-.ovojesasvimposebnaklasa .form__end {
-  width: 860px;
+#ovojesasvimposebnaklasa .form__end {
+  width: 100%;
   margin: 30px auto;
   display: block;
 }
-@media (max-width: 767px) {
-  .ovojesasvimposebnaklasa .form__end {
-    width: 100%;
-  }
-}
-@media (min-width: 767px) and (max-width: 1025px) {
-  .ovojesasvimposebnaklasa .form__end {
-    width: 600px;
-  }
-}
-.ovojesasvimposebnaklasa .form__end p {
+#ovojesasvimposebnaklasa .form__end p {
   font-family: cedra4f, cursive;
   font-size: 23px;
+  line-height: 1;
   color: #686868;
   text-align: center;
   padding: 0 90px;
   text-align: center;
 }
 @media (max-width: 767px) {
-  .ovojesasvimposebnaklasa .form__end p {
+  #ovojesasvimposebnaklasa .form__end p {
     font-size: 16px;
     padding: 0;
   }
 }
-.ovojesasvimposebnaklasa .form input[type=submit] {
+#ovojesasvimposebnaklasa .form input[type=submit] {
   width: 424px;
   height: 45px;
   border: 1px solid #cde17a;
@@ -653,19 +692,19 @@
   margin-bottom: 45px;
 }
 @media (max-width: 767px) {
-  .ovojesasvimposebnaklasa .form input[type=submit] {
+  #ovojesasvimposebnaklasa .form input[type=submit] {
     width: 75%;
     font-size: 14px;
   }
 }
-.ovojesasvimposebnaklasa .form input[type=submit]:hover {
+#ovojesasvimposebnaklasa .form input[type=submit]:hover {
   color: #cde17a;
   background: #686868;
 }
-.ovojesasvimposebnaklasa .form__card--bodovi {
+#ovojesasvimposebnaklasa .form__card--bodovi {
   padding: 20px 0 5px 0;
 }
-.ovojesasvimposebnaklasa .form .tekst-rezultati {
+#ovojesasvimposebnaklasa .form .tekst-rezultati {
   font-family: cedra4f, cursive;
   color: #707070;
   font-size: 20px;
@@ -673,21 +712,29 @@
   text-align: center;
 }
 @media (max-width: 767px) {
-  .ovojesasvimposebnaklasa .form .tekst-rezultati {
+  #ovojesasvimposebnaklasa .form .tekst-rezultati {
     font-size: 16px;
   }
 }
-.ovojesasvimposebnaklasa .form .error-message {
+#ovojesasvimposebnaklasa .form .error-message {
   font-family: Arial, Helvetica, sans-serif;
   font-size: 14px;
   background-color: #fc837c;
   color: white;
-  position: relative;
+  position: absolute;
+  top: 60px;
+  right: 0;
   width: 30%;
   padding: 10px;
   margin: 0 auto;
 }
-.ovojesasvimposebnaklasa .form .error-message::before {
+@media (max-width: 767px) {
+  #ovojesasvimposebnaklasa .form .error-message {
+    top: 28px;
+    right: 0;
+  }
+}
+#ovojesasvimposebnaklasa .form .error-message::before {
   content: "";
   position: absolute;
   left: -29px;
@@ -698,17 +745,17 @@
   border-color: transparent #fc837c transparent transparent;
   border-style: solid;
 }
-.ovojesasvimposebnaklasa .form .error-message input[type=text],
-.ovojesasvimposebnaklasa .form .error-message input[type=date],
-.ovojesasvimposebnaklasa .form .error-message input[name=tezina],
-.ovojesasvimposebnaklasa .form .error-message input[name=aktivnost] {
+#ovojesasvimposebnaklasa .form .error-message input[type=text],
+#ovojesasvimposebnaklasa .form .error-message input[type=date],
+#ovojesasvimposebnaklasa .form .error-message input[name=tezina],
+#ovojesasvimposebnaklasa .form .error-message input[name=aktivnost] {
   border: 2px solid #fc837c;
   outline: none;
 }
-.ovojesasvimposebnaklasa .success-message {
+#ovojesasvimposebnaklasa .success-message {
   margin-bottom: 50px;
 }
-.ovojesasvimposebnaklasa .success-message .text {
+#ovojesasvimposebnaklasa .success-message .text {
   width: 50%;
   height: 25%;
   background: white;
@@ -721,9 +768,10 @@
           transform: translate(-50%, -50%);
   padding: 30px;
   font-weight: 800;
+  font-family: cedra4f, cursive;
 }
 @media (max-width: 767px) {
-  .ovojesasvimposebnaklasa .success-message .text {
+  #ovojesasvimposebnaklasa .success-message .text {
     top: 50%;
     left: 50%;
     -webkit-transform: translate(-50%, -50%);
@@ -733,62 +781,62 @@
     font-size: 14px;
   }
 }
-.ovojesasvimposebnaklasa .success-message .icon {
+#ovojesasvimposebnaklasa .success-message .icon {
   z-index: 1000;
   position: absolute;
   top: 50px;
 }
 @media (max-width: 767px) {
-  .ovojesasvimposebnaklasa .success-message .icon {
+  #ovojesasvimposebnaklasa .success-message .icon {
     top: 10px;
   }
 }
-.ovojesasvimposebnaklasa #form__card25 p {
+#ovojesasvimposebnaklasa #form__card25 p {
   margin-bottom: 10px;
 }
-.ovojesasvimposebnaklasa .pravila__wrapper {
+#ovojesasvimposebnaklasa .pravila__wrapper {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
-.ovojesasvimposebnaklasa .pravila__wrapper h6 {
+#ovojesasvimposebnaklasa .pravila__wrapper h6 {
   margin-top: 20px;
   margin-bottom: 20px;
   font-family: Arial, Helvetica, sans-serif;
   color: #0030fa;
 }
 @media (min-width: 767px) and (max-width: 1025px) {
-  .ovojesasvimposebnaklasa .pravila__wrapper h6 {
+  #ovojesasvimposebnaklasa .pravila__wrapper h6 {
     font-size: 14px;
   }
 }
 @media (max-width: 767px) {
-  .ovojesasvimposebnaklasa .pravila__wrapper h6 {
+  #ovojesasvimposebnaklasa .pravila__wrapper h6 {
     font-size: 14px;
     padding-left: 10px;
   }
 }
 @media screen and (min-width: 1025px) {
-  .ovojesasvimposebnaklasa .pravila__wrapper h6 {
+  #ovojesasvimposebnaklasa .pravila__wrapper h6 {
     font-size: 20px;
   }
 }
 @media screen and (min-width: 2000px) {
-  .ovojesasvimposebnaklasa .pravila__wrapper h6 {
+  #ovojesasvimposebnaklasa .pravila__wrapper h6 {
     margin-left: 52px;
   }
 }
-.ovojesasvimposebnaklasa .pravila__checkbox {
+#ovojesasvimposebnaklasa .pravila__checkbox {
   width: 44px;
   margin: 0 auto;
   position: relative;
 }
 @media screen and (min-width: 2000px) {
-  .ovojesasvimposebnaklasa .pravila__checkbox {
+  #ovojesasvimposebnaklasa .pravila__checkbox {
     margin: 0;
   }
 }
-.ovojesasvimposebnaklasa .pravila__checkbox label {
+#ovojesasvimposebnaklasa .pravila__checkbox label {
   cursor: pointer;
   position: absolute;
   width: 40px;
@@ -803,12 +851,12 @@
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr="#fcfff4", endColorstr="#b3bead",GradientType=0 );
 }
 @media (max-width: 767px) {
-  .ovojesasvimposebnaklasa .pravila__checkbox label {
+  #ovojesasvimposebnaklasa .pravila__checkbox label {
     width: 22px;
     height: 22px;
   }
 }
-.ovojesasvimposebnaklasa .pravila__checkbox label:after {
+#ovojesasvimposebnaklasa .pravila__checkbox label:after {
   -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
   filter: alpha(opacity=0);
   opacity: 0;
@@ -826,39 +874,40 @@
   transform: rotate(-45deg);
 }
 @media (max-width: 767px) {
-  .ovojesasvimposebnaklasa .pravila__checkbox label:after {
+  #ovojesasvimposebnaklasa .pravila__checkbox label:after {
     top: 0;
     left: 0;
     width: 23px;
     height: 12px;
   }
 }
-.ovojesasvimposebnaklasa .pravila__checkbox label:hover::after {
+#ovojesasvimposebnaklasa .pravila__checkbox label:hover::after {
   -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=30)";
   filter: alpha(opacity=30);
   opacity: 0.5;
 }
-.ovojesasvimposebnaklasa .pravila__checkbox input[type=checkbox]:checked + label:after {
+#ovojesasvimposebnaklasa .pravila__checkbox input[type=checkbox]:checked + label:after {
   -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
   filter: alpha(opacity=100);
   opacity: 1;
 }
-.ovojesasvimposebnaklasa input[type=checkbox i] {
+#ovojesasvimposebnaklasa input[type=checkbox i] {
   opacity: 0;
   width: 0;
   height: 0;
 }
-.ovojesasvimposebnaklasa .link-pravila {
+#ovojesasvimposebnaklasa .link-pravila {
   color: #0030fa;
   text-decoration: underline;
+  font-family: Arial, Helvetica, sans-serif;
 }
-.ovojesasvimposebnaklasa .results #rKraljeznica,
-.ovojesasvimposebnaklasa .results #rTrbuh,
-.ovojesasvimposebnaklasa .results #rSmetnje,
-.ovojesasvimposebnaklasa .results #rTegobe,
-.ovojesasvimposebnaklasa .results #rIzgled,
-.ovojesasvimposebnaklasa .results #rDisanje,
-.ovojesasvimposebnaklasa .results #rStil {
+#ovojesasvimposebnaklasa .results #rKraljeznica,
+#ovojesasvimposebnaklasa .results #rTrbuh,
+#ovojesasvimposebnaklasa .results #rSmetnje,
+#ovojesasvimposebnaklasa .results #rTegobe,
+#ovojesasvimposebnaklasa .results #rIzgled,
+#ovojesasvimposebnaklasa .results #rDisanje,
+#ovojesasvimposebnaklasa .results #rStil {
   margin-bottom: 20px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -870,18 +919,18 @@
   transition: background 0.5s ease-in-out;
 }
 @media (max-width: 767px) {
-  .ovojesasvimposebnaklasa .results #rKraljeznica,
-.ovojesasvimposebnaklasa .results #rTrbuh,
-.ovojesasvimposebnaklasa .results #rSmetnje,
-.ovojesasvimposebnaklasa .results #rTegobe,
-.ovojesasvimposebnaklasa .results #rIzgled,
-.ovojesasvimposebnaklasa .results #rDisanje,
-.ovojesasvimposebnaklasa .results #rStil {
+  #ovojesasvimposebnaklasa .results #rKraljeznica,
+#ovojesasvimposebnaklasa .results #rTrbuh,
+#ovojesasvimposebnaklasa .results #rSmetnje,
+#ovojesasvimposebnaklasa .results #rTegobe,
+#ovojesasvimposebnaklasa .results #rIzgled,
+#ovojesasvimposebnaklasa .results #rDisanje,
+#ovojesasvimposebnaklasa .results #rStil {
     font-size: 12px;
     margin-bottom: 10px;
   }
 }
-.ovojesasvimposebnaklasa .results .bodovi {
+#ovojesasvimposebnaklasa .results .bodovi {
   font-weight: bold;
   text-align: left;
   margin-bottom: 20px;
@@ -893,11 +942,11 @@
   text-transform: uppercase;
 }
 @media (max-width: 767px) {
-  .ovojesasvimposebnaklasa .results .bodovi {
+  #ovojesasvimposebnaklasa .results .bodovi {
     font-size: 16px;
   }
 }
-.ovojesasvimposebnaklasa .results p {
+#ovojesasvimposebnaklasa .results p {
   font-family: cedra4f, cursive;
   color: #707070;
   font-size: 20px;
@@ -907,33 +956,33 @@
   margin-left: 10px;
 }
 @media (max-width: 767px) {
-  .ovojesasvimposebnaklasa .results p {
+  #ovojesasvimposebnaklasa .results p {
     font-size: 14px;
     margin-right: 10px;
   }
 }
-.ovojesasvimposebnaklasa .results #rKraljeznica {
+#ovojesasvimposebnaklasa .results #rKraljeznica {
   background-color: rgba(206, 225, 130, 0.6);
 }
-.ovojesasvimposebnaklasa .results #rTrbuh {
+#ovojesasvimposebnaklasa .results #rTrbuh {
   background-color: rgba(252, 234, 44, 0.6);
 }
-.ovojesasvimposebnaklasa .results #rSmetnje {
+#ovojesasvimposebnaklasa .results #rSmetnje {
   background-color: rgba(211, 159, 245, 0.6);
 }
-.ovojesasvimposebnaklasa .results #rTegobe {
+#ovojesasvimposebnaklasa .results #rTegobe {
   background-color: rgba(126, 248, 161, 0.6);
 }
-.ovojesasvimposebnaklasa .results #rIzgled {
+#ovojesasvimposebnaklasa .results #rIzgled {
   background-color: rgba(248, 91, 70, 0.6);
 }
-.ovojesasvimposebnaklasa .results #rDisanje {
+#ovojesasvimposebnaklasa .results #rDisanje {
   background-color: rgba(14, 131, 248, 0.6);
 }
-.ovojesasvimposebnaklasa .results #rStil {
+#ovojesasvimposebnaklasa .results #rStil {
   background-color: rgba(216, 60, 245, 0.6);
 }
-.ovojesasvimposebnaklasa #form__card2::before {
+#ovojesasvimposebnaklasa #form__card2::before {
   content: "";
   position: absolute;
   display: block;
@@ -943,7 +992,12 @@
   top: 0;
   background-color: #cee182;
 }
-.ovojesasvimposebnaklasa #form__card4::before {
+@media (max-width: 767px) {
+  #ovojesasvimposebnaklasa #form__card2::before {
+    width: 50px;
+  }
+}
+#ovojesasvimposebnaklasa #form__card4::before {
   content: "";
   position: absolute;
   display: block;
@@ -953,7 +1007,12 @@
   top: 0;
   background-color: #fcec2e;
 }
-.ovojesasvimposebnaklasa #form__card6::before {
+@media (max-width: 767px) {
+  #ovojesasvimposebnaklasa #form__card4::before {
+    width: 50px;
+  }
+}
+#ovojesasvimposebnaklasa #form__card6::before {
   content: "";
   position: absolute;
   display: block;
@@ -963,7 +1022,12 @@
   top: 0;
   background-color: #d39ff5;
 }
-.ovojesasvimposebnaklasa #form__card8::before {
+@media (max-width: 767px) {
+  #ovojesasvimposebnaklasa #form__card6::before {
+    width: 50px;
+  }
+}
+#ovojesasvimposebnaklasa #form__card8::before {
   content: "";
   position: absolute;
   display: block;
@@ -973,7 +1037,12 @@
   top: 0;
   background-color: #7ef8a1;
 }
-.ovojesasvimposebnaklasa #form__card10::before {
+@media (max-width: 767px) {
+  #ovojesasvimposebnaklasa #form__card8::before {
+    width: 50px;
+  }
+}
+#ovojesasvimposebnaklasa #form__card10::before {
   content: "";
   position: absolute;
   display: block;
@@ -983,7 +1052,12 @@
   top: 0;
   background-color: #f85b46;
 }
-.ovojesasvimposebnaklasa #form__card12::before {
+@media (max-width: 767px) {
+  #ovojesasvimposebnaklasa #form__card10::before {
+    width: 50px;
+  }
+}
+#ovojesasvimposebnaklasa #form__card12::before {
   content: "";
   position: absolute;
   display: block;
@@ -993,7 +1067,12 @@
   top: 0;
   background-color: #0e83f8;
 }
-.ovojesasvimposebnaklasa #form__card14::before {
+@media (max-width: 767px) {
+  #ovojesasvimposebnaklasa #form__card12::before {
+    width: 50px;
+  }
+}
+#ovojesasvimposebnaklasa #form__card14::before {
   content: "";
   position: absolute;
   display: block;
@@ -1003,7 +1082,12 @@
   top: 0;
   background-color: #d83cf5;
 }
-.ovojesasvimposebnaklasa #form__card20::before {
+@media (max-width: 767px) {
+  #ovojesasvimposebnaklasa #form__card14::before {
+    width: 50px;
+  }
+}
+#ovojesasvimposebnaklasa #form__card20::before {
   content: "";
   position: absolute;
   display: block;
@@ -1013,7 +1097,12 @@
   top: 0;
   background-color: #6e6e6e;
 }
-.ovojesasvimposebnaklasa .success-message {
+@media (max-width: 767px) {
+  #ovojesasvimposebnaklasa #form__card20::before {
+    width: 50px;
+  }
+}
+#ovojesasvimposebnaklasa .success-message {
   width: 500px;
   height: 250px;
   background: #cde17a;
@@ -1023,33 +1112,50 @@
   text-align: center;
 }
 @media (max-width: 767px) {
-  .ovojesasvimposebnaklasa .success-message {
+  #ovojesasvimposebnaklasa .success-message {
     width: 100%;
     height: 125px;
   }
 }
-.ovojesasvimposebnaklasa .stranica503 {
+#ovojesasvimposebnaklasa .stranica503 {
   text-align: center;
   margin-top: 50px;
   background-color: #e7e7e7;
   padding: 20px;
 }
 @media (max-width: 767px) {
-  .ovojesasvimposebnaklasa .stranica503 {
+  #ovojesasvimposebnaklasa .stranica503 {
     margin-top: 30px;
   }
 }
-.ovojesasvimposebnaklasa .stranica503 h1 {
+#ovojesasvimposebnaklasa .stranica503 h1 {
   color: #10fac4;
 }
 @media (max-width: 767px) {
-  .ovojesasvimposebnaklasa .stranica503 h1 {
+  #ovojesasvimposebnaklasa .stranica503 h1 {
     font-size: 20px;
   }
 }
-.ovojesasvimposebnaklasa .stranica503 img {
+#ovojesasvimposebnaklasa .stranica503 img {
   width: 50%;
 }
-.ovojesasvimposebnaklasa .stranica503 p {
+#ovojesasvimposebnaklasa .stranica503 p {
   font-weight: 800;
+}
+#ovojesasvimposebnaklasa #anketaForm {
+  position: relative;
+}
+#ovojesasvimposebnaklasa #anketaForm::after {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  top: 0;
+  left: 0;
+}
+#ovojesasvimposebnaklasa .napomena {
+  position: relative;
+  z-index: 10;
 }

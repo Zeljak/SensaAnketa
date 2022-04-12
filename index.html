@@ -58,9 +58,9 @@
   </head>
 
   <body>
-	<div class="ovojesasvimposebnaklasa">
-    <div class="wrapper_html">
-      <div class="wrapper_body">
+	<div id="ovojesasvimposebnaklasa">
+    <div id="wrapper_html">
+      <div id="wrapper_body">
         <!-- HEADER -->
         <header class="header">
           <div class="header__text-box card1">
@@ -80,7 +80,7 @@
 
     <main>
         <section class="form">
-            <form id="anketaSensa">
+            <form id="userDataForm" data-validate novalidate="true">
               <div class="form__uvod">
                 <p>
                   Izdvojite vrijeme za samoprocjenu i odgovore na pitanja koja
@@ -94,33 +94,22 @@
                 </p>
                 <div class="green-rectangle"></div>
 
-                <!-- Mjerenje -->
-                <!-- <div class="mjerenje">
-                  <h3 class="form__question">
-                    Vaš broj ispunjavanja upitnika:
-                  </h3>
-                  <label
-                    ><input type="radio" name="select" /><span>1</span></label
-                  >
-                  <label
-                    ><input type="radio" name="select" /><span>2</span></label
-                  >
-                </div> -->
+       
 
                 <!-- Ime i prezime -->
-                <!-- <div>
+                <div class="input-wrapper">
+                  <h4>Upišite ime i prezime:</h4>
                   <input
                     type="text"
                     id="imeprezime"
                     name="imeprezime"
                     class="form__imeprezime"
                     placeholder="Ime i prezime:"
-					required
                   />
-                </div> -->
+                </div>
 
                 <!-- Godina rođenja -->
-                <div>
+                <div class="input-wrapper">
                   <h4>Upišite datum i godinu rođenja:</h4>
                   <input
                     type="date"
@@ -130,12 +119,13 @@
                     placeholder="Godina rođenja"
 					required
                   />
-				  <div class="error-message" id="bouncer-error_date"> Ispunite obavezno polje</div>
+				    <div class="error-message" id="bouncer-error_date">Ispunite obavezno polje
+                  </div>
                 </div>
 				
 
-            <!-- E-mail -->
-                <div>
+                <!-- E-mail -->
+                <div class="input-wrapper">
                   <h4>Upišite e-mail adresu:</h4>
                   <input
                     type="text"
@@ -143,12 +133,14 @@
                     name="email"
                     class="form__email"
                     placeholder="imeprezime@email.com"
-					required
                   />
                 </div>
+				<input type="submit" id="submit-form" class="checkUser button--custom" value="Ispunite osnovne podatke">
               </div>
+			</form>
 
-			      <div class="form__card">
+			<form id="anketaForm" data-validate novalidate="true">
+			      <div class="form__card napomena">
 				<h3>NAPOMENA </h3>	
 				<p>Anketa se otključava tek kada ispunite polja s osnovnim podacima: DATUM I GODINA ROĐENJA, E-MAIL ADRESA!</p>
 			      </div>
@@ -412,7 +404,7 @@
                 <p>A&nbsp;&nbsp;&nbsp; Niski intenzitet (spori hod, joga asane, thai chi, vrtlarenje...)</p>
 				        <div>
 					      <input
-					  type="text"
+					  type="number"
 					  id="aktivnost_niska"
 					  name="aktivnost"
 					  class="aktivnost_niska"
@@ -423,7 +415,7 @@
                 <p>B&nbsp;&nbsp;&nbsp; Srednji intenzitet (hodanje, ples, pilates, body tehnika, prsno ili leđno plivanje...)</p>
 				<div>
 					<input
-					  type="text"
+					  type="number"
 					  id="aktivnost_srednja"
 					  name="aktivnost"
 					  class="aktivnost_srednja"
@@ -434,7 +426,7 @@
                 <p>C&nbsp;&nbsp;&nbsp; Visoki intenzitet (trčanje, rukomet, nogomet, tenis, kraul, aerobic...)</p>
 				<div>
 					<input
-					  type="text"
+					  type="number"
 					  id="aktivnost_visoka"
 					  name="aktivnost"
 					  class="aktivnost_visoka"
@@ -2403,7 +2395,7 @@
                   />
                 </div>
             </div>
-
+		</form>
 			  <!-- Rezultati -->
  			<div class="form__card--title form__card--rezultati">
 			  	<h2>rezultati</h2>
