@@ -714,10 +714,9 @@
       border-style: solid;
     }
 
-    .error-message input[type="text"],
-    .error-message input[type="date"],
-    .error-message input[name="tezina"],
-    .error-message input[name="aktivnost"] {
+    .error input[type="text"],
+    .error input[type="date"],
+    .error input[name="number"] {
       border: 2px solid $error-color;
       outline: none;
     }
@@ -726,6 +725,18 @@
   // SUCCESS MESSAGE
   .success-message {
     margin-bottom: 50px;
+    width: 500px;
+    height: 250px;
+    background: $green;
+    position: relative;
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+
+    @include for-phone {
+      width: 100%;
+      height: 125px;
+    }
 
     .text {
       width: 50%;
@@ -754,6 +765,7 @@
       z-index: 1000;
       position: absolute;
       top: 50px;
+      margin-left: 0;
 
       @include for-phone {
         top: 10px;
@@ -771,11 +783,15 @@
 
   .pravila__wrapper {
     display: flex;
+
+    @include for-phone {
+      gap: 15px;
+    }
   }
   .pravila__wrapper h6 {
     margin-top: 20px;
     margin-bottom: 20px;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: $family-secondary;
     color: $link-blue;
 
     @include for-tablet {
@@ -858,11 +874,11 @@
     }
   }
 
-  .pravila__checkbox label:hover::after {
-    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=30)";
-    filter: alpha(opacity=30);
-    opacity: 0.5;
-  }
+  // .pravila__checkbox label:hover::after {
+  //   -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=30)";
+  //   filter: alpha(opacity=30);
+  //   opacity: 0.5;
+  // }
 
   .pravila__checkbox input[type="checkbox"]:checked + label:after {
     -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
@@ -1076,22 +1092,6 @@
     }
   }
 
-  // SUCCESS MESSAGE
-  .success-message {
-    width: 500px;
-    height: 250px;
-    background: $green;
-    position: relative;
-    display: block;
-    margin: 0 auto;
-    text-align: center;
-
-    @include for-phone {
-      width: 100%;
-      height: 125px;
-    }
-  }
-
   // ERROR 503
   .stranica503 {
     text-align: center;
@@ -1139,5 +1139,8 @@
   .napomena {
     position: relative;
     z-index: 10;
+    -webkit-box-shadow: inset 0px 0px 0px 3px $green;
+    -moz-box-shadow: inset 0px 0px 0px 3px $green;
+    box-shadow: inset 0px 0px 0px 3px $green;
   }
 }
