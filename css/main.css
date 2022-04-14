@@ -57,26 +57,15 @@
   width: 70%;
   display: block;
 }
-#ovojesasvimposebnaklasa .header h1 {
+#ovojesasvimposebnaklasa .header h2 {
   font-family: cedra4f, cursive;
   font-size: 30px;
   text-align: center;
-}
-@media (max-width: 767px) {
-  #ovojesasvimposebnaklasa .header h1 {
-    font-size: 20px;
-  }
-}
-#ovojesasvimposebnaklasa .header h2 {
-  font-family: cedra4f, cursive;
-  font-size: 14px;
-  color: #686868;
-  background-color: #cde17a;
   text-align: center;
 }
 @media (max-width: 767px) {
   #ovojesasvimposebnaklasa .header h2 {
-    font-size: 12px;
+    font-size: 20px;
   }
 }
 #ovojesasvimposebnaklasa .header h3 {
@@ -85,6 +74,18 @@
   color: white;
   margin-bottom: 20px;
   text-align: center;
+}
+#ovojesasvimposebnaklasa .header h4 {
+  font-family: cedra4f, cursive;
+  font-size: 14px;
+  color: #686868;
+  background-color: #cde17a;
+  text-align: center;
+}
+@media (max-width: 767px) {
+  #ovojesasvimposebnaklasa .header h4 {
+    font-size: 12px;
+  }
 }
 #ovojesasvimposebnaklasa .header .card1 {
   width: 200px;
@@ -102,6 +103,7 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  background-color: #d1d1d1;
 }
 #ovojesasvimposebnaklasa .form {
   font-family: cedra4f;

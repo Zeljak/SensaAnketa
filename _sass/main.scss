@@ -73,24 +73,14 @@
       display: block;
     }
 
-    h1 {
+    h2 {
       font-family: $family-secondary;
       font-size: 30px;
+      text-align: center;
       text-align: center;
 
       @include for-phone {
         font-size: 20px;
-      }
-    }
-    h2 {
-      font-family: $family-secondary;
-      font-size: 14px;
-      color: $brownish-grey;
-      background-color: $green;
-      text-align: center;
-
-      @include for-phone {
-        font-size: 12px;
       }
     }
 
@@ -100,6 +90,18 @@
       color: white;
       margin-bottom: 20px;
       text-align: center;
+    }
+
+    h4 {
+      font-family: $family-secondary;
+      font-size: 14px;
+      color: $brownish-grey;
+      background-color: $green;
+      text-align: center;
+
+      @include for-phone {
+        font-size: 12px;
+      }
     }
 
     .card1 {
@@ -112,6 +114,7 @@
       display: flex;
       justify-content: center;
       align-items: center;
+      background-color: $light-pink;
     }
   }
 
